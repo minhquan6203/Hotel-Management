@@ -59,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.ForeColor = System.Drawing.Color.SeaGreen;
             this.label2.Location = new System.Drawing.Point(512, 20);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -71,7 +71,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(506, 89);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -83,7 +83,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ForeColor = System.Drawing.Color.SeaGreen;
             this.label4.Location = new System.Drawing.Point(506, 182);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -98,7 +98,7 @@
             this.txbUserName.BorderColorMouseHover = System.Drawing.Color.Black;
             this.txbUserName.BorderThickness = 1;
             this.txbUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbUserName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txbUserName.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbUserName.isPassword = false;
             this.txbUserName.Location = new System.Drawing.Point(511, 119);
@@ -131,7 +131,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(979, 6);
+            this.btnClose.Location = new System.Drawing.Point(1005, 4);
             this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(21, 20);
@@ -145,8 +145,8 @@
             // 
             this.btnLogin.ActiveBorderThickness = 1;
             this.btnLogin.ActiveCornerRadius = 20;
-            this.btnLogin.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btnLogin.ActiveForecolor = System.Drawing.Color.White;
+            this.btnLogin.ActiveFillColor = System.Drawing.Color.DarkGreen;
+            this.btnLogin.ActiveForecolor = System.Drawing.Color.Chartreuse;
             this.btnLogin.ActiveLineColor = System.Drawing.Color.Black;
             this.btnLogin.BackColor = System.Drawing.Color.White;
             this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
@@ -156,8 +156,8 @@
             this.btnLogin.ForeColor = System.Drawing.Color.Black;
             this.btnLogin.IdleBorderThickness = 1;
             this.btnLogin.IdleCornerRadius = 20;
-            this.btnLogin.IdleFillColor = System.Drawing.Color.White;
-            this.btnLogin.IdleForecolor = System.Drawing.Color.Black;
+            this.btnLogin.IdleFillColor = System.Drawing.Color.SeaGreen;
+            this.btnLogin.IdleForecolor = System.Drawing.Color.Chartreuse;
             this.btnLogin.IdleLineColor = System.Drawing.Color.Black;
             this.btnLogin.Location = new System.Drawing.Point(511, 295);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -170,6 +170,7 @@
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.ForeColor = System.Drawing.Color.DarkGreen;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(511, 71);
@@ -184,8 +185,8 @@
             // 
             this.btnExit_.ActiveBorderThickness = 1;
             this.btnExit_.ActiveCornerRadius = 20;
-            this.btnExit_.ActiveFillColor = System.Drawing.Color.Silver;
-            this.btnExit_.ActiveForecolor = System.Drawing.Color.White;
+            this.btnExit_.ActiveFillColor = System.Drawing.Color.DarkGreen;
+            this.btnExit_.ActiveForecolor = System.Drawing.Color.Chartreuse;
             this.btnExit_.ActiveLineColor = System.Drawing.Color.Black;
             this.btnExit_.BackColor = System.Drawing.Color.White;
             this.btnExit_.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit_.BackgroundImage")));
@@ -195,8 +196,8 @@
             this.btnExit_.ForeColor = System.Drawing.Color.Black;
             this.btnExit_.IdleBorderThickness = 1;
             this.btnExit_.IdleCornerRadius = 20;
-            this.btnExit_.IdleFillColor = System.Drawing.Color.White;
-            this.btnExit_.IdleForecolor = System.Drawing.Color.Black;
+            this.btnExit_.IdleFillColor = System.Drawing.Color.SeaGreen;
+            this.btnExit_.IdleForecolor = System.Drawing.Color.Chartreuse;
             this.btnExit_.IdleLineColor = System.Drawing.Color.Black;
             this.btnExit_.Location = new System.Drawing.Point(511, 362);
             this.btnExit_.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -232,24 +233,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(54, 32);
+            this.label3.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label3.Location = new System.Drawing.Point(31, 26);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(376, 42);
+            this.label3.Size = new System.Drawing.Size(443, 40);
             this.label3.TabIndex = 32;
             this.label3.Text = "THE EIGHTTEEN HOTEL";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(57, 350);
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.label5.Location = new System.Drawing.Point(56, 345);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(374, 25);
+            this.label5.Size = new System.Drawing.Size(362, 24);
             this.label5.TabIndex = 33;
             this.label5.Text = "Sự hài lòng của bạn là niềm vui của chúng tôi";
             this.label5.Click += new System.EventHandler(this.label5_Click);

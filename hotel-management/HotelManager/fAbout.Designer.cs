@@ -43,6 +43,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(5, 53);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(640, 12);
             this.bunifuSeparator1.TabIndex = 52;
@@ -73,7 +74,7 @@
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
             this.btnClose.Location = new System.Drawing.Point(629, 6);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(21, 20);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -111,8 +112,8 @@
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuSeparator2.LineThickness = 1;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(155, 185);
-            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator2.Location = new System.Drawing.Point(157, 173);
+            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(341, 12);
             this.bunifuSeparator2.TabIndex = 70;
@@ -136,48 +137,49 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(181, 260);
+            this.label4.Location = new System.Drawing.Point(177, 238);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 25);
+            this.label4.Size = new System.Drawing.Size(264, 25);
             this.label4.TabIndex = 72;
-            this.label4.Text = "Quân - 21521333\r\n";
+            this.label4.Text = "Nguyễn Văn Quân - 21521333\r\n";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(216, 304);
+            this.label6.Location = new System.Drawing.Point(177, 276);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 25);
+            this.label6.Size = new System.Drawing.Size(288, 25);
             this.label6.TabIndex = 73;
-            this.label6.Text = "Vee";
+            this.label6.Text = "Nguyễn Thị Tường Vi - 21522787";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(203, 345);
+            this.label7.Location = new System.Drawing.Point(177, 311);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 25);
+            this.label7.Size = new System.Drawing.Size(265, 25);
             this.label7.TabIndex = 74;
-            this.label7.Text = "Thọ";
+            this.label7.Text = "Nguyễn Phúc Thọ -  21521478";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(207, 386);
+            this.label8.Location = new System.Drawing.Point(177, 345);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 25);
+            this.label8.Size = new System.Drawing.Size(243, 25);
             this.label8.TabIndex = 75;
-            this.label8.Text = "Thảo";
+            this.label8.Text = "Trần Hạnh Thảo - 21522609";
             // 
             // label9
             // 
@@ -218,12 +220,24 @@
             this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton25.Click += new System.EventHandler(this.bunifuThinButton25_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(177, 380);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(288, 25);
+            this.label2.TabIndex = 78;
+            this.label2.Text = "Nguyễn Thị Bảo Xuyên - 21520537";
+            // 
             // fAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(657, 507);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.bunifuThinButton25);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -238,7 +252,7 @@
             this.Controls.Add(this.bunifuSeparator1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fAbout";
@@ -263,5 +277,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
+        private System.Windows.Forms.Label label2;
     }
 }
