@@ -40,6 +40,7 @@
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
             this.gbxCustomerInfo = new System.Windows.Forms.GroupBox();
+            this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDeleteCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUpdateCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
             this.cbCustomerType = new MetroFramework.Controls.MetroComboBox();
@@ -49,8 +50,11 @@
             this.lbCustomerID = new System.Windows.Forms.Label();
             this.txbFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lbName = new System.Windows.Forms.Label();
-            this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
             this.gbxDetailBookRoom = new System.Windows.Forms.GroupBox();
+            this.dmTotalGuest_ = new System.Windows.Forms.DomainUpDown();
+            this.ctlPrice = new MetroFramework.Controls.MetroComboBox();
+            this.lbPrice = new System.Windows.Forms.Label();
+            this.lbTotalGuest = new System.Windows.Forms.Label();
             this.txbBookRoomID = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lbBookRoomID = new System.Windows.Forms.Label();
             this.txbNote = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -65,10 +69,6 @@
             this.lbRoomType = new System.Windows.Forms.Label();
             this.lbCheckOut = new System.Windows.Forms.Label();
             this.lbCheckIn = new System.Windows.Forms.Label();
-            this.lbTotalGuest = new System.Windows.Forms.Label();
-            this.lbPrice = new System.Windows.Forms.Label();
-            this.ctlPrice = new MetroFramework.Controls.MetroComboBox();
-            this.spinTotalGuest = new DevExpress.XtraEditors.SpinEdit();
             this.gbxCustomerList = new System.Windows.Forms.GroupBox();
             this.dataGridViewRoomType = new System.Windows.Forms.DataGridView();
             this.bindingCustomerType = new System.Windows.Forms.BindingNavigator(this.components);
@@ -89,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.gbxCustomerInfo.SuspendLayout();
             this.gbxDetailBookRoom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.spinTotalGuest.Properties)).BeginInit();
             this.gbxCustomerList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoomType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingCustomerType)).BeginInit();
@@ -193,6 +192,31 @@
             this.gbxCustomerInfo.TabIndex = 49;
             this.gbxCustomerInfo.TabStop = false;
             this.gbxCustomerInfo.Text = "Thông tin khách hàng";
+            // 
+            // btnAddCustomer
+            // 
+            this.btnAddCustomer.ActiveBorderThickness = 1;
+            this.btnAddCustomer.ActiveCornerRadius = 20;
+            this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddCustomer.BackColor = System.Drawing.Color.White;
+            this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
+            this.btnAddCustomer.ButtonText = "Thêm khách hàng";
+            this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddCustomer.IdleBorderThickness = 1;
+            this.btnAddCustomer.IdleCornerRadius = 20;
+            this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
+            this.btnAddCustomer.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddCustomer.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddCustomer.Location = new System.Drawing.Point(11, 231);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(271, 49);
+            this.btnAddCustomer.TabIndex = 53;
+            this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnDeleteCustomer
             // 
@@ -350,35 +374,10 @@
             this.lbName.TabIndex = 22;
             this.lbName.Text = "Họ và tên:";
             // 
-            // btnAddCustomer
-            // 
-            this.btnAddCustomer.ActiveBorderThickness = 1;
-            this.btnAddCustomer.ActiveCornerRadius = 20;
-            this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAddCustomer.BackColor = System.Drawing.Color.White;
-            this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
-            this.btnAddCustomer.ButtonText = "Thêm khách hàng";
-            this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAddCustomer.IdleBorderThickness = 1;
-            this.btnAddCustomer.IdleCornerRadius = 20;
-            this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
-            this.btnAddCustomer.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAddCustomer.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAddCustomer.Location = new System.Drawing.Point(11, 231);
-            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(271, 49);
-            this.btnAddCustomer.TabIndex = 53;
-            this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // gbxDetailBookRoom
             // 
             this.gbxDetailBookRoom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.gbxDetailBookRoom.Controls.Add(this.spinTotalGuest);
+            this.gbxDetailBookRoom.Controls.Add(this.dmTotalGuest_);
             this.gbxDetailBookRoom.Controls.Add(this.ctlPrice);
             this.gbxDetailBookRoom.Controls.Add(this.lbPrice);
             this.gbxDetailBookRoom.Controls.Add(this.lbTotalGuest);
@@ -404,6 +403,53 @@
             this.gbxDetailBookRoom.TabIndex = 50;
             this.gbxDetailBookRoom.TabStop = false;
             this.gbxDetailBookRoom.Text = "Thông tin đặt phòng";
+            // 
+            // dmTotalGuest_
+            // 
+            this.dmTotalGuest_.Location = new System.Drawing.Point(11, 244);
+            this.dmTotalGuest_.Name = "dmTotalGuest_";
+            this.dmTotalGuest_.Size = new System.Drawing.Size(203, 34);
+            this.dmTotalGuest_.TabIndex = 52;
+            // 
+            // ctlPrice
+            // 
+            this.ctlPrice.BackColor = System.Drawing.Color.White;
+            this.ctlPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ctlPrice.FormattingEnabled = true;
+            this.ctlPrice.ItemHeight = 24;
+            this.ctlPrice.Location = new System.Drawing.Point(240, 244);
+            this.ctlPrice.Name = "ctlPrice";
+            this.ctlPrice.Size = new System.Drawing.Size(203, 30);
+            this.ctlPrice.Style = MetroFramework.MetroColorStyle.Green;
+            this.ctlPrice.TabIndex = 65;
+            this.ctlPrice.UseCustomBackColor = true;
+            this.ctlPrice.UseCustomForeColor = true;
+            this.ctlPrice.UseSelectable = true;
+            this.ctlPrice.UseStyleColors = true;
+            // 
+            // lbPrice
+            // 
+            this.lbPrice.AutoSize = true;
+            this.lbPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lbPrice.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbPrice.Location = new System.Drawing.Point(240, 216);
+            this.lbPrice.Name = "lbPrice";
+            this.lbPrice.Size = new System.Drawing.Size(87, 25);
+            this.lbPrice.TabIndex = 64;
+            this.lbPrice.Text = "Đơn giá: ";
+            // 
+            // lbTotalGuest
+            // 
+            this.lbTotalGuest.AutoSize = true;
+            this.lbTotalGuest.BackColor = System.Drawing.Color.Transparent;
+            this.lbTotalGuest.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTotalGuest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbTotalGuest.Location = new System.Drawing.Point(6, 216);
+            this.lbTotalGuest.Name = "lbTotalGuest";
+            this.lbTotalGuest.Size = new System.Drawing.Size(191, 25);
+            this.lbTotalGuest.TabIndex = 62;
+            this.lbTotalGuest.Text = "Tổng số khách hàng: ";
             // 
             // txbBookRoomID
             // 
@@ -604,73 +650,6 @@
             this.lbCheckIn.TabIndex = 34;
             this.lbCheckIn.Text = "Ngày nhận:";
             // 
-            // lbTotalGuest
-            // 
-            this.lbTotalGuest.AutoSize = true;
-            this.lbTotalGuest.BackColor = System.Drawing.Color.Transparent;
-            this.lbTotalGuest.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTotalGuest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbTotalGuest.Location = new System.Drawing.Point(6, 216);
-            this.lbTotalGuest.Name = "lbTotalGuest";
-            this.lbTotalGuest.Size = new System.Drawing.Size(191, 25);
-            this.lbTotalGuest.TabIndex = 62;
-            this.lbTotalGuest.Text = "Tổng số khách hàng: ";
-            // 
-            // lbPrice
-            // 
-            this.lbPrice.AutoSize = true;
-            this.lbPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lbPrice.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbPrice.Location = new System.Drawing.Point(240, 216);
-            this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(87, 25);
-            this.lbPrice.TabIndex = 64;
-            this.lbPrice.Text = "Đơn giá: ";
-            // 
-            // ctlPrice
-            // 
-            this.ctlPrice.BackColor = System.Drawing.Color.White;
-            this.ctlPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ctlPrice.FormattingEnabled = true;
-            this.ctlPrice.ItemHeight = 24;
-            this.ctlPrice.Location = new System.Drawing.Point(240, 244);
-            this.ctlPrice.Name = "ctlPrice";
-            this.ctlPrice.Size = new System.Drawing.Size(203, 30);
-            this.ctlPrice.Style = MetroFramework.MetroColorStyle.Green;
-            this.ctlPrice.TabIndex = 65;
-            this.ctlPrice.UseCustomBackColor = true;
-            this.ctlPrice.UseCustomForeColor = true;
-            this.ctlPrice.UseSelectable = true;
-            this.ctlPrice.UseStyleColors = true;
-            // 
-            // spinTotalGuest
-            // 
-            this.spinTotalGuest.EditValue = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.spinTotalGuest.Location = new System.Drawing.Point(11, 244);
-            this.spinTotalGuest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.spinTotalGuest.Name = "spinTotalGuest";
-            this.spinTotalGuest.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spinTotalGuest.Properties.MaxValue = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.spinTotalGuest.Properties.MinValue = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.spinTotalGuest.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.spinTotalGuest.Size = new System.Drawing.Size(203, 24);
-            this.spinTotalGuest.TabIndex = 66;
-            this.spinTotalGuest.EditValueChanged += new System.EventHandler(this.spinEdit1_EditValueChanged);
-            // 
             // gbxCustomerList
             // 
             this.gbxCustomerList.Controls.Add(this.dataGridViewRoomType);
@@ -716,7 +695,7 @@
             this.dataGridViewRoomType.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewRoomType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewRoomType.GridColor = System.Drawing.Color.White;
-            this.dataGridViewRoomType.Location = new System.Drawing.Point(3, 61);
+            this.dataGridViewRoomType.Location = new System.Drawing.Point(3, 55);
             this.dataGridViewRoomType.Name = "dataGridViewRoomType";
             this.dataGridViewRoomType.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -735,7 +714,7 @@
             this.dataGridViewRoomType.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewRoomType.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridViewRoomType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewRoomType.Size = new System.Drawing.Size(589, 421);
+            this.dataGridViewRoomType.Size = new System.Drawing.Size(589, 427);
             this.dataGridViewRoomType.TabIndex = 28;
             // 
             // bindingCustomerType
@@ -762,14 +741,14 @@
             this.bindingCustomerType.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingCustomerType.Name = "bindingCustomerType";
             this.bindingCustomerType.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingCustomerType.Size = new System.Drawing.Size(589, 31);
+            this.bindingCustomerType.Size = new System.Drawing.Size(589, 25);
             this.bindingCustomerType.TabIndex = 29;
             this.bindingCustomerType.Text = "bindingNavigator1";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -796,7 +775,7 @@
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -810,7 +789,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -835,12 +814,12 @@
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(39, 28);
+            this.toolStripLabel1.Size = new System.Drawing.Size(39, 22);
             this.toolStripLabel1.Text = "Xuất";
             // 
             // colID
@@ -868,7 +847,7 @@
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 125;
+            this.Column2.Width = 155;
             // 
             // Column1
             // 
@@ -903,7 +882,6 @@
             this.gbxCustomerInfo.PerformLayout();
             this.gbxDetailBookRoom.ResumeLayout(false);
             this.gbxDetailBookRoom.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.spinTotalGuest.Properties)).EndInit();
             this.gbxCustomerList.ResumeLayout(false);
             this.gbxCustomerList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoomType)).EndInit();
@@ -951,13 +929,8 @@
         private System.Windows.Forms.Label lbTotalGuest;
         private System.Windows.Forms.Label lbPrice;
         private MetroFramework.Controls.MetroComboBox ctlPrice;
-        private DevExpress.XtraEditors.SpinEdit spinTotalGuest;
         private System.Windows.Forms.GroupBox gbxCustomerList;
         private System.Windows.Forms.DataGridView dataGridViewRoomType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.BindingNavigator bindingCustomerType;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -969,5 +942,10 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.DomainUpDown dmTotalGuest_;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

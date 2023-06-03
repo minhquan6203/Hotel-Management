@@ -32,26 +32,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fManagement));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelLeft = new System.Windows.Forms.Panel();
-            this.TileBookRoom = new MetroFramework.Controls.MetroTile();
-            this.TileAccess = new MetroFramework.Controls.MetroTile();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnNavigationPanel = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnIntroduce = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAccountProfile = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnLogOut = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnHelp = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnLogOut = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.TileBookRoom = new MetroFramework.Controls.MetroTile();
+            this.TileAccess = new MetroFramework.Controls.MetroTile();
             this.TileRoom = new MetroFramework.Controls.MetroTile();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.TileBill = new MetroFramework.Controls.MetroTile();
             this.TileRules = new MetroFramework.Controls.MetroTile();
             this.TileReport = new MetroFramework.Controls.MetroTile();
-            this.TileEmployee = new MetroFramework.Controls.MetroTile();
+            this.TileAccount = new MetroFramework.Controls.MetroTile();
             this.titlePay = new MetroFramework.Controls.MetroTile();
             this.label2 = new System.Windows.Forms.Label();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.titleBookRoom = new MetroFramework.Controls.MetroTile();
             this.panelLeft.SuspendLayout();
-            this.gunaPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,19 +64,18 @@
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.White;
+            this.panelLeft.Controls.Add(this.panel1);
             this.panelLeft.Controls.Add(this.TileBookRoom);
             this.panelLeft.Controls.Add(this.TileAccess);
-            this.panelLeft.Controls.Add(this.gunaPanel1);
             this.panelLeft.Controls.Add(this.TileRoom);
             this.panelLeft.Controls.Add(this.bunifuSeparator1);
             this.panelLeft.Controls.Add(this.TileBill);
             this.panelLeft.Controls.Add(this.TileRules);
             this.panelLeft.Controls.Add(this.TileReport);
-            this.panelLeft.Controls.Add(this.TileEmployee);
+            this.panelLeft.Controls.Add(this.TileAccount);
             this.panelLeft.Controls.Add(this.titlePay);
             this.panelLeft.Controls.Add(this.label2);
             this.panelLeft.Controls.Add(this.btnClose);
-            this.panelLeft.Controls.Add(this.titleBookRoom);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Margin = new System.Windows.Forms.Padding(4);
@@ -86,65 +84,21 @@
             this.panelLeft.TabIndex = 1;
             this.panelLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRight_Paint);
             // 
-            // TileBookRoom
+            // panel1
             // 
-            this.TileBookRoom.ActiveControl = null;
-            this.TileBookRoom.BackColor = System.Drawing.Color.Silver;
-            this.TileBookRoom.ForeColor = System.Drawing.Color.DimGray;
-            this.TileBookRoom.Location = new System.Drawing.Point(470, 91);
-            this.TileBookRoom.Margin = new System.Windows.Forms.Padding(4);
-            this.TileBookRoom.Name = "TileBookRoom";
-            this.TileBookRoom.Size = new System.Drawing.Size(182, 347);
-            this.TileBookRoom.TabIndex = 58;
-            this.TileBookRoom.Text = "Đặt phòng";
-            this.TileBookRoom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.TileBookRoom.TileImage = ((System.Drawing.Image)(resources.GetObject("TileBookRoom.TileImage")));
-            this.TileBookRoom.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.TileBookRoom.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.TileBookRoom.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.TileBookRoom.UseCustomBackColor = true;
-            this.TileBookRoom.UseCustomForeColor = true;
-            this.TileBookRoom.UseSelectable = true;
-            this.TileBookRoom.UseStyleColors = true;
-            this.TileBookRoom.UseTileImage = true;
-            // 
-            // TileAccess
-            // 
-            this.TileAccess.ActiveControl = null;
-            this.TileAccess.BackColor = System.Drawing.Color.Silver;
-            this.TileAccess.ForeColor = System.Drawing.Color.DimGray;
-            this.TileAccess.Location = new System.Drawing.Point(1049, 90);
-            this.TileAccess.Margin = new System.Windows.Forms.Padding(4);
-            this.TileAccess.Name = "TileAccess";
-            this.TileAccess.Size = new System.Drawing.Size(204, 348);
-            this.TileAccess.TabIndex = 57;
-            this.TileAccess.Text = "Quyền truy cập";
-            this.TileAccess.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.TileAccess.TileImage = ((System.Drawing.Image)(resources.GetObject("TileAccess.TileImage")));
-            this.TileAccess.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.TileAccess.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.TileAccess.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.TileAccess.UseCustomBackColor = true;
-            this.TileAccess.UseCustomForeColor = true;
-            this.TileAccess.UseSelectable = true;
-            this.TileAccess.UseStyleColors = true;
-            this.TileAccess.UseTileImage = true;
-            this.TileAccess.Click += new System.EventHandler(this.metroTile2_Click_1);
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPanel1.BackgroundImage")));
-            this.gunaPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaPanel1.Controls.Add(this.btnNavigationPanel);
-            this.gunaPanel1.Controls.Add(this.btnIntroduce);
-            this.gunaPanel1.Controls.Add(this.btnAccountProfile);
-            this.gunaPanel1.Controls.Add(this.btnLogOut);
-            this.gunaPanel1.Controls.Add(this.btnHelp);
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(236, 718);
-            this.gunaPanel1.TabIndex = 56;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.btnNavigationPanel);
+            this.panel1.Controls.Add(this.btnIntroduce);
+            this.panel1.Controls.Add(this.btnAccountProfile);
+            this.panel1.Controls.Add(this.btnHelp);
+            this.panel1.Controls.Add(this.btnLogOut);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(236, 718);
+            this.panel1.TabIndex = 59;
             // 
             // btnNavigationPanel
             // 
@@ -175,7 +129,7 @@
             this.btnNavigationPanel.OnHovercolor = System.Drawing.Color.Gray;
             this.btnNavigationPanel.OnHoverTextColor = System.Drawing.Color.White;
             this.btnNavigationPanel.selected = false;
-            this.btnNavigationPanel.Size = new System.Drawing.Size(255, 55);
+            this.btnNavigationPanel.Size = new System.Drawing.Size(236, 49);
             this.btnNavigationPanel.TabIndex = 6;
             this.btnNavigationPanel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNavigationPanel.Textcolor = System.Drawing.Color.White;
@@ -258,6 +212,43 @@
             this.btnAccountProfile.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnAccountProfile.Click += new System.EventHandler(this.btnAccountProfile_Click);
             // 
+            // btnHelp
+            // 
+            this.btnHelp.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHelp.BorderRadius = 0;
+            this.btnHelp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.btnHelp.ButtonText = "    Trợ giúp";
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHelp.DisabledColor = System.Drawing.Color.Gray;
+            this.btnHelp.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnHelp.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnHelp.Iconimage")));
+            this.btnHelp.Iconimage_right = null;
+            this.btnHelp.Iconimage_right_Selected = null;
+            this.btnHelp.Iconimage_Selected = null;
+            this.btnHelp.IconMarginLeft = 0;
+            this.btnHelp.IconMarginRight = 0;
+            this.btnHelp.IconRightVisible = true;
+            this.btnHelp.IconRightZoom = 0D;
+            this.btnHelp.IconVisible = true;
+            this.btnHelp.IconZoom = 50D;
+            this.btnHelp.IsTab = false;
+            this.btnHelp.Location = new System.Drawing.Point(0, 586);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(5);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.btnHelp.OnHovercolor = System.Drawing.Color.DarkGray;
+            this.btnHelp.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnHelp.selected = false;
+            this.btnHelp.Size = new System.Drawing.Size(236, 49);
+            this.btnHelp.TabIndex = 3;
+            this.btnHelp.Text = "    Trợ giúp";
+            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHelp.Textcolor = System.Drawing.Color.DimGray;
+            this.btnHelp.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            // 
             // btnLogOut
             // 
             this.btnLogOut.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
@@ -296,42 +287,50 @@
             this.btnLogOut.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // btnHelp
+            // TileBookRoom
             // 
-            this.btnHelp.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
-            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
-            this.btnHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHelp.BorderRadius = 0;
-            this.btnHelp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnHelp.ButtonText = "    Trợ giúp";
-            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHelp.DisabledColor = System.Drawing.Color.Gray;
-            this.btnHelp.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnHelp.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnHelp.Iconimage")));
-            this.btnHelp.Iconimage_right = null;
-            this.btnHelp.Iconimage_right_Selected = null;
-            this.btnHelp.Iconimage_Selected = null;
-            this.btnHelp.IconMarginLeft = 0;
-            this.btnHelp.IconMarginRight = 0;
-            this.btnHelp.IconRightVisible = true;
-            this.btnHelp.IconRightZoom = 0D;
-            this.btnHelp.IconVisible = true;
-            this.btnHelp.IconZoom = 50D;
-            this.btnHelp.IsTab = false;
-            this.btnHelp.Location = new System.Drawing.Point(0, 586);
-            this.btnHelp.Margin = new System.Windows.Forms.Padding(5);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
-            this.btnHelp.OnHovercolor = System.Drawing.Color.DarkGray;
-            this.btnHelp.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnHelp.selected = false;
-            this.btnHelp.Size = new System.Drawing.Size(236, 49);
-            this.btnHelp.TabIndex = 3;
-            this.btnHelp.Text = "    Trợ giúp";
-            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Textcolor = System.Drawing.Color.DimGray;
-            this.btnHelp.TextFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.TileBookRoom.ActiveControl = null;
+            this.TileBookRoom.BackColor = System.Drawing.Color.Silver;
+            this.TileBookRoom.ForeColor = System.Drawing.Color.DimGray;
+            this.TileBookRoom.Location = new System.Drawing.Point(470, 91);
+            this.TileBookRoom.Margin = new System.Windows.Forms.Padding(4);
+            this.TileBookRoom.Name = "TileBookRoom";
+            this.TileBookRoom.Size = new System.Drawing.Size(182, 347);
+            this.TileBookRoom.TabIndex = 58;
+            this.TileBookRoom.Text = "Đặt phòng";
+            this.TileBookRoom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.TileBookRoom.TileImage = ((System.Drawing.Image)(resources.GetObject("TileBookRoom.TileImage")));
+            this.TileBookRoom.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TileBookRoom.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.TileBookRoom.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.TileBookRoom.UseCustomBackColor = true;
+            this.TileBookRoom.UseCustomForeColor = true;
+            this.TileBookRoom.UseSelectable = true;
+            this.TileBookRoom.UseStyleColors = true;
+            this.TileBookRoom.UseTileImage = true;
+            // 
+            // TileAccess
+            // 
+            this.TileAccess.ActiveControl = null;
+            this.TileAccess.BackColor = System.Drawing.Color.Silver;
+            this.TileAccess.ForeColor = System.Drawing.Color.DimGray;
+            this.TileAccess.Location = new System.Drawing.Point(1049, 90);
+            this.TileAccess.Margin = new System.Windows.Forms.Padding(4);
+            this.TileAccess.Name = "TileAccess";
+            this.TileAccess.Size = new System.Drawing.Size(204, 348);
+            this.TileAccess.TabIndex = 57;
+            this.TileAccess.Text = "Quyền truy cập";
+            this.TileAccess.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.TileAccess.TileImage = ((System.Drawing.Image)(resources.GetObject("TileAccess.TileImage")));
+            this.TileAccess.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TileAccess.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.TileAccess.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.TileAccess.UseCustomBackColor = true;
+            this.TileAccess.UseCustomForeColor = true;
+            this.TileAccess.UseSelectable = true;
+            this.TileAccess.UseStyleColors = true;
+            this.TileAccess.UseTileImage = true;
+            this.TileAccess.Click += new System.EventHandler(this.metroTile2_Click_1);
             // 
             // TileRoom
             // 
@@ -437,28 +436,28 @@
             this.TileReport.UseTileImage = true;
             this.TileReport.Click += new System.EventHandler(this.title_Click);
             // 
-            // TileEmployee
+            // TileAccount
             // 
-            this.TileEmployee.ActiveControl = null;
-            this.TileEmployee.BackColor = System.Drawing.Color.Silver;
-            this.TileEmployee.ForeColor = System.Drawing.Color.DimGray;
-            this.TileEmployee.Location = new System.Drawing.Point(1261, 90);
-            this.TileEmployee.Margin = new System.Windows.Forms.Padding(4);
-            this.TileEmployee.Name = "TileEmployee";
-            this.TileEmployee.Size = new System.Drawing.Size(204, 348);
-            this.TileEmployee.TabIndex = 29;
-            this.TileEmployee.Text = "Quản lý nhân viên";
-            this.TileEmployee.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.TileEmployee.TileImage = ((System.Drawing.Image)(resources.GetObject("TileEmployee.TileImage")));
-            this.TileEmployee.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.TileEmployee.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.TileEmployee.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.TileEmployee.UseCustomBackColor = true;
-            this.TileEmployee.UseCustomForeColor = true;
-            this.TileEmployee.UseSelectable = true;
-            this.TileEmployee.UseStyleColors = true;
-            this.TileEmployee.UseTileImage = true;
-            this.TileEmployee.Click += new System.EventHandler(this.metroTile8_Click);
+            this.TileAccount.ActiveControl = null;
+            this.TileAccount.BackColor = System.Drawing.Color.Silver;
+            this.TileAccount.ForeColor = System.Drawing.Color.DimGray;
+            this.TileAccount.Location = new System.Drawing.Point(1261, 90);
+            this.TileAccount.Margin = new System.Windows.Forms.Padding(4);
+            this.TileAccount.Name = "TileAccount";
+            this.TileAccount.Size = new System.Drawing.Size(204, 348);
+            this.TileAccount.TabIndex = 29;
+            this.TileAccount.Text = "Quản lý tài khoản";
+            this.TileAccount.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.TileAccount.TileImage = ((System.Drawing.Image)(resources.GetObject("TileAccount.TileImage")));
+            this.TileAccount.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TileAccount.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.TileAccount.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.TileAccount.UseCustomBackColor = true;
+            this.TileAccount.UseCustomForeColor = true;
+            this.TileAccount.UseSelectable = true;
+            this.TileAccount.UseStyleColors = true;
+            this.TileAccount.UseTileImage = true;
+            this.TileAccount.Click += new System.EventHandler(this.metroTile8_Click);
             // 
             // titlePay
             // 
@@ -511,30 +510,6 @@
             this.btnClose.Zoom = 10;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
-            // titleBookRoom
-            // 
-            this.titleBookRoom.ActiveControl = null;
-            this.titleBookRoom.BackColor = System.Drawing.Color.Silver;
-            this.titleBookRoom.Cursor = System.Windows.Forms.Cursors.Default;
-            this.titleBookRoom.ForeColor = System.Drawing.Color.DimGray;
-            this.titleBookRoom.Location = new System.Drawing.Point(39, 90);
-            this.titleBookRoom.Margin = new System.Windows.Forms.Padding(4);
-            this.titleBookRoom.Name = "titleBookRoom";
-            this.titleBookRoom.Size = new System.Drawing.Size(180, 340);
-            this.titleBookRoom.TabIndex = 17;
-            this.titleBookRoom.Text = "Đặt Phòng";
-            this.titleBookRoom.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.titleBookRoom.TileImage = ((System.Drawing.Image)(resources.GetObject("titleBookRoom.TileImage")));
-            this.titleBookRoom.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titleBookRoom.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
-            this.titleBookRoom.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
-            this.titleBookRoom.UseCustomBackColor = true;
-            this.titleBookRoom.UseCustomForeColor = true;
-            this.titleBookRoom.UseSelectable = true;
-            this.titleBookRoom.UseStyleColors = true;
-            this.titleBookRoom.UseTileImage = true;
-            this.titleBookRoom.Click += new System.EventHandler(this.titleSignUpRoom_Click);
-            // 
             // fManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -551,7 +526,7 @@
             this.Text = "Quản lí khách sạn";
             this.panelLeft.ResumeLayout(false);
             this.panelLeft.PerformLayout();
-            this.gunaPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
 
@@ -561,10 +536,9 @@
 
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel panelLeft;
-        private MetroFramework.Controls.MetroTile titleBookRoom;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private System.Windows.Forms.Label label2;
-        private MetroFramework.Controls.MetroTile TileEmployee;
+        private MetroFramework.Controls.MetroTile TileAccount;
         private MetroFramework.Controls.MetroTile titlePay;
         private MetroFramework.Controls.MetroTile TileReport;
         private MetroFramework.Controls.MetroTile TileBill;
@@ -573,11 +547,11 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnIntroduce;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private MetroFramework.Controls.MetroTile TileRoom;
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Bunifu.Framework.UI.BunifuFlatButton btnLogOut;
         private Bunifu.Framework.UI.BunifuFlatButton btnNavigationPanel;
         private Bunifu.Framework.UI.BunifuFlatButton btnAccountProfile;
         private MetroFramework.Controls.MetroTile TileAccess;
         private MetroFramework.Controls.MetroTile TileBookRoom;
+        private System.Windows.Forms.Panel panel1;
     }
 }

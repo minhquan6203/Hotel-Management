@@ -384,5 +384,10 @@ namespace HotelManager
         {
 
         }
+
+        private void dataGridViewRoomType_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

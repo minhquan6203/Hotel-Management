@@ -40,6 +40,7 @@
             this.txbSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupRoom = new System.Windows.Forms.GroupBox();
+            this.txbRoomID = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lbNote = new System.Windows.Forms.Label();
             this.lbRoomID_ = new System.Windows.Forms.Label();
             this.lbRoomType = new System.Windows.Forms.Label();
@@ -51,6 +52,12 @@
             this.comboBoxRoomType = new MetroFramework.Controls.MetroComboBox();
             this.gbxRoomList = new System.Windows.Forms.GroupBox();
             this.dataGridViewRoom = new System.Windows.Forms.DataGridView();
+            this.colIDRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNameRoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIdRoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.None = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingRoom = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -70,14 +77,7 @@
             this.btnFixRoom = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.colIDRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNameRoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colIdRoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.None = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txbRoomID = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.gbxSearch.SuspendLayout();
             this.groupRoom.SuspendLayout();
             this.gbxRoomList.SuspendLayout();
@@ -221,6 +221,23 @@
             this.groupRoom.TabIndex = 33;
             this.groupRoom.TabStop = false;
             this.groupRoom.Text = "Thông tin phòng";
+            // 
+            // txbRoomID
+            // 
+            this.txbRoomID.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbRoomID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbRoomID.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbRoomID.BorderThickness = 1;
+            this.txbRoomID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbRoomID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbRoomID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbRoomID.isPassword = false;
+            this.txbRoomID.Location = new System.Drawing.Point(29, 54);
+            this.txbRoomID.Margin = new System.Windows.Forms.Padding(5);
+            this.txbRoomID.Name = "txbRoomID";
+            this.txbRoomID.Size = new System.Drawing.Size(233, 36);
+            this.txbRoomID.TabIndex = 46;
+            this.txbRoomID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lbNote
             // 
@@ -435,6 +452,63 @@
             this.dataGridViewRoom.TabIndex = 28;
             this.dataGridViewRoom.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewRoom_CellContentClick);
             // 
+            // colIDRoom
+            // 
+            this.colIDRoom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colIDRoom.DataPropertyName = "RoomId";
+            this.colIDRoom.HeaderText = "Mã Phòng";
+            this.colIDRoom.MinimumWidth = 6;
+            this.colIDRoom.Name = "colIDRoom";
+            this.colIDRoom.ReadOnly = true;
+            this.colIDRoom.Width = 135;
+            // 
+            // colNameRoomType
+            // 
+            this.colNameRoomType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colNameRoomType.DataPropertyName = "nameRoomType";
+            this.colNameRoomType.HeaderText = "Loại Phòng";
+            this.colNameRoomType.MinimumWidth = 6;
+            this.colNameRoomType.Name = "colNameRoomType";
+            this.colNameRoomType.ReadOnly = true;
+            this.colNameRoomType.Width = 144;
+            // 
+            // colPrice
+            // 
+            this.colPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colPrice.DataPropertyName = "price_New";
+            this.colPrice.HeaderText = "Giá Phòng";
+            this.colPrice.MinimumWidth = 6;
+            this.colPrice.Name = "colPrice";
+            this.colPrice.ReadOnly = true;
+            this.colPrice.Width = 136;
+            // 
+            // colStatus
+            // 
+            this.colStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colStatus.DataPropertyName = "nameStatusRoom";
+            this.colStatus.HeaderText = "Tình Trạng";
+            this.colStatus.MinimumWidth = 6;
+            this.colStatus.Name = "colStatus";
+            this.colStatus.ReadOnly = true;
+            // 
+            // colIdRoomType
+            // 
+            this.colIdRoomType.DataPropertyName = "Note";
+            this.colIdRoomType.HeaderText = "Ghi Chú";
+            this.colIdRoomType.MinimumWidth = 6;
+            this.colIdRoomType.Name = "colIdRoomType";
+            this.colIdRoomType.ReadOnly = true;
+            this.colIdRoomType.Width = 285;
+            // 
+            // None
+            // 
+            this.None.HeaderText = "";
+            this.None.MinimumWidth = 6;
+            this.None.Name = "None";
+            this.None.ReadOnly = true;
+            this.None.Visible = false;
+            this.None.Width = 125;
+            // 
             // bindingRoom
             // 
             this.bindingRoom.AddNewItem = null;
@@ -549,7 +623,7 @@
             this.labelName.Location = new System.Drawing.Point(71, 9);
             this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(248, 46);
+            this.labelName.Size = new System.Drawing.Size(240, 45);
             this.labelName.TabIndex = 50;
             this.labelName.Text = "Quản Lí Phòng";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -602,7 +676,7 @@
             this.btnCLose1.ButtonText = "Đóng";
             this.btnCLose1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCLose1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCLose1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCLose1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCLose1.IdleBorderThickness = 1;
             this.btnCLose1.IdleCornerRadius = 15;
             this.btnCLose1.IdleFillColor = System.Drawing.Color.White;
@@ -714,63 +788,6 @@
             this.btnClose.Zoom = 10;
             this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
-            // colIDRoom
-            // 
-            this.colIDRoom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colIDRoom.DataPropertyName = "RoomId";
-            this.colIDRoom.HeaderText = "Mã Phòng";
-            this.colIDRoom.MinimumWidth = 6;
-            this.colIDRoom.Name = "colIDRoom";
-            this.colIDRoom.ReadOnly = true;
-            this.colIDRoom.Width = 135;
-            // 
-            // colNameRoomType
-            // 
-            this.colNameRoomType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colNameRoomType.DataPropertyName = "nameRoomType";
-            this.colNameRoomType.HeaderText = "Loại Phòng";
-            this.colNameRoomType.MinimumWidth = 6;
-            this.colNameRoomType.Name = "colNameRoomType";
-            this.colNameRoomType.ReadOnly = true;
-            this.colNameRoomType.Width = 144;
-            // 
-            // colPrice
-            // 
-            this.colPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colPrice.DataPropertyName = "price_New";
-            this.colPrice.HeaderText = "Giá Phòng";
-            this.colPrice.MinimumWidth = 6;
-            this.colPrice.Name = "colPrice";
-            this.colPrice.ReadOnly = true;
-            this.colPrice.Width = 136;
-            // 
-            // colStatus
-            // 
-            this.colStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colStatus.DataPropertyName = "nameStatusRoom";
-            this.colStatus.HeaderText = "Tình Trạng";
-            this.colStatus.MinimumWidth = 6;
-            this.colStatus.Name = "colStatus";
-            this.colStatus.ReadOnly = true;
-            // 
-            // colIdRoomType
-            // 
-            this.colIdRoomType.DataPropertyName = "Note";
-            this.colIdRoomType.HeaderText = "Ghi Chú";
-            this.colIdRoomType.MinimumWidth = 6;
-            this.colIdRoomType.Name = "colIdRoomType";
-            this.colIdRoomType.ReadOnly = true;
-            this.colIdRoomType.Width = 285;
-            // 
-            // None
-            // 
-            this.None.HeaderText = "";
-            this.None.MinimumWidth = 6;
-            this.None.Name = "None";
-            this.None.ReadOnly = true;
-            this.None.Visible = false;
-            this.None.Width = 125;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -780,23 +797,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
-            // 
-            // txbRoomID
-            // 
-            this.txbRoomID.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbRoomID.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbRoomID.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbRoomID.BorderThickness = 1;
-            this.txbRoomID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbRoomID.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbRoomID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbRoomID.isPassword = false;
-            this.txbRoomID.Location = new System.Drawing.Point(29, 54);
-            this.txbRoomID.Margin = new System.Windows.Forms.Padding(5);
-            this.txbRoomID.Name = "txbRoomID";
-            this.txbRoomID.Size = new System.Drawing.Size(233, 36);
-            this.txbRoomID.TabIndex = 46;
-            this.txbRoomID.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // fRoom
             // 
