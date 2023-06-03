@@ -204,5 +204,85 @@ namespace HotelManager
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbAmountPeople_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dpkDateCheckIn_onValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dpkDateOfBirth_onValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dpkDateCheckOut_onValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbIDCard_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbFullName_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dpkDateCheckIn_onValueChanged_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbRoomTypeID_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

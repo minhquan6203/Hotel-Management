@@ -112,8 +112,8 @@ namespace HotelManager
         }
         private void BtnSearch_Click(object sender, EventArgs e)
         {
-            txbSearch.Text = txbSearch.Text.Trim();
-            if (txbSearch.Text != string.Empty)
+            txbRoomTypeID.Text = txbRoomTypeID.Text.Trim();
+            if (txbRoomTypeID.Text != string.Empty)
             {
                 txbName.Text = string.Empty;
                 txbPrice.Text = string.Empty;
@@ -150,10 +150,10 @@ namespace HotelManager
         }
         private DataTable GetSearchRoomType()
         {
-            if (int.TryParse(txbSearch.Text, out int id))
-                return RoomTypeDAO.Instance.Search(txbSearch.Text, id);
+            if (int.TryParse(txbRoomTypeID.Text, out int id))
+                return RoomTypeDAO.Instance.Search(txbRoomTypeID.Text, id);
             else
-                return RoomTypeDAO.Instance.Search(txbSearch.Text, 0);
+                return RoomTypeDAO.Instance.Search(txbRoomTypeID.Text, 0);
         }
 
         #endregion
@@ -369,5 +369,20 @@ namespace HotelManager
             BtnCancel_Click(sender, null);
         }
         #endregion
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

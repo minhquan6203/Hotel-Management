@@ -46,9 +46,9 @@ namespace HotelManager
             LoadFullRoom(GetFullRoom());
             comboBoxRoomType.DataSource = _fRoomtType.TableRoomType;
             txbPrice.DataBindings.Clear();
-            txbLimitPerson.DataBindings.Clear();
+            txbNote.DataBindings.Clear();
             txbPrice.DataBindings.Add(new Binding("Text", comboBoxRoomType.DataSource, "price_new"));
-            txbLimitPerson.DataBindings.Add(new Binding("Text", comboBoxRoomType.DataSource, "limitPerson"));
+            txbNote.DataBindings.Add(new Binding("Text", comboBoxRoomType.DataSource, "limitPerson"));
             this.Show();
         }
         private void BtnCLose1_Click(object sender, EventArgs e)
@@ -127,7 +127,7 @@ namespace HotelManager
             if (table.Rows.Count > 0)
                 comboBoxRoomType.SelectedIndex = 0;
             _fRoomtType = new fRoomType(table);
-            txbLimitPerson.DataBindings.Add(new Binding("Text", comboBoxRoomType.DataSource, "limitPerson"));
+            txbNote.DataBindings.Add(new Binding("Text", comboBoxRoomType.DataSource, "limitPerson"));
         }
         #endregion
 
@@ -322,5 +322,25 @@ namespace HotelManager
             BtnCancel_Click(sender, null);
         }
         #endregion
+
+        private void dataGridViewRoom_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxStatusRoom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

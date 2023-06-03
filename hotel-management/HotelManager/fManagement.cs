@@ -50,13 +50,13 @@ namespace HotelManager
             if (panelLeft.Width == 42)
             {
                 panelLeft.Width = 177;
-                panelRight.Width = 939;
+                panelLeft.Width = 939;
                 this.Width = 1116;
             }
             else
             {
                 panelLeft.Width = 42;
-                panelRight.Width = 807;
+                panelLeft.Width = 807;
                 this.Width = 981;
             }
         }
@@ -231,6 +231,11 @@ namespace HotelManager
         }
 
         private void panelLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void metroTile2_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -142,6 +142,11 @@ namespace HotelManager
             datePickerStartDay.Value = DateTime.Now;
             comboBoxSex.SelectedIndex = 1;
         }
+
+        private void dpkDatePickerStartDay_onValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

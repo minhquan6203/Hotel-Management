@@ -406,5 +406,25 @@ namespace HotelManager
             else
                 BtnCancel_Click(null, null);
         }
+
+        private void dataGridStaff_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txbAddress_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

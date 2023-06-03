@@ -151,5 +151,20 @@ namespace HotelManager
             }
 
         }
+
+        private void dpkDateOfBirth_onValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMetroTextbox3_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void spinEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
