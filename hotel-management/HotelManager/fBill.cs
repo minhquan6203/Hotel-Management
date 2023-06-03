@@ -155,5 +155,9 @@ namespace HotelManager
         }
         #endregion
 
+        private void dataGridViewBill_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

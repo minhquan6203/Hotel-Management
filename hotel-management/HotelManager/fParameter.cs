@@ -113,7 +113,7 @@ namespace HotelManager
                 MessageBox.Show( "Không thể cập nhật (Không có phụ thu này)", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
-            bool isFill = fCustomer.CheckFillInText(new Control[] { txbValue });
+            bool isFill = fAccount.CheckFillInText(new Control[] { txbValue });
             if (isFill)
             {
                 Parameter surchargePre = groupParameter.Tag as Parameter;

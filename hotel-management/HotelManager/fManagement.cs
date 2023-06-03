@@ -142,7 +142,7 @@ namespace HotelManager
             if (CheckAccess("fcustomer"))
             {
                 this.Hide();
-                fCustomer customer = new fCustomer();
+                fAccount customer = new fAccount();
                 customer.ShowDialog();
                 this.Show();
             }

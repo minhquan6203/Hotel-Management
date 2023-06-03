@@ -26,7 +26,7 @@ namespace HotelManager
         }
         private void InsertServiceType()
         {
-            if (fCustomer.CheckFillInText(new Control[] { txbName }))
+            if (fAccount.CheckFillInText(new Control[] { txbName }))
             {
                 try
                 {

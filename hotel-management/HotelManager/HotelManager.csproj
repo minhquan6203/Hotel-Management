@@ -107,9 +107,6 @@
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304">
       <HintPath>..\packages\CrystalReports.FlashControlV71.13.0.3501\lib\net20\FlashControlV71.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI">
-      <HintPath>D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Design\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
-    </Reference>
     <Reference Include="log4net, Version=2.0.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.15\lib\net45\log4net.dll</HintPath>
     </Reference>
@@ -278,11 +275,11 @@
     <Compile Include="fChangeRoom.Designer.cs">
       <DependentUpon>fChangeRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="fCustomer.cs">
+    <Compile Include="fAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fCustomer.Designer.cs">
-      <DependentUpon>fCustomer.cs</DependentUpon>
+    <Compile Include="fAccount.Designer.cs">
+      <DependentUpon>fAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="fManagement.cs">
       <SubType>Form</SubType>
@@ -418,8 +415,8 @@
     <EmbeddedResource Include="fChangeRoom.resx">
       <DependentUpon>fChangeRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fCustomer.resx">
-      <DependentUpon>fCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="fAccount.resx">
+      <DependentUpon>fAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fManagement.resx">
       <DependentUpon>fManagement.cs</DependentUpon>

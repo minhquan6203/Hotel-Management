@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Windows.Forms;
 namespace HotelManager
 {
-    public partial class fCustomer : Form
+    public partial class fAccount : Form
     {
 
         #region Constructor
-        internal fCustomer()
+        internal fAccount()
         {
             InitializeComponent();
             cbCustomerSearch.SelectedIndex = 3;
@@ -21,7 +21,7 @@ namespace HotelManager
             comboboxID.DisplayMember = "id";
             FormClosing += FCustomer_FormClosing;
             txbSearch.KeyPress += TxbSearch_KeyPress;
-            dataGridViewCustomer.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            dataGridViewAccount.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
         }
 
         #endregion
@@ -31,17 +31,17 @@ namespace HotelManager
         {
             BindingSource source = new BindingSource();
             source.DataSource = table;
-            dataGridViewCustomer.DataSource = source;
+            dataGridViewAccount.DataSource = source;
             bindingCustomer.BindingSource = source;
             comboboxID.DataSource = source;
         }
         private void LoadFullCustomerType()
         {
             DataTable table = GetFullCustomerType();
-            comboBoxCustomerType.DataSource = table;
-            comboBoxCustomerType.DisplayMember = "Name";
+            comboBoxAccountType.DataSource = table;
+            comboBoxAccountType.DisplayMember = "Name";
             if(table.Rows.Count > 0)
-                comboBoxCustomerType.SelectedIndex = 0;
+                comboBoxAccountType.SelectedIndex = 0;
         }
         #endregion
 
@@ -59,13 +59,13 @@ namespace HotelManager
             switch (SaveCustomer.FilterIndex)
             {
                 case 2:
-                    check = ExportToExcel.Instance.Export(dataGridViewCustomer, SaveCustomer.FileName, ModeExportToExcel.XLSX);
+                    check = ExportToExcel.Instance.Export(dataGridViewAccount, SaveCustomer.FileName, ModeExportToExcel.XLSX);
                     break;
                 case 3:
-                    check = ExportToExcel.Instance.Export(dataGridViewCustomer, SaveCustomer.FileName, ModeExportToExcel.PDF);
+                    check = ExportToExcel.Instance.Export(dataGridViewAccount, SaveCustomer.FileName, ModeExportToExcel.PDF);
                     break;
                 default:
-                    check = ExportToExcel.Instance.Export(dataGridViewCustomer, SaveCustomer.FileName, ModeExportToExcel.XLS);
+                    check = ExportToExcel.Instance.Export(dataGridViewAccount, SaveCustomer.FileName, ModeExportToExcel.XLS);
                     break;
             }
             if (check)
@@ -142,7 +142,7 @@ namespace HotelManager
         }
         private void InsertCustomer()
         {
-            if (!CheckFillInText(new Control[] { txbPhoneNumber, txbFullName, txbIDCard, txbNationality, txbAddress, comboBoxCustomerType}))
+            if (!CheckFillInText(new Control[] { txbPhoneNumber, txbFullName, txbIDCard, txbNationality, txbAddress, comboBoxAccountType}))
             {
                 MessageBox.Show( "Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -157,7 +157,7 @@ namespace HotelManager
                         LoadFullCustomer(GetFullCustomer());
                     else
                         BtnCancel_Click(null, null);
-                    comboboxID.SelectedIndex = dataGridViewCustomer.RowCount - 1;
+                    comboboxID.SelectedIndex = dataGridViewAccount.RowCount - 1;
                 }
                 else
                     MessageBox.Show( "Khách Hàng đã tồn tại\nTrùng số chứng minh nhân dân", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -174,7 +174,7 @@ namespace HotelManager
                 MessageBox.Show( "Khách hàng này chưa tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             else
-            if (!CheckFillInText(new Control[] { txbPhoneNumber, txbFullName, txbIDCard, txbNationality, txbAddress, comboBoxCustomerType }))
+            if (!CheckFillInText(new Control[] { txbPhoneNumber, txbFullName, txbIDCard, txbNationality, txbAddress, comboBoxAccountType }))
             {
                 MessageBox.Show( "Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -194,7 +194,7 @@ namespace HotelManager
                         {
                             MessageBox.Show( "Cập nhật thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             groupCustomer.Tag = customerNow;
-                            int index = dataGridViewCustomer.SelectedRows[0].Index;
+                            int index = dataGridViewAccount.SelectedRows[0].Index;
                             LoadFullCustomer(GetFullCustomer());
                             comboboxID.SelectedIndex = index;
                         }
@@ -229,7 +229,7 @@ namespace HotelManager
                 txbIDCard.Text = row.Cells["colIDCard"].Value.ToString();
                 txbNationality.Text = row.Cells["colNationality"].Value.ToString();
                 txbPhoneNumber.Text = row.Cells["colPhone"].Value.ToString();
-                comboBoxCustomerType.SelectedIndex =(int) row.Cells["colIdCustomerType"].Value - 1;
+                comboBoxAccountType.SelectedIndex =(int) row.Cells["colIdCustomerType"].Value - 1;
                 comboBoxSex.SelectedItem = row.Cells["colSex"].Value;
                 datepickerDateOfBirth.Value = (DateTime)row.Cells["colDateOfBirth"].Value;
                 Customer customer = new Customer(((DataRowView) row.DataBoundItem).Row);
@@ -255,8 +255,8 @@ namespace HotelManager
             else
                 customer.Id = int.Parse(comboboxID.Text);
             customer.IdCard = txbIDCard.Text;
-            int id = comboBoxCustomerType.SelectedIndex;
-            customer.IdCustomerType = (int)((DataTable) comboBoxCustomerType.DataSource).Rows[id]["id"];
+            int id = comboBoxAccountType.SelectedIndex;
+            customer.IdCustomerType = (int)((DataTable) comboBoxAccountType.DataSource).Rows[id]["id"];
             customer.Name = txbFullName.Text;
             customer.Sex = comboBoxSex.Text;
             customer.PhoneNumber = int.Parse(txbPhoneNumber.Text);
@@ -293,9 +293,9 @@ namespace HotelManager
         #region Seclection Change
         private void DataGridViewCustomer_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridViewCustomer.SelectedRows.Count > 0)
+            if (dataGridViewAccount.SelectedRows.Count > 0)
             {
-                DataGridViewRow row = dataGridViewCustomer.SelectedRows[0];
+                DataGridViewRow row = dataGridViewAccount.SelectedRows[0];
                 ChangeText(row);
             }
         }
@@ -356,5 +356,25 @@ namespace HotelManager
             LoadFullCustomer(GetFullCustomer());
         }
         #endregion
+
+        private void dataGridViewCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboboxID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

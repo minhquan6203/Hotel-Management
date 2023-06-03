@@ -98,7 +98,7 @@ namespace HotelManager
         }
         private void InsertService()
         {
-            if (!fCustomer.CheckFillInText(new Control[] { txbName, comboBoxServiceType, txbPrice }))
+            if (!fAccount.CheckFillInText(new Control[] { txbName, comboBoxServiceType, txbPrice }))
             {
                 DialogResult result = MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

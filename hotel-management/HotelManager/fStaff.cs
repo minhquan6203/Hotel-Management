@@ -52,7 +52,7 @@ namespace HotelManager
         }
         private void BtnReset_Click(object sender, EventArgs e)
         {
-            if (fCustomer.CheckFillInText(new Control[] { txbUserName }))
+            if (fAccount.CheckFillInText(new Control[] { txbUserName }))
             {
                 DialogResult result = MessageBox.Show( "Bạn có muốn đặt lại mật khẩu với tên đăng nhập " + txbUserName.Text + " không?", "Thông báo",
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
@@ -134,7 +134,7 @@ namespace HotelManager
         
         private void UpdateStaff()
         {
-            bool isFill = fCustomer.CheckFillInText(new Control[] { txbUserName, comboBoxStaffType, txbName ,
+            bool isFill = fAccount.CheckFillInText(new Control[] { txbUserName, comboBoxStaffType, txbName ,
                                                             txbIDcard , comboBoxSex , txbPhoneNumber, txbAddress});
             if (!isFill)
             {

@@ -62,7 +62,7 @@ namespace HotelManager
 
         private void InsertStaff()
         {
-            bool isFill = fCustomer.CheckFillInText(new Control[] { txbName, comboBoxStaffType, txbName ,
+            bool isFill = fAccount.CheckFillInText(new Control[] { txbName, comboBoxStaffType, txbName ,
                                                             txbIDcard , comboBoxSex , txbPhoneNumber, txbAddress});
             if (isFill)
             {

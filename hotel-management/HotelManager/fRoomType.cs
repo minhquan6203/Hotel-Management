@@ -189,7 +189,7 @@ namespace HotelManager
                 MessageBox.Show( "Loại phòng này chưa tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             else
-            if (!fCustomer.CheckFillInText(new Control[] { txbName, txbPrice }))
+            if (!fAccount.CheckFillInText(new Control[] { txbName, txbPrice }))
             {
                 MessageBox.Show( "Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

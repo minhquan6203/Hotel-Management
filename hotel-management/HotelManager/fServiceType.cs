@@ -158,7 +158,7 @@ namespace HotelManager
             if(comboboxID.Text == string.Empty)
                 MessageBox.Show("Loại dịch vụ này chưa tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
-            if (!fCustomer.CheckFillInText(new Control[] { txbName }))
+            if (!fAccount.CheckFillInText(new Control[] { txbName }))
             {
                 MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
