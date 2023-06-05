@@ -33,17 +33,17 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbNameSystem = new System.Windows.Forms.Label();
+            this.lbTeacherName = new System.Windows.Forms.Label();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbGroupName = new System.Windows.Forms.Label();
+            this.lbMember5 = new System.Windows.Forms.Label();
+            this.lbMember2 = new System.Windows.Forms.Label();
+            this.lbMember1 = new System.Windows.Forms.Label();
+            this.lbMember3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.lbMember4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -86,29 +86,29 @@
             this.btnClose.Zoom = 10;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // label5
+            // lbNameSystem
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(117, 90);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(394, 32);
-            this.label5.TabIndex = 68;
-            this.label5.Text = "PHẦN MỀM QUẢN LÝ KHÁCH SẠN";
+            this.lbNameSystem.AutoSize = true;
+            this.lbNameSystem.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameSystem.ForeColor = System.Drawing.Color.Black;
+            this.lbNameSystem.Location = new System.Drawing.Point(117, 90);
+            this.lbNameSystem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNameSystem.Name = "lbNameSystem";
+            this.lbNameSystem.Size = new System.Drawing.Size(394, 32);
+            this.lbNameSystem.TabIndex = 68;
+            this.lbNameSystem.Text = "PHẦN MỀM QUẢN LÝ KHÁCH SẠN";
             // 
-            // label3
+            // lbTeacherName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(200, 143);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(241, 25);
-            this.label3.TabIndex = 69;
-            this.label3.Text = "GVHD: Đỗ Thị Thanh Tuyền\r\n";
+            this.lbTeacherName.AutoSize = true;
+            this.lbTeacherName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTeacherName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbTeacherName.Location = new System.Drawing.Point(200, 143);
+            this.lbTeacherName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTeacherName.Name = "lbTeacherName";
+            this.lbTeacherName.Size = new System.Drawing.Size(241, 25);
+            this.lbTeacherName.TabIndex = 69;
+            this.lbTeacherName.Text = "GVHD: Đỗ Thị Thanh Tuyền\r\n";
             // 
             // bunifuSeparator2
             // 
@@ -123,68 +123,68 @@
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = false;
             // 
-            // label1
+            // lbGroupName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(216, 202);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 25);
-            this.label1.TabIndex = 71;
-            this.label1.Text = "Nhóm: 18 - NM CNPM\r\n";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbGroupName.AutoSize = true;
+            this.lbGroupName.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGroupName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbGroupName.Location = new System.Drawing.Point(216, 202);
+            this.lbGroupName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbGroupName.Name = "lbGroupName";
+            this.lbGroupName.Size = new System.Drawing.Size(207, 25);
+            this.lbGroupName.TabIndex = 71;
+            this.lbGroupName.Text = "Nhóm: 18 - NM CNPM\r\n";
+            this.lbGroupName.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label4
+            // lbMember5
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(176, 384);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(264, 25);
-            this.label4.TabIndex = 72;
-            this.label4.Text = "Nguyễn Văn Quân - 21521333\r\n";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lbMember5.AutoSize = true;
+            this.lbMember5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMember5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbMember5.Location = new System.Drawing.Point(176, 384);
+            this.lbMember5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMember5.Name = "lbMember5";
+            this.lbMember5.Size = new System.Drawing.Size(264, 25);
+            this.lbMember5.TabIndex = 72;
+            this.lbMember5.Text = "Nguyễn Văn Quân - 21521333\r\n";
+            this.lbMember5.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label6
+            // lbMember2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(176, 276);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(288, 25);
-            this.label6.TabIndex = 73;
-            this.label6.Text = "Nguyễn Thị Tường Vi - 21522787";
+            this.lbMember2.AutoSize = true;
+            this.lbMember2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMember2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbMember2.Location = new System.Drawing.Point(176, 276);
+            this.lbMember2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMember2.Name = "lbMember2";
+            this.lbMember2.Size = new System.Drawing.Size(288, 25);
+            this.lbMember2.TabIndex = 73;
+            this.lbMember2.Text = "Nguyễn Thị Tường Vi - 21522787";
             // 
-            // label7
+            // lbMember1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(176, 240);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(397, 25);
-            this.label7.TabIndex = 74;
-            this.label7.Text = "Nguyễn Phúc Thọ -  21521478 - Nhóm trưởng";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.lbMember1.AutoSize = true;
+            this.lbMember1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMember1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbMember1.Location = new System.Drawing.Point(176, 240);
+            this.lbMember1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMember1.Name = "lbMember1";
+            this.lbMember1.Size = new System.Drawing.Size(397, 25);
+            this.lbMember1.TabIndex = 74;
+            this.lbMember1.Text = "Nguyễn Phúc Thọ -  21521478 - Nhóm trưởng";
+            this.lbMember1.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label8
+            // lbMember3
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(176, 313);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(243, 25);
-            this.label8.TabIndex = 75;
-            this.label8.Text = "Trần Hạnh Thảo - 21522609";
+            this.lbMember3.AutoSize = true;
+            this.lbMember3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMember3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbMember3.Location = new System.Drawing.Point(176, 313);
+            this.lbMember3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMember3.Name = "lbMember3";
+            this.lbMember3.Size = new System.Drawing.Size(243, 25);
+            this.lbMember3.TabIndex = 75;
+            this.lbMember3.Text = "Trần Hạnh Thảo - 21522609";
             // 
             // label9
             // 
@@ -198,43 +198,43 @@
             this.label9.TabIndex = 76;
             this.label9.Text = "version xxx";
             // 
-            // bunifuThinButton25
+            // btnClose_
             // 
-            this.bunifuThinButton25.ActiveBorderThickness = 1;
-            this.bunifuThinButton25.ActiveCornerRadius = 20;
-            this.bunifuThinButton25.ActiveFillColor = System.Drawing.Color.Silver;
-            this.bunifuThinButton25.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton25.ActiveLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuThinButton25.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton25.BackgroundImage")));
-            this.bunifuThinButton25.ButtonText = "Đóng";
-            this.bunifuThinButton25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton25.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuThinButton25.IdleBorderThickness = 1;
-            this.bunifuThinButton25.IdleCornerRadius = 20;
-            this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.Black;
-            this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.Black;
-            this.bunifuThinButton25.Location = new System.Drawing.Point(408, 448);
-            this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.bunifuThinButton25.Name = "bunifuThinButton25";
-            this.bunifuThinButton25.Size = new System.Drawing.Size(233, 49);
-            this.bunifuThinButton25.TabIndex = 77;
-            this.bunifuThinButton25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton25.Click += new System.EventHandler(this.bunifuThinButton25_Click);
+            this.btnClose_.ActiveBorderThickness = 1;
+            this.btnClose_.ActiveCornerRadius = 20;
+            this.btnClose_.ActiveFillColor = System.Drawing.Color.Silver;
+            this.btnClose_.ActiveForecolor = System.Drawing.Color.White;
+            this.btnClose_.ActiveLineColor = System.Drawing.Color.Black;
+            this.btnClose_.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose_.BackColor = System.Drawing.Color.White;
+            this.btnClose_.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose_.BackgroundImage")));
+            this.btnClose_.ButtonText = "Đóng";
+            this.btnClose_.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose_.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnClose_.IdleBorderThickness = 1;
+            this.btnClose_.IdleCornerRadius = 20;
+            this.btnClose_.IdleFillColor = System.Drawing.Color.White;
+            this.btnClose_.IdleForecolor = System.Drawing.Color.Black;
+            this.btnClose_.IdleLineColor = System.Drawing.Color.Black;
+            this.btnClose_.Location = new System.Drawing.Point(408, 448);
+            this.btnClose_.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnClose_.Name = "btnClose_";
+            this.btnClose_.Size = new System.Drawing.Size(233, 49);
+            this.btnClose_.TabIndex = 77;
+            this.btnClose_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClose_.Click += new System.EventHandler(this.bunifuThinButton25_Click);
             // 
-            // label2
+            // lbMember4
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(176, 347);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(288, 25);
-            this.label2.TabIndex = 78;
-            this.label2.Text = "Nguyễn Thị Bảo Xuyên - 21520537";
+            this.lbMember4.AutoSize = true;
+            this.lbMember4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbMember4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbMember4.Location = new System.Drawing.Point(176, 347);
+            this.lbMember4.Name = "lbMember4";
+            this.lbMember4.Size = new System.Drawing.Size(288, 25);
+            this.lbMember4.TabIndex = 78;
+            this.lbMember4.Text = "Nguyễn Thị Bảo Xuyên - 21520537";
             // 
             // pictureBox1
             // 
@@ -253,17 +253,17 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(657, 507);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.bunifuThinButton25);
+            this.Controls.Add(this.lbMember4);
+            this.Controls.Add(this.btnClose_);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbMember3);
+            this.Controls.Add(this.lbMember1);
+            this.Controls.Add(this.lbMember2);
+            this.Controls.Add(this.lbMember5);
+            this.Controls.Add(this.lbGroupName);
             this.Controls.Add(this.bunifuSeparator2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbTeacherName);
+            this.Controls.Add(this.lbNameSystem);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.bunifuSeparator1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -284,17 +284,17 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbNameSystem;
+        private System.Windows.Forms.Label lbMember3;
+        private System.Windows.Forms.Label lbMember1;
+        private System.Windows.Forms.Label lbMember2;
+        private System.Windows.Forms.Label lbMember5;
+        private System.Windows.Forms.Label lbGroupName;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbTeacherName;
         private System.Windows.Forms.Label label9;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
-        private System.Windows.Forms.Label label2;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnClose_;
+        private System.Windows.Forms.Label lbMember4;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

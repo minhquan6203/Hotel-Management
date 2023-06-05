@@ -10,7 +10,7 @@ namespace HotelManager
     public partial class fRoom : Form
     {
         #region Properties
-        private fRoomType _fRoomtType;
+        private fRoomTypeManage _fRoomtType;
         #endregion
 
         #region Constructor
@@ -126,7 +126,7 @@ namespace HotelManager
             comboBoxRoomType.DisplayMember = "Name";
             if (table.Rows.Count > 0)
                 comboBoxRoomType.SelectedIndex = 0;
-            _fRoomtType = new fRoomType(table);
+            _fRoomtType = new fRoomTypeManage(table);
             txbNote.DataBindings.Add(new Binding("Text", comboBoxRoomType.DataSource, "limitPerson"));
         }
         #endregion

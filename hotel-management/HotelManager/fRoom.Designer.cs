@@ -68,7 +68,7 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.labelName = new System.Windows.Forms.Label();
+            this.labelRoomManage = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.saveRoom = new System.Windows.Forms.SaveFileDialog();
             this.gbxFunction = new System.Windows.Forms.GroupBox();
@@ -577,6 +577,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -614,19 +615,19 @@
             this.toolStripLabel1.Text = "Xuất";
             this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
             // 
-            // labelName
+            // labelRoomManage
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelName.ForeColor = System.Drawing.Color.Black;
-            this.labelName.Location = new System.Drawing.Point(71, 9);
-            this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(240, 45);
-            this.labelName.TabIndex = 50;
-            this.labelName.Text = "Quản Lí Phòng";
-            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelRoomManage.AutoSize = true;
+            this.labelRoomManage.BackColor = System.Drawing.Color.Transparent;
+            this.labelRoomManage.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelRoomManage.ForeColor = System.Drawing.Color.Black;
+            this.labelRoomManage.Location = new System.Drawing.Point(71, 9);
+            this.labelRoomManage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRoomManage.Name = "labelRoomManage";
+            this.labelRoomManage.Size = new System.Drawing.Size(240, 45);
+            this.labelRoomManage.TabIndex = 50;
+            this.labelRoomManage.Text = "Quản Lí Phòng";
+            this.labelRoomManage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuSeparator1
             // 
@@ -807,7 +808,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gbxFunction);
             this.Controls.Add(this.bunifuSeparator1);
-            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.labelRoomManage);
             this.Controls.Add(this.gbxRoomList);
             this.Controls.Add(this.groupRoom);
             this.Controls.Add(this.gbxSearch);
@@ -873,7 +874,7 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txbNote;
         private System.Windows.Forms.Label lbPrice;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbPrice;
-        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelRoomManage;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private System.Windows.Forms.SaveFileDialog saveRoom;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;

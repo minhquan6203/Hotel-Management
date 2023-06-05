@@ -32,16 +32,30 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAccount));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupCustomer = new System.Windows.Forms.GroupBox();
+            this.tbxPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txbAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txbNameEmployee = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.datepickerDateOfBirth = new Bunifu.Framework.UI.BunifuDatepicker();
+            this.tbxUserAccount = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lbDateofBirth = new System.Windows.Forms.Label();
             this.lbAddress = new System.Windows.Forms.Label();
             this.comboBoxAccountType = new MetroFramework.Controls.MetroComboBox();
             this.lbUserAccount = new System.Windows.Forms.Label();
             this.txbFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lbPhoneNumber = new System.Windows.Forms.Label();
-            this.lbName = new System.Windows.Forms.Label();
+            this.lbNameEmployee = new System.Windows.Forms.Label();
             this.lbAccountType = new System.Windows.Forms.Label();
             this.lbPassWord = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbxAccountList = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingCustomer = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -57,37 +71,23 @@
             this.lbUserAccountInput = new System.Windows.Forms.Label();
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.SaveCustomer = new System.Windows.Forms.SaveFileDialog();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbxFunction = new System.Windows.Forms.GroupBox();
             this.btnClose1 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbAccountManage = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.tbxUserAccount = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.datepickerDateOfBirth = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.txbName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txbAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupCustomer.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbxAccountList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingCustomer)).BeginInit();
             this.bindingCustomer.SuspendLayout();
             this.gbxSearch.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbxFunction.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -99,9 +99,9 @@
             // 
             // groupCustomer
             // 
-            this.groupCustomer.Controls.Add(this.bunifuMetroTextbox1);
+            this.groupCustomer.Controls.Add(this.tbxPhoneNumber);
             this.groupCustomer.Controls.Add(this.txbAddress);
-            this.groupCustomer.Controls.Add(this.txbName);
+            this.groupCustomer.Controls.Add(this.txbNameEmployee);
             this.groupCustomer.Controls.Add(this.datepickerDateOfBirth);
             this.groupCustomer.Controls.Add(this.tbxUserAccount);
             this.groupCustomer.Controls.Add(this.lbDateofBirth);
@@ -110,7 +110,7 @@
             this.groupCustomer.Controls.Add(this.lbUserAccount);
             this.groupCustomer.Controls.Add(this.txbFullName);
             this.groupCustomer.Controls.Add(this.lbPhoneNumber);
-            this.groupCustomer.Controls.Add(this.lbName);
+            this.groupCustomer.Controls.Add(this.lbNameEmployee);
             this.groupCustomer.Controls.Add(this.lbAccountType);
             this.groupCustomer.Controls.Add(this.lbPassWord);
             this.groupCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -122,6 +122,89 @@
             this.groupCustomer.TabIndex = 1;
             this.groupCustomer.TabStop = false;
             this.groupCustomer.Text = "Thông tin khách hàng";
+            // 
+            // tbxPhoneNumber
+            // 
+            this.tbxPhoneNumber.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbxPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbxPhoneNumber.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbxPhoneNumber.BorderThickness = 1;
+            this.tbxPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbxPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbxPhoneNumber.isPassword = false;
+            this.tbxPhoneNumber.Location = new System.Drawing.Point(17, 267);
+            this.tbxPhoneNumber.Margin = new System.Windows.Forms.Padding(0);
+            this.tbxPhoneNumber.Name = "tbxPhoneNumber";
+            this.tbxPhoneNumber.Size = new System.Drawing.Size(379, 29);
+            this.tbxPhoneNumber.TabIndex = 63;
+            this.tbxPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txbAddress
+            // 
+            this.txbAddress.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbAddress.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbAddress.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbAddress.BorderThickness = 1;
+            this.txbAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbAddress.isPassword = false;
+            this.txbAddress.Location = new System.Drawing.Point(221, 191);
+            this.txbAddress.Margin = new System.Windows.Forms.Padding(0);
+            this.txbAddress.Name = "txbAddress";
+            this.txbAddress.Size = new System.Drawing.Size(175, 29);
+            this.txbAddress.TabIndex = 62;
+            this.txbAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txbNameEmployee
+            // 
+            this.txbNameEmployee.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbNameEmployee.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbNameEmployee.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbNameEmployee.BorderThickness = 1;
+            this.txbNameEmployee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbNameEmployee.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNameEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbNameEmployee.isPassword = false;
+            this.txbNameEmployee.Location = new System.Drawing.Point(17, 191);
+            this.txbNameEmployee.Margin = new System.Windows.Forms.Padding(0);
+            this.txbNameEmployee.Name = "txbNameEmployee";
+            this.txbNameEmployee.Size = new System.Drawing.Size(175, 29);
+            this.txbNameEmployee.TabIndex = 61;
+            this.txbNameEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // datepickerDateOfBirth
+            // 
+            this.datepickerDateOfBirth.BackColor = System.Drawing.Color.Silver;
+            this.datepickerDateOfBirth.BorderRadius = 0;
+            this.datepickerDateOfBirth.ForeColor = System.Drawing.Color.White;
+            this.datepickerDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.datepickerDateOfBirth.FormatCustom = null;
+            this.datepickerDateOfBirth.Location = new System.Drawing.Point(221, 133);
+            this.datepickerDateOfBirth.Margin = new System.Windows.Forms.Padding(26, 46, 26, 46);
+            this.datepickerDateOfBirth.Name = "datepickerDateOfBirth";
+            this.datepickerDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.datepickerDateOfBirth.Size = new System.Drawing.Size(175, 29);
+            this.datepickerDateOfBirth.TabIndex = 60;
+            this.datepickerDateOfBirth.Value = new System.DateTime(1998, 4, 6, 0, 0, 0, 0);
+            // 
+            // tbxUserAccount
+            // 
+            this.tbxUserAccount.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbxUserAccount.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbxUserAccount.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbxUserAccount.BorderThickness = 1;
+            this.tbxUserAccount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbxUserAccount.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxUserAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tbxUserAccount.isPassword = false;
+            this.tbxUserAccount.Location = new System.Drawing.Point(17, 55);
+            this.tbxUserAccount.Margin = new System.Windows.Forms.Padding(0);
+            this.tbxUserAccount.Name = "tbxUserAccount";
+            this.tbxUserAccount.Size = new System.Drawing.Size(175, 29);
+            this.tbxUserAccount.TabIndex = 59;
+            this.tbxUserAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lbDateofBirth
             // 
@@ -207,17 +290,17 @@
             this.lbPhoneNumber.TabIndex = 28;
             this.lbPhoneNumber.Text = "Số điện thoại: ";
             // 
-            // lbName
+            // lbNameEmployee
             // 
-            this.lbName.AutoSize = true;
-            this.lbName.BackColor = System.Drawing.Color.Transparent;
-            this.lbName.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.lbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbName.Location = new System.Drawing.Point(7, 166);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(138, 25);
-            this.lbName.TabIndex = 41;
-            this.lbName.Text = "Tên nhân viên: ";
+            this.lbNameEmployee.AutoSize = true;
+            this.lbNameEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.lbNameEmployee.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.lbNameEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbNameEmployee.Location = new System.Drawing.Point(7, 166);
+            this.lbNameEmployee.Name = "lbNameEmployee";
+            this.lbNameEmployee.Size = new System.Drawing.Size(138, 25);
+            this.lbNameEmployee.TabIndex = 41;
+            this.lbNameEmployee.Text = "Tên nhân viên: ";
             // 
             // lbAccountType
             // 
@@ -243,18 +326,95 @@
             this.lbPassWord.TabIndex = 22;
             this.lbPassWord.Text = "Mật khẩu: ";
             // 
-            // groupBox1
+            // gbxAccountList
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.bindingCustomer);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox1.Location = new System.Drawing.Point(424, 54);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(941, 555);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách tài khoản";
+            this.gbxAccountList.Controls.Add(this.dataGridView1);
+            this.gbxAccountList.Controls.Add(this.bindingCustomer);
+            this.gbxAccountList.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gbxAccountList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gbxAccountList.Location = new System.Drawing.Point(424, 54);
+            this.gbxAccountList.Name = "gbxAccountList";
+            this.gbxAccountList.Size = new System.Drawing.Size(941, 555);
+            this.gbxAccountList.TabIndex = 3;
+            this.gbxAccountList.TabStop = false;
+            this.gbxAccountList.Text = "Danh sách tài khoản";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column5,
+            this.Column4,
+            this.Column6,
+            this.Column7,
+            this.Column8});
+            this.dataGridView1.Location = new System.Drawing.Point(6, 75);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(928, 472);
+            this.dataGridView1.TabIndex = 30;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tên tài khoản";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 145;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Mật khẩu";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 105;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Loại tài khoản";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 105;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Tên nhân viên";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 145;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Ngày sinh";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 95;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Địa chỉ";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "SĐT";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 155;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Column8";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.Visible = false;
+            this.Column8.Width = 125;
             // 
             // bindingCustomer
             // 
@@ -439,20 +599,20 @@
             this.SaveCustomer.FileName = "Danh Sách Khách hàng";
             this.SaveCustomer.Filter = "Excel File(*.xls)|*.xls|Excel File (*.xlsx) |.xlsx|PDF File(*.pdf)|*.pdf";
             // 
-            // groupBox2
+            // gbxFunction
             // 
-            this.groupBox2.Controls.Add(this.btnClose1);
-            this.groupBox2.Controls.Add(this.btnUpdate);
-            this.groupBox2.Controls.Add(this.btnAddCustomer);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.groupBox2.Location = new System.Drawing.Point(5, 474);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(414, 135);
-            this.groupBox2.TabIndex = 36;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Chức Năng";
+            this.gbxFunction.Controls.Add(this.btnClose1);
+            this.gbxFunction.Controls.Add(this.btnUpdate);
+            this.gbxFunction.Controls.Add(this.btnAddCustomer);
+            this.gbxFunction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbxFunction.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gbxFunction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gbxFunction.Location = new System.Drawing.Point(5, 474);
+            this.gbxFunction.Name = "gbxFunction";
+            this.gbxFunction.Size = new System.Drawing.Size(414, 135);
+            this.gbxFunction.TabIndex = 36;
+            this.gbxFunction.TabStop = false;
+            this.gbxFunction.Text = "Chức Năng";
             // 
             // btnClose1
             // 
@@ -535,18 +695,18 @@
             this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAddCustomer.Click += new System.EventHandler(this.BtnAddCustomer_Click);
             // 
-            // label6
+            // lbAccountManage
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(75, 1);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(281, 46);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Quản lý tài khoản";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbAccountManage.AutoSize = true;
+            this.lbAccountManage.BackColor = System.Drawing.Color.Transparent;
+            this.lbAccountManage.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountManage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbAccountManage.Location = new System.Drawing.Point(75, 1);
+            this.lbAccountManage.Name = "lbAccountManage";
+            this.lbAccountManage.Size = new System.Drawing.Size(281, 46);
+            this.lbAccountManage.TabIndex = 42;
+            this.lbAccountManage.Text = "Quản lý tài khoản";
+            this.lbAccountManage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuSeparator1
             // 
@@ -576,89 +736,6 @@
             this.btnClose.Zoom = 10;
             this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
-            // tbxUserAccount
-            // 
-            this.tbxUserAccount.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbxUserAccount.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbxUserAccount.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbxUserAccount.BorderThickness = 1;
-            this.tbxUserAccount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbxUserAccount.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxUserAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tbxUserAccount.isPassword = false;
-            this.tbxUserAccount.Location = new System.Drawing.Point(17, 55);
-            this.tbxUserAccount.Margin = new System.Windows.Forms.Padding(0);
-            this.tbxUserAccount.Name = "tbxUserAccount";
-            this.tbxUserAccount.Size = new System.Drawing.Size(175, 29);
-            this.tbxUserAccount.TabIndex = 59;
-            this.tbxUserAccount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // datepickerDateOfBirth
-            // 
-            this.datepickerDateOfBirth.BackColor = System.Drawing.Color.Silver;
-            this.datepickerDateOfBirth.BorderRadius = 0;
-            this.datepickerDateOfBirth.ForeColor = System.Drawing.Color.White;
-            this.datepickerDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datepickerDateOfBirth.FormatCustom = null;
-            this.datepickerDateOfBirth.Location = new System.Drawing.Point(221, 133);
-            this.datepickerDateOfBirth.Margin = new System.Windows.Forms.Padding(26, 46, 26, 46);
-            this.datepickerDateOfBirth.Name = "datepickerDateOfBirth";
-            this.datepickerDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.datepickerDateOfBirth.Size = new System.Drawing.Size(175, 29);
-            this.datepickerDateOfBirth.TabIndex = 60;
-            this.datepickerDateOfBirth.Value = new System.DateTime(1998, 4, 6, 0, 0, 0, 0);
-            // 
-            // txbName
-            // 
-            this.txbName.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbName.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbName.BorderThickness = 1;
-            this.txbName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbName.isPassword = false;
-            this.txbName.Location = new System.Drawing.Point(17, 191);
-            this.txbName.Margin = new System.Windows.Forms.Padding(0);
-            this.txbName.Name = "txbName";
-            this.txbName.Size = new System.Drawing.Size(175, 29);
-            this.txbName.TabIndex = 61;
-            this.txbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txbAddress
-            // 
-            this.txbAddress.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbAddress.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbAddress.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbAddress.BorderThickness = 1;
-            this.txbAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbAddress.isPassword = false;
-            this.txbAddress.Location = new System.Drawing.Point(221, 191);
-            this.txbAddress.Margin = new System.Windows.Forms.Padding(0);
-            this.txbAddress.Name = "txbAddress";
-            this.txbAddress.Size = new System.Drawing.Size(175, 29);
-            this.txbAddress.TabIndex = 62;
-            this.txbAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMetroTextbox1
-            // 
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderThickness = 1;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(17, 267);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(0);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(175, 29);
-            this.bunifuMetroTextbox1.TabIndex = 63;
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -669,83 +746,6 @@
             this.pictureBox1.TabIndex = 57;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column5,
-            this.Column4,
-            this.Column6,
-            this.Column7,
-            this.Column8});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 75);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(928, 472);
-            this.dataGridView1.TabIndex = 30;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Tên tài khoản";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 145;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Mật khẩu";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 105;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Loại tài khoản";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 105;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Tên nhân viên";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 145;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Ngày sinh";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 95;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Địa chỉ";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "SĐT";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 155;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.Visible = false;
-            this.Column8.Width = 125;
-            // 
             // fAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -754,10 +754,10 @@
             this.ClientSize = new System.Drawing.Size(1370, 614);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gbxSearch);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lbAccountManage);
             this.Controls.Add(this.bunifuSeparator1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbxFunction);
+            this.Controls.Add(this.gbxAccountList);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupCustomer);
             this.DoubleBuffered = true;
@@ -772,15 +772,15 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FCustomer_KeyPress);
             this.groupCustomer.ResumeLayout(false);
             this.groupCustomer.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
+            this.gbxAccountList.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingCustomer)).EndInit();
             this.bindingCustomer.ResumeLayout(false);
             this.bindingCustomer.PerformLayout();
             this.gbxSearch.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
+            this.gbxFunction.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -792,13 +792,13 @@
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private System.Windows.Forms.GroupBox groupCustomer;
         private MetroFramework.Controls.MetroComboBox comboBoxAccountType;
-        private System.Windows.Forms.Label lbName;
+        private System.Windows.Forms.Label lbNameEmployee;
         private System.Windows.Forms.Label lbPhoneNumber;
         private System.Windows.Forms.Label lbAccountType;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbFullName;
         private System.Windows.Forms.Label lbPassWord;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAddCustomer;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbxAccountList;
         private System.Windows.Forms.BindingNavigator bindingCustomer;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -814,8 +814,8 @@
         private System.Windows.Forms.Label lbUserAccountInput;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.SaveFileDialog SaveCustomer;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox gbxFunction;
+        private System.Windows.Forms.Label lbAccountManage;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
         private Bunifu.Framework.UI.BunifuThinButton2 btnClose1;
@@ -824,9 +824,9 @@
         private System.Windows.Forms.Label lbAddress;
         private Bunifu.Framework.UI.BunifuMetroTextbox tbxUserAccount;
         private Bunifu.Framework.UI.BunifuDatepicker datepickerDateOfBirth;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txbName;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txbNameEmployee;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbAddress;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox tbxPhoneNumber;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

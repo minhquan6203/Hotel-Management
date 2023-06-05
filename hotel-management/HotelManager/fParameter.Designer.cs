@@ -30,20 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fParameter));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnCLose1 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.gbxFunction = new System.Windows.Forms.GroupBox();
+            this.btnAddParameter = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnCLose_ = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbxParameterList = new System.Windows.Forms.GroupBox();
             this.dataGridViewParameter = new System.Windows.Forms.DataGridView();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDescribe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Describ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateUpdate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSurcharge = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -55,29 +57,31 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbxSearch = new System.Windows.Forms.GroupBox();
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txbSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbNameParameter = new System.Windows.Forms.Label();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupParameter = new System.Windows.Forms.GroupBox();
             this.comboboxName = new MetroFramework.Controls.MetroComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbDescribe = new System.Windows.Forms.Label();
             this.txbDescribe = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbValue = new System.Windows.Forms.Label();
             this.txbValue = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.labelName = new System.Windows.Forms.Label();
+            this.lbNameParameter_ = new System.Windows.Forms.Label();
+            this.labelParameterManage = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.saveParameter = new System.Windows.Forms.SaveFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbxFunction.SuspendLayout();
+            this.gbxParameterList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewParameter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSurcharge)).BeginInit();
             this.bindingSurcharge.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbxSearch.SuspendLayout();
             this.groupParameter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnClose
@@ -86,7 +90,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(824, 6);
+            this.btnClose.Location = new System.Drawing.Point(918, 6);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(16, 16);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,86 +106,113 @@
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // groupBox2
+            // gbxFunction
             // 
-            this.groupBox2.Controls.Add(this.btnCLose1);
-            this.groupBox2.Controls.Add(this.btnUpdate);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBox2.Location = new System.Drawing.Point(5, 408);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(220, 141);
-            this.groupBox2.TabIndex = 68;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Chức Năng";
+            this.gbxFunction.Controls.Add(this.btnAddParameter);
+            this.gbxFunction.Controls.Add(this.btnCLose_);
+            this.gbxFunction.Controls.Add(this.btnUpdate);
+            this.gbxFunction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbxFunction.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gbxFunction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gbxFunction.Location = new System.Drawing.Point(5, 456);
+            this.gbxFunction.Name = "gbxFunction";
+            this.gbxFunction.Size = new System.Drawing.Size(252, 172);
+            this.gbxFunction.TabIndex = 68;
+            this.gbxFunction.TabStop = false;
+            this.gbxFunction.Text = "Chức Năng";
             // 
-            // btnCLose1
+            // btnAddParameter
             // 
-            this.btnCLose1.ActiveBorderThickness = 1;
-            this.btnCLose1.ActiveCornerRadius = 20;
-            this.btnCLose1.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnCLose1.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCLose1.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCLose1.BackColor = System.Drawing.Color.White;
-            this.btnCLose1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCLose1.BackgroundImage")));
-            this.btnCLose1.ButtonText = "Đóng";
-            this.btnCLose1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCLose1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.btnCLose1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnCLose1.IdleBorderThickness = 1;
-            this.btnCLose1.IdleCornerRadius = 20;
-            this.btnCLose1.IdleFillColor = System.Drawing.Color.White;
-            this.btnCLose1.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnCLose1.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCLose1.Location = new System.Drawing.Point(26, 79);
-            this.btnCLose1.Margin = new System.Windows.Forms.Padding(6);
-            this.btnCLose1.Name = "btnCLose1";
-            this.btnCLose1.Size = new System.Drawing.Size(175, 40);
-            this.btnCLose1.TabIndex = 25;
-            this.btnCLose1.TabStop = false;
-            this.btnCLose1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCLose1.Click += new System.EventHandler(this.BtnCLose1_Click);
+            this.btnAddParameter.ActiveBorderThickness = 1;
+            this.btnAddParameter.ActiveCornerRadius = 20;
+            this.btnAddParameter.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddParameter.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAddParameter.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddParameter.BackColor = System.Drawing.Color.White;
+            this.btnAddParameter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddParameter.BackgroundImage")));
+            this.btnAddParameter.ButtonText = "Thêm quy định";
+            this.btnAddParameter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddParameter.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.btnAddParameter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddParameter.IdleBorderThickness = 1;
+            this.btnAddParameter.IdleCornerRadius = 20;
+            this.btnAddParameter.IdleFillColor = System.Drawing.Color.White;
+            this.btnAddParameter.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddParameter.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddParameter.Location = new System.Drawing.Point(26, 36);
+            this.btnAddParameter.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAddParameter.Name = "btnAddParameter";
+            this.btnAddParameter.Size = new System.Drawing.Size(203, 40);
+            this.btnAddParameter.TabIndex = 26;
+            this.btnAddParameter.TabStop = false;
+            this.btnAddParameter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnCLose_
+            // 
+            this.btnCLose_.ActiveBorderThickness = 1;
+            this.btnCLose_.ActiveCornerRadius = 20;
+            this.btnCLose_.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCLose_.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCLose_.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCLose_.BackColor = System.Drawing.Color.White;
+            this.btnCLose_.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCLose_.BackgroundImage")));
+            this.btnCLose_.ButtonText = "Đóng";
+            this.btnCLose_.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCLose_.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.btnCLose_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCLose_.IdleBorderThickness = 1;
+            this.btnCLose_.IdleCornerRadius = 20;
+            this.btnCLose_.IdleFillColor = System.Drawing.Color.White;
+            this.btnCLose_.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCLose_.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnCLose_.Location = new System.Drawing.Point(26, 129);
+            this.btnCLose_.Margin = new System.Windows.Forms.Padding(6);
+            this.btnCLose_.Name = "btnCLose_";
+            this.btnCLose_.Size = new System.Drawing.Size(203, 40);
+            this.btnCLose_.TabIndex = 25;
+            this.btnCLose_.TabStop = false;
+            this.btnCLose_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCLose_.Click += new System.EventHandler(this.BtnCLose1_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.ActiveBorderThickness = 1;
             this.btnUpdate.ActiveCornerRadius = 20;
-            this.btnUpdate.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
-            this.btnUpdate.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnUpdate.BackColor = System.Drawing.Color.White;
             this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-            this.btnUpdate.ButtonText = "Cập Nhật";
+            this.btnUpdate.ButtonText = "Cập nhật";
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.btnUpdate.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnUpdate.IdleBorderThickness = 1;
             this.btnUpdate.IdleCornerRadius = 20;
             this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
-            this.btnUpdate.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.Location = new System.Drawing.Point(26, 27);
+            this.btnUpdate.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdate.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdate.Location = new System.Drawing.Point(26, 82);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(6);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(175, 40);
+            this.btnUpdate.Size = new System.Drawing.Size(203, 40);
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.TabStop = false;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
-            // groupBox1
+            // gbxParameterList
             // 
-            this.groupBox1.Controls.Add(this.dataGridViewParameter);
-            this.groupBox1.Controls.Add(this.bindingSurcharge);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBox1.Location = new System.Drawing.Point(231, 55);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(609, 494);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh Sách Qui Định";
+            this.gbxParameterList.Controls.Add(this.dataGridViewParameter);
+            this.gbxParameterList.Controls.Add(this.bindingSurcharge);
+            this.gbxParameterList.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gbxParameterList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gbxParameterList.Location = new System.Drawing.Point(263, 64);
+            this.gbxParameterList.Name = "gbxParameterList";
+            this.gbxParameterList.Size = new System.Drawing.Size(664, 561);
+            this.gbxParameterList.TabIndex = 3;
+            this.gbxParameterList.TabStop = false;
+            this.gbxParameterList.Text = "Danh sách quy định";
             // 
             // dataGridViewParameter
             // 
@@ -190,47 +221,49 @@
             this.dataGridViewParameter.AllowUserToResizeRows = false;
             this.dataGridViewParameter.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewParameter.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewParameter.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewParameter.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewParameter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewParameter.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colName,
             this.colValue,
-            this.colDescribe,
-            this.Column1});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewParameter.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Describ,
+            this.DateUpdate,
+            this.Column3});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewParameter.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewParameter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewParameter.GridColor = System.Drawing.Color.White;
-            this.dataGridViewParameter.Location = new System.Drawing.Point(3, 50);
+            this.dataGridViewParameter.Location = new System.Drawing.Point(3, 61);
             this.dataGridViewParameter.Name = "dataGridViewParameter";
             this.dataGridViewParameter.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewParameter.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewParameter.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewParameter.RowHeadersVisible = false;
+            this.dataGridViewParameter.RowHeadersWidth = 51;
             this.dataGridViewParameter.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewParameter.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridViewParameter.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewParameter.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewParameter.Size = new System.Drawing.Size(603, 441);
+            this.dataGridViewParameter.Size = new System.Drawing.Size(658, 497);
             this.dataGridViewParameter.TabIndex = 28;
             this.dataGridViewParameter.SelectionChanged += new System.EventHandler(this.DataGridSurcharge_SelectionChanged);
             // 
@@ -239,41 +272,52 @@
             this.colName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.colName.DataPropertyName = "name";
             this.colName.HeaderText = "Tên";
+            this.colName.MinimumWidth = 6;
             this.colName.Name = "colName";
             this.colName.ReadOnly = true;
-            this.colName.Width = 58;
+            this.colName.Width = 73;
             // 
             // colValue
             // 
             this.colValue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.colValue.DataPropertyName = "value";
             this.colValue.HeaderText = "Giá trị";
+            this.colValue.MinimumWidth = 6;
             this.colValue.Name = "colValue";
             this.colValue.ReadOnly = true;
-            this.colValue.Width = 77;
+            this.colValue.Width = 95;
             // 
-            // colDescribe
+            // Describ
             // 
-            this.colDescribe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colDescribe.DataPropertyName = "describe";
-            this.colDescribe.HeaderText = "Miêu tả";
-            this.colDescribe.Name = "colDescribe";
-            this.colDescribe.ReadOnly = true;
-            this.colDescribe.Width = 87;
+            this.Describ.HeaderText = "Miêu tả";
+            this.Describ.MinimumWidth = 6;
+            this.Describ.Name = "Describ";
+            this.Describ.ReadOnly = true;
+            this.Describ.Width = 379;
             // 
-            // Column1
+            // DateUpdate
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.DataPropertyName = "datemodify";
-            this.Column1.HeaderText = "Ngày cập nhật";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.DateUpdate.HeaderText = "Ngày cập nhật";
+            this.DateUpdate.MinimumWidth = 6;
+            this.DateUpdate.Name = "DateUpdate";
+            this.DateUpdate.ReadOnly = true;
+            this.DateUpdate.Width = 110;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Visible = false;
+            this.Column3.Width = 125;
             // 
             // bindingSurcharge
             // 
             this.bindingSurcharge.AddNewItem = null;
             this.bindingSurcharge.CountItem = this.bindingNavigatorCountItem;
             this.bindingSurcharge.DeleteItem = null;
+            this.bindingSurcharge.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingSurcharge.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -285,14 +329,14 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.toolStripLabel1});
-            this.bindingSurcharge.Location = new System.Drawing.Point(3, 25);
+            this.bindingSurcharge.Location = new System.Drawing.Point(3, 30);
             this.bindingSurcharge.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingSurcharge.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.bindingSurcharge.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.bindingSurcharge.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingSurcharge.Name = "bindingSurcharge";
             this.bindingSurcharge.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingSurcharge.Size = new System.Drawing.Size(603, 25);
+            this.bindingSurcharge.Size = new System.Drawing.Size(658, 31);
             this.bindingSurcharge.TabIndex = 29;
             this.bindingSurcharge.Text = "bindingNavigator1";
             // 
@@ -327,7 +371,7 @@
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -341,7 +385,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -366,7 +410,7 @@
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripLabel1
             // 
@@ -376,75 +420,76 @@
             this.toolStripLabel1.Text = "Xuất";
             this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
             // 
-            // groupBox3
+            // gbxSearch
             // 
-            this.groupBox3.Controls.Add(this.btnSearch);
-            this.groupBox3.Controls.Add(this.txbSearch);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.btnCancel);
-            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBox3.Location = new System.Drawing.Point(5, 55);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(220, 140);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Tìm kiếm";
+            this.gbxSearch.Controls.Add(this.btnSearch);
+            this.gbxSearch.Controls.Add(this.txbSearch);
+            this.gbxSearch.Controls.Add(this.lbNameParameter);
+            this.gbxSearch.Controls.Add(this.btnCancel);
+            this.gbxSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gbxSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gbxSearch.Location = new System.Drawing.Point(5, 76);
+            this.gbxSearch.Name = "gbxSearch";
+            this.gbxSearch.Size = new System.Drawing.Size(252, 155);
+            this.gbxSearch.TabIndex = 0;
+            this.gbxSearch.TabStop = false;
+            this.gbxSearch.Text = "Tìm kiếm";
             // 
             // btnSearch
             // 
             this.btnSearch.ActiveBorderThickness = 1;
             this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSearch.BackColor = System.Drawing.Color.White;
             this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
             this.btnSearch.ButtonText = "Tìm Kiếm";
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSearch.IdleBorderThickness = 1;
             this.btnSearch.IdleCornerRadius = 20;
             this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-            this.btnSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.Location = new System.Drawing.Point(26, 85);
+            this.btnSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSearch.Location = new System.Drawing.Point(27, 103);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(175, 40);
+            this.btnSearch.Size = new System.Drawing.Size(202, 40);
             this.btnSearch.TabIndex = 46;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // txbSearch
             // 
-            this.txbSearch.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txbSearch.BorderColorIdle = System.Drawing.Color.SeaGreen;
-            this.txbSearch.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txbSearch.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbSearch.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbSearch.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbSearch.BorderThickness = 1;
             this.txbSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbSearch.isPassword = false;
-            this.txbSearch.Location = new System.Drawing.Point(26, 46);
+            this.txbSearch.Location = new System.Drawing.Point(26, 61);
             this.txbSearch.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(175, 29);
+            this.txbSearch.Size = new System.Drawing.Size(203, 29);
             this.txbSearch.TabIndex = 0;
             this.txbSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txbSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxbSearch_KeyPress);
             // 
-            // label5
+            // lbNameParameter
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label5.Location = new System.Drawing.Point(22, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 20);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Tên:";
+            this.lbNameParameter.AutoSize = true;
+            this.lbNameParameter.BackColor = System.Drawing.Color.Transparent;
+            this.lbNameParameter.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.lbNameParameter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbNameParameter.Location = new System.Drawing.Point(22, 30);
+            this.lbNameParameter.Name = "lbNameParameter";
+            this.lbNameParameter.Size = new System.Drawing.Size(124, 25);
+            this.lbNameParameter.TabIndex = 28;
+            this.lbNameParameter.Text = "Tên quy định:";
             // 
             // btnCancel
             // 
@@ -464,7 +509,7 @@
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
             this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
             this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(26, 86);
+            this.btnCancel.Location = new System.Drawing.Point(27, 103);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(175, 40);
@@ -476,17 +521,17 @@
             // groupParameter
             // 
             this.groupParameter.Controls.Add(this.comboboxName);
-            this.groupParameter.Controls.Add(this.label2);
+            this.groupParameter.Controls.Add(this.lbDescribe);
             this.groupParameter.Controls.Add(this.txbDescribe);
-            this.groupParameter.Controls.Add(this.label1);
+            this.groupParameter.Controls.Add(this.lbValue);
             this.groupParameter.Controls.Add(this.txbValue);
-            this.groupParameter.Controls.Add(this.label16);
+            this.groupParameter.Controls.Add(this.lbNameParameter_);
             this.groupParameter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupParameter.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupParameter.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupParameter.Location = new System.Drawing.Point(5, 197);
+            this.groupParameter.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.groupParameter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupParameter.Location = new System.Drawing.Point(5, 237);
             this.groupParameter.Name = "groupParameter";
-            this.groupParameter.Size = new System.Drawing.Size(220, 209);
+            this.groupParameter.Size = new System.Drawing.Size(252, 221);
             this.groupParameter.TabIndex = 1;
             this.groupParameter.TabStop = false;
             this.groupParameter.Text = "Thông tin qui định";
@@ -494,124 +539,141 @@
             // comboboxName
             // 
             this.comboboxName.FormattingEnabled = true;
-            this.comboboxName.ItemHeight = 23;
-            this.comboboxName.Location = new System.Drawing.Point(26, 47);
+            this.comboboxName.ItemHeight = 24;
+            this.comboboxName.Location = new System.Drawing.Point(26, 65);
             this.comboboxName.Name = "comboboxName";
-            this.comboboxName.Size = new System.Drawing.Size(175, 29);
+            this.comboboxName.Size = new System.Drawing.Size(203, 30);
             this.comboboxName.Style = MetroFramework.MetroColorStyle.Green;
             this.comboboxName.TabIndex = 47;
             this.comboboxName.UseSelectable = true;
             // 
-            // label2
+            // lbDescribe
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label2.Location = new System.Drawing.Point(22, 139);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 20);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Miêu tả:";
+            this.lbDescribe.AutoSize = true;
+            this.lbDescribe.BackColor = System.Drawing.Color.Transparent;
+            this.lbDescribe.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.lbDescribe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbDescribe.Location = new System.Drawing.Point(22, 152);
+            this.lbDescribe.Name = "lbDescribe";
+            this.lbDescribe.Size = new System.Drawing.Size(80, 25);
+            this.lbDescribe.TabIndex = 26;
+            this.lbDescribe.Text = "Miêu tả:";
             // 
             // txbDescribe
             // 
-            this.txbDescribe.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txbDescribe.BorderColorIdle = System.Drawing.Color.SeaGreen;
-            this.txbDescribe.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txbDescribe.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbDescribe.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbDescribe.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbDescribe.BorderThickness = 1;
             this.txbDescribe.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbDescribe.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbDescribe.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbDescribe.isPassword = false;
-            this.txbDescribe.Location = new System.Drawing.Point(26, 162);
+            this.txbDescribe.Location = new System.Drawing.Point(26, 177);
             this.txbDescribe.Margin = new System.Windows.Forms.Padding(0);
             this.txbDescribe.Name = "txbDescribe";
-            this.txbDescribe.Size = new System.Drawing.Size(175, 29);
+            this.txbDescribe.Size = new System.Drawing.Size(203, 29);
             this.txbDescribe.TabIndex = 3;
             this.txbDescribe.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // label1
+            // lbValue
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label1.Location = new System.Drawing.Point(22, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 20);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Giá trị:";
+            this.lbValue.AutoSize = true;
+            this.lbValue.BackColor = System.Drawing.Color.Transparent;
+            this.lbValue.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.lbValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbValue.Location = new System.Drawing.Point(22, 98);
+            this.lbValue.Name = "lbValue";
+            this.lbValue.Size = new System.Drawing.Size(67, 25);
+            this.lbValue.TabIndex = 24;
+            this.lbValue.Text = "Giá trị:";
             // 
             // txbValue
             // 
-            this.txbValue.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txbValue.BorderColorIdle = System.Drawing.Color.SeaGreen;
-            this.txbValue.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txbValue.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbValue.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbValue.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbValue.BorderThickness = 1;
             this.txbValue.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbValue.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbValue.isPassword = false;
-            this.txbValue.Location = new System.Drawing.Point(26, 103);
+            this.txbValue.Location = new System.Drawing.Point(26, 123);
             this.txbValue.Margin = new System.Windows.Forms.Padding(0);
             this.txbValue.Name = "txbValue";
-            this.txbValue.Size = new System.Drawing.Size(175, 29);
+            this.txbValue.Size = new System.Drawing.Size(203, 29);
             this.txbValue.TabIndex = 1;
             this.txbValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbValue.OnValueChanged += new System.EventHandler(this.txbValue_OnValueChanged);
             this.txbValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxbPrice_KeyPress);
             // 
-            // label16
+            // lbNameParameter_
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label16.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label16.Location = new System.Drawing.Point(22, 25);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(35, 20);
-            this.label16.TabIndex = 22;
-            this.label16.Text = "Tên:";
+            this.lbNameParameter_.AutoSize = true;
+            this.lbNameParameter_.BackColor = System.Drawing.Color.Transparent;
+            this.lbNameParameter_.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.lbNameParameter_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbNameParameter_.Location = new System.Drawing.Point(22, 37);
+            this.lbNameParameter_.Name = "lbNameParameter_";
+            this.lbNameParameter_.Size = new System.Drawing.Size(124, 25);
+            this.lbNameParameter_.TabIndex = 22;
+            this.lbNameParameter_.Text = "Tên quy định:";
             // 
-            // labelName
+            // labelParameterManage
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.BackColor = System.Drawing.Color.Transparent;
-            this.labelName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.labelName.Location = new System.Drawing.Point(9, 6);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(122, 37);
-            this.labelName.TabIndex = 63;
-            this.labelName.Text = "Qui Định";
-            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelParameterManage.AutoSize = true;
+            this.labelParameterManage.BackColor = System.Drawing.Color.Transparent;
+            this.labelParameterManage.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelParameterManage.ForeColor = System.Drawing.Color.Black;
+            this.labelParameterManage.Location = new System.Drawing.Point(73, 9);
+            this.labelParameterManage.Name = "labelParameterManage";
+            this.labelParameterManage.Size = new System.Drawing.Size(161, 45);
+            this.labelParameterManage.TabIndex = 63;
+            this.labelParameterManage.Text = "Quy Định";
+            this.labelParameterManage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelParameterManage.Click += new System.EventHandler(this.labelName_Click);
             // 
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(5, 43);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(5, 57);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(835, 13);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(900, 13);
             this.bunifuSeparator1.TabIndex = 67;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
+            this.bunifuSeparator1.Load += new System.EventHandler(this.bunifuSeparator1_Load);
             // 
             // saveParameter
             // 
             this.saveParameter.FileName = "Danh sách phụ thu";
             this.saveParameter.Filter = "Excel File(*.xls)|*.xls|Excel File (*.xlsx) |.xlsx|PDF File(*.pdf)|*.pdf";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(5, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(76, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 69;
+            this.pictureBox1.TabStop = false;
+            // 
             // fParameter
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(845, 553);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(939, 640);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.gbxFunction);
+            this.Controls.Add(this.gbxParameterList);
+            this.Controls.Add(this.gbxSearch);
             this.Controls.Add(this.groupParameter);
-            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.labelParameterManage);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.bunifuSeparator1);
             this.DoubleBuffered = true;
@@ -626,17 +688,18 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FParameter_FormClosing);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FParameter_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbxFunction.ResumeLayout(false);
+            this.gbxParameterList.ResumeLayout(false);
+            this.gbxParameterList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewParameter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSurcharge)).EndInit();
             this.bindingSurcharge.ResumeLayout(false);
             this.bindingSurcharge.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbxSearch.ResumeLayout(false);
+            this.gbxSearch.PerformLayout();
             this.groupParameter.ResumeLayout(false);
             this.groupParameter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -646,10 +709,10 @@
 
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnCLose1;
+        private System.Windows.Forms.GroupBox gbxFunction;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnCLose_;
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbxParameterList;
         private System.Windows.Forms.DataGridView dataGridViewParameter;
         private System.Windows.Forms.BindingNavigator bindingSurcharge;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -662,24 +725,27 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gbxSearch;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbSearch;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbNameParameter;
         private System.Windows.Forms.GroupBox groupParameter;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbDescribe;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbDescribe;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbValue;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbValue;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label lbNameParameter_;
+        private System.Windows.Forms.Label labelParameterManage;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private MetroFramework.Controls.MetroComboBox comboboxName;
         private System.Windows.Forms.SaveFileDialog saveParameter;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAddParameter;
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colValue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDescribe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Describ;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateUpdate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }

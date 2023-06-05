@@ -35,7 +35,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fBookRoomDetails));
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbBookRoomDetail = new System.Windows.Forms.Label();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -51,7 +51,10 @@
             this.txbFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lbName = new System.Windows.Forms.Label();
             this.gbxDetailBookRoom = new System.Windows.Forms.GroupBox();
-            this.dmTotalGuest_ = new System.Windows.Forms.DomainUpDown();
+            this.numericTotalGuest = new System.Windows.Forms.NumericUpDown();
+            this.btnDeleteRoom = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUpdateRoom = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAddRoom = new Bunifu.Framework.UI.BunifuThinButton2();
             this.ctlPrice = new MetroFramework.Controls.MetroComboBox();
             this.lbPrice = new System.Windows.Forms.Label();
             this.lbTotalGuest = new System.Windows.Forms.Label();
@@ -67,10 +70,14 @@
             this.dpkDateCheckIn = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cbRoomType = new MetroFramework.Controls.MetroComboBox();
             this.lbRoomType = new System.Windows.Forms.Label();
-            this.lbCheckOut = new System.Windows.Forms.Label();
-            this.lbCheckIn = new System.Windows.Forms.Label();
+            this.lbDateCheckOut = new System.Windows.Forms.Label();
+            this.lbDateCheckIn = new System.Windows.Forms.Label();
             this.gbxCustomerList = new System.Windows.Forms.GroupBox();
             this.dataGridViewRoomType = new System.Windows.Forms.DataGridView();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingCustomerType = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -82,13 +89,10 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.gbxCustomerInfo.SuspendLayout();
             this.gbxDetailBookRoom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericTotalGuest)).BeginInit();
             this.gbxCustomerList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoomType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingCustomerType)).BeginInit();
@@ -108,17 +112,17 @@
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // label2
+            // lbBookRoomDetail
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(13, 5);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(303, 45);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Chi Tiết Đặt Phòng";
+            this.lbBookRoomDetail.AutoSize = true;
+            this.lbBookRoomDetail.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbBookRoomDetail.ForeColor = System.Drawing.Color.Black;
+            this.lbBookRoomDetail.Location = new System.Drawing.Point(13, 5);
+            this.lbBookRoomDetail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbBookRoomDetail.Name = "lbBookRoomDetail";
+            this.lbBookRoomDetail.Size = new System.Drawing.Size(303, 45);
+            this.lbBookRoomDetail.TabIndex = 30;
+            this.lbBookRoomDetail.Text = "Chi Tiết Đặt Phòng";
             // 
             // bunifuDragControl1
             // 
@@ -161,7 +165,7 @@
             this.btnClose_.IdleFillColor = System.Drawing.Color.White;
             this.btnClose_.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnClose_.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnClose_.Location = new System.Drawing.Point(35, 480);
+            this.btnClose_.Location = new System.Drawing.Point(488, 491);
             this.btnClose_.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnClose_.Name = "btnClose_";
             this.btnClose_.Size = new System.Drawing.Size(271, 49);
@@ -377,7 +381,10 @@
             // gbxDetailBookRoom
             // 
             this.gbxDetailBookRoom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.gbxDetailBookRoom.Controls.Add(this.dmTotalGuest_);
+            this.gbxDetailBookRoom.Controls.Add(this.numericTotalGuest);
+            this.gbxDetailBookRoom.Controls.Add(this.btnDeleteRoom);
+            this.gbxDetailBookRoom.Controls.Add(this.btnUpdateRoom);
+            this.gbxDetailBookRoom.Controls.Add(this.btnAddRoom);
             this.gbxDetailBookRoom.Controls.Add(this.ctlPrice);
             this.gbxDetailBookRoom.Controls.Add(this.lbPrice);
             this.gbxDetailBookRoom.Controls.Add(this.lbTotalGuest);
@@ -393,23 +400,104 @@
             this.gbxDetailBookRoom.Controls.Add(this.dpkDateCheckIn);
             this.gbxDetailBookRoom.Controls.Add(this.cbRoomType);
             this.gbxDetailBookRoom.Controls.Add(this.lbRoomType);
-            this.gbxDetailBookRoom.Controls.Add(this.lbCheckOut);
-            this.gbxDetailBookRoom.Controls.Add(this.lbCheckIn);
+            this.gbxDetailBookRoom.Controls.Add(this.lbDateCheckOut);
+            this.gbxDetailBookRoom.Controls.Add(this.lbDateCheckIn);
             this.gbxDetailBookRoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gbxDetailBookRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gbxDetailBookRoom.Location = new System.Drawing.Point(12, 64);
             this.gbxDetailBookRoom.Name = "gbxDetailBookRoom";
-            this.gbxDetailBookRoom.Size = new System.Drawing.Size(456, 406);
+            this.gbxDetailBookRoom.Size = new System.Drawing.Size(456, 516);
             this.gbxDetailBookRoom.TabIndex = 50;
             this.gbxDetailBookRoom.TabStop = false;
             this.gbxDetailBookRoom.Text = "Thông tin đặt phòng";
             // 
-            // dmTotalGuest_
+            // numericTotalGuest
             // 
-            this.dmTotalGuest_.Location = new System.Drawing.Point(11, 244);
-            this.dmTotalGuest_.Name = "dmTotalGuest_";
-            this.dmTotalGuest_.Size = new System.Drawing.Size(203, 34);
-            this.dmTotalGuest_.TabIndex = 52;
+            this.numericTotalGuest.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.numericTotalGuest.Location = new System.Drawing.Point(11, 245);
+            this.numericTotalGuest.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.numericTotalGuest.Name = "numericTotalGuest";
+            this.numericTotalGuest.Size = new System.Drawing.Size(203, 34);
+            this.numericTotalGuest.TabIndex = 69;
+            // 
+            // btnDeleteRoom
+            // 
+            this.btnDeleteRoom.ActiveBorderThickness = 1;
+            this.btnDeleteRoom.ActiveCornerRadius = 20;
+            this.btnDeleteRoom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDeleteRoom.ActiveForecolor = System.Drawing.Color.White;
+            this.btnDeleteRoom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDeleteRoom.BackColor = System.Drawing.Color.White;
+            this.btnDeleteRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteRoom.BackgroundImage")));
+            this.btnDeleteRoom.ButtonText = "Xóa phòng";
+            this.btnDeleteRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeleteRoom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDeleteRoom.IdleBorderThickness = 1;
+            this.btnDeleteRoom.IdleCornerRadius = 20;
+            this.btnDeleteRoom.IdleFillColor = System.Drawing.Color.White;
+            this.btnDeleteRoom.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDeleteRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDeleteRoom.Location = new System.Drawing.Point(77, 458);
+            this.btnDeleteRoom.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnDeleteRoom.Name = "btnDeleteRoom";
+            this.btnDeleteRoom.Size = new System.Drawing.Size(271, 49);
+            this.btnDeleteRoom.TabIndex = 68;
+            this.btnDeleteRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnUpdateRoom
+            // 
+            this.btnUpdateRoom.ActiveBorderThickness = 1;
+            this.btnUpdateRoom.ActiveCornerRadius = 20;
+            this.btnUpdateRoom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdateRoom.ActiveForecolor = System.Drawing.Color.White;
+            this.btnUpdateRoom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdateRoom.BackColor = System.Drawing.Color.White;
+            this.btnUpdateRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateRoom.BackgroundImage")));
+            this.btnUpdateRoom.ButtonText = "Cập nhật phòng ";
+            this.btnUpdateRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdateRoom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdateRoom.IdleBorderThickness = 1;
+            this.btnUpdateRoom.IdleCornerRadius = 20;
+            this.btnUpdateRoom.IdleFillColor = System.Drawing.Color.White;
+            this.btnUpdateRoom.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdateRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnUpdateRoom.Location = new System.Drawing.Point(77, 405);
+            this.btnUpdateRoom.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnUpdateRoom.Name = "btnUpdateRoom";
+            this.btnUpdateRoom.Size = new System.Drawing.Size(271, 49);
+            this.btnUpdateRoom.TabIndex = 67;
+            this.btnUpdateRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAddRoom
+            // 
+            this.btnAddRoom.ActiveBorderThickness = 1;
+            this.btnAddRoom.ActiveCornerRadius = 20;
+            this.btnAddRoom.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddRoom.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAddRoom.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddRoom.BackColor = System.Drawing.Color.White;
+            this.btnAddRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddRoom.BackgroundImage")));
+            this.btnAddRoom.ButtonText = "Thêm Phòng";
+            this.btnAddRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddRoom.IdleBorderThickness = 1;
+            this.btnAddRoom.IdleCornerRadius = 20;
+            this.btnAddRoom.IdleFillColor = System.Drawing.Color.White;
+            this.btnAddRoom.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddRoom.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddRoom.Location = new System.Drawing.Point(77, 355);
+            this.btnAddRoom.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnAddRoom.Name = "btnAddRoom";
+            this.btnAddRoom.Size = new System.Drawing.Size(271, 49);
+            this.btnAddRoom.TabIndex = 66;
+            this.btnAddRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ctlPrice
             // 
@@ -626,29 +714,29 @@
             this.lbRoomType.TabIndex = 32;
             this.lbRoomType.Text = "Loại phòng:";
             // 
-            // lbCheckOut
+            // lbDateCheckOut
             // 
-            this.lbCheckOut.AutoSize = true;
-            this.lbCheckOut.BackColor = System.Drawing.Color.Transparent;
-            this.lbCheckOut.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCheckOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbCheckOut.Location = new System.Drawing.Point(240, 141);
-            this.lbCheckOut.Name = "lbCheckOut";
-            this.lbCheckOut.Size = new System.Drawing.Size(88, 25);
-            this.lbCheckOut.TabIndex = 40;
-            this.lbCheckOut.Text = "Ngày trả:";
+            this.lbDateCheckOut.AutoSize = true;
+            this.lbDateCheckOut.BackColor = System.Drawing.Color.Transparent;
+            this.lbDateCheckOut.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDateCheckOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbDateCheckOut.Location = new System.Drawing.Point(240, 141);
+            this.lbDateCheckOut.Name = "lbDateCheckOut";
+            this.lbDateCheckOut.Size = new System.Drawing.Size(88, 25);
+            this.lbDateCheckOut.TabIndex = 40;
+            this.lbDateCheckOut.Text = "Ngày trả:";
             // 
-            // lbCheckIn
+            // lbDateCheckIn
             // 
-            this.lbCheckIn.AutoSize = true;
-            this.lbCheckIn.BackColor = System.Drawing.Color.Transparent;
-            this.lbCheckIn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCheckIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbCheckIn.Location = new System.Drawing.Point(240, 80);
-            this.lbCheckIn.Name = "lbCheckIn";
-            this.lbCheckIn.Size = new System.Drawing.Size(108, 25);
-            this.lbCheckIn.TabIndex = 34;
-            this.lbCheckIn.Text = "Ngày nhận:";
+            this.lbDateCheckIn.AutoSize = true;
+            this.lbDateCheckIn.BackColor = System.Drawing.Color.Transparent;
+            this.lbDateCheckIn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDateCheckIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbDateCheckIn.Location = new System.Drawing.Point(240, 80);
+            this.lbDateCheckIn.Name = "lbDateCheckIn";
+            this.lbDateCheckIn.Size = new System.Drawing.Size(108, 25);
+            this.lbDateCheckIn.TabIndex = 34;
+            this.lbDateCheckIn.Text = "Ngày nhận:";
             // 
             // gbxCustomerList
             // 
@@ -658,7 +746,7 @@
             this.gbxCustomerList.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gbxCustomerList.Location = new System.Drawing.Point(786, 64);
             this.gbxCustomerList.Name = "gbxCustomerList";
-            this.gbxCustomerList.Size = new System.Drawing.Size(595, 485);
+            this.gbxCustomerList.Size = new System.Drawing.Size(595, 516);
             this.gbxCustomerList.TabIndex = 51;
             this.gbxCustomerList.TabStop = false;
             this.gbxCustomerList.Text = "Danh sách khách hàng tại phòng";
@@ -695,7 +783,7 @@
             this.dataGridViewRoomType.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewRoomType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewRoomType.GridColor = System.Drawing.Color.White;
-            this.dataGridViewRoomType.Location = new System.Drawing.Point(3, 55);
+            this.dataGridViewRoomType.Location = new System.Drawing.Point(3, 61);
             this.dataGridViewRoomType.Name = "dataGridViewRoomType";
             this.dataGridViewRoomType.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -714,113 +802,8 @@
             this.dataGridViewRoomType.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewRoomType.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridViewRoomType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewRoomType.Size = new System.Drawing.Size(589, 427);
+            this.dataGridViewRoomType.Size = new System.Drawing.Size(589, 452);
             this.dataGridViewRoomType.TabIndex = 28;
-            // 
-            // bindingCustomerType
-            // 
-            this.bindingCustomerType.AddNewItem = null;
-            this.bindingCustomerType.CountItem = this.bindingNavigatorCountItem;
-            this.bindingCustomerType.DeleteItem = null;
-            this.bindingCustomerType.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.bindingCustomerType.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.toolStripLabel1});
-            this.bindingCustomerType.Location = new System.Drawing.Point(3, 30);
-            this.bindingCustomerType.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingCustomerType.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingCustomerType.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingCustomerType.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingCustomerType.Name = "bindingCustomerType";
-            this.bindingCustomerType.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingCustomerType.Size = new System.Drawing.Size(589, 25);
-            this.bindingCustomerType.TabIndex = 29;
-            this.bindingCustomerType.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.AutoSize = false;
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(30, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.AutoSize = false;
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(30, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(58, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.AutoSize = false;
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(30, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.AutoSize = false;
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(30, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(39, 22);
-            this.toolStripLabel1.Text = "Xuất";
             // 
             // colID
             // 
@@ -858,19 +841,124 @@
             this.Column1.Visible = false;
             this.Column1.Width = 125;
             // 
+            // bindingCustomerType
+            // 
+            this.bindingCustomerType.AddNewItem = null;
+            this.bindingCustomerType.CountItem = this.bindingNavigatorCountItem;
+            this.bindingCustomerType.DeleteItem = null;
+            this.bindingCustomerType.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.bindingCustomerType.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.toolStripLabel1});
+            this.bindingCustomerType.Location = new System.Drawing.Point(3, 30);
+            this.bindingCustomerType.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bindingCustomerType.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bindingCustomerType.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bindingCustomerType.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bindingCustomerType.Name = "bindingCustomerType";
+            this.bindingCustomerType.PositionItem = this.bindingNavigatorPositionItem;
+            this.bindingCustomerType.Size = new System.Drawing.Size(589, 31);
+            this.bindingCustomerType.TabIndex = 29;
+            this.bindingCustomerType.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.AutoSize = false;
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(30, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.AutoSize = false;
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(30, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(58, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.AutoSize = false;
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(30, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.AutoSize = false;
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(30, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(39, 28);
+            this.toolStripLabel1.Text = "Xuất";
+            // 
             // fBookRoomDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1393, 561);
+            this.ClientSize = new System.Drawing.Size(1393, 592);
             this.Controls.Add(this.gbxCustomerList);
             this.Controls.Add(this.gbxDetailBookRoom);
             this.Controls.Add(this.btnClose_);
             this.Controls.Add(this.gbxCustomerInfo);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.bunifuSeparator1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbBookRoomDetail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -882,6 +970,7 @@
             this.gbxCustomerInfo.PerformLayout();
             this.gbxDetailBookRoom.ResumeLayout(false);
             this.gbxDetailBookRoom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericTotalGuest)).EndInit();
             this.gbxCustomerList.ResumeLayout(false);
             this.gbxCustomerList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRoomType)).EndInit();
@@ -896,7 +985,7 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbBookRoomDetail;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnClose_;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
@@ -924,8 +1013,8 @@
         private Bunifu.Framework.UI.BunifuDatepicker dpkDateCheckIn;
         private MetroFramework.Controls.MetroComboBox cbRoomType;
         private System.Windows.Forms.Label lbRoomType;
-        private System.Windows.Forms.Label lbCheckOut;
-        private System.Windows.Forms.Label lbCheckIn;
+        private System.Windows.Forms.Label lbDateCheckOut;
+        private System.Windows.Forms.Label lbDateCheckIn;
         private System.Windows.Forms.Label lbTotalGuest;
         private System.Windows.Forms.Label lbPrice;
         private MetroFramework.Controls.MetroComboBox ctlPrice;
@@ -942,10 +1031,13 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.DomainUpDown dmTotalGuest_;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnDeleteRoom;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnUpdateRoom;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAddRoom;
+        private System.Windows.Forms.NumericUpDown numericTotalGuest;
     }
 }

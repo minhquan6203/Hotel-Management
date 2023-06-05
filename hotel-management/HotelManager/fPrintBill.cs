@@ -39,7 +39,7 @@ namespace HotelManager
         int id = 0;
         public void ShowBillPreView(int idBill)
         {
-            listViewUseService.Items.Clear();
+            listBillDetail.Items.Clear();
             DataTable dataTable = BillDAO.Instance.ShowBillPreView(idBill);
             CultureInfo cultureInfo = new CultureInfo("vi-vn");
             int _totalPrice = 0;
@@ -61,7 +61,7 @@ namespace HotelManager
                 listViewItem.SubItems.Add(subItem3);
                 listViewItem.SubItems.Add(subItem4);
 
-                listViewUseService.Items.Add(listViewItem);
+                listBillDetail.Items.Add(listViewItem);
             }
 
             ListViewItem listViewItemTotalPrice = new ListViewItem();
@@ -73,7 +73,7 @@ namespace HotelManager
             listViewItemTotalPrice.SubItems.Add(_subItem2);
             listViewItemTotalPrice.SubItems.Add(_subItem3);
             listViewItemTotalPrice.SubItems.Add(subItemTotalPrice);
-            listViewUseService.Items.Add(listViewItemTotalPrice);
+            listBillDetail.Items.Add(listViewItemTotalPrice);
 
             id = 1;
         }
@@ -133,6 +133,21 @@ namespace HotelManager
             bitmap = new Bitmap(Application.StartupPath + @"\Bill.Png");
             if (printDialog1.ShowDialog() == DialogResult.OK)
                 printDocument1.Print();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

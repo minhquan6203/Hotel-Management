@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fLogin));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelLogin = new System.Windows.Forms.Label();
             this.lbUserName = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
             this.txbUserName = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -42,7 +42,7 @@
             this.btnExit = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelNameHotel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,17 +55,17 @@
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // label2
+            // labelLogin
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(512, 20);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 45);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Đăng Nhập";
+            this.labelLogin.AutoSize = true;
+            this.labelLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelLogin.ForeColor = System.Drawing.Color.Black;
+            this.labelLogin.Location = new System.Drawing.Point(512, 20);
+            this.labelLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelLogin.Name = "labelLogin";
+            this.labelLogin.Size = new System.Drawing.Size(190, 45);
+            this.labelLogin.TabIndex = 3;
+            this.labelLogin.Text = "Đăng Nhập";
             // 
             // lbUserName
             // 
@@ -230,17 +230,17 @@
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // labelNameHotel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(31, 26);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(426, 38);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "THE EIGHTTEEN HOTEL";
+            this.labelNameHotel.AutoSize = true;
+            this.labelNameHotel.Font = new System.Drawing.Font("Lucida Fax", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameHotel.ForeColor = System.Drawing.Color.Black;
+            this.labelNameHotel.Location = new System.Drawing.Point(31, 26);
+            this.labelNameHotel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNameHotel.Name = "labelNameHotel";
+            this.labelNameHotel.Size = new System.Drawing.Size(426, 38);
+            this.labelNameHotel.TabIndex = 32;
+            this.labelNameHotel.Text = "THE EIGHTTEEN HOTEL";
             // 
             // label5
             // 
@@ -262,7 +262,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1039, 472);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelNameHotel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuSeparator2);
             this.Controls.Add(this.btnExit);
@@ -273,7 +273,7 @@
             this.Controls.Add(this.txbUserName);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUserName);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -290,7 +290,7 @@
 
         #endregion
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelLogin;
         private System.Windows.Forms.Label lbUserName;
         private System.Windows.Forms.Label lbPassword;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbUserName;
@@ -300,7 +300,7 @@
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnExit;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelNameHotel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
     }

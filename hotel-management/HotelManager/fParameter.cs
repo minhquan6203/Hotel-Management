@@ -248,5 +248,20 @@ namespace HotelManager
             BtnCancel_Click(sender, null);
         }
         #endregion
+
+        private void labelName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuSeparator1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbValue_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

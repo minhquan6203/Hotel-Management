@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace HotelManager
 {
-    public partial class fRoomType : Form
+    public partial class fRoomTypeManage : Form
     {
         #region Property
         private DataTable _tableRoomType;
@@ -30,11 +30,11 @@ namespace HotelManager
         #endregion
 
         #region Constructor
-        public fRoomType()
+        public fRoomTypeManage()
         {
             InitializeComponent();
         }
-        public fRoomType(DataTable table)
+        public fRoomTypeManage(DataTable table)
         {
             InitializeComponent();
             TableRoomType = table;

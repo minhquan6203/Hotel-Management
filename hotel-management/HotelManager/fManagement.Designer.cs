@@ -47,7 +47,7 @@
             this.TileReport = new MetroFramework.Controls.MetroTile();
             this.TileAccount = new MetroFramework.Controls.MetroTile();
             this.titlePay = new MetroFramework.Controls.MetroTile();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbHotelManage = new System.Windows.Forms.Label();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelLeft.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -74,7 +74,7 @@
             this.panelLeft.Controls.Add(this.TileReport);
             this.panelLeft.Controls.Add(this.TileAccount);
             this.panelLeft.Controls.Add(this.titlePay);
-            this.panelLeft.Controls.Add(this.label2);
+            this.panelLeft.Controls.Add(this.lbHotelManage);
             this.panelLeft.Controls.Add(this.btnClose);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
@@ -362,7 +362,7 @@
             this.bunifuSeparator1.Location = new System.Drawing.Point(39, 52);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(1172, 12);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(1426, 12);
             this.bunifuSeparator1.TabIndex = 54;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -482,17 +482,17 @@
             this.titlePay.UseTileImage = true;
             this.titlePay.Click += new System.EventHandler(this.titlePay_Click);
             // 
-            // label2
+            // lbHotelManage
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(235, 9);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(304, 45);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Quản Lý Khách Sạn";
+            this.lbHotelManage.AutoSize = true;
+            this.lbHotelManage.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbHotelManage.ForeColor = System.Drawing.Color.Black;
+            this.lbHotelManage.Location = new System.Drawing.Point(235, 9);
+            this.lbHotelManage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbHotelManage.Name = "lbHotelManage";
+            this.lbHotelManage.Size = new System.Drawing.Size(304, 45);
+            this.lbHotelManage.TabIndex = 21;
+            this.lbHotelManage.Text = "Quản Lý Khách Sạn";
             // 
             // btnClose
             // 
@@ -537,7 +537,7 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel panelLeft;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbHotelManage;
         private MetroFramework.Controls.MetroTile TileAccount;
         private MetroFramework.Controls.MetroTile titlePay;
         private MetroFramework.Controls.MetroTile TileReport;

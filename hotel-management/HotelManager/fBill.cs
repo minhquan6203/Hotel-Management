@@ -39,7 +39,7 @@ namespace HotelManager
             comboboxID.DataSource = source;
 
             txbDateCreate.DataBindings.Clear();
-            txbName.DataBindings.Clear();
+            tbxRoomID.DataBindings.Clear();
             txbPrice.DataBindings.Clear();
             txbStatusRoom.DataBindings.Clear();
             txbUser.DataBindings.Clear();
@@ -47,7 +47,7 @@ namespace HotelManager
             txbFinalPrice.DataBindings.Clear();
 
             txbDateCreate.DataBindings.Add("Text", source, "DateOfCreate");
-            txbName.DataBindings.Add("Text", source, "roomName");
+            tbxRoomID.DataBindings.Add("Text", source, "roomName");
             txbPrice.DataBindings.Add("Text", source, "totalPrice");
             txbStatusRoom.DataBindings.Add("Text", source, "Name");
             txbUser.DataBindings.Add("Text", source, "StaffSetUp");
@@ -99,7 +99,7 @@ namespace HotelManager
             if (txbSearch.Text != string.Empty)
             {
                 txbDateCreate.Text = string.Empty;
-                txbName.Text = string.Empty;
+                tbxRoomID.Text = string.Empty;
                 txbPrice.Text = string.Empty;
                 txbStatusRoom.Text = string.Empty;
                 txbUser.Text = string.Empty;
@@ -156,6 +156,21 @@ namespace HotelManager
         #endregion
 
         private void dataGridViewBill_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbSearch_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
         {
 
         }
