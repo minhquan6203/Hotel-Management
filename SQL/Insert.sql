@@ -16,19 +16,6 @@ INSERT ACCESS (IDStaffType, IDJob) VALUES (2, 1)
 INSERT ACCESS (IDStaffType, IDJob) VALUES (2, 2)
 INSERT ACCESS (IDStaffType, IDJob) VALUES (2, 3)
 
-
---SET IDENTITY_INSERT Customer ON 
---INSERT Customer (ID, IDCard, IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality) VALUES (1, N'12345', 1, N'Nguyễn Văn Quân', CAST(N'2003-02-06' AS Date), N'New York', 0969399209, N'Nam', N'Việt Nam')
---INSERT Customer (ID, IDCard, IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality) VALUES (2, N'123456', 2, N'Nguyễn Văn Quân', CAST(N'2003-02-06' AS Date), N'Bắc Ninh', 0969399209, N'Nam', N'Singapore')
---INSERT Customer (ID, IDCard, IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality) VALUES (4, N'1234567', 2, N'Nguyễn Văn Quân', CAST(N'2003-02-06' AS Date), N'HCM', 0969399209, N'Nam', N'Trung Quốc')
---INSERT Customer (ID, IDCard, IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality) VALUES (5, N'123456789', 1, N'Nguyễn Văn Quân', CAST(N'2003-02-06' AS Date), N'Hà Nội', 0969399209, N'Nam', N'Nhật Bản')
---INSERT Customer (ID, IDCard, IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality) VALUES (8, N'696969', 1, N'Nguyễn Văn Quân', CAST(N'2003-02-06' AS Date), N'Los Angerles', 0909090909, N'Nữ', N'Việt Nam')
---INSERT Customer (ID, IDCard, IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality) VALUES (9, N'696969696', 1, N'Nguyễn Văn Quân', CAST(N'2003-02-06' AS Date), N'Los Angerles', 123456789, N'Nam', N'Việt Nam')
---INSERT Customer (ID, IDCard, IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality) VALUES (10, N'111111', 2, N'Nguyễn Văn Quân', CAST(N'2003-02-06' AS Date), N'Cali', 1234567888, N'Nam', N'Hoa Kỳ')
---INSERT Customer (ID, IDCard, IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality) VALUES (12, N'333333', 2, N'Nguyễn Văn Quân', CAST(N'2003-02-06' AS Date), N'Litte Saigon', 1212121212, N'Nữ', N'Việt Nam')
---INSERT Customer (ID, IDCard, IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality) VALUES (14, N'555555', 1, N'Nguyễn Văn Quân', CAST(N'2003-02-06' AS Date), N'Hồ Chí Minh', 13441441, N'Nam', N'Việt Nam')
---SET IDENTITY_INSERT Customer OFF
-
 SET IDENTITY_INSERT CustomerType ON 
 INSERT CustomerType (ID, Name) VALUES (1, N'Khách nội địa')
 INSERT CustomerType (ID, Name) VALUES (2, N'Khách nước ngoài')
@@ -50,7 +37,7 @@ SET IDENTITY_INSERT JOB OFF
 
 INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ1', 3, N'Mỗi phòng có tối 3 khách', NULL)
 INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ2', 0.25, N'Mỗi khách hàng vượt số lượng tiêu chuẩn phụ thu thêm 0.25', NULL)
-INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ3', 1.5, N'Khách nước ngoài phụ thu 1.5', CAST(N'2018-06-24T18:29:00' AS SmallDateTime))
+INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ3', 1.5, N'Khách nước ngoài phụ thu 1.5', NULL)
 
  
 SET IDENTITY_INSERT Room ON
