@@ -248,5 +248,10 @@ namespace HotelManager
             BtnCancel_Click(sender, null);
         }
         #endregion
+
+        private void txbSearch_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

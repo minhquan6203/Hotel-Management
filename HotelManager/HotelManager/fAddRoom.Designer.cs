@@ -214,7 +214,7 @@
             this.txbLimitPerson.Location = new System.Drawing.Point(329, 123);
             this.txbLimitPerson.Margin = new System.Windows.Forms.Padding(0);
             this.txbLimitPerson.Name = "txbLimitPerson";
-            this.txbLimitPerson.Size = new System.Drawing.Size(233, 36);
+            this.txbLimitPerson.Size = new System.Drawing.Size(233, 30);
             this.txbLimitPerson.TabIndex = 44;
             this.txbLimitPerson.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -256,7 +256,7 @@
             this.txbNameRoom.Location = new System.Drawing.Point(29, 54);
             this.txbNameRoom.Margin = new System.Windows.Forms.Padding(0);
             this.txbNameRoom.Name = "txbNameRoom";
-            this.txbNameRoom.Size = new System.Drawing.Size(233, 36);
+            this.txbNameRoom.Size = new System.Drawing.Size(233, 30);
             this.txbNameRoom.TabIndex = 0;
             this.txbNameRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -276,7 +276,7 @@
             this.txbPrice.Location = new System.Drawing.Point(329, 54);
             this.txbPrice.Margin = new System.Windows.Forms.Padding(0);
             this.txbPrice.Name = "txbPrice";
-            this.txbPrice.Size = new System.Drawing.Size(233, 36);
+            this.txbPrice.Size = new System.Drawing.Size(233, 30);
             this.txbPrice.TabIndex = 42;
             this.txbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -290,8 +290,8 @@
             this.comboBoxRoomType.Location = new System.Drawing.Point(29, 123);
             this.comboBoxRoomType.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxRoomType.Name = "comboBoxRoomType";
-            this.comboBoxRoomType.Size = new System.Drawing.Size(232, 30);
-            this.comboBoxRoomType.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboBoxRoomType.Size = new System.Drawing.Size(233, 30);
+            this.comboBoxRoomType.Style = MetroFramework.MetroColorStyle.Silver;
             this.comboBoxRoomType.TabIndex = 1;
             this.comboBoxRoomType.UseCustomBackColor = true;
             this.comboBoxRoomType.UseCustomForeColor = true;

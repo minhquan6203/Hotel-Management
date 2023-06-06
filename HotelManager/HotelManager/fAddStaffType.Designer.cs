@@ -126,6 +126,7 @@
             this.txbName.BorderColorFocused = System.Drawing.Color.Black;
             this.txbName.BorderColorIdle = System.Drawing.Color.Black;
             this.txbName.BorderColorMouseHover = System.Drawing.Color.Black;
+            this.txbName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbName.BorderThickness = 1;
             this.txbName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,7 +135,7 @@
             this.txbName.Location = new System.Drawing.Point(181, 31);
             this.txbName.Margin = new System.Windows.Forms.Padding(0);
             this.txbName.Name = "txbName";
-            this.txbName.Size = new System.Drawing.Size(311, 36);
+            this.txbName.Size = new System.Drawing.Size(311, 30);
             this.txbName.TabIndex = 57;
             this.txbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txbName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbName_KeyPress);

@@ -88,16 +88,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnPrint = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -114,7 +114,7 @@
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
             this.btnClose.Location = new System.Drawing.Point(916, 7);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(21, 20);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -127,13 +127,13 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label2.Location = new System.Drawing.Point(4, 0);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(72, 7);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 41);
+            this.label2.Size = new System.Drawing.Size(197, 41);
             this.label2.TabIndex = 33;
-            this.label2.Text = "In Hóa Đơn";
+            this.label2.Text = "Xuất hóa đơn";
             // 
             // groupBox6
             // 
@@ -188,14 +188,13 @@
             this.groupBox6.Controls.Add(this.label3);
             this.groupBox6.Controls.Add(this.label13);
             this.groupBox6.Controls.Add(this.label1);
-            this.groupBox6.Controls.Add(this.pictureBox2);
             this.groupBox6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox6.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBox6.Location = new System.Drawing.Point(8, 34);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.ForeColor = System.Drawing.Color.Black;
+            this.groupBox6.Location = new System.Drawing.Point(8, 45);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox6.Size = new System.Drawing.Size(928, 796);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Size = new System.Drawing.Size(928, 785);
             this.groupBox6.TabIndex = 36;
             this.groupBox6.TabStop = false;
             // 
@@ -204,7 +203,7 @@
             this.lblFinalPrice.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblFinalPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFinalPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblFinalPrice.Location = new System.Drawing.Point(696, 759);
+            this.lblFinalPrice.Location = new System.Drawing.Point(715, 685);
             this.lblFinalPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFinalPrice.Name = "lblFinalPrice";
             this.lblFinalPrice.Size = new System.Drawing.Size(175, 21);
@@ -217,7 +216,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label24.Location = new System.Drawing.Point(593, 759);
+            this.label24.Location = new System.Drawing.Point(593, 685);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(96, 23);
@@ -229,7 +228,7 @@
             this.lblDiscount.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblDiscount.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDiscount.Location = new System.Drawing.Point(411, 759);
+            this.lblDiscount.Location = new System.Drawing.Point(411, 685);
             this.lblDiscount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDiscount.Name = "lblDiscount";
             this.lblDiscount.Size = new System.Drawing.Size(176, 21);
@@ -242,7 +241,7 @@
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label29.Location = new System.Drawing.Point(333, 759);
+            this.label29.Location = new System.Drawing.Point(324, 685);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(82, 23);
@@ -254,10 +253,10 @@
             this.lblTotalPrice.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblTotalPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblTotalPrice.Location = new System.Drawing.Point(149, 759);
+            this.lblTotalPrice.Location = new System.Drawing.Point(149, 685);
             this.lblTotalPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(175, 21);
+            this.lblTotalPrice.Size = new System.Drawing.Size(130, 34);
             this.lblTotalPrice.TabIndex = 109;
             this.lblTotalPrice.Text = "Mã hóa đơn";
             // 
@@ -267,7 +266,7 @@
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label27.Location = new System.Drawing.Point(47, 759);
+            this.label27.Location = new System.Drawing.Point(35, 685);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(87, 23);
@@ -279,7 +278,7 @@
             this.lblServicePrice.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblServicePrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblServicePrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblServicePrice.Location = new System.Drawing.Point(696, 727);
+            this.lblServicePrice.Location = new System.Drawing.Point(715, 651);
             this.lblServicePrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblServicePrice.Name = "lblServicePrice";
             this.lblServicePrice.Size = new System.Drawing.Size(205, 21);
@@ -292,7 +291,7 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label25.Location = new System.Drawing.Point(589, 727);
+            this.label25.Location = new System.Drawing.Point(593, 651);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(106, 23);
@@ -304,7 +303,7 @@
             this.lblSurcharge.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblSurcharge.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSurcharge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblSurcharge.Location = new System.Drawing.Point(409, 727);
+            this.lblSurcharge.Location = new System.Drawing.Point(411, 651);
             this.lblSurcharge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSurcharge.Name = "lblSurcharge";
             this.lblSurcharge.Size = new System.Drawing.Size(176, 21);
@@ -317,7 +316,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(333, 727);
+            this.label8.Location = new System.Drawing.Point(324, 651);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(75, 23);
@@ -329,10 +328,10 @@
             this.lblRoomPrice.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblRoomPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoomPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblRoomPrice.Location = new System.Drawing.Point(148, 727);
+            this.lblRoomPrice.Location = new System.Drawing.Point(149, 651);
             this.lblRoomPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRoomPrice.Name = "lblRoomPrice";
-            this.lblRoomPrice.Size = new System.Drawing.Size(176, 21);
+            this.lblRoomPrice.Size = new System.Drawing.Size(157, 34);
             this.lblRoomPrice.TabIndex = 103;
             this.lblRoomPrice.Text = "Mã hóa đơn";
             // 
@@ -342,7 +341,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label22.Location = new System.Drawing.Point(47, 727);
+            this.label22.Location = new System.Drawing.Point(35, 651);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(101, 23);
@@ -354,11 +353,11 @@
             this.bunifuSeparator3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator3.LineThickness = 4;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(24, 706);
+            this.bunifuSeparator3.LineThickness = 7;
+            this.bunifuSeparator3.Location = new System.Drawing.Point(23, 606);
             this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(12, 16, 12, 16);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(877, 18);
+            this.bunifuSeparator3.Size = new System.Drawing.Size(877, 10);
             this.bunifuSeparator3.TabIndex = 101;
             this.bunifuSeparator3.Transparency = 255;
             this.bunifuSeparator3.Vertical = false;
@@ -378,10 +377,10 @@
             this.listViewUseService.FullRowSelect = true;
             this.listViewUseService.GridLines = true;
             this.listViewUseService.HideSelection = false;
-            this.listViewUseService.Location = new System.Drawing.Point(41, 462);
-            this.listViewUseService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewUseService.Location = new System.Drawing.Point(39, 460);
+            this.listViewUseService.Margin = new System.Windows.Forms.Padding(4);
             this.listViewUseService.Name = "listViewUseService";
-            this.listViewUseService.Size = new System.Drawing.Size(841, 240);
+            this.listViewUseService.Size = new System.Drawing.Size(841, 157);
             this.listViewUseService.TabIndex = 100;
             this.listViewUseService.UseCompatibleStateImageBehavior = false;
             this.listViewUseService.View = System.Windows.Forms.View.Details;
@@ -414,8 +413,8 @@
             // 
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator2.LineThickness = 4;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(24, 438);
+            this.bunifuSeparator2.LineThickness = 7;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(23, 438);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(877, 23);
@@ -703,11 +702,11 @@
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator1.LineThickness = 4;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(24, 206);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.bunifuSeparator1.LineThickness = 7;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(23, 206);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(877, 20);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(877, 19);
             this.bunifuSeparator1.TabIndex = 74;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -739,10 +738,10 @@
             // 
             this.lblStaffSetUp.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStaffSetUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblStaffSetUp.Location = new System.Drawing.Point(411, 183);
+            this.lblStaffSetUp.Location = new System.Drawing.Point(439, 183);
             this.lblStaffSetUp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStaffSetUp.Name = "lblStaffSetUp";
-            this.lblStaffSetUp.Size = new System.Drawing.Size(213, 21);
+            this.lblStaffSetUp.Size = new System.Drawing.Size(165, 23);
             this.lblStaffSetUp.TabIndex = 71;
             this.lblStaffSetUp.Text = "Mã hóa đơn";
             // 
@@ -751,7 +750,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(283, 183);
+            this.label7.Location = new System.Drawing.Point(311, 183);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 23);
@@ -785,92 +784,68 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label5.Location = new System.Drawing.Point(264, 149);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(317, 129);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(390, 32);
+            this.label5.Size = new System.Drawing.Size(287, 32);
             this.label5.TabIndex = 67;
-            this.label5.Text = "HÓA ĐƠN THANH TOÁN DỊCH VỤ";
+            this.label5.Text = "HÓA ĐƠN THANH TOÁN";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(275, 124);
+            this.label4.Location = new System.Drawing.Point(19, 101);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(384, 28);
             this.label4.TabIndex = 66;
-            this.label4.Text = "▶ Website: https://www.thereveriesaigon.com";
+            this.label4.Text = "▶ Website: https://www.theeightteenhotel.com";
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(275, 100);
+            this.label3.Location = new System.Drawing.Point(19, 78);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(371, 23);
+            this.label3.Size = new System.Drawing.Size(204, 23);
             this.label3.TabIndex = 65;
-            this.label3.Text = "▶ Phone: 028 3823 6688";
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label13.Location = new System.Drawing.Point(275, 57);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(645, 46);
-            this.label13.TabIndex = 64;
-            this.label13.Text = "▶ Address: The Reverie Saigon, 22-36 Nguyen Hue Boulevard, Ben Nghe Ward, Distric" +
-    "t 1, Ho Chi Minh City.";
+            this.label3.Text = "▶ Phone: 0969399209";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label1.Location = new System.Drawing.Point(268, 20);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(5, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(290, 37);
+            this.label1.Size = new System.Drawing.Size(311, 37);
             this.label1.TabIndex = 34;
-            this.label1.Text = "THE REVERIE SAIGON";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(24, 22);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(216, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
+            this.label1.Text = "THE EIGHTTEEN HOTEL";
             // 
             // btnPrint
             // 
             this.btnPrint.ActiveBorderThickness = 1;
             this.btnPrint.ActiveCornerRadius = 20;
-            this.btnPrint.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnPrint.ActiveFillColor = System.Drawing.Color.Silver;
             this.btnPrint.ActiveForecolor = System.Drawing.Color.White;
-            this.btnPrint.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnPrint.ActiveLineColor = System.Drawing.Color.Black;
             this.btnPrint.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnPrint.BackColor = System.Drawing.Color.White;
             this.btnPrint.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrint.BackgroundImage")));
             this.btnPrint.ButtonText = "In Hóa Đơn";
             this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnPrint.ForeColor = System.Drawing.Color.Black;
             this.btnPrint.IdleBorderThickness = 1;
             this.btnPrint.IdleCornerRadius = 20;
             this.btnPrint.IdleFillColor = System.Drawing.Color.White;
-            this.btnPrint.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnPrint.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnPrint.Location = new System.Drawing.Point(136, 832);
+            this.btnPrint.IdleForecolor = System.Drawing.Color.Black;
+            this.btnPrint.IdleLineColor = System.Drawing.Color.Black;
+            this.btnPrint.Location = new System.Drawing.Point(77, 832);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(271, 49);
@@ -882,21 +857,21 @@
             // 
             this.btnClose_.ActiveBorderThickness = 1;
             this.btnClose_.ActiveCornerRadius = 20;
-            this.btnClose_.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnClose_.ActiveFillColor = System.Drawing.Color.Silver;
             this.btnClose_.ActiveForecolor = System.Drawing.Color.White;
-            this.btnClose_.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnClose_.ActiveLineColor = System.Drawing.Color.Black;
             this.btnClose_.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnClose_.BackColor = System.Drawing.Color.White;
             this.btnClose_.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose_.BackgroundImage")));
             this.btnClose_.ButtonText = "Đóng";
             this.btnClose_.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose_.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose_.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnClose_.ForeColor = System.Drawing.Color.Black;
             this.btnClose_.IdleBorderThickness = 1;
             this.btnClose_.IdleCornerRadius = 20;
             this.btnClose_.IdleFillColor = System.Drawing.Color.White;
-            this.btnClose_.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnClose_.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnClose_.IdleForecolor = System.Drawing.Color.Black;
+            this.btnClose_.IdleLineColor = System.Drawing.Color.Black;
             this.btnClose_.Location = new System.Drawing.Point(533, 832);
             this.btnClose_.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnClose_.Name = "btnClose_";
@@ -914,12 +889,34 @@
             this.printDialog1.Document = this.printDocument1;
             this.printDialog1.UseEXDialog = true;
             // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label13.Location = new System.Drawing.Point(19, 55);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(214, 23);
+            this.label13.TabIndex = 64;
+            this.label13.Text = "▶ Address: UIT";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 67;
+            this.pictureBox1.TabStop = false;
+            // 
             // fPrintBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(944, 882);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnClose_);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.groupBox6);
@@ -927,14 +924,14 @@
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fPrintBill";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fPrintBill";
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -946,9 +943,7 @@
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -1007,5 +1002,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnPrint;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

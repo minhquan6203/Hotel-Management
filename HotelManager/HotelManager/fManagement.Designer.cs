@@ -81,9 +81,10 @@
             this.panelRight.Controls.Add(this.btnClose);
             this.panelRight.Controls.Add(this.titleBookRoom);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRight.Location = new System.Drawing.Point(177, 0);
+            this.panelRight.Location = new System.Drawing.Point(236, 0);
+            this.panelRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(939, 583);
+            this.panelRight.Size = new System.Drawing.Size(1252, 718);
             this.panelRight.TabIndex = 1;
             this.panelRight.Paint += new System.Windows.Forms.PaintEventHandler(this.panelRight_Paint);
             // 
@@ -92,9 +93,10 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(29, 42);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(39, 52);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(879, 10);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(1172, 12);
             this.bunifuSeparator1.TabIndex = 54;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -104,9 +106,10 @@
             this.metroTile17.ActiveControl = null;
             this.metroTile17.BackColor = System.Drawing.Color.SeaGreen;
             this.metroTile17.ForeColor = System.Drawing.Color.White;
-            this.metroTile17.Location = new System.Drawing.Point(330, 377);
+            this.metroTile17.Location = new System.Drawing.Point(440, 464);
+            this.metroTile17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile17.Name = "metroTile17";
-            this.metroTile17.Size = new System.Drawing.Size(276, 135);
+            this.metroTile17.Size = new System.Drawing.Size(368, 166);
             this.metroTile17.TabIndex = 47;
             this.metroTile17.Text = "Quản Lí Khách Hàng";
             this.metroTile17.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile17.TileImage")));
@@ -116,6 +119,7 @@
             this.metroTile17.UseSelectable = true;
             this.metroTile17.UseStyleColors = true;
             this.metroTile17.UseTileImage = true;
+            this.metroTile17.UseVisualStyleBackColor = false;
             this.metroTile17.Click += new System.EventHandler(this.metroTile17_Click);
             // 
             // metroTile16
@@ -123,9 +127,10 @@
             this.metroTile16.ActiveControl = null;
             this.metroTile16.BackColor = System.Drawing.Color.SeaGreen;
             this.metroTile16.ForeColor = System.Drawing.Color.White;
-            this.metroTile16.Location = new System.Drawing.Point(632, 73);
+            this.metroTile16.Location = new System.Drawing.Point(843, 90);
+            this.metroTile16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile16.Name = "metroTile16";
-            this.metroTile16.Size = new System.Drawing.Size(135, 276);
+            this.metroTile16.Size = new System.Drawing.Size(180, 340);
             this.metroTile16.TabIndex = 44;
             this.metroTile16.Text = "Quản Lí Hóa Đơn";
             this.metroTile16.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile16.TileImage")));
@@ -135,6 +140,7 @@
             this.metroTile16.UseSelectable = true;
             this.metroTile16.UseStyleColors = true;
             this.metroTile16.UseTileImage = true;
+            this.metroTile16.UseVisualStyleBackColor = false;
             this.metroTile16.Click += new System.EventHandler(this.metroTile16_Click);
             // 
             // metroTile13
@@ -142,9 +148,10 @@
             this.metroTile13.ActiveControl = null;
             this.metroTile13.BackColor = System.Drawing.Color.SeaGreen;
             this.metroTile13.ForeColor = System.Drawing.Color.White;
-            this.metroTile13.Location = new System.Drawing.Point(632, 377);
+            this.metroTile13.Location = new System.Drawing.Point(843, 464);
+            this.metroTile13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile13.Name = "metroTile13";
-            this.metroTile13.Size = new System.Drawing.Size(276, 135);
+            this.metroTile13.Size = new System.Drawing.Size(368, 166);
             this.metroTile13.TabIndex = 41;
             this.metroTile13.Text = "Quy Định";
             this.metroTile13.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile13.TileImage")));
@@ -154,6 +161,7 @@
             this.metroTile13.UseSelectable = true;
             this.metroTile13.UseStyleColors = true;
             this.metroTile13.UseTileImage = true;
+            this.metroTile13.UseVisualStyleBackColor = false;
             this.metroTile13.Click += new System.EventHandler(this.metroTile13_Click);
             // 
             // title
@@ -161,9 +169,10 @@
             this.title.ActiveControl = null;
             this.title.BackColor = System.Drawing.Color.SeaGreen;
             this.title.ForeColor = System.Drawing.Color.White;
-            this.title.Location = new System.Drawing.Point(330, 73);
+            this.title.Location = new System.Drawing.Point(440, 90);
+            this.title.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(276, 135);
+            this.title.Size = new System.Drawing.Size(368, 166);
             this.title.TabIndex = 36;
             this.title.Text = "Thống kê doanh thu";
             this.title.TileImage = ((System.Drawing.Image)(resources.GetObject("title.TileImage")));
@@ -173,6 +182,7 @@
             this.title.UseSelectable = true;
             this.title.UseStyleColors = true;
             this.title.UseTileImage = true;
+            this.title.UseVisualStyleBackColor = false;
             this.title.Click += new System.EventHandler(this.title_Click);
             // 
             // titleManageRoom
@@ -180,9 +190,10 @@
             this.titleManageRoom.ActiveControl = null;
             this.titleManageRoom.BackColor = System.Drawing.Color.SeaGreen;
             this.titleManageRoom.ForeColor = System.Drawing.Color.White;
-            this.titleManageRoom.Location = new System.Drawing.Point(330, 214);
+            this.titleManageRoom.Location = new System.Drawing.Point(440, 263);
+            this.titleManageRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.titleManageRoom.Name = "titleManageRoom";
-            this.titleManageRoom.Size = new System.Drawing.Size(135, 135);
+            this.titleManageRoom.Size = new System.Drawing.Size(180, 166);
             this.titleManageRoom.TabIndex = 34;
             this.titleManageRoom.Text = "Quản Lí Phòng";
             this.titleManageRoom.TileImage = ((System.Drawing.Image)(resources.GetObject("titleManageRoom.TileImage")));
@@ -192,6 +203,7 @@
             this.titleManageRoom.UseSelectable = true;
             this.titleManageRoom.UseStyleColors = true;
             this.titleManageRoom.UseTileImage = true;
+            this.titleManageRoom.UseVisualStyleBackColor = false;
             this.titleManageRoom.Click += new System.EventHandler(this.titleManageRoom_Click);
             // 
             // metroTile2
@@ -199,9 +211,10 @@
             this.metroTile2.ActiveControl = null;
             this.metroTile2.BackColor = System.Drawing.Color.SeaGreen;
             this.metroTile2.ForeColor = System.Drawing.Color.White;
-            this.metroTile2.Location = new System.Drawing.Point(773, 73);
+            this.metroTile2.Location = new System.Drawing.Point(1031, 90);
+            this.metroTile2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(135, 276);
+            this.metroTile2.Size = new System.Drawing.Size(180, 340);
             this.metroTile2.TabIndex = 32;
             this.metroTile2.Text = "Quản Lí Dịch Vụ";
             this.metroTile2.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile2.TileImage")));
@@ -211,6 +224,7 @@
             this.metroTile2.UseSelectable = true;
             this.metroTile2.UseStyleColors = true;
             this.metroTile2.UseTileImage = true;
+            this.metroTile2.UseVisualStyleBackColor = false;
             this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile8
@@ -218,9 +232,10 @@
             this.metroTile8.ActiveControl = null;
             this.metroTile8.BackColor = System.Drawing.Color.SeaGreen;
             this.metroTile8.ForeColor = System.Drawing.Color.White;
-            this.metroTile8.Location = new System.Drawing.Point(471, 214);
+            this.metroTile8.Location = new System.Drawing.Point(628, 263);
+            this.metroTile8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile8.Name = "metroTile8";
-            this.metroTile8.Size = new System.Drawing.Size(135, 135);
+            this.metroTile8.Size = new System.Drawing.Size(180, 166);
             this.metroTile8.TabIndex = 29;
             this.metroTile8.Text = "Quản Lí Nhân Viên";
             this.metroTile8.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile8.TileImage")));
@@ -230,6 +245,7 @@
             this.metroTile8.UseSelectable = true;
             this.metroTile8.UseStyleColors = true;
             this.metroTile8.UseTileImage = true;
+            this.metroTile8.UseVisualStyleBackColor = false;
             this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
             // 
             // titlePay
@@ -237,9 +253,10 @@
             this.titlePay.ActiveControl = null;
             this.titlePay.BackColor = System.Drawing.Color.SeaGreen;
             this.titlePay.ForeColor = System.Drawing.Color.White;
-            this.titlePay.Location = new System.Drawing.Point(29, 377);
+            this.titlePay.Location = new System.Drawing.Point(39, 464);
+            this.titlePay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.titlePay.Name = "titlePay";
-            this.titlePay.Size = new System.Drawing.Size(276, 135);
+            this.titlePay.Size = new System.Drawing.Size(368, 166);
             this.titlePay.TabIndex = 27;
             this.titlePay.Text = "Sử Dụng Dịch Vụ VàThanh Toán";
             this.titlePay.TileImage = ((System.Drawing.Image)(resources.GetObject("titlePay.TileImage")));
@@ -249,6 +266,7 @@
             this.titlePay.UseSelectable = true;
             this.titlePay.UseStyleColors = true;
             this.titlePay.UseTileImage = true;
+            this.titlePay.UseVisualStyleBackColor = false;
             this.titlePay.Click += new System.EventHandler(this.titlePay_Click);
             // 
             // titleRecieveRoom
@@ -256,9 +274,10 @@
             this.titleRecieveRoom.ActiveControl = null;
             this.titleRecieveRoom.BackColor = System.Drawing.Color.SeaGreen;
             this.titleRecieveRoom.ForeColor = System.Drawing.Color.White;
-            this.titleRecieveRoom.Location = new System.Drawing.Point(170, 73);
+            this.titleRecieveRoom.Location = new System.Drawing.Point(227, 90);
+            this.titleRecieveRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.titleRecieveRoom.Name = "titleRecieveRoom";
-            this.titleRecieveRoom.Size = new System.Drawing.Size(135, 276);
+            this.titleRecieveRoom.Size = new System.Drawing.Size(180, 340);
             this.titleRecieveRoom.TabIndex = 25;
             this.titleRecieveRoom.Text = "Nhận Phòng";
             this.titleRecieveRoom.TileImage = ((System.Drawing.Image)(resources.GetObject("titleRecieveRoom.TileImage")));
@@ -268,6 +287,7 @@
             this.titleRecieveRoom.UseSelectable = true;
             this.titleRecieveRoom.UseStyleColors = true;
             this.titleRecieveRoom.UseTileImage = true;
+            this.titleRecieveRoom.UseVisualStyleBackColor = false;
             this.titleRecieveRoom.Click += new System.EventHandler(this.titleRecieveRoom_Click);
             // 
             // label2
@@ -275,9 +295,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label2.Location = new System.Drawing.Point(21, 7);
+            this.label2.Location = new System.Drawing.Point(28, 9);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(237, 37);
+            this.label2.Size = new System.Drawing.Size(297, 46);
             this.label2.TabIndex = 21;
             this.label2.Text = "Quản Lí Khách Sạn";
             // 
@@ -287,9 +308,10 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(916, 7);
+            this.btnClose.Location = new System.Drawing.Point(1221, 9);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(16, 16);
+            this.btnClose.Size = new System.Drawing.Size(21, 20);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnClose.TabIndex = 20;
             this.btnClose.TabStop = false;
@@ -301,9 +323,10 @@
             this.titleBookRoom.ActiveControl = null;
             this.titleBookRoom.BackColor = System.Drawing.Color.SeaGreen;
             this.titleBookRoom.ForeColor = System.Drawing.Color.White;
-            this.titleBookRoom.Location = new System.Drawing.Point(29, 73);
+            this.titleBookRoom.Location = new System.Drawing.Point(39, 90);
+            this.titleBookRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.titleBookRoom.Name = "titleBookRoom";
-            this.titleBookRoom.Size = new System.Drawing.Size(135, 276);
+            this.titleBookRoom.Size = new System.Drawing.Size(180, 340);
             this.titleBookRoom.TabIndex = 17;
             this.titleBookRoom.Text = "Đặt Phòng";
             this.titleBookRoom.TileImage = ((System.Drawing.Image)(resources.GetObject("titleBookRoom.TileImage")));
@@ -313,6 +336,7 @@
             this.titleBookRoom.UseSelectable = true;
             this.titleBookRoom.UseStyleColors = true;
             this.titleBookRoom.UseTileImage = true;
+            this.titleBookRoom.UseVisualStyleBackColor = false;
             this.titleBookRoom.Click += new System.EventHandler(this.titleSignUpRoom_Click);
             // 
             // panelLeft
@@ -331,9 +355,10 @@
             this.panelLeft.GradientTopLeft = System.Drawing.Color.SeaGreen;
             this.panelLeft.GradientTopRight = System.Drawing.Color.SeaGreen;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Quality = 10;
-            this.panelLeft.Size = new System.Drawing.Size(177, 583);
+            this.panelLeft.Size = new System.Drawing.Size(236, 718);
             this.panelLeft.TabIndex = 0;
             // 
             // btnNavigationPanel
@@ -358,12 +383,13 @@
             this.btnNavigationPanel.IconZoom = 50D;
             this.btnNavigationPanel.IsTab = false;
             this.btnNavigationPanel.Location = new System.Drawing.Point(0, 0);
+            this.btnNavigationPanel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnNavigationPanel.Name = "btnNavigationPanel";
             this.btnNavigationPanel.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnNavigationPanel.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnNavigationPanel.OnHoverTextColor = System.Drawing.Color.White;
             this.btnNavigationPanel.selected = false;
-            this.btnNavigationPanel.Size = new System.Drawing.Size(177, 40);
+            this.btnNavigationPanel.Size = new System.Drawing.Size(236, 49);
             this.btnNavigationPanel.TabIndex = 6;
             this.btnNavigationPanel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNavigationPanel.Textcolor = System.Drawing.Color.White;
@@ -392,13 +418,14 @@
             this.btnAccountProfile.IconVisible = true;
             this.btnAccountProfile.IconZoom = 50D;
             this.btnAccountProfile.IsTab = false;
-            this.btnAccountProfile.Location = new System.Drawing.Point(0, 405);
+            this.btnAccountProfile.Location = new System.Drawing.Point(0, 498);
+            this.btnAccountProfile.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAccountProfile.Name = "btnAccountProfile";
             this.btnAccountProfile.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnAccountProfile.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnAccountProfile.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAccountProfile.selected = false;
-            this.btnAccountProfile.Size = new System.Drawing.Size(177, 40);
+            this.btnAccountProfile.Size = new System.Drawing.Size(236, 49);
             this.btnAccountProfile.TabIndex = 5;
             this.btnAccountProfile.Text = "    Thông Tin Cá Nhân";
             this.btnAccountProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -428,13 +455,14 @@
             this.btnLogOut.IconVisible = true;
             this.btnLogOut.IconZoom = 50D;
             this.btnLogOut.IsTab = false;
-            this.btnLogOut.Location = new System.Drawing.Point(0, 451);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 555);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnLogOut.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnLogOut.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogOut.selected = false;
-            this.btnLogOut.Size = new System.Drawing.Size(177, 40);
+            this.btnLogOut.Size = new System.Drawing.Size(236, 49);
             this.btnLogOut.TabIndex = 4;
             this.btnLogOut.Text = "    Đăng Xuất";
             this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -464,13 +492,14 @@
             this.btnHelp.IconVisible = true;
             this.btnHelp.IconZoom = 50D;
             this.btnHelp.IsTab = false;
-            this.btnHelp.Location = new System.Drawing.Point(0, 497);
+            this.btnHelp.Location = new System.Drawing.Point(0, 612);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnHelp.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnHelp.OnHoverTextColor = System.Drawing.Color.White;
             this.btnHelp.selected = false;
-            this.btnHelp.Size = new System.Drawing.Size(177, 40);
+            this.btnHelp.Size = new System.Drawing.Size(236, 49);
             this.btnHelp.TabIndex = 3;
             this.btnHelp.Text = "    Trợ Giúp";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -499,13 +528,14 @@
             this.btnIntroduce.IconVisible = true;
             this.btnIntroduce.IconZoom = 50D;
             this.btnIntroduce.IsTab = false;
-            this.btnIntroduce.Location = new System.Drawing.Point(0, 543);
+            this.btnIntroduce.Location = new System.Drawing.Point(0, 668);
+            this.btnIntroduce.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnIntroduce.Name = "btnIntroduce";
             this.btnIntroduce.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnIntroduce.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnIntroduce.OnHoverTextColor = System.Drawing.Color.White;
             this.btnIntroduce.selected = false;
-            this.btnIntroduce.Size = new System.Drawing.Size(177, 40);
+            this.btnIntroduce.Size = new System.Drawing.Size(236, 49);
             this.btnIntroduce.TabIndex = 2;
             this.btnIntroduce.Text = "    Giới Thiệu";
             this.btnIntroduce.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -534,13 +564,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 670);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 825);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(206, 46);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(275, 57);
             this.bunifuFlatButton1.TabIndex = 1;
             this.bunifuFlatButton1.Text = "Giới Thiệu";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -549,15 +580,16 @@
             // 
             // fManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1116, 583);
+            this.ClientSize = new System.Drawing.Size(1488, 718);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lí khách sạn";

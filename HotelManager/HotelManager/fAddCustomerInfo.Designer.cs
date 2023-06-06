@@ -158,8 +158,8 @@
             this.cbNationality.Location = new System.Drawing.Point(320, 255);
             this.cbNationality.Margin = new System.Windows.Forms.Padding(4);
             this.cbNationality.Name = "cbNationality";
-            this.cbNationality.Size = new System.Drawing.Size(269, 30);
-            this.cbNationality.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbNationality.Size = new System.Drawing.Size(271, 30);
+            this.cbNationality.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbNationality.TabIndex = 53;
             this.cbNationality.UseCustomBackColor = true;
             this.cbNationality.UseCustomForeColor = true;
@@ -177,7 +177,7 @@
             this.dpkDateOfBirth.Margin = new System.Windows.Forms.Padding(19, 26, 19, 26);
             this.dpkDateOfBirth.Name = "dpkDateOfBirth";
             this.dpkDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dpkDateOfBirth.Size = new System.Drawing.Size(271, 36);
+            this.dpkDateOfBirth.Size = new System.Drawing.Size(271, 30);
             this.dpkDateOfBirth.TabIndex = 47;
             this.dpkDateOfBirth.Value = new System.DateTime(1998, 4, 6, 0, 0, 0, 0);
             // 
@@ -214,7 +214,8 @@
             this.cbCustomerType.Location = new System.Drawing.Point(322, 122);
             this.cbCustomerType.Margin = new System.Windows.Forms.Padding(4);
             this.cbCustomerType.Name = "cbCustomerType";
-            this.cbCustomerType.Size = new System.Drawing.Size(269, 30);
+            this.cbCustomerType.Size = new System.Drawing.Size(271, 30);
+            this.cbCustomerType.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbCustomerType.TabIndex = 42;
             this.cbCustomerType.UseCustomBackColor = true;
             this.cbCustomerType.UseCustomForeColor = true;
@@ -278,8 +279,8 @@
             this.cbSex.Location = new System.Drawing.Point(320, 187);
             this.cbSex.Margin = new System.Windows.Forms.Padding(4);
             this.cbSex.Name = "cbSex";
-            this.cbSex.Size = new System.Drawing.Size(269, 30);
-            this.cbSex.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbSex.Size = new System.Drawing.Size(271, 30);
+            this.cbSex.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbSex.TabIndex = 26;
             this.cbSex.UseCustomBackColor = true;
             this.cbSex.UseCustomForeColor = true;

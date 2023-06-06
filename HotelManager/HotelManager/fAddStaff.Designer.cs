@@ -171,7 +171,7 @@
             this.datePickerStartDay.Margin = new System.Windows.Forms.Padding(301, 885, 301, 801);
             this.datePickerStartDay.Name = "datePickerStartDay";
             this.datePickerStartDay.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.datePickerStartDay.Size = new System.Drawing.Size(271, 36);
+            this.datePickerStartDay.Size = new System.Drawing.Size(265, 30);
             this.datePickerStartDay.TabIndex = 61;
             this.datePickerStartDay.Value = new System.DateTime(2018, 5, 16, 0, 0, 0, 0);
             // 
@@ -186,7 +186,7 @@
             this.datepickerDateOfBirth.Margin = new System.Windows.Forms.Padding(19, 26, 19, 26);
             this.datepickerDateOfBirth.Name = "datepickerDateOfBirth";
             this.datepickerDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.datepickerDateOfBirth.Size = new System.Drawing.Size(271, 36);
+            this.datepickerDateOfBirth.Size = new System.Drawing.Size(265, 30);
             this.datepickerDateOfBirth.TabIndex = 47;
             this.datepickerDateOfBirth.Value = new System.DateTime(1998, 4, 6, 0, 0, 0, 0);
             // 
@@ -241,7 +241,8 @@
             this.comboBoxStaffType.Location = new System.Drawing.Point(320, 124);
             this.comboBoxStaffType.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxStaffType.Name = "comboBoxStaffType";
-            this.comboBoxStaffType.Size = new System.Drawing.Size(269, 30);
+            this.comboBoxStaffType.Size = new System.Drawing.Size(265, 30);
+            this.comboBoxStaffType.Style = MetroFramework.MetroColorStyle.Silver;
             this.comboBoxStaffType.TabIndex = 3;
             this.comboBoxStaffType.UseCustomBackColor = true;
             this.comboBoxStaffType.UseCustomForeColor = true;
@@ -299,8 +300,8 @@
             this.comboBoxSex.Location = new System.Drawing.Point(320, 190);
             this.comboBoxSex.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxSex.Name = "comboBoxSex";
-            this.comboBoxSex.Size = new System.Drawing.Size(269, 30);
-            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboBoxSex.Size = new System.Drawing.Size(265, 30);
+            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Silver;
             this.comboBoxSex.TabIndex = 5;
             this.comboBoxSex.UseCustomBackColor = true;
             this.comboBoxSex.UseCustomForeColor = true;

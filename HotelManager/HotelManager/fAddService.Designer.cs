@@ -180,8 +180,8 @@
             this.comboBoxServiceType.Location = new System.Drawing.Point(16, 138);
             this.comboBoxServiceType.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxServiceType.Name = "comboBoxServiceType";
-            this.comboBoxServiceType.Size = new System.Drawing.Size(234, 30);
-            this.comboBoxServiceType.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboBoxServiceType.Size = new System.Drawing.Size(271, 30);
+            this.comboBoxServiceType.Style = MetroFramework.MetroColorStyle.Silver;
             this.comboBoxServiceType.TabIndex = 2;
             this.comboBoxServiceType.UseCustomBackColor = true;
             this.comboBoxServiceType.UseCustomForeColor = true;
@@ -202,7 +202,7 @@
             this.txbName.Location = new System.Drawing.Point(16, 53);
             this.txbName.Margin = new System.Windows.Forms.Padding(0);
             this.txbName.Name = "txbName";
-            this.txbName.Size = new System.Drawing.Size(271, 40);
+            this.txbName.Size = new System.Drawing.Size(271, 30);
             this.txbName.TabIndex = 0;
             this.txbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -220,7 +220,7 @@
             this.txbPrice.Location = new System.Drawing.Point(320, 53);
             this.txbPrice.Margin = new System.Windows.Forms.Padding(0);
             this.txbPrice.Name = "txbPrice";
-            this.txbPrice.Size = new System.Drawing.Size(271, 40);
+            this.txbPrice.Size = new System.Drawing.Size(271, 30);
             this.txbPrice.TabIndex = 1;
             this.txbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txbPrice.OnValueChanged += new System.EventHandler(this.txbPrice_OnValueChanged);
@@ -245,7 +245,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(335, 21);
+            this.label13.Location = new System.Drawing.Point(324, 28);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(44, 25);

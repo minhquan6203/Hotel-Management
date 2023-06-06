@@ -356,5 +356,10 @@ namespace HotelManager
             LoadFullCustomer(GetFullCustomer());
         }
         #endregion
+
+        private void comboBoxSex_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
