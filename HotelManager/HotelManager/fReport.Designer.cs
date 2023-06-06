@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -49,7 +45,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.chartReport = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -57,10 +52,6 @@
             this.bindingReport = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.dataGridReport = new System.Windows.Forms.DataGridView();
-            this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRevenue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label6 = new System.Windows.Forms.Label();
@@ -68,15 +59,19 @@
             this.saveReport = new System.Windows.Forms.SaveFileDialog();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRevenue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericYear)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingReport)).BeginInit();
             this.bindingReport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridReport)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -249,39 +244,6 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
             // 
-            // chartReport
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chartReport.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartReport.Legends.Add(legend1);
-            this.chartReport.Location = new System.Drawing.Point(7, 165);
-            this.chartReport.Margin = new System.Windows.Forms.Padding(4);
-            this.chartReport.Name = "chartReport";
-            this.chartReport.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            this.chartReport.PaletteCustomColors = new System.Drawing.Color[] {
-        System.Drawing.Color.Tomato,
-        System.Drawing.Color.Violet,
-        System.Drawing.Color.DeepSkyBlue,
-        System.Drawing.Color.LimeGreen};
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series1.IsValueShownAsLabel = true;
-            series1.LabelFormat = "{0:0.##}%";
-            series1.Legend = "Legend1";
-            series1.Name = "s1";
-            series1.XValueMember = "name";
-            series1.YValueMembers = "rate";
-            this.chartReport.Series.Add(series1);
-            this.chartReport.Size = new System.Drawing.Size(515, 390);
-            this.chartReport.TabIndex = 75;
-            this.chartReport.Text = "chart1";
-            title1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            title1.Name = "Title1";
-            title1.Text = "Tỉ lệ doanh thu theo loại phòng";
-            this.chartReport.Titles.Add(title1);
-            // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
@@ -374,7 +336,6 @@
             this.dataGridReport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridReport.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colId,
-            this.col,
             this.colRevenue,
             this.colRate});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -408,47 +369,6 @@
             this.dataGridReport.Size = new System.Drawing.Size(589, 329);
             this.dataGridReport.TabIndex = 28;
             this.dataGridReport.VirtualMode = true;
-            // 
-            // colId
-            // 
-            this.colId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colId.DataPropertyName = "name";
-            this.colId.HeaderText = "Tên Loại Phòng";
-            this.colId.MinimumWidth = 6;
-            this.colId.Name = "colId";
-            this.colId.ReadOnly = true;
-            this.colId.Width = 156;
-            // 
-            // col
-            // 
-            this.col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.col.DataPropertyName = "rate_new";
-            this.col.HeaderText = "Tỷ lệ";
-            this.col.MinimumWidth = 6;
-            this.col.Name = "col";
-            this.col.ReadOnly = true;
-            this.col.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.col.Width = 51;
-            // 
-            // colRevenue
-            // 
-            this.colRevenue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colRevenue.DataPropertyName = "value";
-            this.colRevenue.HeaderText = "Doanh Thu";
-            this.colRevenue.MinimumWidth = 6;
-            this.colRevenue.Name = "colRevenue";
-            this.colRevenue.ReadOnly = true;
-            this.colRevenue.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colRate
-            // 
-            this.colRate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colRate.DataPropertyName = "rate";
-            this.colRate.HeaderText = "";
-            this.colRate.MinimumWidth = 6;
-            this.colRate.Name = "colRate";
-            this.colRate.ReadOnly = true;
-            this.colRate.Visible = false;
             // 
             // groupBox1
             // 
@@ -547,15 +467,55 @@
             this.pictureBox1.TabIndex = 77;
             this.pictureBox1.TabStop = false;
             // 
+            // colId
+            // 
+            this.colId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colId.DataPropertyName = "name";
+            this.colId.HeaderText = "Tên Loại Phòng";
+            this.colId.MinimumWidth = 6;
+            this.colId.Name = "colId";
+            this.colId.ReadOnly = true;
+            this.colId.Width = 156;
+            // 
+            // colRevenue
+            // 
+            this.colRevenue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colRevenue.DataPropertyName = "value";
+            this.colRevenue.HeaderText = "Doanh Thu";
+            this.colRevenue.MinimumWidth = 6;
+            this.colRevenue.Name = "colRevenue";
+            this.colRevenue.ReadOnly = true;
+            this.colRevenue.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colRate
+            // 
+            this.colRate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colRate.DataPropertyName = "rate";
+            this.colRate.HeaderText = "";
+            this.colRate.MinimumWidth = 6;
+            this.colRate.Name = "colRate";
+            this.colRate.ReadOnly = true;
+            this.colRate.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(59, 193);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(386, 324);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 78;
+            this.pictureBox2.TabStop = false;
+            // 
             // fReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1135, 624);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.chartReport);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bunifuSeparator1);
@@ -573,7 +533,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericYear)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartReport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingReport)).EndInit();
             this.bindingReport.ResumeLayout(false);
             this.bindingReport.PerformLayout();
@@ -582,6 +541,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -596,7 +556,6 @@
         private System.Windows.Forms.NumericUpDown numericYear;
         private MetroFramework.Controls.MetroComboBox comboBoxMonth;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartReport;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridReport;
         private System.Windows.Forms.BindingNavigator bindingReport;
@@ -614,11 +573,11 @@
         private System.Windows.Forms.Label label6;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private System.Windows.Forms.SaveFileDialog saveReport;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colRevenue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colRate;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRevenue;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRate;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

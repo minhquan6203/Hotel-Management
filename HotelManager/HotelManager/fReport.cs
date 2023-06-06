@@ -87,18 +87,18 @@ namespace HotelManager
         #endregion
 
         #region Chart
-        private void DrawChart(BindingSource source)
-        {   
-            chartReport.DataSource = source;
-            chartReport.DataBind();
-            foreach (DataPoint item in chartReport.Series[0].Points)
-            {
-                if(item.YValues[0] == 0)
-                {
-                    item.Label = " ";
-                }
-            }
-        }
+        //private void DrawChart(BindingSource source)
+        //{   
+        //    chartReport.DataSource = source;
+        //    chartReport.DataBind();
+        //    foreach (DataPoint item in chartReport.Series[0].Points)
+        //    {
+        //        if(item.YValues[0] == 0)
+        //        {
+        //            item.Label = " ";
+        //        }
+        //    }
+        //}
         #endregion
 
         #region Change Price
