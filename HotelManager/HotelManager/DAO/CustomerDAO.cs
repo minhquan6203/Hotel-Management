@@ -32,7 +32,7 @@ namespace HotelManager.DAO
 
         }
 
-        internal bool InsertCustomer(string customerName, int idCustomerType, string idCard, string address, DateTime dateOfBirth, int phoneNumber, string sex, string nationality)
+        internal bool InsertCustomers(string customerName, int idCustomerType, string idCard, string address, DateTime dateOfBirth, int phoneNumber, string sex, string nationality)
         {
             string query = "exec USP_InsertCustomer @customerName , @idCustomerType , @idCard , @address , @dateOfBirth , @phoneNumber , @sex , @nationality";
             int count = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { customerName, idCustomerType, idCard, address, dateOfBirth, phoneNumber, sex, nationality });
@@ -40,7 +40,7 @@ namespace HotelManager.DAO
         }
         internal bool InsertCustomer(Customer customer)
         {
-            return InsertCustomer(customer.Name, customer.IdCustomerType, customer.IdCard, customer.Address,
+            return InsertCustomers(customer.Name, customer.IdCustomerType, customer.IdCard, customer.Address,
                 customer.DateOfBirth, customer.PhoneNumber, customer.Sex, customer.Nationality);
         }
 

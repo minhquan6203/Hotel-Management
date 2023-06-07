@@ -260,6 +260,15 @@ begin
 end
 
 GO
+CREATE PROC [dbo].[USP_InsertRoomType]
+@ID int, @Name nvarchar(100),@Price int,@LimitPerson int,
+AS
+BEGIN
+	INSERT INTO dbo.RoomType(ID,Name,Price,LimitPerson)
+	VALUES(@ID,@Name,@Price,@LimitPerson)
+END
+
+GO
 CREATE PROC [dbo].[USP_InsertCustomer]
 @customerName NVARCHAR(100), @idCustomerType int, @idCard NVARCHAR(100),
 @address NVARCHAR(200), @dateOfBirth date, @phoneNumber int,
@@ -281,6 +290,15 @@ begin
 	insert into Customer(IDCard,Name,IDCustomerType,DateOfBirth,Address,PhoneNumber,Sex,Nationality)
 	values(@idCard,@name,@idCustomerType,@dateOfBirth,@address,@phoneNumber,@sex,@nationality)
 end
+
+GO
+CREATE PROC [dbo].[USP_InsertCustomerType]
+@name NVARCHAR(100)
+AS
+BEGIN
+	INSERT INTO dbo.CustomerType(name)
+	VALUES(@name)
+END
 
 GO
 CREATE Proc [dbo].[USP_InsertReport]
@@ -481,6 +499,15 @@ GO
 CREATE PROC [dbo].[USP_LoadFullParameter]
 AS
 SELECT * FROM dbo.PARAMETER
+
+GO
+CREATE PRO [dbo].[USP_InsertParameter]
+@Name nvarchar(100), @Value float, @Describe nvarchar(200)
+AS
+BEGIN
+	INSERT INTO dbo.Parameter(Name, Value, Describe)
+	VALUES (@Name, @Value, @Describe)
+END
 
 GO
 CREATE PROC [dbo].[USP_LoadFullReport]
