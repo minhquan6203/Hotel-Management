@@ -108,6 +108,7 @@
             this.txbUserName.Location = new System.Drawing.Point(520, 139);
             this.txbUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txbUserName.Name = "txbUserName";
+            this.txbUserName.Padding = new System.Windows.Forms.Padding(0, 0, 5, 5);
             this.txbUserName.Size = new System.Drawing.Size(416, 42);
             this.txbUserName.TabIndex = 0;
             this.txbUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -125,8 +126,9 @@
             this.txbPassWord.ForeColor = System.Drawing.Color.Black;
             this.txbPassWord.isPassword = true;
             this.txbPassWord.Location = new System.Drawing.Point(523, 228);
-            this.txbPassWord.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.txbPassWord.Margin = new System.Windows.Forms.Padding(4);
             this.txbPassWord.Name = "txbPassWord";
+            this.txbPassWord.Padding = new System.Windows.Forms.Padding(0, 0, 5, 5);
             this.txbPassWord.Size = new System.Drawing.Size(416, 42);
             this.txbPassWord.TabIndex = 1;
             this.txbPassWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
