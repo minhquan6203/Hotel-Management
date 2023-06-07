@@ -236,6 +236,7 @@
             // 
             this.comboBoxStaffType.BackColor = System.Drawing.Color.White;
             this.comboBoxStaffType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxStaffType.ForeColor = System.Drawing.Color.Black;
             this.comboBoxStaffType.FormattingEnabled = true;
             this.comboBoxStaffType.ItemHeight = 24;
             this.comboBoxStaffType.Location = new System.Drawing.Point(320, 124);
@@ -291,6 +292,7 @@
             // 
             this.comboBoxSex.BackColor = System.Drawing.Color.White;
             this.comboBoxSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSex.ForeColor = System.Drawing.Color.Black;
             this.comboBoxSex.FormattingEnabled = true;
             this.comboBoxSex.ItemHeight = 24;
             this.comboBoxSex.Items.AddRange(new object[] {

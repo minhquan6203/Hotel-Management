@@ -135,6 +135,7 @@
             // 
             this.cbNationality.BackColor = System.Drawing.Color.White;
             this.cbNationality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbNationality.ForeColor = System.Drawing.Color.Black;
             this.cbNationality.FormattingEnabled = true;
             this.cbNationality.ItemHeight = 24;
             this.cbNationality.Items.AddRange(new object[] {
@@ -209,6 +210,7 @@
             // 
             this.cbCustomerType.BackColor = System.Drawing.Color.White;
             this.cbCustomerType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbCustomerType.ForeColor = System.Drawing.Color.Black;
             this.cbCustomerType.FormattingEnabled = true;
             this.cbCustomerType.ItemHeight = 24;
             this.cbCustomerType.Location = new System.Drawing.Point(322, 122);
@@ -270,6 +272,7 @@
             // 
             this.cbSex.BackColor = System.Drawing.Color.White;
             this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbSex.ForeColor = System.Drawing.Color.Black;
             this.cbSex.FormattingEnabled = true;
             this.cbSex.ItemHeight = 24;
             this.cbSex.Items.AddRange(new object[] {

@@ -284,7 +284,7 @@
             // 
             this.comboBoxRoomType.BackColor = System.Drawing.Color.White;
             this.comboBoxRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxRoomType.ForeColor = System.Drawing.Color.SeaGreen;
+            this.comboBoxRoomType.ForeColor = System.Drawing.Color.Black;
             this.comboBoxRoomType.FormattingEnabled = true;
             this.comboBoxRoomType.ItemHeight = 24;
             this.comboBoxRoomType.Location = new System.Drawing.Point(29, 123);

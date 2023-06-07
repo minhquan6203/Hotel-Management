@@ -88,12 +88,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPrint = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
-            this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.groupBox6.SuspendLayout();
@@ -353,7 +353,7 @@
             this.bunifuSeparator3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator3.LineThickness = 7;
+            this.bunifuSeparator3.LineThickness = 12;
             this.bunifuSeparator3.Location = new System.Drawing.Point(23, 606);
             this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(12, 16, 12, 16);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
@@ -413,7 +413,7 @@
             // 
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator2.LineThickness = 7;
+            this.bunifuSeparator2.LineThickness = 12;
             this.bunifuSeparator2.Location = new System.Drawing.Point(23, 438);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
@@ -702,7 +702,7 @@
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator1.LineThickness = 7;
+            this.bunifuSeparator1.LineThickness = 12;
             this.bunifuSeparator1.Location = new System.Drawing.Point(23, 206);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
@@ -738,7 +738,7 @@
             // 
             this.lblStaffSetUp.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStaffSetUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblStaffSetUp.Location = new System.Drawing.Point(439, 183);
+            this.lblStaffSetUp.Location = new System.Drawing.Point(404, 183);
             this.lblStaffSetUp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStaffSetUp.Name = "lblStaffSetUp";
             this.lblStaffSetUp.Size = new System.Drawing.Size(165, 23);
@@ -750,7 +750,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(311, 183);
+            this.label7.Location = new System.Drawing.Point(278, 183);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 23);
@@ -813,6 +813,17 @@
             this.label3.Size = new System.Drawing.Size(204, 23);
             this.label3.TabIndex = 65;
             this.label3.Text = "▶ Phone: 0969399209";
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label13.Location = new System.Drawing.Point(19, 55);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(214, 23);
+            this.label13.TabIndex = 64;
+            this.label13.Text = "▶ Address: UIT";
             // 
             // label1
             // 
@@ -888,17 +899,6 @@
             // 
             this.printDialog1.Document = this.printDocument1;
             this.printDialog1.UseEXDialog = true;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label13.Location = new System.Drawing.Point(19, 55);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(214, 23);
-            this.label13.TabIndex = 64;
-            this.label13.Text = "▶ Address: UIT";
             // 
             // pictureBox1
             // 

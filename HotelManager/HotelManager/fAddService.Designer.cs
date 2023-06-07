@@ -174,7 +174,7 @@
             // 
             this.comboBoxServiceType.BackColor = System.Drawing.Color.White;
             this.comboBoxServiceType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxServiceType.ForeColor = System.Drawing.Color.SeaGreen;
+            this.comboBoxServiceType.ForeColor = System.Drawing.Color.Black;
             this.comboBoxServiceType.FormattingEnabled = true;
             this.comboBoxServiceType.ItemHeight = 24;
             this.comboBoxServiceType.Location = new System.Drawing.Point(16, 138);

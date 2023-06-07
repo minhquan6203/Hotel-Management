@@ -406,5 +406,10 @@ namespace HotelManager
             else
                 BtnCancel_Click(null, null);
         }
+
+        private void bunifuSeparator1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

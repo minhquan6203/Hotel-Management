@@ -37,7 +37,7 @@ SET IDENTITY_INSERT JOB OFF
 
 INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ1', 3, N'Mỗi phòng có tối 3 khách', NULL)
 INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ2', 0.25, N'Mỗi khách hàng vượt số lượng tiêu chuẩn phụ thu thêm 0.25', NULL)
-INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ3', 1.5, N'Khách nước ngoài phụ thu 1.5', NULL)
+INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ3', 1.5, N'Khách nước ngoài hóa đơn nhân với hệ số 1.5', NULL)
 
  
 SET IDENTITY_INSERT Room ON
@@ -149,8 +149,6 @@ GO
 ALTER TABLE Parameter ADD  DEFAULT (getdate()) FOR DateModify
 GO
 ALTER TABLE REPORT ADD  DEFAULT ((0)) FOR value
-GO
-ALTER TABLE REPORT ADD  DEFAULT ((0)) FOR rate
 GO
 ALTER TABLE REPORT ADD  DEFAULT ((1)) FOR Month
 GO

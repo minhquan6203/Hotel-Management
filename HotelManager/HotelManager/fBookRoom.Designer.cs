@@ -166,12 +166,13 @@
             // 
             // bunifuCheckbox1
             // 
-            this.bunifuCheckbox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.bunifuCheckbox1.BackColor = System.Drawing.Color.White;
+            this.bunifuCheckbox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.bunifuCheckbox1.ChechedOffColor = System.Drawing.Color.White;
             this.bunifuCheckbox1.Checked = false;
-            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCheckbox1.CheckedOnColor = System.Drawing.Color.Silver;
             this.bunifuCheckbox1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCheckbox1.Location = new System.Drawing.Point(7, 50);
+            this.bunifuCheckbox1.Location = new System.Drawing.Point(7, 46);
             this.bunifuCheckbox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuCheckbox1.Name = "bunifuCheckbox1";
             this.bunifuCheckbox1.Size = new System.Drawing.Size(20, 20);
@@ -273,6 +274,7 @@
             // 
             this.cbNationality.BackColor = System.Drawing.Color.White;
             this.cbNationality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbNationality.ForeColor = System.Drawing.Color.Black;
             this.cbNationality.FormattingEnabled = true;
             this.cbNationality.ItemHeight = 24;
             this.cbNationality.Items.AddRange(new object[] {
@@ -293,10 +295,10 @@
             "Tây Ban Nha",
             "Ý",
             "Khác"});
-            this.cbNationality.Location = new System.Drawing.Point(240, 207);
+            this.cbNationality.Location = new System.Drawing.Point(240, 210);
             this.cbNationality.Name = "cbNationality";
             this.cbNationality.Size = new System.Drawing.Size(203, 30);
-            this.cbNationality.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbNationality.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbNationality.TabIndex = 49;
             this.cbNationality.UseCustomBackColor = true;
             this.cbNationality.UseCustomForeColor = true;
@@ -307,10 +309,11 @@
             // 
             this.dpkDateOfBirth.BackColor = System.Drawing.Color.Silver;
             this.dpkDateOfBirth.BorderRadius = 0;
+            this.dpkDateOfBirth.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dpkDateOfBirth.ForeColor = System.Drawing.Color.White;
             this.dpkDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dpkDateOfBirth.FormatCustom = null;
-            this.dpkDateOfBirth.Location = new System.Drawing.Point(240, 46);
+            this.dpkDateOfBirth.Location = new System.Drawing.Point(241, 46);
             this.dpkDateOfBirth.Margin = new System.Windows.Forms.Padding(14, 21, 14, 21);
             this.dpkDateOfBirth.Name = "dpkDateOfBirth";
             this.dpkDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -333,12 +336,13 @@
             // 
             this.cbCustomerType.BackColor = System.Drawing.Color.White;
             this.cbCustomerType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbCustomerType.ForeColor = System.Drawing.Color.Black;
             this.cbCustomerType.FormattingEnabled = true;
             this.cbCustomerType.ItemHeight = 24;
-            this.cbCustomerType.Location = new System.Drawing.Point(10, 155);
+            this.cbCustomerType.Location = new System.Drawing.Point(241, 99);
             this.cbCustomerType.Name = "cbCustomerType";
             this.cbCustomerType.Size = new System.Drawing.Size(203, 30);
-            this.cbCustomerType.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbCustomerType.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbCustomerType.TabIndex = 42;
             this.cbCustomerType.UseCustomBackColor = true;
             this.cbCustomerType.UseCustomForeColor = true;
@@ -350,7 +354,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(8, 131);
+            this.label20.Location = new System.Drawing.Point(238, 77);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(154, 25);
             this.label20.TabIndex = 41;
@@ -363,8 +367,8 @@
             this.DatepickerDateOfReceive.ForeColor = System.Drawing.Color.White;
             this.DatepickerDateOfReceive.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DatepickerDateOfReceive.FormatCustom = "";
-            this.DatepickerDateOfReceive.Location = new System.Drawing.Point(42, 766);
-            this.DatepickerDateOfReceive.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.DatepickerDateOfReceive.Location = new System.Drawing.Point(43, 766);
+            this.DatepickerDateOfReceive.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
             this.DatepickerDateOfReceive.Name = "DatepickerDateOfReceive";
             this.DatepickerDateOfReceive.Size = new System.Drawing.Size(304, 47);
             this.DatepickerDateOfReceive.TabIndex = 30;
@@ -381,7 +385,7 @@
             this.txbAddress.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txbAddress.ForeColor = System.Drawing.Color.Black;
             this.txbAddress.isPassword = false;
-            this.txbAddress.Location = new System.Drawing.Point(240, 101);
+            this.txbAddress.Location = new System.Drawing.Point(13, 157);
             this.txbAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txbAddress.Name = "txbAddress";
             this.txbAddress.Size = new System.Drawing.Size(203, 29);
@@ -393,7 +397,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(238, 80);
+            this.label11.Location = new System.Drawing.Point(8, 131);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(74, 25);
             this.label11.TabIndex = 35;
@@ -403,16 +407,17 @@
             // 
             this.cbSex.BackColor = System.Drawing.Color.White;
             this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbSex.ForeColor = System.Drawing.Color.Black;
             this.cbSex.FormattingEnabled = true;
             this.cbSex.ItemHeight = 24;
             this.cbSex.Items.AddRange(new object[] {
             "Nam",
             "Nữ",
             "Khác"});
-            this.cbSex.Location = new System.Drawing.Point(240, 152);
+            this.cbSex.Location = new System.Drawing.Point(240, 157);
             this.cbSex.Name = "cbSex";
             this.cbSex.Size = new System.Drawing.Size(203, 30);
-            this.cbSex.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbSex.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbSex.TabIndex = 26;
             this.cbSex.UseCustomBackColor = true;
             this.cbSex.UseCustomForeColor = true;
@@ -424,7 +429,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(238, 182);
+            this.label12.Location = new System.Drawing.Point(238, 187);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(97, 25);
             this.label12.TabIndex = 29;
@@ -452,7 +457,7 @@
             this.txbPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txbPhoneNumber.ForeColor = System.Drawing.Color.Black;
             this.txbPhoneNumber.isPassword = false;
-            this.txbPhoneNumber.Location = new System.Drawing.Point(10, 207);
+            this.txbPhoneNumber.Location = new System.Drawing.Point(13, 210);
             this.txbPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txbPhoneNumber.Name = "txbPhoneNumber";
             this.txbPhoneNumber.Size = new System.Drawing.Size(203, 29);
@@ -703,12 +708,13 @@
             // 
             this.cbRoomType.BackColor = System.Drawing.Color.White;
             this.cbRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbRoomType.ForeColor = System.Drawing.Color.Black;
             this.cbRoomType.FormattingEnabled = true;
             this.cbRoomType.ItemHeight = 24;
             this.cbRoomType.Location = new System.Drawing.Point(11, 57);
             this.cbRoomType.Name = "cbRoomType";
             this.cbRoomType.Size = new System.Drawing.Size(203, 30);
-            this.cbRoomType.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbRoomType.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbRoomType.TabIndex = 33;
             this.cbRoomType.UseCustomBackColor = true;
             this.cbRoomType.UseCustomForeColor = true;

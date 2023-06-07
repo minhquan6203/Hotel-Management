@@ -480,6 +480,8 @@
             // 
             // comboboxID
             // 
+            this.comboboxID.BackColor = System.Drawing.Color.White;
+            this.comboboxID.ForeColor = System.Drawing.Color.Black;
             this.comboboxID.FormattingEnabled = true;
             this.comboboxID.ItemHeight = 24;
             this.comboboxID.Location = new System.Drawing.Point(15, 60);
@@ -598,6 +600,7 @@
             // 
             this.cbBillSearch.BackColor = System.Drawing.Color.White;
             this.cbBillSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbBillSearch.ForeColor = System.Drawing.Color.Black;
             this.cbBillSearch.FormattingEnabled = true;
             this.cbBillSearch.ItemHeight = 24;
             this.cbBillSearch.Items.AddRange(new object[] {

@@ -33,10 +33,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fCustomer));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupCustomer = new System.Windows.Forms.GroupBox();
             this.txbNationality = new MetroFramework.Controls.MetroComboBox();
+            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label14 = new System.Windows.Forms.Label();
             this.txbAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txbPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -91,7 +93,6 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.groupCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -169,12 +170,29 @@
             this.txbNationality.Location = new System.Drawing.Point(220, 183);
             this.txbNationality.Name = "txbNationality";
             this.txbNationality.Size = new System.Drawing.Size(175, 30);
-            this.txbNationality.Style = MetroFramework.MetroColorStyle.Green;
+            this.txbNationality.Style = MetroFramework.MetroColorStyle.Silver;
             this.txbNationality.TabIndex = 58;
             this.txbNationality.UseCustomBackColor = true;
             this.txbNationality.UseCustomForeColor = true;
             this.txbNationality.UseSelectable = true;
             this.txbNationality.UseStyleColors = true;
+            // 
+            // bunifuMetroTextbox1
+            // 
+            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox1.BorderThickness = 1;
+            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuMetroTextbox1.isPassword = false;
+            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(220, -87);
+            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
+            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(175, 30);
+            this.bunifuMetroTextbox1.TabIndex = 0;
+            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label14
             // 
@@ -260,7 +278,7 @@
             this.comboBoxSex.Location = new System.Drawing.Point(220, 249);
             this.comboBoxSex.Name = "comboBoxSex";
             this.comboBoxSex.Size = new System.Drawing.Size(175, 30);
-            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Silver;
             this.comboBoxSex.TabIndex = 4;
             this.comboBoxSex.UseCustomBackColor = true;
             this.comboBoxSex.UseCustomForeColor = true;
@@ -278,7 +296,7 @@
             this.comboBoxCustomerType.Location = new System.Drawing.Point(220, 125);
             this.comboBoxCustomerType.Name = "comboBoxCustomerType";
             this.comboBoxCustomerType.Size = new System.Drawing.Size(175, 30);
-            this.comboBoxCustomerType.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboBoxCustomerType.Style = MetroFramework.MetroColorStyle.Silver;
             this.comboBoxCustomerType.TabIndex = 3;
             this.comboBoxCustomerType.UseCustomBackColor = true;
             this.comboBoxCustomerType.UseCustomForeColor = true;
@@ -287,12 +305,14 @@
             // 
             // comboboxID
             // 
+            this.comboboxID.BackColor = System.Drawing.Color.White;
+            this.comboboxID.ForeColor = System.Drawing.Color.Black;
             this.comboboxID.FormattingEnabled = true;
             this.comboboxID.ItemHeight = 24;
             this.comboboxID.Location = new System.Drawing.Point(16, 64);
             this.comboboxID.Name = "comboboxID";
             this.comboboxID.Size = new System.Drawing.Size(175, 30);
-            this.comboboxID.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboboxID.Style = MetroFramework.MetroColorStyle.Silver;
             this.comboboxID.TabIndex = 0;
             this.comboboxID.UseSelectable = true;
             // 
@@ -472,6 +492,11 @@
             this.dataGridViewCustomer.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewCustomer.RowHeadersVisible = false;
             this.dataGridViewCustomer.RowHeadersWidth = 51;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewCustomer.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -724,6 +749,7 @@
             // 
             this.cbCustomerSearch.BackColor = System.Drawing.Color.White;
             this.cbCustomerSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbCustomerSearch.ForeColor = System.Drawing.Color.Black;
             this.cbCustomerSearch.FormattingEnabled = true;
             this.cbCustomerSearch.ItemHeight = 24;
             this.cbCustomerSearch.Items.AddRange(new object[] {
@@ -734,7 +760,7 @@
             this.cbCustomerSearch.Location = new System.Drawing.Point(16, 68);
             this.cbCustomerSearch.Name = "cbCustomerSearch";
             this.cbCustomerSearch.Size = new System.Drawing.Size(175, 30);
-            this.cbCustomerSearch.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbCustomerSearch.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbCustomerSearch.TabIndex = 50;
             this.cbCustomerSearch.UseCustomBackColor = true;
             this.cbCustomerSearch.UseCustomForeColor = true;
@@ -974,23 +1000,6 @@
             this.pictureBox1.TabIndex = 57;
             this.pictureBox1.TabStop = false;
             // 
-            // bunifuMetroTextbox1
-            // 
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox1.BorderThickness = 1;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(220, -87);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(175, 30);
-            this.bunifuMetroTextbox1.TabIndex = 0;
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // fCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -1007,7 +1016,7 @@
             this.Controls.Add(this.groupCustomer);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ForeColor = System.Drawing.Color.Silver;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;

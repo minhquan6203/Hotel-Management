@@ -129,6 +129,7 @@
             // 
             this.txbNationality.BackColor = System.Drawing.Color.White;
             this.txbNationality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txbNationality.ForeColor = System.Drawing.Color.Black;
             this.txbNationality.FormattingEnabled = true;
             this.txbNationality.ItemHeight = 24;
             this.txbNationality.Items.AddRange(new object[] {
@@ -191,6 +192,7 @@
             // 
             this.comboBoxCustomerType.BackColor = System.Drawing.Color.White;
             this.comboBoxCustomerType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxCustomerType.ForeColor = System.Drawing.Color.Black;
             this.comboBoxCustomerType.FormattingEnabled = true;
             this.comboBoxCustomerType.ItemHeight = 24;
             this.comboBoxCustomerType.Location = new System.Drawing.Point(320, 127);
@@ -265,6 +267,7 @@
             // 
             this.comboBoxSex.BackColor = System.Drawing.Color.White;
             this.comboBoxSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSex.ForeColor = System.Drawing.Color.Black;
             this.comboBoxSex.FormattingEnabled = true;
             this.comboBoxSex.ItemHeight = 24;
             this.comboBoxSex.Items.AddRange(new object[] {

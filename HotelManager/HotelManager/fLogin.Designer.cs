@@ -94,7 +94,7 @@
             // 
             // txbUserName
             // 
-            this.txbUserName.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.txbUserName.BackColor = System.Drawing.Color.White;
             this.txbUserName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txbUserName.BorderColorFocused = System.Drawing.Color.Black;
             this.txbUserName.BorderColorIdle = System.Drawing.Color.Black;
@@ -102,11 +102,11 @@
             this.txbUserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbUserName.BorderThickness = 1;
             this.txbUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbUserName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUserName.ForeColor = System.Drawing.Color.Black;
             this.txbUserName.isPassword = false;
             this.txbUserName.Location = new System.Drawing.Point(520, 139);
-            this.txbUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(416, 42);
             this.txbUserName.TabIndex = 0;
@@ -121,7 +121,7 @@
             this.txbPassWord.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbPassWord.BorderThickness = 1;
             this.txbPassWord.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbPassWord.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.txbPassWord.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassWord.ForeColor = System.Drawing.Color.Black;
             this.txbPassWord.isPassword = true;
             this.txbPassWord.Location = new System.Drawing.Point(523, 228);

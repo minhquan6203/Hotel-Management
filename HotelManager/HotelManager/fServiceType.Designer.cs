@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fServiceType));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
@@ -67,6 +68,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnInsert = new Bunifu.Framework.UI.BunifuThinButton2();
             this.saveServiceType = new System.Windows.Forms.SaveFileDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupServiceType.SuspendLayout();
@@ -75,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingServiceType)).BeginInit();
             this.bindingServiceType.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -106,10 +109,10 @@
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.btnCancel);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBox3.Location = new System.Drawing.Point(5, 54);
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
+            this.groupBox3.Location = new System.Drawing.Point(5, 64);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(223, 140);
+            this.groupBox3.Size = new System.Drawing.Size(223, 150);
             this.groupBox3.TabIndex = 45;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm";
@@ -118,21 +121,21 @@
             // 
             this.btnSearch.ActiveBorderThickness = 1;
             this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.ActiveFillColor = System.Drawing.Color.Silver;
             this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.ActiveLineColor = System.Drawing.Color.Black;
             this.btnSearch.BackColor = System.Drawing.Color.White;
             this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
             this.btnSearch.ButtonText = "Tìm Kiếm";
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.btnSearch.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.ForeColor = System.Drawing.Color.Black;
             this.btnSearch.IdleBorderThickness = 1;
             this.btnSearch.IdleCornerRadius = 20;
             this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-            this.btnSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.Location = new System.Drawing.Point(26, 85);
+            this.btnSearch.IdleForecolor = System.Drawing.Color.Black;
+            this.btnSearch.IdleLineColor = System.Drawing.Color.Black;
+            this.btnSearch.Location = new System.Drawing.Point(26, 100);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(175, 40);
@@ -142,15 +145,15 @@
             // 
             // txbSearch
             // 
-            this.txbSearch.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txbSearch.BorderColorIdle = System.Drawing.Color.SeaGreen;
-            this.txbSearch.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txbSearch.BorderColorFocused = System.Drawing.Color.Black;
+            this.txbSearch.BorderColorIdle = System.Drawing.Color.Black;
+            this.txbSearch.BorderColorMouseHover = System.Drawing.Color.Black;
             this.txbSearch.BorderThickness = 1;
             this.txbSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbSearch.isPassword = false;
-            this.txbSearch.Location = new System.Drawing.Point(26, 46);
+            this.txbSearch.Location = new System.Drawing.Point(26, 68);
             this.txbSearch.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.Size = new System.Drawing.Size(175, 29);
@@ -162,8 +165,8 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label5.Location = new System.Drawing.Point(26, 24);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(24, 37);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(181, 25);
             this.label5.TabIndex = 28;
@@ -187,7 +190,7 @@
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
             this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
             this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(26, 85);
+            this.btnCancel.Location = new System.Drawing.Point(26, 100);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(175, 40);
@@ -205,22 +208,23 @@
             this.groupServiceType.Controls.Add(this.label16);
             this.groupServiceType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupServiceType.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupServiceType.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupServiceType.Location = new System.Drawing.Point(5, 195);
+            this.groupServiceType.ForeColor = System.Drawing.Color.Black;
+            this.groupServiceType.Location = new System.Drawing.Point(5, 220);
             this.groupServiceType.Name = "groupServiceType";
-            this.groupServiceType.Size = new System.Drawing.Size(223, 160);
+            this.groupServiceType.Size = new System.Drawing.Size(223, 171);
             this.groupServiceType.TabIndex = 46;
             this.groupServiceType.TabStop = false;
             this.groupServiceType.Text = "Thông tin loại dịch vụ";
             // 
             // comboboxID
             // 
+            this.comboboxID.ForeColor = System.Drawing.Color.Black;
             this.comboboxID.FormattingEnabled = true;
             this.comboboxID.ItemHeight = 24;
-            this.comboboxID.Location = new System.Drawing.Point(26, 48);
+            this.comboboxID.Location = new System.Drawing.Point(26, 68);
             this.comboboxID.Name = "comboboxID";
             this.comboboxID.Size = new System.Drawing.Size(175, 30);
-            this.comboboxID.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboboxID.Style = MetroFramework.MetroColorStyle.Silver;
             this.comboboxID.TabIndex = 0;
             this.comboboxID.UseSelectable = true;
             // 
@@ -228,8 +232,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label1.Location = new System.Drawing.Point(26, 84);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(24, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 25);
             this.label1.TabIndex = 24;
@@ -237,15 +241,15 @@
             // 
             // txbName
             // 
-            this.txbName.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txbName.BorderColorIdle = System.Drawing.Color.SeaGreen;
-            this.txbName.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txbName.BorderColorFocused = System.Drawing.Color.Black;
+            this.txbName.BorderColorIdle = System.Drawing.Color.Black;
+            this.txbName.BorderColorMouseHover = System.Drawing.Color.Black;
             this.txbName.BorderThickness = 1;
             this.txbName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbName.isPassword = false;
-            this.txbName.Location = new System.Drawing.Point(26, 106);
+            this.txbName.Location = new System.Drawing.Point(26, 126);
             this.txbName.Margin = new System.Windows.Forms.Padding(0);
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(175, 29);
@@ -256,8 +260,8 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label16.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label16.Location = new System.Drawing.Point(26, 25);
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(24, 40);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(145, 25);
             this.label16.TabIndex = 22;
@@ -267,21 +271,21 @@
             // 
             this.btnUpdateServiceType.ActiveBorderThickness = 1;
             this.btnUpdateServiceType.ActiveCornerRadius = 20;
-            this.btnUpdateServiceType.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdateServiceType.ActiveFillColor = System.Drawing.Color.Silver;
             this.btnUpdateServiceType.ActiveForecolor = System.Drawing.Color.White;
-            this.btnUpdateServiceType.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdateServiceType.ActiveLineColor = System.Drawing.Color.Black;
             this.btnUpdateServiceType.BackColor = System.Drawing.Color.White;
             this.btnUpdateServiceType.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateServiceType.BackgroundImage")));
             this.btnUpdateServiceType.ButtonText = "Cập Nhật";
             this.btnUpdateServiceType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdateServiceType.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.btnUpdateServiceType.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdateServiceType.ForeColor = System.Drawing.Color.Black;
             this.btnUpdateServiceType.IdleBorderThickness = 1;
             this.btnUpdateServiceType.IdleCornerRadius = 20;
             this.btnUpdateServiceType.IdleFillColor = System.Drawing.Color.White;
-            this.btnUpdateServiceType.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnUpdateServiceType.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdateServiceType.Location = new System.Drawing.Point(26, 71);
+            this.btnUpdateServiceType.IdleForecolor = System.Drawing.Color.Black;
+            this.btnUpdateServiceType.IdleLineColor = System.Drawing.Color.Black;
+            this.btnUpdateServiceType.Location = new System.Drawing.Point(26, 89);
             this.btnUpdateServiceType.Margin = new System.Windows.Forms.Padding(6);
             this.btnUpdateServiceType.Name = "btnUpdateServiceType";
             this.btnUpdateServiceType.Size = new System.Drawing.Size(175, 40);
@@ -295,10 +299,10 @@
             this.groupBox1.Controls.Add(this.dataGridViewServiceType);
             this.groupBox1.Controls.Add(this.bindingServiceType);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBox1.Location = new System.Drawing.Point(234, 54);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(234, 64);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(549, 483);
+            this.groupBox1.Size = new System.Drawing.Size(549, 514);
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Loại Dịch Vụ";
@@ -308,48 +312,53 @@
             this.dataGridViewServiceType.AllowUserToAddRows = false;
             this.dataGridViewServiceType.AllowUserToDeleteRows = false;
             this.dataGridViewServiceType.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewServiceType.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewServiceType.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewServiceType.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewServiceType.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewServiceType.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewServiceType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewServiceType.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
             this.colName});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewServiceType.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewServiceType.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewServiceType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewServiceType.GridColor = System.Drawing.Color.White;
             this.dataGridViewServiceType.Location = new System.Drawing.Point(3, 55);
             this.dataGridViewServiceType.Name = "dataGridViewServiceType";
             this.dataGridViewServiceType.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewServiceType.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewServiceType.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewServiceType.RowHeadersVisible = false;
             this.dataGridViewServiceType.RowHeadersWidth = 51;
             this.dataGridViewServiceType.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewServiceType.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridViewServiceType.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewServiceType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewServiceType.Size = new System.Drawing.Size(543, 425);
+            this.dataGridViewServiceType.Size = new System.Drawing.Size(543, 456);
             this.dataGridViewServiceType.TabIndex = 28;
             this.dataGridViewServiceType.SelectionChanged += new System.EventHandler(this.DataGridViewServiceType_SelectionChanged);
             // 
@@ -485,8 +494,8 @@
             this.labelName.AutoSize = true;
             this.labelName.BackColor = System.Drawing.Color.Transparent;
             this.labelName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.ForeColor = System.Drawing.Color.SeaGreen;
-            this.labelName.Location = new System.Drawing.Point(9, 6);
+            this.labelName.ForeColor = System.Drawing.Color.Black;
+            this.labelName.Location = new System.Drawing.Point(85, 6);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(329, 46);
             this.labelName.TabIndex = 48;
@@ -498,10 +507,10 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(5, 43);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(8, 56);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(778, 14);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(778, 10);
             this.bunifuSeparator1.TabIndex = 56;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -510,21 +519,21 @@
             // 
             this.btnCLose1.ActiveBorderThickness = 1;
             this.btnCLose1.ActiveCornerRadius = 20;
-            this.btnCLose1.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnCLose1.ActiveFillColor = System.Drawing.Color.Silver;
             this.btnCLose1.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCLose1.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnCLose1.ActiveLineColor = System.Drawing.Color.Black;
             this.btnCLose1.BackColor = System.Drawing.Color.White;
             this.btnCLose1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCLose1.BackgroundImage")));
             this.btnCLose1.ButtonText = "Đóng";
             this.btnCLose1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCLose1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.btnCLose1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCLose1.ForeColor = System.Drawing.Color.Black;
             this.btnCLose1.IdleBorderThickness = 1;
             this.btnCLose1.IdleCornerRadius = 20;
             this.btnCLose1.IdleFillColor = System.Drawing.Color.White;
-            this.btnCLose1.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnCLose1.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnCLose1.Location = new System.Drawing.Point(26, 121);
+            this.btnCLose1.IdleForecolor = System.Drawing.Color.Black;
+            this.btnCLose1.IdleLineColor = System.Drawing.Color.Black;
+            this.btnCLose1.Location = new System.Drawing.Point(26, 132);
             this.btnCLose1.Margin = new System.Windows.Forms.Padding(6);
             this.btnCLose1.Name = "btnCLose1";
             this.btnCLose1.Size = new System.Drawing.Size(175, 40);
@@ -540,8 +549,8 @@
             this.groupBox2.Controls.Add(this.btnUpdateServiceType);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.groupBox2.Location = new System.Drawing.Point(5, 356);
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
+            this.groupBox2.Location = new System.Drawing.Point(5, 397);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(223, 181);
             this.groupBox2.TabIndex = 57;
@@ -552,21 +561,21 @@
             // 
             this.btnInsert.ActiveBorderThickness = 1;
             this.btnInsert.ActiveCornerRadius = 20;
-            this.btnInsert.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnInsert.ActiveFillColor = System.Drawing.Color.Silver;
             this.btnInsert.ActiveForecolor = System.Drawing.Color.White;
-            this.btnInsert.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnInsert.ActiveLineColor = System.Drawing.Color.Black;
             this.btnInsert.BackColor = System.Drawing.Color.White;
             this.btnInsert.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInsert.BackgroundImage")));
             this.btnInsert.ButtonText = "Thêm";
             this.btnInsert.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInsert.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.btnInsert.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnInsert.ForeColor = System.Drawing.Color.Black;
             this.btnInsert.IdleBorderThickness = 1;
             this.btnInsert.IdleCornerRadius = 20;
             this.btnInsert.IdleFillColor = System.Drawing.Color.White;
-            this.btnInsert.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnInsert.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnInsert.Location = new System.Drawing.Point(26, 21);
+            this.btnInsert.IdleForecolor = System.Drawing.Color.Black;
+            this.btnInsert.IdleLineColor = System.Drawing.Color.Black;
+            this.btnInsert.Location = new System.Drawing.Point(26, 48);
             this.btnInsert.Margin = new System.Windows.Forms.Padding(6);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(175, 40);
@@ -580,12 +589,23 @@
             this.saveServiceType.FileName = "Danh sách loại dịch vụ";
             this.saveServiceType.Filter = "Excel File(*.xls)|*.xls|Excel File (*.xlsx) |.xlsx|PDF File(*.pdf)|*.pdf";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 58;
+            this.pictureBox1.TabStop = false;
+            // 
             // fServiceType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(788, 543);
+            this.ClientSize = new System.Drawing.Size(788, 613);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.bunifuSeparator1);
@@ -615,6 +635,7 @@
             this.bindingServiceType.ResumeLayout(false);
             this.bindingServiceType.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -656,5 +677,6 @@
         private System.Windows.Forms.SaveFileDialog saveServiceType;
         private MetroFramework.Controls.MetroComboBox comboboxID;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

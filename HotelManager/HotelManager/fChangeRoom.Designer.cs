@@ -196,13 +196,14 @@
             // 
             this.cbRoom.BackColor = System.Drawing.Color.White;
             this.cbRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbRoom.ForeColor = System.Drawing.Color.Black;
             this.cbRoom.FormattingEnabled = true;
             this.cbRoom.ItemHeight = 24;
             this.cbRoom.Location = new System.Drawing.Point(36, 124);
             this.cbRoom.Margin = new System.Windows.Forms.Padding(4);
             this.cbRoom.Name = "cbRoom";
             this.cbRoom.Size = new System.Drawing.Size(271, 30);
-            this.cbRoom.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbRoom.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbRoom.TabIndex = 54;
             this.cbRoom.UseCustomBackColor = true;
             this.cbRoom.UseCustomForeColor = true;
@@ -226,13 +227,14 @@
             // 
             this.cbRoomType.BackColor = System.Drawing.Color.White;
             this.cbRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbRoomType.ForeColor = System.Drawing.Color.Black;
             this.cbRoomType.FormattingEnabled = true;
             this.cbRoomType.ItemHeight = 24;
             this.cbRoomType.Location = new System.Drawing.Point(36, 58);
             this.cbRoomType.Margin = new System.Windows.Forms.Padding(4);
             this.cbRoomType.Name = "cbRoomType";
             this.cbRoomType.Size = new System.Drawing.Size(271, 30);
-            this.cbRoomType.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbRoomType.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbRoomType.TabIndex = 52;
             this.cbRoomType.UseCustomBackColor = true;
             this.cbRoomType.UseCustomForeColor = true;

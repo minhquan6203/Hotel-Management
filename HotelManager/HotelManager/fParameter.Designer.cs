@@ -30,9 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fParameter));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -111,7 +113,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(17, 443);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(220, 141);
+            this.groupBox2.Size = new System.Drawing.Size(214, 141);
             this.groupBox2.TabIndex = 68;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức Năng";
@@ -134,7 +136,7 @@
             this.btnCLose1.IdleFillColor = System.Drawing.Color.White;
             this.btnCLose1.IdleForecolor = System.Drawing.Color.Black;
             this.btnCLose1.IdleLineColor = System.Drawing.Color.Black;
-            this.btnCLose1.Location = new System.Drawing.Point(26, 79);
+            this.btnCLose1.Location = new System.Drawing.Point(17, 79);
             this.btnCLose1.Margin = new System.Windows.Forms.Padding(6);
             this.btnCLose1.Name = "btnCLose1";
             this.btnCLose1.Size = new System.Drawing.Size(175, 40);
@@ -161,7 +163,7 @@
             this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
             this.btnUpdate.IdleForecolor = System.Drawing.Color.Black;
             this.btnUpdate.IdleLineColor = System.Drawing.Color.Black;
-            this.btnUpdate.Location = new System.Drawing.Point(26, 27);
+            this.btnUpdate.Location = new System.Drawing.Point(17, 27);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(6);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(175, 40);
@@ -188,45 +190,55 @@
             this.dataGridViewParameter.AllowUserToAddRows = false;
             this.dataGridViewParameter.AllowUserToDeleteRows = false;
             this.dataGridViewParameter.AllowUserToResizeRows = false;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewParameter.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridViewParameter.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewParameter.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewParameter.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewParameter.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridViewParameter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewParameter.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colName,
             this.colValue,
             this.colDescribe,
             this.Column1});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewParameter.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewParameter.DefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridViewParameter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewParameter.GridColor = System.Drawing.Color.White;
             this.dataGridViewParameter.Location = new System.Drawing.Point(3, 55);
             this.dataGridViewParameter.Name = "dataGridViewParameter";
             this.dataGridViewParameter.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewParameter.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewParameter.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridViewParameter.RowHeadersVisible = false;
             this.dataGridViewParameter.RowHeadersWidth = 51;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewParameter.RowsDefaultCellStyle = dataGridViewCellStyle25;
             this.dataGridViewParameter.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewParameter.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridViewParameter.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -393,7 +405,7 @@
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
             this.groupBox3.Location = new System.Drawing.Point(17, 64);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(220, 162);
+            this.groupBox3.Size = new System.Drawing.Size(214, 162);
             this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm";
@@ -495,19 +507,21 @@
             this.groupParameter.ForeColor = System.Drawing.Color.Black;
             this.groupParameter.Location = new System.Drawing.Point(17, 223);
             this.groupParameter.Name = "groupParameter";
-            this.groupParameter.Size = new System.Drawing.Size(220, 224);
+            this.groupParameter.Size = new System.Drawing.Size(214, 224);
             this.groupParameter.TabIndex = 1;
             this.groupParameter.TabStop = false;
             this.groupParameter.Text = "Thông tin qui định";
             // 
             // comboboxName
             // 
+            this.comboboxName.BackColor = System.Drawing.Color.White;
+            this.comboboxName.ForeColor = System.Drawing.Color.Black;
             this.comboboxName.FormattingEnabled = true;
             this.comboboxName.ItemHeight = 24;
             this.comboboxName.Location = new System.Drawing.Point(17, 67);
             this.comboboxName.Name = "comboboxName";
             this.comboboxName.Size = new System.Drawing.Size(175, 30);
-            this.comboboxName.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboboxName.Style = MetroFramework.MetroColorStyle.Silver;
             this.comboboxName.TabIndex = 47;
             this.comboboxName.UseSelectable = true;
             // 

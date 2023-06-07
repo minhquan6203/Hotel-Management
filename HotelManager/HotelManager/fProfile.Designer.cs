@@ -282,6 +282,7 @@
             // 
             this.cbSex.BackColor = System.Drawing.Color.White;
             this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbSex.ForeColor = System.Drawing.Color.Black;
             this.cbSex.FormattingEnabled = true;
             this.cbSex.ItemHeight = 24;
             this.cbSex.Items.AddRange(new object[] {
@@ -292,7 +293,7 @@
             this.cbSex.Margin = new System.Windows.Forms.Padding(4);
             this.cbSex.Name = "cbSex";
             this.cbSex.Size = new System.Drawing.Size(271, 30);
-            this.cbSex.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbSex.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbSex.TabIndex = 75;
             this.cbSex.UseCustomBackColor = true;
             this.cbSex.UseCustomForeColor = true;

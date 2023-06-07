@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fUseService));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -127,7 +127,7 @@
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
             this.btnClose.Location = new System.Drawing.Point(1645, 7);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(21, 20);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -152,11 +152,11 @@
             this.groupBox3.Controls.Add(this.color4);
             this.groupBox3.Controls.Add(this.flowLayoutRooms);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
             this.groupBox3.Location = new System.Drawing.Point(8, 63);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(480, 688);
             this.groupBox3.TabIndex = 31;
             this.groupBox3.TabStop = false;
@@ -178,7 +178,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.SeaGreen;
             this.pictureBox6.Location = new System.Drawing.Point(19, 37);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(129, 18);
             this.pictureBox6.TabIndex = 62;
@@ -200,7 +200,7 @@
             // 
             this.color5.BackColor = System.Drawing.Color.Gray;
             this.color5.Location = new System.Drawing.Point(328, 116);
-            this.color5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.color5.Margin = new System.Windows.Forms.Padding(4);
             this.color5.Name = "color5";
             this.color5.Size = new System.Drawing.Size(129, 18);
             this.color5.TabIndex = 60;
@@ -215,14 +215,14 @@
             this.lblRoomType3.Name = "lblRoomType3";
             this.lblRoomType3.Size = new System.Drawing.Size(147, 44);
             this.lblRoomType3.TabIndex = 59;
-            this.lblRoomType3.Text = "Phòng Standard (STD)";
+            this.lblRoomType3.Text = "Phòng C";
             this.lblRoomType3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // color3
             // 
             this.color3.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.color3.Location = new System.Drawing.Point(20, 116);
-            this.color3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.color3.Margin = new System.Windows.Forms.Padding(4);
             this.color3.Name = "color3";
             this.color3.Size = new System.Drawing.Size(129, 18);
             this.color3.TabIndex = 58;
@@ -237,14 +237,14 @@
             this.lblRoomType2.Name = "lblRoomType2";
             this.lblRoomType2.Size = new System.Drawing.Size(147, 44);
             this.lblRoomType2.TabIndex = 57;
-            this.lblRoomType2.Text = "Phòng Superior (SUP)";
+            this.lblRoomType2.Text = "Phòng B";
             this.lblRoomType2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // color2
             // 
             this.color2.BackColor = System.Drawing.Color.Violet;
             this.color2.Location = new System.Drawing.Point(328, 37);
-            this.color2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.color2.Margin = new System.Windows.Forms.Padding(4);
             this.color2.Name = "color2";
             this.color2.Size = new System.Drawing.Size(129, 18);
             this.color2.TabIndex = 56;
@@ -259,7 +259,7 @@
             this.lblRoomType1.Name = "lblRoomType1";
             this.lblRoomType1.Size = new System.Drawing.Size(147, 44);
             this.lblRoomType1.TabIndex = 55;
-            this.lblRoomType1.Text = "Phòng Deluxe (DLX)";
+            this.lblRoomType1.Text = "Phòng A";
             this.lblRoomType1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblRoomType4
@@ -271,14 +271,14 @@
             this.lblRoomType4.Name = "lblRoomType4";
             this.lblRoomType4.Size = new System.Drawing.Size(147, 44);
             this.lblRoomType4.TabIndex = 53;
-            this.lblRoomType4.Text = "Phòng Suite (SUT)";
+            this.lblRoomType4.Text = "Phòng D";
             this.lblRoomType4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // color1
             // 
             this.color1.BackColor = System.Drawing.Color.Tomato;
             this.color1.Location = new System.Drawing.Point(173, 37);
-            this.color1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.color1.Margin = new System.Windows.Forms.Padding(4);
             this.color1.Name = "color1";
             this.color1.Size = new System.Drawing.Size(129, 18);
             this.color1.TabIndex = 54;
@@ -288,7 +288,7 @@
             // 
             this.color4.BackColor = System.Drawing.Color.LimeGreen;
             this.color4.Location = new System.Drawing.Point(173, 116);
-            this.color4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.color4.Margin = new System.Windows.Forms.Padding(4);
             this.color4.Name = "color4";
             this.color4.Size = new System.Drawing.Size(129, 18);
             this.color4.TabIndex = 52;
@@ -298,8 +298,9 @@
             // 
             this.flowLayoutRooms.AutoScroll = true;
             this.flowLayoutRooms.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutRooms.ForeColor = System.Drawing.Color.Silver;
             this.flowLayoutRooms.Location = new System.Drawing.Point(4, 190);
-            this.flowLayoutRooms.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutRooms.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutRooms.Name = "flowLayoutRooms";
             this.flowLayoutRooms.Size = new System.Drawing.Size(472, 494);
             this.flowLayoutRooms.TabIndex = 51;
@@ -310,7 +311,7 @@
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(8, 52);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(1657, 12);
             this.bunifuSeparator1.TabIndex = 33;
@@ -321,7 +322,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(12, 7);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -341,11 +342,11 @@
             this.groupBox1.Controls.Add(this.cbServiceType);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(493, 63);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(315, 358);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
@@ -353,19 +354,20 @@
             // 
             // txbPrice
             // 
-            this.txbPrice.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txbPrice.BorderColorIdle = System.Drawing.Color.SeaGreen;
-            this.txbPrice.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txbPrice.BorderColorFocused = System.Drawing.Color.Black;
+            this.txbPrice.BorderColorIdle = System.Drawing.Color.Black;
+            this.txbPrice.BorderColorMouseHover = System.Drawing.Color.Black;
+            this.txbPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbPrice.BorderThickness = 1;
             this.txbPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbPrice.Enabled = false;
             this.txbPrice.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txbPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbPrice.ForeColor = System.Drawing.Color.Black;
             this.txbPrice.isPassword = false;
             this.txbPrice.Location = new System.Drawing.Point(23, 182);
-            this.txbPrice.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txbPrice.Margin = new System.Windows.Forms.Padding(5);
             this.txbPrice.Name = "txbPrice";
-            this.txbPrice.Size = new System.Drawing.Size(271, 36);
+            this.txbPrice.Size = new System.Drawing.Size(269, 30);
             this.txbPrice.TabIndex = 58;
             this.txbPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -373,7 +375,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(23, 158);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
@@ -385,16 +387,16 @@
             // 
             this.numericUpDownCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericUpDownCount.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDownCount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.numericUpDownCount.ForeColor = System.Drawing.Color.Black;
             this.numericUpDownCount.Location = new System.Drawing.Point(23, 249);
-            this.numericUpDownCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownCount.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownCount.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
             this.numericUpDownCount.Name = "numericUpDownCount";
-            this.numericUpDownCount.Size = new System.Drawing.Size(271, 32);
+            this.numericUpDownCount.Size = new System.Drawing.Size(269, 32);
             this.numericUpDownCount.TabIndex = 57;
             this.numericUpDownCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDownCount.Value = new decimal(new int[] {
@@ -407,7 +409,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(23, 222);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -419,13 +421,14 @@
             // 
             this.cbService.BackColor = System.Drawing.Color.White;
             this.cbService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbService.ForeColor = System.Drawing.Color.Black;
             this.cbService.FormattingEnabled = true;
             this.cbService.ItemHeight = 24;
             this.cbService.Location = new System.Drawing.Point(23, 119);
-            this.cbService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbService.Margin = new System.Windows.Forms.Padding(4);
             this.cbService.Name = "cbService";
             this.cbService.Size = new System.Drawing.Size(269, 30);
-            this.cbService.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbService.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbService.TabIndex = 54;
             this.cbService.UseCustomBackColor = true;
             this.cbService.UseCustomForeColor = true;
@@ -437,20 +440,20 @@
             // 
             this.btnAdd.ActiveBorderThickness = 1;
             this.btnAdd.ActiveCornerRadius = 20;
-            this.btnAdd.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnAdd.ActiveFillColor = System.Drawing.Color.Silver;
             this.btnAdd.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAdd.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAdd.ActiveLineColor = System.Drawing.Color.Black;
             this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
             this.btnAdd.ButtonText = "Thêm Dịch Vụ";
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.IdleBorderThickness = 1;
             this.btnAdd.IdleCornerRadius = 20;
             this.btnAdd.IdleFillColor = System.Drawing.Color.White;
-            this.btnAdd.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnAdd.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAdd.IdleForecolor = System.Drawing.Color.Black;
+            this.btnAdd.IdleLineColor = System.Drawing.Color.Black;
             this.btnAdd.Location = new System.Drawing.Point(23, 294);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAdd.Name = "btnAdd";
@@ -463,7 +466,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(23, 92);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -475,13 +478,14 @@
             // 
             this.cbServiceType.BackColor = System.Drawing.Color.White;
             this.cbServiceType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbServiceType.ForeColor = System.Drawing.Color.Black;
             this.cbServiceType.FormattingEnabled = true;
             this.cbServiceType.ItemHeight = 24;
             this.cbServiceType.Location = new System.Drawing.Point(23, 54);
-            this.cbServiceType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbServiceType.Margin = new System.Windows.Forms.Padding(4);
             this.cbServiceType.Name = "cbServiceType";
             this.cbServiceType.Size = new System.Drawing.Size(269, 30);
-            this.cbServiceType.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbServiceType.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbServiceType.TabIndex = 52;
             this.cbServiceType.UseCustomBackColor = true;
             this.cbServiceType.UseCustomForeColor = true;
@@ -493,7 +497,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(23, 27);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -510,11 +514,11 @@
             this.groupBox5.Controls.Add(this.txbTotalPrice);
             this.groupBox5.Controls.Add(this.label7);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox5.ForeColor = System.Drawing.Color.SeaGreen;
+            this.groupBox5.ForeColor = System.Drawing.Color.Black;
             this.groupBox5.Location = new System.Drawing.Point(493, 425);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox5.Size = new System.Drawing.Size(315, 326);
             this.groupBox5.TabIndex = 50;
             this.groupBox5.TabStop = false;
@@ -524,20 +528,20 @@
             // 
             this.btnAddCustomer.ActiveBorderThickness = 1;
             this.btnAddCustomer.ActiveCornerRadius = 20;
-            this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.Silver;
             this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.Black;
             this.btnAddCustomer.BackColor = System.Drawing.Color.White;
             this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
             this.btnAddCustomer.ButtonText = "Thanh Toán";
             this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCustomer.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAddCustomer.ForeColor = System.Drawing.Color.Black;
             this.btnAddCustomer.IdleBorderThickness = 1;
             this.btnAddCustomer.IdleCornerRadius = 20;
             this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
-            this.btnAddCustomer.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnAddCustomer.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAddCustomer.IdleForecolor = System.Drawing.Color.Black;
+            this.btnAddCustomer.IdleLineColor = System.Drawing.Color.Black;
             this.btnAddCustomer.Location = new System.Drawing.Point(23, 181);
             this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnAddCustomer.Name = "btnAddCustomer";
@@ -549,11 +553,11 @@
             // numericUpDown1
             // 
             this.numericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.numericUpDown1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.numericUpDown1.ForeColor = System.Drawing.Color.Black;
             this.numericUpDown1.Location = new System.Drawing.Point(23, 121);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(271, 34);
+            this.numericUpDown1.Size = new System.Drawing.Size(269, 34);
             this.numericUpDown1.TabIndex = 62;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -561,7 +565,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(17, 94);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -573,20 +577,20 @@
             // 
             this.btnClose_.ActiveBorderThickness = 1;
             this.btnClose_.ActiveCornerRadius = 20;
-            this.btnClose_.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnClose_.ActiveFillColor = System.Drawing.Color.Silver;
             this.btnClose_.ActiveForecolor = System.Drawing.Color.White;
-            this.btnClose_.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnClose_.ActiveLineColor = System.Drawing.Color.Black;
             this.btnClose_.BackColor = System.Drawing.Color.White;
             this.btnClose_.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose_.BackgroundImage")));
             this.btnClose_.ButtonText = "Đóng";
             this.btnClose_.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose_.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose_.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnClose_.ForeColor = System.Drawing.Color.Black;
             this.btnClose_.IdleBorderThickness = 1;
             this.btnClose_.IdleCornerRadius = 20;
             this.btnClose_.IdleFillColor = System.Drawing.Color.White;
-            this.btnClose_.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnClose_.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnClose_.IdleForecolor = System.Drawing.Color.Black;
+            this.btnClose_.IdleLineColor = System.Drawing.Color.Black;
             this.btnClose_.Location = new System.Drawing.Point(23, 246);
             this.btnClose_.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnClose_.Name = "btnClose_";
@@ -597,19 +601,20 @@
             // 
             // txbTotalPrice
             // 
-            this.txbTotalPrice.BorderColorFocused = System.Drawing.Color.SeaGreen;
-            this.txbTotalPrice.BorderColorIdle = System.Drawing.Color.SeaGreen;
-            this.txbTotalPrice.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
+            this.txbTotalPrice.BorderColorFocused = System.Drawing.Color.Black;
+            this.txbTotalPrice.BorderColorIdle = System.Drawing.Color.Black;
+            this.txbTotalPrice.BorderColorMouseHover = System.Drawing.Color.Black;
+            this.txbTotalPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbTotalPrice.BorderThickness = 1;
             this.txbTotalPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbTotalPrice.Enabled = false;
             this.txbTotalPrice.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txbTotalPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbTotalPrice.ForeColor = System.Drawing.Color.Black;
             this.txbTotalPrice.isPassword = false;
             this.txbTotalPrice.Location = new System.Drawing.Point(23, 54);
-            this.txbTotalPrice.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txbTotalPrice.Margin = new System.Windows.Forms.Padding(5);
             this.txbTotalPrice.Name = "txbTotalPrice";
-            this.txbTotalPrice.Size = new System.Drawing.Size(271, 36);
+            this.txbTotalPrice.Size = new System.Drawing.Size(269, 30);
             this.txbTotalPrice.TabIndex = 58;
             this.txbTotalPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -617,7 +622,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(23, 27);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
@@ -629,11 +634,11 @@
             // 
             this.groupBoxBill.Controls.Add(this.panel2);
             this.groupBoxBill.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxBill.ForeColor = System.Drawing.Color.SeaGreen;
+            this.groupBoxBill.ForeColor = System.Drawing.Color.Black;
             this.groupBoxBill.Location = new System.Drawing.Point(816, 322);
-            this.groupBoxBill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxBill.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxBill.Name = "groupBoxBill";
-            this.groupBoxBill.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxBill.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxBill.Size = new System.Drawing.Size(849, 428);
             this.groupBoxBill.TabIndex = 51;
             this.groupBoxBill.TabStop = false;
@@ -646,7 +651,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(4, 31);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(841, 393);
             this.panel2.TabIndex = 39;
@@ -662,12 +667,12 @@
             this.columnHeader4,
             this.columnHeader5});
             this.listViewUseService.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewUseService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.listViewUseService.ForeColor = System.Drawing.Color.Black;
             this.listViewUseService.FullRowSelect = true;
             this.listViewUseService.GridLines = true;
             this.listViewUseService.HideSelection = false;
             this.listViewUseService.Location = new System.Drawing.Point(0, 0);
-            this.listViewUseService.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewUseService.Margin = new System.Windows.Forms.Padding(4);
             this.listViewUseService.Name = "listViewUseService";
             this.listViewUseService.Size = new System.Drawing.Size(841, 393);
             this.listViewUseService.TabIndex = 8;
@@ -702,52 +707,52 @@
             // 
             this.dataGridViewBookRoom.AllowDrop = true;
             this.dataGridViewBookRoom.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            this.dataGridViewBookRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            this.dataGridViewBookRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewBookRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewBookRoom.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dataGridViewBookRoom.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewBookRoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBookRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBookRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewBookRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewBookRoom.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewBookRoom.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewBookRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewBookRoom.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewBookRoom.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewBookRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewBookRoom.Name = "dataGridViewBookRoom";
             this.dataGridViewBookRoom.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBookRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBookRoom.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewBookRoom.RowHeadersVisible = false;
             this.dataGridViewBookRoom.RowHeadersWidth = 51;
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBookRoom.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBookRoom.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewBookRoom.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridViewBookRoom.Size = new System.Drawing.Size(841, 393);
             this.dataGridViewBookRoom.StandardTab = true;
@@ -757,11 +762,11 @@
             // 
             this.groupBillRoom.Controls.Add(this.listViewBillRoom);
             this.groupBillRoom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBillRoom.ForeColor = System.Drawing.Color.SeaGreen;
+            this.groupBillRoom.ForeColor = System.Drawing.Color.Black;
             this.groupBillRoom.Location = new System.Drawing.Point(815, 63);
-            this.groupBillRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBillRoom.Margin = new System.Windows.Forms.Padding(4);
             this.groupBillRoom.Name = "groupBillRoom";
-            this.groupBillRoom.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBillRoom.Padding = new System.Windows.Forms.Padding(4);
             this.groupBillRoom.Size = new System.Drawing.Size(851, 86);
             this.groupBillRoom.TabIndex = 53;
             this.groupBillRoom.TabStop = false;
@@ -781,12 +786,12 @@
             this.columnHeader14});
             this.listViewBillRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewBillRoom.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.listViewBillRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.listViewBillRoom.ForeColor = System.Drawing.Color.Black;
             this.listViewBillRoom.FullRowSelect = true;
             this.listViewBillRoom.GridLines = true;
             this.listViewBillRoom.HideSelection = false;
             this.listViewBillRoom.Location = new System.Drawing.Point(4, 31);
-            this.listViewBillRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewBillRoom.Margin = new System.Windows.Forms.Padding(4);
             this.listViewBillRoom.Name = "listViewBillRoom";
             this.listViewBillRoom.Size = new System.Drawing.Size(843, 51);
             this.listViewBillRoom.TabIndex = 9;
@@ -838,11 +843,11 @@
             // 
             this.groupBox2.Controls.Add(this.listViewSurcharge);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.SeaGreen;
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(815, 153);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(851, 166);
             this.groupBox2.TabIndex = 54;
             this.groupBox2.TabStop = false;
@@ -859,12 +864,12 @@
             this.columnHeader15});
             this.listViewSurcharge.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewSurcharge.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.listViewSurcharge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.listViewSurcharge.ForeColor = System.Drawing.Color.Black;
             this.listViewSurcharge.FullRowSelect = true;
             this.listViewSurcharge.GridLines = true;
             this.listViewSurcharge.HideSelection = false;
             this.listViewSurcharge.Location = new System.Drawing.Point(4, 31);
-            this.listViewSurcharge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listViewSurcharge.Margin = new System.Windows.Forms.Padding(4);
             this.listViewSurcharge.Name = "listViewSurcharge";
             this.listViewSurcharge.Size = new System.Drawing.Size(843, 131);
             this.listViewSurcharge.TabIndex = 9;
@@ -908,7 +913,7 @@
             this.Controls.Add(this.btnClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "fUseService";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fUseService";

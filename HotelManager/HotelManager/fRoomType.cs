@@ -369,5 +369,20 @@ namespace HotelManager
             BtnCancel_Click(sender, null);
         }
         #endregion
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbName_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbPrice_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -191,13 +191,14 @@
             // 
             this.cbRoomType.BackColor = System.Drawing.Color.White;
             this.cbRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbRoomType.ForeColor = System.Drawing.Color.Black;
             this.cbRoomType.FormattingEnabled = true;
             this.cbRoomType.ItemHeight = 24;
             this.cbRoomType.Location = new System.Drawing.Point(24, 124);
             this.cbRoomType.Margin = new System.Windows.Forms.Padding(4);
             this.cbRoomType.Name = "cbRoomType";
             this.cbRoomType.Size = new System.Drawing.Size(271, 30);
-            this.cbRoomType.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbRoomType.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbRoomType.TabIndex = 55;
             this.cbRoomType.UseCustomBackColor = true;
             this.cbRoomType.UseCustomForeColor = true;
@@ -449,6 +450,7 @@
             // 
             this.cbNationality.BackColor = System.Drawing.Color.White;
             this.cbNationality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbNationality.ForeColor = System.Drawing.Color.Black;
             this.cbNationality.FormattingEnabled = true;
             this.cbNationality.ItemHeight = 24;
             this.cbNationality.Items.AddRange(new object[] {
@@ -472,7 +474,7 @@
             this.cbNationality.Margin = new System.Windows.Forms.Padding(4);
             this.cbNationality.Name = "cbNationality";
             this.cbNationality.Size = new System.Drawing.Size(271, 30);
-            this.cbNationality.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbNationality.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbNationality.TabIndex = 49;
             this.cbNationality.UseCustomBackColor = true;
             this.cbNationality.UseCustomForeColor = true;
@@ -495,13 +497,14 @@
             // 
             this.cbCustomerType.BackColor = System.Drawing.Color.White;
             this.cbCustomerType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbCustomerType.ForeColor = System.Drawing.Color.Black;
             this.cbCustomerType.FormattingEnabled = true;
             this.cbCustomerType.ItemHeight = 24;
             this.cbCustomerType.Location = new System.Drawing.Point(13, 191);
             this.cbCustomerType.Margin = new System.Windows.Forms.Padding(4);
             this.cbCustomerType.Name = "cbCustomerType";
             this.cbCustomerType.Size = new System.Drawing.Size(271, 30);
-            this.cbCustomerType.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbCustomerType.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbCustomerType.TabIndex = 42;
             this.cbCustomerType.UseCustomBackColor = true;
             this.cbCustomerType.UseCustomForeColor = true;
@@ -568,6 +571,7 @@
             // 
             this.cbSex.BackColor = System.Drawing.Color.White;
             this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbSex.ForeColor = System.Drawing.Color.Black;
             this.cbSex.FormattingEnabled = true;
             this.cbSex.ItemHeight = 24;
             this.cbSex.Items.AddRange(new object[] {
@@ -578,7 +582,7 @@
             this.cbSex.Margin = new System.Windows.Forms.Padding(4);
             this.cbSex.Name = "cbSex";
             this.cbSex.Size = new System.Drawing.Size(271, 30);
-            this.cbSex.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbSex.Style = MetroFramework.MetroColorStyle.Silver;
             this.cbSex.TabIndex = 26;
             this.cbSex.UseCustomBackColor = true;
             this.cbSex.UseCustomForeColor = true;
