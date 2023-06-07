@@ -261,7 +261,7 @@ end
 
 GO
 CREATE PROC [dbo].[USP_InsertRoomType]
-@ID int, @Name nvarchar(100),@Price int,@LimitPerson int,
+@ID int, @Name nvarchar(100),@Price int,@LimitPerson int
 AS
 BEGIN
 	INSERT INTO dbo.RoomType(ID,Name,Price,LimitPerson)
@@ -270,25 +270,23 @@ END
 
 GO
 CREATE PROC [dbo].[USP_InsertCustomer]
-@customerName NVARCHAR(100), @idCustomerType int, @idCard NVARCHAR(100),
-@address NVARCHAR(200), @dateOfBirth date, @phoneNumber int,
-@sex NVARCHAR(100), @nationality NVARCHAR(100)
+@idCard NVARCHAR(100), @customerName NVARCHAR(100), @idCustomerType int, @sex NVARCHAR(100)
 AS
 BEGIN
 DECLARE @count INT =0
 SELECT @count = COUNT(*) FROM customer WHERE IDCard = @idCard
 IF(@count=0)
-INSERT INTO dbo.Customer(IDCard,IDCustomerType, Name, DateOfBirth, Address, PhoneNumber, Sex, Nationality)
-	VALUES(@idCard, @idCustomerType, @customerName, @dateOfBirth, @address, @phoneNumber, @sex, @nationality)
+INSERT INTO dbo.Customer(IDCard,IDCustomerType, Name, Sex)
+	VALUES(@idCard, @idCustomerType, @customerName, @sex)
 end
 
 GO
 create proc [dbo].[USP_InsertCustomer_]
-@idCard nvarchar(100),@name nvarchar(100),@idCustomerType int, @dateOfBirth Date,@address nvarchar(200),@phoneNumber int,@sex nvarchar(100),@nationality nvarchar(100)
+@idCard NVARCHAR(100), @customerName NVARCHAR(100), @idCustomerType int,@sex NVARCHAR(100)
 as
 begin
-	insert into Customer(IDCard,Name,IDCustomerType,DateOfBirth,Address,PhoneNumber,Sex,Nationality)
-	values(@idCard,@name,@idCustomerType,@dateOfBirth,@address,@phoneNumber,@sex,@nationality)
+INSERT INTO dbo.Customer(IDCard,IDCustomerType, Name, Sex)
+	VALUES(@idCard, @idCustomerType, @customerName, @sex)
 end
 
 GO
@@ -483,7 +481,7 @@ END
 GO
 CREATE PROC [dbo].[USP_LoadFullCustomer]
 AS
-SELECT CUSTOMER.ID, Customer.Name, IDCard, CustomerType.Name as [NameCustomerType], Sex, DateOfBirth, PhoneNumber, Address, Nationality, IDCustomerType 
+SELECT CUSTOMER.ID, Customer.Name, IDCard, CustomerType.Name as [NameCustomerType], Sex, IDCustomerType 
 FROM dbo.Customer INNER JOIN dbo.CustomerType ON CustomerType.ID = Customer.IDCustomerType
 
 GO
@@ -501,7 +499,7 @@ AS
 SELECT * FROM dbo.PARAMETER
 
 GO
-CREATE PRO [dbo].[USP_InsertParameter]
+CREATE PROC [dbo].[USP_InsertParameter]
 @Name nvarchar(100), @Value float, @Describe nvarchar(200)
 AS
 BEGIN
@@ -646,10 +644,7 @@ BEGIN
 		INSERT INTO @table SELECT bill.id  FROM bill INNER JOIN dbo.ReceiveRoom ON ReceiveRoom.ID = Bill.IDReceiveRoom
 		INNER JOIN dbo.BookRoom ON BookRoom.ID = ReceiveRoom.IDBookRoom INNER JOIN dbo.Customer ON Customer.ID = BookRoom.IDCustomer
 		WHERE [dbo].ConvertString(Customer.IDCard) LIKE @string
-	ELSE IF(@mode = 3)
-		INSERT INTO @table SELECT bill.id  FROM bill INNER JOIN dbo.ReceiveRoom ON ReceiveRoom.ID = Bill.IDReceiveRoom
-		INNER JOIN dbo.BookRoom ON BookRoom.ID = ReceiveRoom.IDBookRoom INNER JOIN dbo.Customer ON Customer.ID = BookRoom.IDCustomer
-		WHERE CAST(dbo.Customer.PhoneNumber AS NVARCHAR(100)) LIKE @string
+
 
 	SELECT bill.id, room.Name AS [roomName], Customer.Name as [customerName], bill.StaffSetUp, bill.DateOfCreate, STATUSBILL.Name, bill.TotalPrice, (cast(bill.Discount as nvarchar(4)) + '%') [Discount], cast(bill.TotalPrice*( (100-bill.Discount)/100.0) as int) [FinalPrice]
     FROM dbo.BILL INNER JOIN dbo.RECEIVEROOM ON RECEIVEROOM.ID = BILL.IDReceiveRoom 
@@ -675,10 +670,8 @@ GO
 			INSERT INTO @table SELECT id FROM [dbo].customer WHERE [dbo].[ConvertString](name) LIKE @string;
 		ELSE IF(@mode = 2)
 			INSERT INTO @table SELECT id FROM [dbo].customer WHERE [dbo].[ConvertString](IDCard) LIKE @string;
-		ELSE IF(@mode = 3)
-			INSERT INTO @table SELECT id FROM [dbo].customer WHERE CAST(PhoneNumber AS NVARCHAR(100)) LIKE @string;
 
-	    SELECT CUSTOMER.ID, Customer.Name, IDCard, CustomerType.Name as [NameCustomerType], Sex, DateOfBirth, PhoneNumber, Address, Nationality, IDCustomerType
+	    SELECT CUSTOMER.ID, Customer.Name, IDCard, CustomerType.Name as [NameCustomerType], Sex, IDCustomerType
 		FROM Customer INNER JOIN @table ON [@table].id = CUSTOMER.ID INNER JOIN dbo.CustomerType ON CustomerType.ID = Customer.IDCustomerType
 	END
 
@@ -801,7 +794,7 @@ CREATE proc [dbo].[USP_ShowBillInfo]
 @idBill int
 as
 begin
-select D.Name[HoTen],D.IDCard[CMND],D.PhoneNumber[SDT],E.Name[LoaiKH],D.Address[DiaChi],D.Nationality[QuocTich],F.Name[TenPhong],G.Name[LoaiPhong],G.Price[DonGia],C.DateCheckIn[NgayDen],C.DateCheckOut[NgayDi],A.RoomPrice[TienPhong],A.ServicePrice[TienDichVu],A.Surcharge[PhuThu],A.TotalPrice[ThanhTien],A.Discount[GiamGia]
+select D.Name[HoTen],D.IDCard[CMND],E.Name[LoaiKH],F.Name[TenPhong],G.Name[LoaiPhong],G.Price[DonGia],C.DateCheckIn[NgayDen],C.DateCheckOut[NgayDi],A.RoomPrice[TienPhong],A.ServicePrice[TienDichVu],A.Surcharge[PhuThu],A.TotalPrice[ThanhTien],A.Discount[GiamGia]
 from Bill A, ReceiveRoom B,BookRoom C, Customer D,CustomerType E,Room F,RoomType G
 where A.IDReceiveRoom=B.ID and B.IDBookRoom=C.ID and C.IDCustomer=D.ID and D.IDCustomerType=E.ID and B.IDRoom=F.ID and F.IDRoomType=G.ID and A.ID=@idBill
 end
@@ -832,11 +825,11 @@ CREATE proc [dbo].[USP_ShowCustomerFromReceiveRoom]
 @idReceiveRoom int
 as
 begin
-	select C.Name[Tên khách hàng],C.IDCard[CMND],C.Address[Địa chỉ],C.PhoneNumber[Số điện thoại],C.Nationality[Quốc tịch]
+	select C.Name[Tên khách hàng],C.IDCard[CMND]
 	from ReceiveRoom A, BookRoom B, Customer C
 	where A.ID=@idReceiveRoom and A.IDBookRoom=B.ID and B.IDCustomer=C.ID
 	union
-	select C.Name[Tên khách hàng],C.IDCard[CMND],C.Address[Địa chỉ],C.PhoneNumber[Số điện thoại],C.Nationality[Quốc tịch]
+	select C.Name[Tên khách hàng],C.IDCard[CMND]
 	from ReceiveRoom A,ReceiveRoomDetails B,Customer C
 	where A.ID=@idReceiveRoom and A.ID=B.IDReceiveRoom and B.IDCustomerOther=C.ID
 end
@@ -912,10 +905,10 @@ begin
 
 	select @check1=COUNT(*)
 	from ReceiveRoom A,BookRoom B,Customer D
-	where A.IDBookRoom=B.ID and B.IDCustomer=D.ID and D.Nationality!=N'Việt Nam' and A.ID=@idReceiveRoom
+	where A.IDBookRoom=B.ID and B.IDCustomer=D.ID and D.IDCustomerType!=1 and A.ID=@idReceiveRoom
 	select @check2=COUNT(*)
 	from ReceiveRoom A,ReceiveRoomDetails C,Customer D
-	where A.ID=C.IDReceiveRoom and D.ID=C.IDCustomerOther and D.Nationality!=N'Việt Nam' and A.ID=@idReceiveRoom
+	where A.ID=C.IDReceiveRoom and D.ID=C.IDCustomerOther and D.IDCustomerType!=1 and A.ID=@idReceiveRoom
 
 	if((@check1+@check2)>0) 
 	set @surcharge=@surcharge + @roomPrice*(@QD3 - 1)
@@ -983,8 +976,7 @@ end
 
 GO
 CREATE PROC [dbo].[USP_UpdateCustomer]
-@id INT, @customerName NVARCHAR(100), @idCustomerType int, @idCardNow NVARCHAR(100), @address NVARCHAR(200),
-@dateOfBirth date, @phoneNumber int, @sex NVARCHAR(100), @nationality NVARCHAR(100), @idCardPre NVARCHAR(100)
+@id INT, @customerName NVARCHAR(100), @idCustomerType int, @idCardNow NVARCHAR(100), @sex NVARCHAR(100), @idCardPre NVARCHAR(100)
 AS
 BEGIN
 	IF(@idCardPre != @idCardNow)
@@ -997,9 +989,7 @@ BEGIN
 		BEGIN
 			UPDATE dbo.Customer 
 			SET 
-			Name =@customerName, IDCustomerType = @idCustomerType, IDCard =@idCardNow,
-			Address = @address, DateOfBirth =@dateOfBirth, PhoneNumber =@phoneNumber,
-			Nationality = @nationality, Sex = @sex
+			Name =@customerName, IDCustomerType = @idCustomerType, IDCard =@idCardNow, Sex = @sex
 			WHERE ID = @id
 		END
 	END
@@ -1007,20 +997,18 @@ BEGIN
 	BEGIN
 		UPDATE dbo.Customer 
 			SET 
-			Name =@customerName, IDCustomerType = @idCustomerType,Address = @address,
-			DateOfBirth =@dateOfBirth, PhoneNumber =@phoneNumber,
-			Nationality = @nationality, Sex = @sex
+			Name =@customerName, IDCustomerType = @idCustomerType, Sex = @sex
 			WHERE ID = @id
 	end
 END
 
 GO
 create proc [dbo].[USP_UpdateCustomer_]
-@id int,@name nvarchar(50),@idCard nvarchar(50),@idCustomerType int,@phoneNumber int, @dateOfBirth date,@address nvarchar(100),@sex nvarchar(20),@nationality nvarchar(100)
+@id int,@name nvarchar(50),@idCard nvarchar(50),@idCustomerType int,@sex nvarchar(20)
 as
 begin
 	update Customer
-	set Name=@name,IDCard=@idCard,IDCustomerType=@idCustomerType,PhoneNumber=@phoneNumber,DateOfBirth=@dateOfBirth,Address=@address,Sex=@sex,Nationality=@nationality
+	set Name=@name,IDCard=@idCard,IDCustomerType=@idCustomerType,Sex=@sex
 	where ID=@id
 end
 

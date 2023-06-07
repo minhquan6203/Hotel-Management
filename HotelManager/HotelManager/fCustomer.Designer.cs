@@ -38,25 +38,17 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupCustomer = new System.Windows.Forms.GroupBox();
             this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.comboBoxSex = new MetroFramework.Controls.MetroComboBox();
             this.comboBoxCustomerType = new MetroFramework.Controls.MetroComboBox();
             this.comboboxID = new MetroFramework.Controls.MetroComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txbFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txbIDCard = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label16 = new System.Windows.Forms.Label();
             this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNameCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colIDCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNameCustomerType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDateOfBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNationality = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colIdCustomerType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bindingCustomer = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -83,8 +75,12 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.comboBoxSex = new MetroFramework.Controls.MetroComboBox();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNameCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIDCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNameCustomerType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIdCustomerType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -142,6 +138,28 @@
             this.bunifuMetroTextbox1.Size = new System.Drawing.Size(175, 30);
             this.bunifuMetroTextbox1.TabIndex = 0;
             this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // comboBoxSex
+            // 
+            this.comboBoxSex.BackColor = System.Drawing.Color.White;
+            this.comboBoxSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSex.ForeColor = System.Drawing.Color.Black;
+            this.comboBoxSex.FormattingEnabled = true;
+            this.comboBoxSex.ItemHeight = 24;
+            this.comboBoxSex.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
+            this.comboBoxSex.Location = new System.Drawing.Point(220, 183);
+            this.comboBoxSex.Name = "comboBoxSex";
+            this.comboBoxSex.Size = new System.Drawing.Size(175, 30);
+            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Silver;
+            this.comboBoxSex.TabIndex = 4;
+            this.comboBoxSex.UseCustomBackColor = true;
+            this.comboBoxSex.UseCustomForeColor = true;
+            this.comboBoxSex.UseSelectable = true;
+            this.comboBoxSex.UseStyleColors = true;
+            this.comboBoxSex.SelectedIndexChanged += new System.EventHandler(this.comboBoxSex_SelectedIndexChanged);
             // 
             // comboBoxCustomerType
             // 
@@ -203,6 +221,17 @@
             this.txbFullName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txbFullName.Enter += new System.EventHandler(this.Txb_Enter);
             this.txbFullName.Leave += new System.EventHandler(this.Txb_Leave);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(225, 156);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(88, 25);
+            this.label13.TabIndex = 28;
+            this.label13.Text = "Giới tính:";
             // 
             // label20
             // 
@@ -285,10 +314,6 @@
             this.colIDCard,
             this.colNameCustomerType,
             this.colSex,
-            this.colDateOfBirth,
-            this.colPhone,
-            this.colAddress,
-            this.colNationality,
             this.colIdCustomerType});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
@@ -321,109 +346,9 @@
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCustomer.Size = new System.Drawing.Size(653, 399);
+            this.dataGridViewCustomer.Size = new System.Drawing.Size(419, 399);
             this.dataGridViewCustomer.TabIndex = 3;
             this.dataGridViewCustomer.SelectionChanged += new System.EventHandler(this.DataGridViewCustomer_SelectionChanged);
-            // 
-            // colID
-            // 
-            this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colID.DataPropertyName = "id";
-            this.colID.HeaderText = "Mã";
-            this.colID.MinimumWidth = 6;
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Width = 69;
-            // 
-            // colNameCustomer
-            // 
-            this.colNameCustomer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colNameCustomer.DataPropertyName = "Name";
-            this.colNameCustomer.HeaderText = "Tên";
-            this.colNameCustomer.MinimumWidth = 6;
-            this.colNameCustomer.Name = "colNameCustomer";
-            this.colNameCustomer.ReadOnly = true;
-            this.colNameCustomer.Width = 70;
-            // 
-            // colIDCard
-            // 
-            this.colIDCard.DataPropertyName = "idcard";
-            this.colIDCard.FillWeight = 90F;
-            this.colIDCard.HeaderText = "Số CMND";
-            this.colIDCard.MinimumWidth = 6;
-            this.colIDCard.Name = "colIDCard";
-            this.colIDCard.ReadOnly = true;
-            this.colIDCard.Width = 90;
-            // 
-            // colNameCustomerType
-            // 
-            this.colNameCustomerType.DataPropertyName = "NameCustomerType";
-            this.colNameCustomerType.FillWeight = 70F;
-            this.colNameCustomerType.HeaderText = "Loại";
-            this.colNameCustomerType.MinimumWidth = 6;
-            this.colNameCustomerType.Name = "colNameCustomerType";
-            this.colNameCustomerType.ReadOnly = true;
-            this.colNameCustomerType.Width = 70;
-            // 
-            // colSex
-            // 
-            this.colSex.DataPropertyName = "sex";
-            this.colSex.FillWeight = 85F;
-            this.colSex.HeaderText = "Giới Tính";
-            this.colSex.MinimumWidth = 6;
-            this.colSex.Name = "colSex";
-            this.colSex.ReadOnly = true;
-            this.colSex.Visible = false;
-            this.colSex.Width = 85;
-            // 
-            // colDateOfBirth
-            // 
-            this.colDateOfBirth.DataPropertyName = "dateofbirth";
-            this.colDateOfBirth.FillWeight = 90F;
-            this.colDateOfBirth.HeaderText = "Ngày Sinh";
-            this.colDateOfBirth.MinimumWidth = 6;
-            this.colDateOfBirth.Name = "colDateOfBirth";
-            this.colDateOfBirth.ReadOnly = true;
-            this.colDateOfBirth.Visible = false;
-            this.colDateOfBirth.Width = 90;
-            // 
-            // colPhone
-            // 
-            this.colPhone.DataPropertyName = "phoneNumber";
-            this.colPhone.HeaderText = "SĐT";
-            this.colPhone.MinimumWidth = 6;
-            this.colPhone.Name = "colPhone";
-            this.colPhone.ReadOnly = true;
-            this.colPhone.Width = 125;
-            // 
-            // colAddress
-            // 
-            this.colAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colAddress.DataPropertyName = "address";
-            this.colAddress.HeaderText = "Địa Chỉ";
-            this.colAddress.MinimumWidth = 6;
-            this.colAddress.Name = "colAddress";
-            this.colAddress.ReadOnly = true;
-            // 
-            // colNationality
-            // 
-            this.colNationality.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colNationality.DataPropertyName = "nationality";
-            this.colNationality.HeaderText = "Quốc Tịch";
-            this.colNationality.MinimumWidth = 6;
-            this.colNationality.Name = "colNationality";
-            this.colNationality.ReadOnly = true;
-            this.colNationality.Width = 128;
-            // 
-            // colIdCustomerType
-            // 
-            this.colIdCustomerType.DataPropertyName = "idCustomerType";
-            this.colIdCustomerType.HeaderText = "";
-            this.colIdCustomerType.MinimumWidth = 6;
-            this.colIdCustomerType.Name = "colIdCustomerType";
-            this.colIdCustomerType.ReadOnly = true;
-            this.colIdCustomerType.Visible = false;
-            this.colIdCustomerType.Width = 125;
             // 
             // groupBox1
             // 
@@ -433,7 +358,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(430, 62);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(659, 475);
+            this.groupBox1.Size = new System.Drawing.Size(425, 475);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Khách Hàng";
@@ -466,7 +391,7 @@
             this.bindingCustomer.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingCustomer.Name = "bindingCustomer";
             this.bindingCustomer.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingCustomer.Size = new System.Drawing.Size(653, 43);
+            this.bindingCustomer.Size = new System.Drawing.Size(419, 43);
             this.bindingCustomer.TabIndex = 29;
             this.bindingCustomer.Text = "binding";
             // 
@@ -801,7 +726,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(1073, 6);
+            this.btnClose.Location = new System.Drawing.Point(843, 6);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(16, 16);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -820,45 +745,73 @@
             this.pictureBox1.TabIndex = 57;
             this.pictureBox1.TabStop = false;
             // 
-            // label13
+            // colID
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(225, 156);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 25);
-            this.label13.TabIndex = 28;
-            this.label13.Text = "Giới tính:";
+            this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colID.DataPropertyName = "id";
+            this.colID.HeaderText = "Mã";
+            this.colID.MinimumWidth = 6;
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Width = 69;
             // 
-            // comboBoxSex
+            // colNameCustomer
             // 
-            this.comboBoxSex.BackColor = System.Drawing.Color.White;
-            this.comboBoxSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSex.ForeColor = System.Drawing.Color.Black;
-            this.comboBoxSex.FormattingEnabled = true;
-            this.comboBoxSex.ItemHeight = 24;
-            this.comboBoxSex.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Khác"});
-            this.comboBoxSex.Location = new System.Drawing.Point(220, 183);
-            this.comboBoxSex.Name = "comboBoxSex";
-            this.comboBoxSex.Size = new System.Drawing.Size(175, 30);
-            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Silver;
-            this.comboBoxSex.TabIndex = 4;
-            this.comboBoxSex.UseCustomBackColor = true;
-            this.comboBoxSex.UseCustomForeColor = true;
-            this.comboBoxSex.UseSelectable = true;
-            this.comboBoxSex.UseStyleColors = true;
-            this.comboBoxSex.SelectedIndexChanged += new System.EventHandler(this.comboBoxSex_SelectedIndexChanged);
+            this.colNameCustomer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colNameCustomer.DataPropertyName = "Name";
+            this.colNameCustomer.HeaderText = "Tên";
+            this.colNameCustomer.MinimumWidth = 6;
+            this.colNameCustomer.Name = "colNameCustomer";
+            this.colNameCustomer.ReadOnly = true;
+            this.colNameCustomer.Width = 70;
+            // 
+            // colIDCard
+            // 
+            this.colIDCard.DataPropertyName = "idcard";
+            this.colIDCard.FillWeight = 90F;
+            this.colIDCard.HeaderText = "Số CMND";
+            this.colIDCard.MinimumWidth = 6;
+            this.colIDCard.Name = "colIDCard";
+            this.colIDCard.ReadOnly = true;
+            this.colIDCard.Width = 90;
+            // 
+            // colNameCustomerType
+            // 
+            this.colNameCustomerType.DataPropertyName = "NameCustomerType";
+            this.colNameCustomerType.FillWeight = 70F;
+            this.colNameCustomerType.HeaderText = "Loại";
+            this.colNameCustomerType.MinimumWidth = 6;
+            this.colNameCustomerType.Name = "colNameCustomerType";
+            this.colNameCustomerType.ReadOnly = true;
+            this.colNameCustomerType.Width = 70;
+            // 
+            // colSex
+            // 
+            this.colSex.DataPropertyName = "sex";
+            this.colSex.FillWeight = 85F;
+            this.colSex.HeaderText = "Giới Tính";
+            this.colSex.MinimumWidth = 6;
+            this.colSex.Name = "colSex";
+            this.colSex.ReadOnly = true;
+            this.colSex.Visible = false;
+            this.colSex.Width = 85;
+            // 
+            // colIdCustomerType
+            // 
+            this.colIdCustomerType.DataPropertyName = "idCustomerType";
+            this.colIdCustomerType.HeaderText = "";
+            this.colIdCustomerType.MinimumWidth = 6;
+            this.colIdCustomerType.Name = "colIdCustomerType";
+            this.colIdCustomerType.ReadOnly = true;
+            this.colIdCustomerType.Visible = false;
+            this.colIdCustomerType.Width = 125;
             // 
             // fCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1094, 540);
+            this.ClientSize = new System.Drawing.Size(864, 540);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label6);
@@ -931,19 +884,15 @@
         private MetroFramework.Controls.MetroComboBox comboboxID;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
         private MetroFramework.Controls.MetroComboBox cbCustomerSearch;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private MetroFramework.Controls.MetroComboBox comboBoxSex;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNameCustomer;
         private System.Windows.Forms.DataGridViewTextBoxColumn colIDCard;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNameCustomerType;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSex;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDateOfBirth;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colAddress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNationality;
         private System.Windows.Forms.DataGridViewTextBoxColumn colIdCustomerType;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
-        private MetroFramework.Controls.MetroComboBox comboBoxSex;
-        private System.Windows.Forms.Label label13;
     }
 }

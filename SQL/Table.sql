@@ -70,11 +70,7 @@ CREATE TABLE Customer(
 	IDCard nvarchar(100) NOT NULL,
 	IDCustomerType int NOT NULL,
 	Name nvarchar(100) NOT NULL,
-	DateOfBirth date NOT NULL,
-	Address nvarchar(200) NOT NULL,
-	PhoneNumber int NOT NULL,
 	Sex nvarchar(100) NOT NULL,
-	Nationality nvarchar(100) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	ID ASC

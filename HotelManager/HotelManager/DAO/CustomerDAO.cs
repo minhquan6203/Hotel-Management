@@ -21,7 +21,7 @@ namespace HotelManager.DAO
         }
         public bool InsertCustomer(string idCard, string name,int idCustomerType, string sex)
         {
-            string query = "USP_InsertCustomer_ @idCard , @name , @idCustomerType , @sex ";
+            string query = "USP_InsertCustomer_ @idCard , @name , @idCustomerType , @sex";
             return DataProvider.Instance.ExecuteNoneQuery(query,new object[] { idCard, name, idCustomerType , sex })>0;
         }
         public Customer GetInfoByIdCard(string idCard)
@@ -64,10 +64,10 @@ namespace HotelManager.DAO
             string query = "USP_LoadFullCustomer";
             return DataProvider.Instance.ExecuteQuery(query);
         }
-        internal DataTable Search(string text, int phoneNumber)
+        internal DataTable Search(string text, int mode)
         {
             string query = "USP_SearchCustomer @string , @int";
-            return DataProvider.Instance.ExecuteQuery(query, new object[] { text, phoneNumber });
+            return DataProvider.Instance.ExecuteQuery(query, new object[] { text, mode });
         }
         public int GetIDCustomerFromBookRoom(int idReceiveRoom)
         {
