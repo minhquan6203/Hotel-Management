@@ -44,7 +44,6 @@ namespace HotelManager
         }
         public void LoadDate()
         {
-            dpkDateOfBirth.Value = new DateTime(1998, 4, 6);
             dpkDateCheckIn.Value = DateTime.Now;
             dpkDateCheckOut.Value = DateTime.Now.AddDays(1);
         }
@@ -61,20 +60,16 @@ namespace HotelManager
         {
             return CustomerDAO.Instance.IsIdCardExists(idCard);
         }
-        public void InsertCustomer(string idCard, string name, int idCustomerType, DateTime dateofBirth, string address, int phonenumber, string sex, string nationality)
+        public void InsertCustomer(string idCard, string name, int idCustomerType, string sex)
         {
-            CustomerDAO.Instance.InsertCustomer(idCard, name, idCustomerType, dateofBirth, address, phonenumber, sex, nationality);
+            CustomerDAO.Instance.InsertCustomer(idCard, name, idCustomerType, sex );
         }
         public void GetInfoByIdCard(string idCard)
         {
             Customer customer = CustomerDAO.Instance.GetInfoByIdCard(idCard);
             txbIDCard.Text = customer.IdCard.ToString();
             txbFullName.Text = customer.Name;
-            txbAddress.Text = customer.Address;
-            dpkDateOfBirth.Value = customer.DateOfBirth;
             cbSex.Text = customer.Sex;
-            txbPhoneNumber.Text = customer.PhoneNumber.ToString();
-            cbNationality.Text = customer.Nationality;
             cbCustomerType.Text = CustomerTypeDAO.Instance.GetNameByIdCard(idCard);
         }
         public void InsertBookRoom(int idCustomer, int idRoomType, DateTime datecheckin, DateTime datecheckout, DateTime datebookroom)
@@ -149,19 +144,19 @@ namespace HotelManager
         }
         public void ClearData()
         {
-            txbIDCardSearch.Text = txbIDCard.Text = txbFullName.Text = txbAddress.Text = txbPhoneNumber.Text = cbNationality.Text = String.Empty;
+            txbIDCardSearch.Text = txbIDCard.Text = txbFullName.Text = String.Empty;
             LoadDate();
         }
         private void btnBookRoom_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn đặt phòng không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (txbIDCard.Text != String.Empty && txbFullName.Text != String.Empty && txbAddress.Text != String.Empty && txbPhoneNumber.Text != String.Empty && cbNationality.Text != String.Empty)
+                if (txbIDCard.Text != String.Empty && txbFullName.Text != String.Empty)
                 {
                     if (!IsIdCardExists(txbIDCard.Text))
                     {
                         int idCustomerType = (cbCustomerType.SelectedItem as CustomerType).Id;
-                        InsertCustomer(txbIDCard.Text, txbFullName.Text, idCustomerType, dpkDateOfBirth.Value, txbAddress.Text, int.Parse(txbPhoneNumber.Text), cbSex.Text, cbNationality.Text);
+                        InsertCustomer(txbIDCard.Text, txbFullName.Text, idCustomerType, cbSex.Text);
                     }
                     InsertBookRoom(CustomerDAO.Instance.GetInfoByIdCard(txbIDCard.Text).Id, (cbRoomType.SelectedItem as RoomType).Id, dpkDateCheckIn.Value, dpkDateCheckOut.Value, DateTime.Now);
                     MessageBox.Show("Đặt phòng thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

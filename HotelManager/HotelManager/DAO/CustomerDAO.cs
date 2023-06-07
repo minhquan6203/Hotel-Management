@@ -19,10 +19,10 @@ namespace HotelManager.DAO
             int count = DataProvider.Instance.ExecuteQuery(query, new object[] { idCard }).Rows.Count;
             return count > 0;
         }
-        public bool InsertCustomer(string idCard, string name,int idCustomerType,DateTime dateofBirth,string address,int phonenumber,string sex,string nationality)
+        public bool InsertCustomer(string idCard, string name,int idCustomerType, string sex)
         {
-            string query = "USP_InsertCustomer_ @idCard , @name , @idCustomerType , @dateOfBirth , @address , @phoneNumber , @sex , @nationality";
-            return DataProvider.Instance.ExecuteNoneQuery(query,new object[] { idCard, name, idCustomerType, dateofBirth, address, phonenumber, sex, nationality })>0;
+            string query = "USP_InsertCustomer_ @idCard , @name , @idCustomerType , @sex ";
+            return DataProvider.Instance.ExecuteNoneQuery(query,new object[] { idCard, name, idCustomerType , sex })>0;
         }
         public Customer GetInfoByIdCard(string idCard)
         {
@@ -32,33 +32,31 @@ namespace HotelManager.DAO
 
         }
 
-        internal bool InsertCustomers(string customerName, int idCustomerType, string idCard, string address, DateTime dateOfBirth, int phoneNumber, string sex, string nationality)
+        internal bool InsertCustomers(string customerName, int idCustomerType, string idCard, string sex)
         {
-            string query = "exec USP_InsertCustomer @customerName , @idCustomerType , @idCard , @address , @dateOfBirth , @phoneNumber , @sex , @nationality";
-            int count = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { customerName, idCustomerType, idCard, address, dateOfBirth, phoneNumber, sex, nationality });
+            string query = "exec USP_InsertCustomer @customerName , @idCustomerType , @idCard , @sex";
+            int count = DataProvider.Instance.ExecuteNoneQuery(query, new object[] { customerName, idCustomerType, idCard, sex });
             return count > 0;
         }
         internal bool InsertCustomer(Customer customer)
         {
-            return InsertCustomers(customer.Name, customer.IdCustomerType, customer.IdCard, customer.Address,
-                customer.DateOfBirth, customer.PhoneNumber, customer.Sex, customer.Nationality);
+            return InsertCustomers(customer.Name, customer.IdCustomerType, customer.IdCard, customer.Sex);
         }
 
 
         internal bool UpdateCustomer(Customer customerNow, Customer customerPre)
         {
-            string query = "USP_UpdateCustomer @id , @customerName , @idCustomerType ," +
-                            " @idCardNow , @address , @dateOfBirth , " +
-                            "@phoneNumber , @sex , @nationality , @idCardPre";
+            string query = "USP_UpdateCustomer @id , @customerName , @idCustomerType , " +
+                            "@idCardNow , " +
+                            "@sex , @idCardPre";
             object[] parameter = new object[] {customerNow.Id, customerNow.Name, customerNow.IdCustomerType, customerNow.IdCard,
-                                    customerNow.Address, customerNow.DateOfBirth, customerNow.PhoneNumber,
-                                    customerNow.Sex, customerNow.Nationality, customerPre.IdCard};
+                                    customerNow.Sex, customerPre.IdCard};
             return DataProvider.Instance.ExecuteNoneQuery(query, parameter) > 0;
         }
-        public bool UpdateCustomer(int id,string name,string idCard,int idCustomerType, int phoneNumber,DateTime dateOfBirth,string address,string sex,string nationality)
+        public bool UpdateCustomer(int id,string name,string idCard,int idCustomerType,string sex)
         {
-            string query = "USP_UpdateCustomer_ @id , @name , @idCard , @idCustomerType , @phoneNumber , @dateOfBirth , @address , @sex , @nationality";
-            return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { id,name,idCard,idCustomerType,phoneNumber,dateOfBirth,address,sex,nationality})>0;
+            string query = "USP_UpdateCustomer_ @id , @name , @idCard , @idCustomerType , @sex";
+            return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { id,name,idCard,idCustomerType,sex})>0;
         }
 
         internal DataTable LoadFullCustomer()

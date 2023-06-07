@@ -37,23 +37,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fCustomer));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupCustomer = new System.Windows.Forms.GroupBox();
-            this.txbNationality = new MetroFramework.Controls.MetroComboBox();
             this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txbAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txbPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.comboBoxSex = new MetroFramework.Controls.MetroComboBox();
             this.comboBoxCustomerType = new MetroFramework.Controls.MetroComboBox();
             this.comboboxID = new MetroFramework.Controls.MetroComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txbFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.datepickerDateOfBirth = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txbIDCard = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label16 = new System.Windows.Forms.Label();
             this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
@@ -93,6 +83,8 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.comboBoxSex = new MetroFramework.Controls.MetroComboBox();
             this.groupCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -113,23 +105,15 @@
             // 
             // groupCustomer
             // 
-            this.groupCustomer.Controls.Add(this.txbNationality);
             this.groupCustomer.Controls.Add(this.bunifuMetroTextbox1);
-            this.groupCustomer.Controls.Add(this.label14);
-            this.groupCustomer.Controls.Add(this.txbAddress);
-            this.groupCustomer.Controls.Add(this.txbPhoneNumber);
-            this.groupCustomer.Controls.Add(this.label11);
-            this.groupCustomer.Controls.Add(this.label12);
             this.groupCustomer.Controls.Add(this.comboBoxSex);
             this.groupCustomer.Controls.Add(this.comboBoxCustomerType);
             this.groupCustomer.Controls.Add(this.comboboxID);
             this.groupCustomer.Controls.Add(this.label2);
             this.groupCustomer.Controls.Add(this.txbFullName);
-            this.groupCustomer.Controls.Add(this.datepickerDateOfBirth);
             this.groupCustomer.Controls.Add(this.label13);
             this.groupCustomer.Controls.Add(this.label20);
             this.groupCustomer.Controls.Add(this.label15);
-            this.groupCustomer.Controls.Add(this.label1);
             this.groupCustomer.Controls.Add(this.txbIDCard);
             this.groupCustomer.Controls.Add(this.label16);
             this.groupCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -137,45 +121,10 @@
             this.groupCustomer.ForeColor = System.Drawing.Color.Black;
             this.groupCustomer.Location = new System.Drawing.Point(5, 175);
             this.groupCustomer.Name = "groupCustomer";
-            this.groupCustomer.Size = new System.Drawing.Size(414, 337);
+            this.groupCustomer.Size = new System.Drawing.Size(414, 238);
             this.groupCustomer.TabIndex = 1;
             this.groupCustomer.TabStop = false;
             this.groupCustomer.Text = "Thông tin khách hàng";
-            // 
-            // txbNationality
-            // 
-            this.txbNationality.BackColor = System.Drawing.Color.White;
-            this.txbNationality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txbNationality.ForeColor = System.Drawing.Color.Black;
-            this.txbNationality.FormattingEnabled = true;
-            this.txbNationality.ItemHeight = 24;
-            this.txbNationality.Items.AddRange(new object[] {
-            "Việt Nam",
-            "Trung Quốc",
-            "Hàn Quốc",
-            "Nhật Bản",
-            "Đài Loan",
-            "Malaysia",
-            "Thái Lan",
-            "Singapore",
-            "Nga",
-            "Anh",
-            "Pháp",
-            "Đức",
-            "Hoa Kỳ",
-            "Hà Lan",
-            "Tây Ban Nha",
-            "Ý",
-            "Khác"});
-            this.txbNationality.Location = new System.Drawing.Point(220, 183);
-            this.txbNationality.Name = "txbNationality";
-            this.txbNationality.Size = new System.Drawing.Size(175, 30);
-            this.txbNationality.Style = MetroFramework.MetroColorStyle.Silver;
-            this.txbNationality.TabIndex = 58;
-            this.txbNationality.UseCustomBackColor = true;
-            this.txbNationality.UseCustomForeColor = true;
-            this.txbNationality.UseSelectable = true;
-            this.txbNationality.UseStyleColors = true;
             // 
             // bunifuMetroTextbox1
             // 
@@ -194,98 +143,6 @@
             this.bunifuMetroTextbox1.TabIndex = 0;
             this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(12, 221);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(127, 25);
-            this.label14.TabIndex = 55;
-            this.label14.Text = "Số điện thoại:";
-            // 
-            // txbAddress
-            // 
-            this.txbAddress.BorderColorFocused = System.Drawing.Color.Black;
-            this.txbAddress.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbAddress.BorderColorMouseHover = System.Drawing.Color.Black;
-            this.txbAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbAddress.BorderThickness = 1;
-            this.txbAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbAddress.ForeColor = System.Drawing.Color.Black;
-            this.txbAddress.isPassword = false;
-            this.txbAddress.Location = new System.Drawing.Point(16, 301);
-            this.txbAddress.Margin = new System.Windows.Forms.Padding(0);
-            this.txbAddress.Name = "txbAddress";
-            this.txbAddress.Size = new System.Drawing.Size(175, 30);
-            this.txbAddress.TabIndex = 53;
-            this.txbAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txbPhoneNumber
-            // 
-            this.txbPhoneNumber.BorderColorFocused = System.Drawing.Color.Black;
-            this.txbPhoneNumber.BorderColorIdle = System.Drawing.Color.Black;
-            this.txbPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Black;
-            this.txbPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txbPhoneNumber.BorderThickness = 1;
-            this.txbPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPhoneNumber.ForeColor = System.Drawing.Color.Black;
-            this.txbPhoneNumber.isPassword = false;
-            this.txbPhoneNumber.Location = new System.Drawing.Point(16, 246);
-            this.txbPhoneNumber.Margin = new System.Windows.Forms.Padding(0);
-            this.txbPhoneNumber.Name = "txbPhoneNumber";
-            this.txbPhoneNumber.Size = new System.Drawing.Size(175, 30);
-            this.txbPhoneNumber.TabIndex = 52;
-            this.txbPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txbPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxbPhoneNumber_KeyPress);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(12, 276);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(74, 25);
-            this.label11.TabIndex = 57;
-            this.label11.Text = "Địa chỉ:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(225, 156);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(97, 25);
-            this.label12.TabIndex = 56;
-            this.label12.Text = "Quốc tịch:";
-            // 
-            // comboBoxSex
-            // 
-            this.comboBoxSex.BackColor = System.Drawing.Color.White;
-            this.comboBoxSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSex.ForeColor = System.Drawing.Color.Black;
-            this.comboBoxSex.FormattingEnabled = true;
-            this.comboBoxSex.ItemHeight = 24;
-            this.comboBoxSex.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Khác"});
-            this.comboBoxSex.Location = new System.Drawing.Point(220, 249);
-            this.comboBoxSex.Name = "comboBoxSex";
-            this.comboBoxSex.Size = new System.Drawing.Size(175, 30);
-            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Silver;
-            this.comboBoxSex.TabIndex = 4;
-            this.comboBoxSex.UseCustomBackColor = true;
-            this.comboBoxSex.UseCustomForeColor = true;
-            this.comboBoxSex.UseSelectable = true;
-            this.comboBoxSex.UseStyleColors = true;
-            this.comboBoxSex.SelectedIndexChanged += new System.EventHandler(this.comboBoxSex_SelectedIndexChanged);
-            // 
             // comboBoxCustomerType
             // 
             this.comboBoxCustomerType.BackColor = System.Drawing.Color.White;
@@ -293,7 +150,7 @@
             this.comboBoxCustomerType.ForeColor = System.Drawing.Color.Black;
             this.comboBoxCustomerType.FormattingEnabled = true;
             this.comboBoxCustomerType.ItemHeight = 24;
-            this.comboBoxCustomerType.Location = new System.Drawing.Point(220, 125);
+            this.comboBoxCustomerType.Location = new System.Drawing.Point(220, 122);
             this.comboBoxCustomerType.Name = "comboBoxCustomerType";
             this.comboBoxCustomerType.Size = new System.Drawing.Size(175, 30);
             this.comboBoxCustomerType.Style = MetroFramework.MetroColorStyle.Silver;
@@ -347,32 +204,6 @@
             this.txbFullName.Enter += new System.EventHandler(this.Txb_Enter);
             this.txbFullName.Leave += new System.EventHandler(this.Txb_Leave);
             // 
-            // datepickerDateOfBirth
-            // 
-            this.datepickerDateOfBirth.BackColor = System.Drawing.Color.Silver;
-            this.datepickerDateOfBirth.BorderRadius = 0;
-            this.datepickerDateOfBirth.ForeColor = System.Drawing.Color.White;
-            this.datepickerDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datepickerDateOfBirth.FormatCustom = null;
-            this.datepickerDateOfBirth.Location = new System.Drawing.Point(220, 65);
-            this.datepickerDateOfBirth.Margin = new System.Windows.Forms.Padding(48, 79, 48, 79);
-            this.datepickerDateOfBirth.Name = "datepickerDateOfBirth";
-            this.datepickerDateOfBirth.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.datepickerDateOfBirth.Size = new System.Drawing.Size(175, 30);
-            this.datepickerDateOfBirth.TabIndex = 5;
-            this.datepickerDateOfBirth.Value = new System.DateTime(2018, 2, 23, 23, 29, 57, 962);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(225, 221);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 25);
-            this.label13.TabIndex = 28;
-            this.label13.Text = "Giới tính:";
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -394,17 +225,6 @@
             this.label15.Size = new System.Drawing.Size(98, 25);
             this.label15.TabIndex = 24;
             this.label15.Text = "Số CMND:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(225, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 25);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "Ngày sinh:";
             // 
             // txbIDCard
             // 
@@ -501,7 +321,7 @@
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCustomer.Size = new System.Drawing.Size(653, 498);
+            this.dataGridViewCustomer.Size = new System.Drawing.Size(653, 399);
             this.dataGridViewCustomer.TabIndex = 3;
             this.dataGridViewCustomer.SelectionChanged += new System.EventHandler(this.DataGridViewCustomer_SelectionChanged);
             // 
@@ -613,7 +433,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(430, 62);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(659, 574);
+            this.groupBox1.Size = new System.Drawing.Size(659, 475);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Khách Hàng";
@@ -861,7 +681,7 @@
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(5, 518);
+            this.groupBox2.Location = new System.Drawing.Point(5, 419);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(414, 118);
             this.groupBox2.TabIndex = 36;
@@ -1000,12 +820,45 @@
             this.pictureBox1.TabIndex = 57;
             this.pictureBox1.TabStop = false;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(225, 156);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(88, 25);
+            this.label13.TabIndex = 28;
+            this.label13.Text = "Giới tính:";
+            // 
+            // comboBoxSex
+            // 
+            this.comboBoxSex.BackColor = System.Drawing.Color.White;
+            this.comboBoxSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSex.ForeColor = System.Drawing.Color.Black;
+            this.comboBoxSex.FormattingEnabled = true;
+            this.comboBoxSex.ItemHeight = 24;
+            this.comboBoxSex.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
+            this.comboBoxSex.Location = new System.Drawing.Point(220, 183);
+            this.comboBoxSex.Name = "comboBoxSex";
+            this.comboBoxSex.Size = new System.Drawing.Size(175, 30);
+            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Silver;
+            this.comboBoxSex.TabIndex = 4;
+            this.comboBoxSex.UseCustomBackColor = true;
+            this.comboBoxSex.UseCustomForeColor = true;
+            this.comboBoxSex.UseSelectable = true;
+            this.comboBoxSex.UseStyleColors = true;
+            this.comboBoxSex.SelectedIndexChanged += new System.EventHandler(this.comboBoxSex_SelectedIndexChanged);
+            // 
             // fCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1094, 643);
+            this.ClientSize = new System.Drawing.Size(1094, 540);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label6);
@@ -1045,12 +898,8 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private System.Windows.Forms.GroupBox groupCustomer;
-        private Bunifu.Framework.UI.BunifuDatepicker datepickerDateOfBirth;
-        private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroComboBox comboBoxCustomerType;
         private System.Windows.Forms.Label label20;
-        private MetroFramework.Controls.MetroComboBox comboBoxSex;
-        private System.Windows.Forms.Label label13;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbIDCard;
         private System.Windows.Forms.Label label15;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbFullName;
@@ -1082,12 +931,6 @@
         private MetroFramework.Controls.MetroComboBox comboboxID;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
         private MetroFramework.Controls.MetroComboBox cbCustomerSearch;
-        private System.Windows.Forms.Label label14;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txbAddress;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txbPhoneNumber;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private MetroFramework.Controls.MetroComboBox txbNationality;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNameCustomer;
         private System.Windows.Forms.DataGridViewTextBoxColumn colIDCard;
@@ -1100,5 +943,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colIdCustomerType;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private MetroFramework.Controls.MetroComboBox comboBoxSex;
+        private System.Windows.Forms.Label label13;
     }
 }

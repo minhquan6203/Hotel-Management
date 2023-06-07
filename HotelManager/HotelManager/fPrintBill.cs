@@ -88,10 +88,7 @@ namespace HotelManager
             CultureInfo cultureInfo = new CultureInfo("vi-vn");
             lblCustomerName.Text = data["HoTen"].ToString();
             lblIDCard.Text = data["CMND"].ToString();
-            lblPhoneNumber.Text = ((int)data["SDT"]).ToString();
             lblCustomerTypeName.Text = data["LoaiKH"].ToString();
-            lblAddress.Text = data["DiaChi"].ToString();
-            lblNationality.Text= data["QuocTich"].ToString();
             lblRoomName.Text= data["TenPhong"].ToString();
             lblRoomTypeName.Text= data["LoaiPhong"].ToString();
             lblRoomPrice_.Text=((int)data["DonGia"]).ToString("c0",cultureInfo);

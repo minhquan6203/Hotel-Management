@@ -33,25 +33,21 @@ namespace HotelManager
         {
             return CustomerDAO.Instance.IsIdCardExists(idCard);
         }
-        public void InsertCustomer(string idCard, string name, int idCustomerType, DateTime dateofBirth, string address, int phonenumber, string sex, string nationality)
+        public void InsertCustomer(string idCard, string name, int idCustomerType, string sex)
         {
-            CustomerDAO.Instance.InsertCustomer(idCard, name, idCustomerType, dateofBirth, address, phonenumber, sex, nationality);
+            CustomerDAO.Instance.InsertCustomer(idCard, name, idCustomerType,sex);
         }
         public void GetInfoByIdCard(string idCard)
         {
             Customer customer = CustomerDAO.Instance.GetInfoByIdCard(idCard);
             txbIDCard.Text = customer.IdCard.ToString();
             txbFullName.Text = customer.Name;
-            txbAddress.Text = customer.Address;
-            dpkDateOfBirth.Value = customer.DateOfBirth;
             cbSex.Text = customer.Sex;
-            txbPhoneNumber.Text = customer.PhoneNumber.ToString();
-            cbNationality.Text = customer.Nationality;
             cbCustomerType.Text = CustomerTypeDAO.Instance.GetNameByIdCard(idCard);
         }
         public void ClearData()
         {
-            txbIDCardSearch.Text = txbIDCard.Text = txbFullName.Text = txbAddress.Text = txbPhoneNumber.Text = cbNationality.Text = String.Empty;
+            txbIDCardSearch.Text = txbIDCard.Text = txbFullName.Text = String.Empty;
         }
         public void AddIdCustomer(int idCustomer)
         {
@@ -73,12 +69,12 @@ namespace HotelManager
         }
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            if(txbFullName.Text!=string.Empty&&txbIDCard.Text!=string.Empty&&txbAddress.Text!=string.Empty&&cbNationality.Text!=string.Empty&&txbPhoneNumber.Text!=string.Empty)
+            if(txbFullName.Text!=string.Empty&&txbIDCard.Text!=string.Empty)
             {
                 if (!IsIdCardExists(txbIDCard.Text))
                 {
                     int idCustomerType = (cbCustomerType.SelectedItem as CustomerType).Id;
-                    InsertCustomer(txbIDCard.Text, txbFullName.Text, idCustomerType, dpkDateOfBirth.Value, txbAddress.Text, int.Parse(txbPhoneNumber.Text), cbSex.Text, cbNationality.Text);
+                    InsertCustomer(txbIDCard.Text, txbFullName.Text, idCustomerType, cbSex.Text);
                 }
                 MessageBox.Show("Thêm khách hàng thành công.", "Thông báo.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 AddIdCustomer(CustomerDAO.Instance.GetInfoByIdCard(txbIDCard.Text).Id);

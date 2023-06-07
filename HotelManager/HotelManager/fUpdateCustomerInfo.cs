@@ -32,21 +32,17 @@ namespace HotelManager
             Customer customer = CustomerDAO.Instance.GetInfoByIdCard(idCard);
             txbIDCard.Text = customer.IdCard.ToString();
             txbFullName.Text = customer.Name;
-            txbAddress.Text = customer.Address;
-            dpkDateOfBirth.Value = customer.DateOfBirth;
             cbSex.Text = customer.Sex;
-            txbPhoneNumber.Text = customer.PhoneNumber.ToString();
-            cbNationality.Text = customer.Nationality;
             cbCustomerType.Text = CustomerTypeDAO.Instance.GetNameByIdCard(idCard);
         }
         public void UpdateCustomer()
         {
             int idCustomerType = (cbCustomerType.SelectedItem as CustomerType).Id;
-            CustomerDAO.Instance.UpdateCustomer(CustomerDAO.Instance.GetInfoByIdCard(idCard).Id,txbFullName.Text,txbIDCard.Text,idCustomerType,int.Parse(txbPhoneNumber.Text),dpkDateOfBirth.Value,txbAddress.Text,cbSex.Text,cbNationality.Text);
+            CustomerDAO.Instance.UpdateCustomer(CustomerDAO.Instance.GetInfoByIdCard(idCard).Id,txbFullName.Text,txbIDCard.Text,idCustomerType,cbSex.Text);
         }
         public void ClearData()
         {
-            txbIDCard.Text = txbFullName.Text = txbAddress.Text = txbPhoneNumber.Text = cbNationality.Text = String.Empty;
+            txbIDCard.Text = txbFullName.Text = String.Empty;
         }
         public bool IsIdCardExists(string idCard)
         {
@@ -75,7 +71,7 @@ namespace HotelManager
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            if (txbFullName.Text != string.Empty && txbIDCard.Text != string.Empty && txbAddress.Text != string.Empty && cbNationality.Text != string.Empty && txbPhoneNumber.Text != string.Empty)
+            if (txbFullName.Text != string.Empty)
             {
                 //Kiểm tra IDCard có trùng không
                 if (!IsIdCardExists(txbIDCard.Text)||txbIDCard.Text==idCard)

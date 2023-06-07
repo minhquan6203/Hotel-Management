@@ -34,31 +34,16 @@ namespace HotelManager
         private void Clean()
         {
             txbFullName.Text = string.Empty;
-            txbAddress.Text = string.Empty;
             txbIDCard.Text = string.Empty;
-            txbNationality.Text = string.Empty;
-            txbPhoneNumber.Text = string.Empty;
         }
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn thêm khách hàng mới?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-            if (result == DialogResult.OK)
-                if (CheckDate())
-                {
-                    InsertCustomer();
-                }
-                else
-                    MessageBox.Show("Ngày sinh phải nhỏ hơn ngày hiện tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
-        private bool CheckDate()
-        {
-            if (DateTime.Now.Subtract(datepickerDateOfBirth.Value).Days <= 0)
-                return false;
-            else return true;
-        }
+    
         private void InsertCustomer()
         {
-            if (!CheckFillInText(new Control[] { txbPhoneNumber, txbFullName, txbIDCard, txbNationality, txbAddress, comboBoxCustomerType }))
+            if (!CheckFillInText(new Control[] {  txbFullName, txbIDCard, comboBoxCustomerType }))
             {
                 MessageBox.Show("Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -90,17 +75,13 @@ namespace HotelManager
         }
         private Customer GetCustomerNow()
         {
-            fStaff.Trim(new Bunifu.Framework.UI.BunifuMetroTextbox[] { txbAddress, txbFullName, txbIDCard });
+            fStaff.Trim(new Bunifu.Framework.UI.BunifuMetroTextbox[] {txbFullName, txbIDCard });
             Customer customer = new Customer();
             customer.IdCard = txbIDCard.Text;
             int id = comboBoxCustomerType.SelectedIndex;
             customer.IdCustomerType = (int)((DataTable)comboBoxCustomerType.DataSource).Rows[id]["id"];
             customer.Name = txbFullName.Text;
             customer.Sex = comboBoxSex.Text;
-            customer.PhoneNumber = int.Parse(txbPhoneNumber.Text);
-            customer.DateOfBirth = datepickerDateOfBirth.Value;
-            customer.Nationality = txbNationality.Text;
-            customer.Address = txbAddress.Text;
             return customer;
         }
 

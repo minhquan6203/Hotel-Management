@@ -84,10 +84,8 @@ namespace HotelManager
         private void BindingNavigatorAddNewItem_Click(object sender, EventArgs e)
         {
             txbFullName.Text = string.Empty;
-            txbAddress.Text = string.Empty;
             txbIDCard.Text = string.Empty;
-            txbNationality.Text = string.Empty;
-            txbPhoneNumber.Text = string.Empty;
+
         }
         private void BtnClose1_Click(object sender, EventArgs e)
         {
@@ -96,26 +94,14 @@ namespace HotelManager
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
             DialogResult result =MessageBox.Show( "Bạn có muốn cập nhật khách hàng này không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-            if (result == DialogResult.OK)
-                if (CheckDate())
-                {
-                    UpdateCustomer();
-                    comboboxID.Focus();
-                }
-                else
-                   MessageBox.Show( "Ngày sinh phải nhỏ hơn ngày hiện tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
         }
         private void BtnSearch_Click(object sender, EventArgs e)
         {
             txbSearch.Text = txbSearch.Text.Trim();
             if (txbSearch.Text != string.Empty)
             {
-                txbAddress.Text = string.Empty;
                 txbFullName.Text = string.Empty;
                 txbIDCard.Text = string.Empty;
-                txbPhoneNumber.Text = string.Empty;
-                txbNationality.Text = string.Empty;
 
                 btnSearch.Visible = false;
                 btnCancel.Visible = true;
@@ -142,7 +128,7 @@ namespace HotelManager
         }
         private void InsertCustomer()
         {
-            if (!CheckFillInText(new Control[] { txbPhoneNumber, txbFullName, txbIDCard, txbNationality, txbAddress, comboBoxCustomerType}))
+            if (!CheckFillInText(new Control[] { txbFullName, txbIDCard, comboBoxCustomerType}))
             {
                 MessageBox.Show( "Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -174,7 +160,7 @@ namespace HotelManager
                 MessageBox.Show( "Khách hàng này chưa tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             else
-            if (!CheckFillInText(new Control[] { txbPhoneNumber, txbFullName, txbIDCard, txbNationality, txbAddress, comboBoxCustomerType }))
+            if (!CheckFillInText(new Control[] {txbFullName, txbIDCard, comboBoxCustomerType }))
             {
                 MessageBox.Show( "Không được để trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -213,10 +199,7 @@ namespace HotelManager
             if (row.IsNewRow)
             {
                 txbFullName.Text = string.Empty;
-                txbAddress.Text = string.Empty;
                 txbIDCard.Text = string.Empty;
-                txbNationality.Text = string.Empty;
-                txbPhoneNumber.Text = string.Empty;
                 bindingNavigatorMoveFirstItem.Enabled = false;
                 bindingNavigatorMovePreviousItem.Enabled = false;
             }
@@ -225,13 +208,9 @@ namespace HotelManager
                 bindingNavigatorMoveFirstItem.Enabled = true;
                 bindingNavigatorMovePreviousItem.Enabled = true;
                 txbFullName.Text = row.Cells["colNameCustomer"].Value.ToString();
-                txbAddress.Text = row.Cells["colAddress"].Value.ToString();
                 txbIDCard.Text = row.Cells["colIDCard"].Value.ToString();
-                txbNationality.Text = row.Cells["colNationality"].Value.ToString();
-                txbPhoneNumber.Text = row.Cells["colPhone"].Value.ToString();
                 comboBoxCustomerType.SelectedIndex =(int) row.Cells["colIdCustomerType"].Value - 1;
                 comboBoxSex.SelectedItem = row.Cells["colSex"].Value;
-                datepickerDateOfBirth.Value = (DateTime)row.Cells["colDateOfBirth"].Value;
                 Customer customer = new Customer(((DataRowView) row.DataBoundItem).Row);
                 groupCustomer.Tag = customer;              
             }
@@ -248,7 +227,7 @@ namespace HotelManager
         #region GetData
         private Customer GetCustomerNow()
         {
-            fStaff.Trim(new Bunifu.Framework.UI.BunifuMetroTextbox[] { txbAddress, txbFullName, txbIDCard });
+            fStaff.Trim(new Bunifu.Framework.UI.BunifuMetroTextbox[] {txbFullName, txbIDCard });
             Customer customer = new Customer();
             if (comboboxID.Text == string.Empty)
                 customer.Id = 0;
@@ -259,10 +238,7 @@ namespace HotelManager
             customer.IdCustomerType = (int)((DataTable) comboBoxCustomerType.DataSource).Rows[id]["id"];
             customer.Name = txbFullName.Text;
             customer.Sex = comboBoxSex.Text;
-            customer.PhoneNumber = int.Parse(txbPhoneNumber.Text);
-            customer.DateOfBirth = datepickerDateOfBirth.Value;
-            customer.Nationality = txbNationality.Text;
-            customer.Address = txbAddress.Text;
+
             return customer;
         }
         private DataTable GetFullCustomer()
@@ -307,12 +283,6 @@ namespace HotelManager
         {
             if (!(char.IsNumber(e.KeyChar) || e.KeyChar == '\b'))
                 e.Handled = true;
-        }
-        private bool CheckDate()
-        {
-            if (DateTime.Now.Subtract(datepickerDateOfBirth.Value).Days <= 0)
-                return false;
-            else return true;
         }
 
         #endregion

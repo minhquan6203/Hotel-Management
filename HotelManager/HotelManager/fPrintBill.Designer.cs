@@ -68,12 +68,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.lblRoomName = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.lblNationality = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.lblPhoneNumber = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.lblIDCard = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblCustomerName = new System.Windows.Forms.Label();
@@ -166,12 +160,6 @@
             this.groupBox6.Controls.Add(this.label16);
             this.groupBox6.Controls.Add(this.lblRoomName);
             this.groupBox6.Controls.Add(this.label15);
-            this.groupBox6.Controls.Add(this.lblNationality);
-            this.groupBox6.Controls.Add(this.label14);
-            this.groupBox6.Controls.Add(this.lblAddress);
-            this.groupBox6.Controls.Add(this.label12);
-            this.groupBox6.Controls.Add(this.lblPhoneNumber);
-            this.groupBox6.Controls.Add(this.label11);
             this.groupBox6.Controls.Add(this.lblIDCard);
             this.groupBox6.Controls.Add(this.label10);
             this.groupBox6.Controls.Add(this.lblCustomerName);
@@ -353,7 +341,7 @@
             this.bunifuSeparator3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator3.LineThickness = 12;
+            this.bunifuSeparator3.LineThickness = 21;
             this.bunifuSeparator3.Location = new System.Drawing.Point(23, 606);
             this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(12, 16, 12, 16);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
@@ -377,10 +365,10 @@
             this.listViewUseService.FullRowSelect = true;
             this.listViewUseService.GridLines = true;
             this.listViewUseService.HideSelection = false;
-            this.listViewUseService.Location = new System.Drawing.Point(39, 460);
+            this.listViewUseService.Location = new System.Drawing.Point(39, 436);
             this.listViewUseService.Margin = new System.Windows.Forms.Padding(4);
             this.listViewUseService.Name = "listViewUseService";
-            this.listViewUseService.Size = new System.Drawing.Size(841, 157);
+            this.listViewUseService.Size = new System.Drawing.Size(841, 181);
             this.listViewUseService.TabIndex = 100;
             this.listViewUseService.UseCompatibleStateImageBehavior = false;
             this.listViewUseService.View = System.Windows.Forms.View.Details;
@@ -413,8 +401,8 @@
             // 
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator2.LineThickness = 12;
-            this.bunifuSeparator2.Location = new System.Drawing.Point(23, 438);
+            this.bunifuSeparator2.LineThickness = 21;
+            this.bunifuSeparator2.Location = new System.Drawing.Point(23, 412);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(8, 10, 8, 10);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(877, 23);
@@ -426,10 +414,10 @@
             // 
             this.lblCustomerTypeName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustomerTypeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCustomerTypeName.Location = new System.Drawing.Point(189, 345);
+            this.lblCustomerTypeName.Location = new System.Drawing.Point(189, 310);
             this.lblCustomerTypeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCustomerTypeName.Name = "lblCustomerTypeName";
-            this.lblCustomerTypeName.Size = new System.Drawing.Size(285, 21);
+            this.lblCustomerTypeName.Size = new System.Drawing.Size(244, 21);
             this.lblCustomerTypeName.TabIndex = 98;
             this.lblCustomerTypeName.Text = "Mã hóa đơn";
             // 
@@ -438,7 +426,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label21.Location = new System.Drawing.Point(47, 345);
+            this.label21.Location = new System.Drawing.Point(47, 310);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(139, 23);
@@ -449,7 +437,7 @@
             // 
             this.lblPeoples.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPeoples.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblPeoples.Location = new System.Drawing.Point(629, 414);
+            this.lblPeoples.Location = new System.Drawing.Point(620, 340);
             this.lblPeoples.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPeoples.Name = "lblPeoples";
             this.lblPeoples.Size = new System.Drawing.Size(285, 21);
@@ -461,7 +449,7 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label20.Location = new System.Drawing.Point(487, 414);
+            this.label20.Location = new System.Drawing.Point(478, 340);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(82, 23);
@@ -472,7 +460,7 @@
             // 
             this.lblDays.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDays.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDays.Location = new System.Drawing.Point(629, 379);
+            this.lblDays.Location = new System.Drawing.Point(620, 305);
             this.lblDays.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDays.Name = "lblDays";
             this.lblDays.Size = new System.Drawing.Size(285, 21);
@@ -484,7 +472,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label19.Location = new System.Drawing.Point(487, 379);
+            this.label19.Location = new System.Drawing.Point(478, 305);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(72, 23);
@@ -495,7 +483,7 @@
             // 
             this.lblRoomPrice_.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoomPrice_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblRoomPrice_.Location = new System.Drawing.Point(629, 310);
+            this.lblRoomPrice_.Location = new System.Drawing.Point(620, 236);
             this.lblRoomPrice_.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRoomPrice_.Name = "lblRoomPrice_";
             this.lblRoomPrice_.Size = new System.Drawing.Size(285, 21);
@@ -507,7 +495,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label18.Location = new System.Drawing.Point(487, 310);
+            this.label18.Location = new System.Drawing.Point(478, 236);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(74, 23);
@@ -518,7 +506,7 @@
             // 
             this.lblDateCheckIn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateCheckIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblDateCheckIn.Location = new System.Drawing.Point(629, 345);
+            this.lblDateCheckIn.Location = new System.Drawing.Point(620, 271);
             this.lblDateCheckIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDateCheckIn.Name = "lblDateCheckIn";
             this.lblDateCheckIn.Size = new System.Drawing.Size(285, 21);
@@ -530,7 +518,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label17.Location = new System.Drawing.Point(487, 345);
+            this.label17.Location = new System.Drawing.Point(478, 271);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(88, 23);
@@ -541,10 +529,10 @@
             // 
             this.lblRoomTypeName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoomTypeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblRoomTypeName.Location = new System.Drawing.Point(629, 274);
+            this.lblRoomTypeName.Location = new System.Drawing.Point(189, 381);
             this.lblRoomTypeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRoomTypeName.Name = "lblRoomTypeName";
-            this.lblRoomTypeName.Size = new System.Drawing.Size(285, 21);
+            this.lblRoomTypeName.Size = new System.Drawing.Size(244, 21);
             this.lblRoomTypeName.TabIndex = 88;
             this.lblRoomTypeName.Text = "Mã hóa đơn";
             // 
@@ -553,7 +541,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label16.Location = new System.Drawing.Point(487, 274);
+            this.label16.Location = new System.Drawing.Point(47, 381);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(100, 23);
@@ -564,10 +552,10 @@
             // 
             this.lblRoomName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoomName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblRoomName.Location = new System.Drawing.Point(629, 236);
+            this.lblRoomName.Location = new System.Drawing.Point(189, 347);
             this.lblRoomName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRoomName.Name = "lblRoomName";
-            this.lblRoomName.Size = new System.Drawing.Size(285, 21);
+            this.lblRoomName.Size = new System.Drawing.Size(244, 21);
             this.lblRoomName.TabIndex = 86;
             this.lblRoomName.Text = "Mã hóa đơn";
             // 
@@ -576,81 +564,12 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label15.Location = new System.Drawing.Point(487, 236);
+            this.label15.Location = new System.Drawing.Point(47, 347);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(95, 23);
             this.label15.TabIndex = 85;
             this.label15.Text = "Tên phòng:";
-            // 
-            // lblNationality
-            // 
-            this.lblNationality.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNationality.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNationality.Location = new System.Drawing.Point(189, 414);
-            this.lblNationality.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNationality.Name = "lblNationality";
-            this.lblNationality.Size = new System.Drawing.Size(244, 21);
-            this.lblNationality.TabIndex = 84;
-            this.lblNationality.Text = "Mã hóa đơn";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label14.Location = new System.Drawing.Point(47, 414);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 23);
-            this.label14.TabIndex = 83;
-            this.label14.Text = "Quốc tịch:";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblAddress.Location = new System.Drawing.Point(189, 379);
-            this.lblAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(288, 21);
-            this.lblAddress.TabIndex = 82;
-            this.lblAddress.Text = "Mã hóa đơn";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label12.Location = new System.Drawing.Point(47, 379);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(66, 23);
-            this.label12.TabIndex = 81;
-            this.label12.Text = "Địa chỉ:";
-            // 
-            // lblPhoneNumber
-            // 
-            this.lblPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblPhoneNumber.Location = new System.Drawing.Point(189, 310);
-            this.lblPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(244, 21);
-            this.lblPhoneNumber.TabIndex = 80;
-            this.lblPhoneNumber.Text = "Mã hóa đơn";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(47, 310);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(115, 23);
-            this.label11.TabIndex = 79;
-            this.label11.Text = "Số điện thoại:";
             // 
             // lblIDCard
             // 
@@ -682,7 +601,7 @@
             this.lblCustomerName.Location = new System.Drawing.Point(189, 236);
             this.lblCustomerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(300, 21);
+            this.lblCustomerName.Size = new System.Drawing.Size(244, 21);
             this.lblCustomerName.TabIndex = 76;
             this.lblCustomerName.Text = "Mã hóa đơn";
             // 
@@ -702,7 +621,7 @@
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator1.LineThickness = 12;
+            this.bunifuSeparator1.LineThickness = 21;
             this.bunifuSeparator1.Location = new System.Drawing.Point(23, 206);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
@@ -958,12 +877,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblCustomerName;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label lblPhoneNumber;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lblNationality;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblPeoples;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label lblDays;
