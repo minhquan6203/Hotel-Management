@@ -883,10 +883,10 @@ begin
 
 	select @check1=COUNT(*)
 	from ReceiveRoom A,BookRoom B,Customer D
-	where A.IDBookRoom=B.ID and B.IDCustomer=D.ID and A.ID=@idReceiveRoom
+	where A.IDBookRoom=B.ID and B.IDCustomer=D.ID and D.IDCustomerType !=1 and A.ID=@idReceiveRoom
 	select @check2=COUNT(*)
 	from ReceiveRoom A,ReceiveRoomDetails C,Customer D
-	where A.ID=C.IDReceiveRoom and D.ID=C.IDCustomerOther and A.ID=@idReceiveRoom
+	where A.ID=C.IDReceiveRoom and D.ID=C.IDCustomerOther and D.IDCustomerType !=1 and A.ID=@idReceiveRoom
 
 	if((@check1+@check2)>0) 
 	set @surcharge=@surcharge + @roomPrice*(@QD3 - 1)
@@ -1022,11 +1022,11 @@ UPDATE dbo.PARAMETER
 	datemodify = GETDATE()
 	WHERE name = @name
 	SELECT @name = [dbo].[ConvertString](@name)
-	IF(@name = 'QD1')
+	IF(@name = 'QĐ1')
 		UPDATE dbo.ROOMTYPE SET LimitPerson = @value WHERE ID = 1
-	ELSE IF(@name = 'QD2')
+	ELSE IF(@name = 'QĐ2')
 		UPDATE dbo.ROOMTYPE SET LimitPerson = @value WHERE ID = 2
-	ELSE IF(@name = 'QD3')
+	ELSE IF(@name = 'QĐ3')
 		UPDATE dbo.ROOMTYPE SET LimitPerson = @value WHERE ID = 3
 	-- ELSE IF(@name = 'QD2.4')
 	-- 	UPDATE dbo.ROOMTYPE SET LimitPerson = @value WHERE ID = 4

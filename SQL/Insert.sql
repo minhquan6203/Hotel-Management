@@ -63,9 +63,9 @@ INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (19, N'Phòng 210', 3, 1
 SET IDENTITY_INSERT Room OFF
 
 SET IDENTITY_INSERT RoomType ON 
-INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (1, N'Phòng A', 150000, 3)
-INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (2, N'Phòng B', 170000, 3)
-INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (3, N'Phòng C', 200000, 3)
+INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (1, N'Phòng A', 150000, 2)
+INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (2, N'Phòng B', 170000, 2)
+INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (3, N'Phòng C', 200000, 2)
 SET IDENTITY_INSERT RoomType OFF
 
 SET IDENTITY_INSERT ServiceType ON 
