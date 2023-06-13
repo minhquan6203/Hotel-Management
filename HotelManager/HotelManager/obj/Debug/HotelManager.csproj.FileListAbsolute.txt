@@ -86,11 +86,10 @@ C:\Users\nguye\PC\Hotel-Management_abc\HotelManager\HotelManager\obj\Debug\Hotel
 C:\Users\nguye\PC\Hotel-Management_abc\HotelManager\HotelManager\obj\Debug\HotelManager.csproj.CopyComplete
 C:\Users\nguye\PC\Hotel-Management_abc\HotelManager\HotelManager\obj\Debug\HotelManager.exe
 C:\Users\nguye\PC\Hotel-Management_abc\HotelManager\HotelManager\obj\Debug\HotelManager.pdb
-C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Debug\HotelManager.exe.config
 C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Debug\HotelManager.exe
-C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Debug\HotelManager.pdb
 C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Debug\MetroFramework.dll
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Debug\HotelManager.exe.config
 C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Debug\HotelManager.csproj.AssemblyReference.cache
 C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Debug\HotelManager.csproj.SuggestedBindingRedirects.cache
@@ -130,3 +129,4 @@ C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Debug\HotelMana
 C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Debug\HotelManager.csproj.CopyComplete
 C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Debug\HotelManager.exe
 C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Debug\HotelManager.pdb
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Debug\HotelManager.pdb

@@ -117,7 +117,7 @@
             this.groupCustomer.ForeColor = System.Drawing.Color.Black;
             this.groupCustomer.Location = new System.Drawing.Point(5, 175);
             this.groupCustomer.Name = "groupCustomer";
-            this.groupCustomer.Size = new System.Drawing.Size(414, 363);
+            this.groupCustomer.Size = new System.Drawing.Size(414, 310);
             this.groupCustomer.TabIndex = 1;
             this.groupCustomer.TabStop = false;
             this.groupCustomer.Text = "Thông tin khách hàng";
