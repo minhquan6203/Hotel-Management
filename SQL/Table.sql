@@ -78,6 +78,7 @@ CREATE TABLE Customer(
 PRIMARY KEY CLUSTERED 
 (
 	ID ASC
+	IDCard
 ))
 GO
 

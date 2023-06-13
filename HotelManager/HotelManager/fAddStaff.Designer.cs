@@ -155,6 +155,7 @@
             this.txbName.Location = new System.Drawing.Point(19, 59);
             this.txbName.Margin = new System.Windows.Forms.Padding(0);
             this.txbName.Name = "txbName";
+            this.txbName.Padding = new System.Windows.Forms.Padding(0, 0, 3, 3);
             this.txbName.Size = new System.Drawing.Size(265, 30);
             this.txbName.TabIndex = 0;
             this.txbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -216,6 +217,7 @@
             this.txbAddress.Location = new System.Drawing.Point(16, 260);
             this.txbAddress.Margin = new System.Windows.Forms.Padding(5);
             this.txbAddress.Name = "txbAddress";
+            this.txbAddress.Padding = new System.Windows.Forms.Padding(0, 0, 3, 3);
             this.txbAddress.Size = new System.Drawing.Size(265, 30);
             this.txbAddress.TabIndex = 4;
             this.txbAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -336,6 +338,7 @@
             this.txbPhoneNumber.Location = new System.Drawing.Point(16, 328);
             this.txbPhoneNumber.Margin = new System.Windows.Forms.Padding(5);
             this.txbPhoneNumber.Name = "txbPhoneNumber";
+            this.txbPhoneNumber.Padding = new System.Windows.Forms.Padding(0, 0, 3, 3);
             this.txbPhoneNumber.Size = new System.Drawing.Size(265, 30);
             this.txbPhoneNumber.TabIndex = 3;
             this.txbPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -367,6 +370,7 @@
             this.txbIDcard.Location = new System.Drawing.Point(16, 190);
             this.txbIDcard.Margin = new System.Windows.Forms.Padding(5);
             this.txbIDcard.Name = "txbIDcard";
+            this.txbIDcard.Padding = new System.Windows.Forms.Padding(0, 0, 3, 3);
             this.txbIDcard.Size = new System.Drawing.Size(265, 30);
             this.txbIDcard.TabIndex = 2;
             this.txbIDcard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -397,6 +401,7 @@
             this.txbFullName.Location = new System.Drawing.Point(16, 124);
             this.txbFullName.Margin = new System.Windows.Forms.Padding(5);
             this.txbFullName.Name = "txbFullName";
+            this.txbFullName.Padding = new System.Windows.Forms.Padding(0, 0, 3, 3);
             this.txbFullName.Size = new System.Drawing.Size(265, 30);
             this.txbFullName.TabIndex = 1;
             this.txbFullName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

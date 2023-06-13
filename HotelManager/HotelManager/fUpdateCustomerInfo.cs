@@ -71,7 +71,7 @@ namespace HotelManager
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            if (txbFullName.Text != string.Empty && txbIDCard.Text != string.Empty)
+            if (txbFullName.Text != string.Empty)
             {
                 //Kiểm tra IDCard có trùng không
                 if (!IsIdCardExists(txbIDCard.Text)||txbIDCard.Text==idCard)

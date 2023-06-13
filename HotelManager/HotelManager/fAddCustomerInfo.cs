@@ -69,7 +69,7 @@ namespace HotelManager
         }
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            if(txbFullName.Text!=string.Empty&&txbIDCard.Text!=string.Empty)
+            if(txbFullName.Text!=string.Empty)
             {
                 try
                 {

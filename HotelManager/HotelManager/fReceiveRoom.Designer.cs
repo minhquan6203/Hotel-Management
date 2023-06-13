@@ -378,6 +378,7 @@
             this.txbIDBookRoom.Location = new System.Drawing.Point(33, 63);
             this.txbIDBookRoom.Margin = new System.Windows.Forms.Padding(5);
             this.txbIDBookRoom.Name = "txbIDBookRoom";
+            this.txbIDBookRoom.Padding = new System.Windows.Forms.Padding(0, 0, 3, 3);
             this.txbIDBookRoom.Size = new System.Drawing.Size(271, 30);
             this.txbIDBookRoom.TabIndex = 27;
             this.txbIDBookRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

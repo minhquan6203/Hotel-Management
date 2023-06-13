@@ -193,6 +193,7 @@
             this.txbIDCard.BorderColorFocused = System.Drawing.Color.Black;
             this.txbIDCard.BorderColorIdle = System.Drawing.Color.Black;
             this.txbIDCard.BorderColorMouseHover = System.Drawing.Color.Black;
+            this.txbIDCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbIDCard.BorderThickness = 1;
             this.txbIDCard.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbIDCard.Font = new System.Drawing.Font("Century Gothic", 9.75F);
@@ -201,6 +202,7 @@
             this.txbIDCard.Location = new System.Drawing.Point(13, 122);
             this.txbIDCard.Margin = new System.Windows.Forms.Padding(5);
             this.txbIDCard.Name = "txbIDCard";
+            this.txbIDCard.Padding = new System.Windows.Forms.Padding(0, 0, 2, 2);
             this.txbIDCard.Size = new System.Drawing.Size(271, 30);
             this.txbIDCard.TabIndex = 22;
             this.txbIDCard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -222,6 +224,7 @@
             this.txbFullName.BorderColorFocused = System.Drawing.Color.Black;
             this.txbFullName.BorderColorIdle = System.Drawing.Color.Black;
             this.txbFullName.BorderColorMouseHover = System.Drawing.Color.Black;
+            this.txbFullName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbFullName.BorderThickness = 1;
             this.txbFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbFullName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
@@ -230,6 +233,7 @@
             this.txbFullName.Location = new System.Drawing.Point(13, 57);
             this.txbFullName.Margin = new System.Windows.Forms.Padding(5);
             this.txbFullName.Name = "txbFullName";
+            this.txbFullName.Padding = new System.Windows.Forms.Padding(0, 0, 2, 2);
             this.txbFullName.Size = new System.Drawing.Size(271, 30);
             this.txbFullName.TabIndex = 21;
             this.txbFullName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

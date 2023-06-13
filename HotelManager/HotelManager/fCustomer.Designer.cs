@@ -142,6 +142,7 @@
             // comboBoxSex
             // 
             this.comboBoxSex.BackColor = System.Drawing.Color.White;
+            this.comboBoxSex.Enabled = false;
             this.comboBoxSex.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxSex.ForeColor = System.Drawing.Color.Black;
             this.comboBoxSex.FormattingEnabled = true;
@@ -164,6 +165,7 @@
             // comboBoxCustomerType
             // 
             this.comboBoxCustomerType.BackColor = System.Drawing.Color.White;
+            this.comboBoxCustomerType.Enabled = false;
             this.comboBoxCustomerType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxCustomerType.ForeColor = System.Drawing.Color.Black;
             this.comboBoxCustomerType.FormattingEnabled = true;
@@ -181,6 +183,7 @@
             // comboboxID
             // 
             this.comboboxID.BackColor = System.Drawing.Color.White;
+            this.comboboxID.Enabled = false;
             this.comboboxID.ForeColor = System.Drawing.Color.Black;
             this.comboboxID.FormattingEnabled = true;
             this.comboboxID.ItemHeight = 24;
@@ -210,6 +213,7 @@
             this.txbFullName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbFullName.BorderThickness = 1;
             this.txbFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbFullName.Enabled = false;
             this.txbFullName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbFullName.ForeColor = System.Drawing.Color.Black;
             this.txbFullName.isPassword = false;
@@ -263,6 +267,7 @@
             this.txbIDCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbIDCard.BorderThickness = 1;
             this.txbIDCard.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbIDCard.Enabled = false;
             this.txbIDCard.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbIDCard.ForeColor = System.Drawing.Color.Black;
             this.txbIDCard.isPassword = false;
