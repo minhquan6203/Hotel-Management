@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fCustomer));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupCustomer = new System.Windows.Forms.GroupBox();
@@ -44,10 +44,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txbFullName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label13 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txbIDCard = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label16 = new System.Windows.Forms.Label();
             this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNameCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIDCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNameCustomerType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colIdCustomerType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bindingCustomer = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -74,13 +81,6 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNameCustomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colIDCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNameCustomerType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colIdCustomerType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -117,7 +117,7 @@
             this.groupCustomer.ForeColor = System.Drawing.Color.Black;
             this.groupCustomer.Location = new System.Drawing.Point(5, 175);
             this.groupCustomer.Name = "groupCustomer";
-            this.groupCustomer.Size = new System.Drawing.Size(414, 239);
+            this.groupCustomer.Size = new System.Drawing.Size(414, 363);
             this.groupCustomer.TabIndex = 1;
             this.groupCustomer.TabStop = false;
             this.groupCustomer.Text = "Thông tin khách hàng";
@@ -233,6 +233,17 @@
             this.label13.TabIndex = 28;
             this.label13.Text = "Giới tính:";
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(225, 40);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(154, 25);
+            this.label20.TabIndex = 41;
+            this.label20.Text = "Loại khách hàng:";
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -280,21 +291,21 @@
             this.dataGridViewCustomer.AllowUserToAddRows = false;
             this.dataGridViewCustomer.AllowUserToDeleteRows = false;
             this.dataGridViewCustomer.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewCustomer.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewCustomer.ColumnHeadersHeight = 25;
             this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -304,33 +315,33 @@
             this.colNameCustomerType,
             this.colSex,
             this.colIdCustomerType});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCustomer.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCustomer.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewCustomer.GridColor = System.Drawing.Color.White;
             this.dataGridViewCustomer.Location = new System.Drawing.Point(3, 73);
             this.dataGridViewCustomer.Name = "dataGridViewCustomer";
             this.dataGridViewCustomer.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCustomer.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCustomer.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewCustomer.RowHeadersVisible = false;
             this.dataGridViewCustomer.RowHeadersWidth = 51;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridViewCustomer.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewCustomer.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.dataGridViewCustomer.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -338,6 +349,67 @@
             this.dataGridViewCustomer.Size = new System.Drawing.Size(653, 400);
             this.dataGridViewCustomer.TabIndex = 3;
             this.dataGridViewCustomer.SelectionChanged += new System.EventHandler(this.DataGridViewCustomer_SelectionChanged);
+            // 
+            // colID
+            // 
+            this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colID.DataPropertyName = "id";
+            this.colID.HeaderText = "Mã";
+            this.colID.MinimumWidth = 6;
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Width = 69;
+            // 
+            // colNameCustomer
+            // 
+            this.colNameCustomer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colNameCustomer.DataPropertyName = "Name";
+            this.colNameCustomer.HeaderText = "Tên";
+            this.colNameCustomer.MinimumWidth = 6;
+            this.colNameCustomer.Name = "colNameCustomer";
+            this.colNameCustomer.ReadOnly = true;
+            this.colNameCustomer.Width = 70;
+            // 
+            // colIDCard
+            // 
+            this.colIDCard.DataPropertyName = "idcard";
+            this.colIDCard.FillWeight = 90F;
+            this.colIDCard.HeaderText = "Số CMND";
+            this.colIDCard.MinimumWidth = 6;
+            this.colIDCard.Name = "colIDCard";
+            this.colIDCard.ReadOnly = true;
+            this.colIDCard.Width = 90;
+            // 
+            // colNameCustomerType
+            // 
+            this.colNameCustomerType.DataPropertyName = "NameCustomerType";
+            this.colNameCustomerType.FillWeight = 70F;
+            this.colNameCustomerType.HeaderText = "Loại";
+            this.colNameCustomerType.MinimumWidth = 6;
+            this.colNameCustomerType.Name = "colNameCustomerType";
+            this.colNameCustomerType.ReadOnly = true;
+            this.colNameCustomerType.Width = 70;
+            // 
+            // colSex
+            // 
+            this.colSex.DataPropertyName = "sex";
+            this.colSex.FillWeight = 85F;
+            this.colSex.HeaderText = "Giới Tính";
+            this.colSex.MinimumWidth = 6;
+            this.colSex.Name = "colSex";
+            this.colSex.ReadOnly = true;
+            this.colSex.Visible = false;
+            this.colSex.Width = 85;
+            // 
+            // colIdCustomerType
+            // 
+            this.colIdCustomerType.DataPropertyName = "idCustomerType";
+            this.colIdCustomerType.HeaderText = "";
+            this.colIdCustomerType.MinimumWidth = 6;
+            this.colIdCustomerType.Name = "colIdCustomerType";
+            this.colIdCustomerType.ReadOnly = true;
+            this.colIdCustomerType.Visible = false;
+            this.colIdCustomerType.Width = 125;
             // 
             // groupBox1
             // 
@@ -690,9 +762,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(85, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(323, 46);
+            this.label6.Size = new System.Drawing.Size(348, 46);
             this.label6.TabIndex = 42;
-            this.label6.Text = "Quản Lí Khách Hàng";
+            this.label6.Text = "Tìm Kiếm Khách Hàng";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuSeparator1
@@ -733,84 +805,13 @@
             this.pictureBox1.TabIndex = 57;
             this.pictureBox1.TabStop = false;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(225, 40);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(154, 25);
-            this.label20.TabIndex = 41;
-            this.label20.Text = "Loại khách hàng:";
-            // 
-            // colID
-            // 
-            this.colID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colID.DataPropertyName = "id";
-            this.colID.HeaderText = "Mã";
-            this.colID.MinimumWidth = 6;
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Width = 69;
-            // 
-            // colNameCustomer
-            // 
-            this.colNameCustomer.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colNameCustomer.DataPropertyName = "Name";
-            this.colNameCustomer.HeaderText = "Tên";
-            this.colNameCustomer.MinimumWidth = 6;
-            this.colNameCustomer.Name = "colNameCustomer";
-            this.colNameCustomer.ReadOnly = true;
-            this.colNameCustomer.Width = 70;
-            // 
-            // colIDCard
-            // 
-            this.colIDCard.DataPropertyName = "idcard";
-            this.colIDCard.FillWeight = 90F;
-            this.colIDCard.HeaderText = "Số CMND";
-            this.colIDCard.MinimumWidth = 6;
-            this.colIDCard.Name = "colIDCard";
-            this.colIDCard.ReadOnly = true;
-            this.colIDCard.Width = 90;
-            // 
-            // colNameCustomerType
-            // 
-            this.colNameCustomerType.DataPropertyName = "NameCustomerType";
-            this.colNameCustomerType.FillWeight = 70F;
-            this.colNameCustomerType.HeaderText = "Loại";
-            this.colNameCustomerType.MinimumWidth = 6;
-            this.colNameCustomerType.Name = "colNameCustomerType";
-            this.colNameCustomerType.ReadOnly = true;
-            this.colNameCustomerType.Width = 70;
-            // 
-            // colSex
-            // 
-            this.colSex.DataPropertyName = "sex";
-            this.colSex.FillWeight = 85F;
-            this.colSex.HeaderText = "Giới Tính";
-            this.colSex.MinimumWidth = 6;
-            this.colSex.Name = "colSex";
-            this.colSex.ReadOnly = true;
-            this.colSex.Visible = false;
-            this.colSex.Width = 85;
-            // 
-            // colIdCustomerType
-            // 
-            this.colIdCustomerType.DataPropertyName = "idCustomerType";
-            this.colIdCustomerType.HeaderText = "";
-            this.colIdCustomerType.MinimumWidth = 6;
-            this.colIdCustomerType.Name = "colIdCustomerType";
-            this.colIdCustomerType.ReadOnly = true;
-            this.colIdCustomerType.Visible = false;
-            this.colIdCustomerType.Width = 125;
-            // 
             // fCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1094, 542);
+            this.Controls.Add(this.groupCustomer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label6);
@@ -818,7 +819,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.groupCustomer);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Silver;

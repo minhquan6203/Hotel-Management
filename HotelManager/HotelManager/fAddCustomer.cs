@@ -36,6 +36,10 @@ namespace HotelManager
             txbFullName.Text = string.Empty;
             txbIDCard.Text = string.Empty;
         }
+        public bool IsIdCardExists(string idCard)
+        {
+            return CustomerDAO.Instance.IsIdCardExists(idCard);
+        }
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn thêm khách hàng mới?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
