@@ -112,7 +112,7 @@
             this.metroTile17.Size = new System.Drawing.Size(368, 166);
             this.metroTile17.Style = MetroFramework.MetroColorStyle.Silver;
             this.metroTile17.TabIndex = 47;
-            this.metroTile17.Text = "Quản Lí Khách Hàng";
+            this.metroTile17.Text = "Quản Lí Và Tìm Kiếm Khách Hàng";
             this.metroTile17.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.metroTile17.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile17.TileImage")));
             this.metroTile17.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -267,7 +267,7 @@
             this.titlePay.Name = "titlePay";
             this.titlePay.Size = new System.Drawing.Size(368, 166);
             this.titlePay.TabIndex = 27;
-            this.titlePay.Text = "Sử Dụng Dịch Vụ VàThanh Toán";
+            this.titlePay.Text = "Sử Dụng Dịch Vụ Và Thanh Toán";
             this.titlePay.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.titlePay.TileImage = ((System.Drawing.Image)(resources.GetObject("titlePay.TileImage")));
             this.titlePay.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
