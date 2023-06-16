@@ -1,0 +1,354 @@
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Release\HotelManager.exe.config
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Release\HotelManager.exe
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Release\HotelManager.pdb
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Release\Bunifu_UI_v1.52.dll
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Release\MetroFramework.dll
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\bin\Release\MetroFramework.Fonts.dll
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.csproj.AssemblyReference.cache
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.csproj.ResolveComReference.cache
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fAbout.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fAccess.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fAddCustomer.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fAddCustomerInfo.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fAddRoom.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fAddService.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fAddServiceType.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fAddStaff.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fAddStaffType.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fBill.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fBookRoomDetails.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fChangeRoom.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fCustomer.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fManagement.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fLogin.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fBookRoom.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fParameter.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fPrintBill.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fProfile.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fReceiveRoom.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fReceiveRoomDetails.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fReport.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fRoom.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fRoomType.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fService.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fServiceType.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fStaff.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fUpdateCustomerInfo.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.fUseService.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.Properties.Resources.resources
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.csproj.GenerateResource.cache
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.csproj.CoreCompileInputs.cache
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.csproj.CopyComplete
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.exe
+C:\Users\nguye\PC\Hotel-Management\HotelManager\HotelManager\obj\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\HotelManager.exe.config
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\MetroFramework.dll
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.AssemblyReference.cache
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.ResolveComReference.cache
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAbout.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAccess.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddCustomer.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddRoom.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddService.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddServiceType.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddStaff.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddStaffType.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fBill.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fBookRoomDetails.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fChangeRoom.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fCustomer.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fManagement.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fLogin.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fBookRoom.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fParameter.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fPrintBill.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fProfile.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fReceiveRoom.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fReceiveRoomDetails.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fReport.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fRoom.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fRoomType.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fService.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fServiceType.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fStaff.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fUpdateCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fUseService.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.Properties.Resources.resources
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.GenerateResource.cache
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.CoreCompileInputs.cache
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.CopyComplete
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Documents\Năm 2\NMCNPM\đồ án\Hotel-Management-quan_dev\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\HotelManager.exe.config
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\MetroFramework.dll
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.AssemblyReference.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.ResolveComReference.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAbout.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAccess.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddCustomer.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddService.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddServiceType.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddStaff.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddStaffType.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fBill.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fBookRoomDetails.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fChangeRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fCustomer.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fManagement.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fLogin.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fBookRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fParameter.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fPrintBill.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fProfile.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fReceiveRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fReceiveRoomDetails.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fReport.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fRoomType.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fService.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fServiceType.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fStaff.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fUpdateCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fUseService.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.Properties.Resources.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.GenerateResource.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.CoreCompileInputs.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.CopyComplete
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\HotelManager.exe.config
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\MetroFramework.dll
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.AssemblyReference.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.ResolveComReference.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAbout.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAccess.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddCustomer.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddService.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddRoomType.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddServiceType.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddStaff.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fAddStaffType.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fBill.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fBookRoomDetails.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fChangeRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fCustomer.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fManagement.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fLogin.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fBookRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fParameter.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fPrintBill.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fProfile.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fReceiveRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fReceiveRoomDetails.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fReport.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fRoom.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fRoomType.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fService.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fServiceType.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fStaff.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fUpdateCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.fUseService.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.Properties.Resources.resources
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.GenerateResource.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.CoreCompileInputs.cache
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.csproj.CopyComplete
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Downloads\Hotel-Management-ht (1)\Hotel-Management-ht\Hotel-Management-quan_dev\HotelManager\HotelManager\obj\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\bin\Release\HotelManager.exe.config
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\bin\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\bin\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\bin\Release\MetroFramework.dll
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.csproj.AssemblyReference.cache
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.csproj.ResolveComReference.cache
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAbout.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAccess.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAddCustomer.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAddCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAddRoom.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAddSurchargeRate.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAddService.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAddRoomType.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAddServiceType.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAddStaff.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fAddStaffType.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fBill.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fBookRoomDetails.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fChangeRoom.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fCustomer.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fManagement.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fLogin.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fBookRoom.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fParameter.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fPrintBill.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fProfile.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fReceiveRoom.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fReceiveRoomDetails.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fReport.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fRoom.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fRoomType.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fService.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fServiceType.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fStaff.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fUpdateCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.fUseService.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.Properties.Resources.resources
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.csproj.GenerateResource.cache
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.csproj.CoreCompileInputs.cache
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.csproj.CopyComplete
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Documents\amet\HotelManager\obj\Release\HotelManager.pdb
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\bin\Release\HotelManager.exe.config
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\bin\Release\HotelManager.exe
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\bin\Release\HotelManager.pdb
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\bin\Release\MetroFramework.dll
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\bin\Release\MetroFramework.Fonts.dll
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.csproj.AssemblyReference.cache
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.csproj.SuggestedBindingRedirects.cache
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.csproj.ResolveComReference.cache
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAbout.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAccess.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAddCustomer.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAddCustomerInfo.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAddRoom.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAddSurchargeRate.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAddService.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAddRoomType.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAddServiceType.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAddStaff.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fAddStaffType.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fBill.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fBookRoomDetails.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fChangeRoom.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fCustomer.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fManagement.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fLogin.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fBookRoom.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fParameter.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fPrintBill.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fProfile.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fReceiveRoom.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fReceiveRoomDetails.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fReport.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fRoom.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fRoomType.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fService.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fServiceType.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fStaff.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fUpdateCustomerInfo.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.fUseService.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.Properties.Resources.resources
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.csproj.GenerateResource.cache
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.csproj.CoreCompileInputs.cache
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.csproj.CopyComplete
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.exe
+D:\Study\Nhập môn công nghệ phần mềm cô Tuyền\Check\amet\HotelManager\obj\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.csproj.AssemblyReference.cache
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.csproj.ResolveComReference.cache
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAbout.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAccess.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAddCustomer.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAddCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAddRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAddSurchargeRate.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAddService.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAddRoomType.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAddServiceType.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAddStaff.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fAddStaffType.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fBill.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fBookRoomDetails.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fChangeRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fCustomer.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fManagement.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fLogin.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fBookRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fParameter.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fPrintBill.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fProfile.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fReceiveRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fReceiveRoomDetails.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fReport.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fRoomType.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fService.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fServiceType.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fStaff.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fUpdateCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.fUseService.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.Properties.Resources.resources
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.csproj.GenerateResource.cache
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.csproj.CoreCompileInputs.cache
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\bin\Release\HotelManager.exe.config
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\bin\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\bin\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\bin\Release\MetroFramework.dll
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Tran Hanh Thao\Desktop\HotelManager\obj\Release\HotelManager.csproj.CopyComplete
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\bin\Release\HotelManager.exe.config
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\bin\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\bin\Release\HotelManager.pdb
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\bin\Release\MetroFramework.dll
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.csproj.AssemblyReference.cache
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.csproj.ResolveComReference.cache
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAbout.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAccess.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAddCustomer.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAddCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAddRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAddSurchargeRate.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAddService.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAddRoomType.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAddServiceType.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAddStaff.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fAddStaffType.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fBill.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fBookRoomDetails.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fChangeRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fCustomer.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fManagement.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fLogin.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fBookRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fParameter.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fPrintBill.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fProfile.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fReceiveRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fReceiveRoomDetails.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fReport.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fRoom.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fRoomType.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fService.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fServiceType.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fStaff.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fUpdateCustomerInfo.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.fUseService.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.Properties.Resources.resources
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.csproj.GenerateResource.cache
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.csproj.CoreCompileInputs.cache
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.csproj.CopyComplete
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.exe
+C:\Users\Tran Hanh Thao\Desktop\Bản fix\HotelManager\obj\Release\HotelManager.pdb
