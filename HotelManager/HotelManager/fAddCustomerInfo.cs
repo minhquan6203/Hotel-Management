@@ -69,7 +69,7 @@ namespace HotelManager
         }
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            if(txbFullName.Text!=string.Empty)
+            if(txbFullName.Text!=string.Empty && txbIDCard.Text!=string.Empty)
             {
                 try
                 {
@@ -79,13 +79,12 @@ namespace HotelManager
                     {
                         int idCustomerType = (cbCustomerType.SelectedItem as CustomerType).Id;
                         InsertCustomer(txbIDCard.Text, txbFullName.Text, idCustomerType, cbSex.Text);
-                        MessageBox.Show("Thêm khách hàng thành công.", "Thông báo.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        AddIdCustomer(CustomerDAO.Instance.GetInfoByIdCard(txbIDCard.Text).Id);
-                        ClearData();
+
 
                     }
-                    else
-                        MessageBox.Show("Khách Hàng đã tồn tại\nTrùng số chứng minh nhân dân", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show("Thêm khách hàng thành công.", "Thông báo.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AddIdCustomer(CustomerDAO.Instance.GetInfoByIdCard(txbIDCard.Text).Id);
+                    ClearData();
 
                 }
                 catch
