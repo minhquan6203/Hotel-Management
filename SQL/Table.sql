@@ -1,11 +1,16 @@
 create DATABASE HotelManagement
 GO
 
-USE master;
-GO
-create DATABASE HotelManagement SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-GO
-DROP DATABASE HotelManagement;
+--USE master;
+--GO
+--DROP DATABASE HotelManagement;
+
+--USE master;
+--GO
+--SELECT * FROM sys.sysprocesses WHERE DB_NAME(dbid) = 'HotelManagement';
+--GO
+
+--KILL 58
 
 USE HotelManagement
 
