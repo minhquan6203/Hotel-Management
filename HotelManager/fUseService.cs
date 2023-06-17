@@ -328,10 +328,7 @@ namespace HotelManager
                 ListViewItem.ListViewSubItem subItem3 = new ListViewItem.ListViewSubItem(listViewItem, ((DateTime)data["Ngày trả"]).ToString().Split(' ')[0]);
                 ListViewItem.ListViewSubItem subItem4 = new ListViewItem.ListViewSubItem(listViewItem, ((int)data["Tiền phòng"]).ToString("c0", cultureInfo));
                 ListViewItem.ListViewSubItem subItem5 = new ListViewItem.ListViewSubItem(listViewItem, ((int)data["Phụ thu"]).ToString("c0", cultureInfo));
-                int roomPrice = (int)data["Tiền phòng"] + (int)data["Phụ thu"];
-                ListViewItem.ListViewSubItem subItem6 = new ListViewItem.ListViewSubItem(listViewItem, roomPrice.ToString("c0", cultureInfo));
-
-                totalPrice += roomPrice;
+                ListViewItem.ListViewSubItem subItem6 = new ListViewItem.ListViewSubItem(listViewItem, ((int)data["Thành tiền"]).ToString("c0", cultureInfo));
 
                 listViewItem.SubItems.Add(subItem1);
                 listViewItem.SubItems.Add(subItem2);
@@ -386,7 +383,7 @@ namespace HotelManager
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             Room room = flowLayoutRooms.Tag as Room;
-            if (MessageBox.Show("Bạn có chắc chắn thanh toán cho "  +room.Name+ " không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("Bạn có chắc chắn thanh toán cho " +room.Name+ " không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 int idBill = BillDAO.Instance.GetIdBillFromIdRoom(room.Id);
                 Pay(idBill,int.Parse(numericUpDown1.Value.ToString()));

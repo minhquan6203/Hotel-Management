@@ -64,17 +64,6 @@ namespace HotelManager
                 listViewUseService.Items.Add(listViewItem);
             }
 
-            ListViewItem listViewItemTotalPrice = new ListViewItem();
-            ListViewItem.ListViewSubItem subItemTotalPrice = new ListViewItem.ListViewSubItem(listViewItemTotalPrice, _totalPrice.ToString("c0", cultureInfo));
-            ListViewItem.ListViewSubItem _subItem1 = new ListViewItem.ListViewSubItem(listViewItemTotalPrice, "");
-            ListViewItem.ListViewSubItem _subItem2 = new ListViewItem.ListViewSubItem(listViewItemTotalPrice, "");
-            ListViewItem.ListViewSubItem _subItem3 = new ListViewItem.ListViewSubItem(listViewItemTotalPrice, "");
-            listViewItemTotalPrice.SubItems.Add(_subItem1);
-            listViewItemTotalPrice.SubItems.Add(_subItem2);
-            listViewItemTotalPrice.SubItems.Add(_subItem3);
-            listViewItemTotalPrice.SubItems.Add(subItemTotalPrice);
-            listViewUseService.Items.Add(listViewItemTotalPrice);
-
             id = 1;
         }
         public bool IsExistsBill(int idRoom)
@@ -96,13 +85,11 @@ namespace HotelManager
             DateTime dateCheckIn= (DateTime)data["NgayDen"];
             DateTime dateCheckOut = (DateTime)data["NgayDi"];
             int days = dateCheckOut.Subtract(dateCheckIn).Days;
-            lblDays.Text = days.ToString();
             lblPeoples.Text = RoomDAO.Instance.GetPeoples(idBill).ToString();
             lblSurcharge.Text= ((int)data["PhuThu"]).ToString("c0", cultureInfo);
             lblServicePrice.Text= ((int)data["TienDichVu"]).ToString("c0", cultureInfo);
             lblRoomPrice.Text= ((int)data["TienPhong"]).ToString("c0", cultureInfo);
-            lblTotalPrice.Text= ((int)data["ThanhTien"]).ToString("c0", cultureInfo);
-            lblFinalPrice.Text= ((int)data["ThanhTien"]*((100-(int)data["GiamGia"])/100.0)).ToString("c0", cultureInfo);
+            lblFinalPrice.Text= ((int)data["ThanhTien"]).ToString("c0", cultureInfo); ;
             lblDiscount.Text= ((int)data["GiamGia"]).ToString()+" %";
         }
         private void btnClose_Click(object sender, EventArgs e)
@@ -130,6 +117,11 @@ namespace HotelManager
             bitmap = new Bitmap(Application.StartupPath + @"\Bill.Png");
             if (printDialog1.ShowDialog() == DialogResult.OK)
                 printDocument1.Print();
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

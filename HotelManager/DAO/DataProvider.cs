@@ -11,7 +11,7 @@ namespace HotelManager.DAO
     public class DataProvider
     {
         private static DataProvider instance;
-        private string connectionStr = @"Data Source=DESKTOP-VAQ890M\MSSQLSERVER01;Initial Catalog=HotelManagement;Integrated Security=True";
+        private string connectionStr = @"Data Source=MSI\SQLEXPRESS;Initial Catalog=HotelManagement;Integrated Security=True";
         //private string connectionStr = @"Data Source=THIEN-AI\THIENAI;Initial Catalog=HotelManagement;Integrated Security=True";
         //private string connectionStr = @"Data Source=.\sqlexpress;Initial Catalog=HotelManagement;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter = null)

@@ -63,7 +63,7 @@ namespace HotelManager.DAO
         public int GetPeoples(int idBill)
         {
             string query = "USP_GetPeoples @idBill";
-            return (int)DataProvider.Instance.ExecuteScalar(query, new object[] { idBill }) + 1;
+            return (int)DataProvider.Instance.ExecuteScalar(query, new object[] { idBill });
         }
         public int GetIdRoomFromReceiveRoom(int idReceiveRoom)
         {

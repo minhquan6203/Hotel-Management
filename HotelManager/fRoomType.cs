@@ -228,7 +228,7 @@ namespace HotelManager
                                 BtnCancel_Click(null, null);
                         }
                         else
-                            MessageBox.Show( "Loại phòng này chưa tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                            MessageBox.Show( "Số người tối đa vượt quá quy định", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     }
                 }
                 catch
@@ -401,6 +401,11 @@ namespace HotelManager
         }
 
         private void fRoomType_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbLimitPerson_OnValueChanged(object sender, EventArgs e)
         {
 
         }

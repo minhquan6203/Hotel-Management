@@ -22,6 +22,10 @@ namespace HotelManager
             LoadFullSurchargeRate(GetFullSurchargeRate());
             comboboxName1.DisplayMember = "Name";
             dataGridViewSurchargeRate.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            LoadFullCustomerType(GetFullCustomerType());
+            comboboxName2.DisplayMember = "Name";
+            dataGridViewCustomerType.ColumnHeadersDefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+
         }
         #endregion
 
@@ -31,7 +35,6 @@ namespace HotelManager
             BindingSource source = new BindingSource();
             source.DataSource = table;
             dataGridViewParameter.DataSource = source;
-            bindingSurcharge.BindingSource = source;
             comboboxName.DataSource = source;
             txbValue.Enter += Txb_Enter;
             txbValue.Leave += Txb_Leave;
@@ -56,40 +59,6 @@ namespace HotelManager
                 comboboxName.Focus();
             }
         }
-        private void ToolStripLabel1_Click(object sender, EventArgs e)
-        {
-            if (saveParameter.ShowDialog() == DialogResult.Cancel)
-                return;
-            else
-            {
-                bool check;
-                try
-                {
-                    switch (saveParameter.FilterIndex)
-                    {
-                        case 2:
-                            check = ExportToExcel.Instance.Export(dataGridViewParameter, saveParameter.FileName, ModeExportToExcel.XLSX);
-                            break;
-                        case 3:
-                            check = ExportToExcel.Instance.Export(dataGridViewParameter, saveParameter.FileName, ModeExportToExcel.PDF);
-                            break;
-                        default:
-                            check = ExportToExcel.Instance.Export(dataGridViewParameter, saveParameter.FileName, ModeExportToExcel.XLS);
-                            break;
-                    }
-                    if (check)
-                        MessageBox.Show("Xuất thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    else
-                        MessageBox.Show("Lỗi xuất thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                catch
-                {
-                    MessageBox.Show("Lỗi (Cần cài đặt Office)", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-
         private void BtnSearch_Click(object sender, EventArgs e)
         {
             txbSearch.Text = txbSearch.Text.Trim();
@@ -112,6 +81,12 @@ namespace HotelManager
             LoadFullSurchargeRate(GetFullSurchargeRate());
             btnCancel1.Visible = false;
             btnSearch1.Visible = true;
+        }
+        private void BtnCancel2_Click(object sender, EventArgs e)
+        {
+            LoadFullCustomerType(GetFullCustomerType());
+            btnCancel2.Visible = false;
+            btnSearch2.Visible = true;
         }
         #endregion
 
@@ -228,12 +203,12 @@ namespace HotelManager
             if (e.KeyChar == 13)
                 BtnSearch_Click(sender, null);
             else
-                if (e.KeyChar == 27 && btnCancel1.Visible == true)
+                if (e.KeyChar == 27 && btnCancel.Visible == true)
                 BtnCancel_Click(sender, null);
         }
         private void FParameter_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == 27 && btnCancel1.Visible == true)
+            if (e.KeyChar == 27 && btnCancel.Visible == true)
                 BtnCancel_Click(sender, null);
         }
         #endregion
@@ -286,11 +261,7 @@ namespace HotelManager
 
         }
 
-        private void bindingSurcharge1_RefreshItems(object sender, EventArgs e)
-        {
-
-        }
-
+   
 
         // fSurchargeRat
 
@@ -300,7 +271,6 @@ namespace HotelManager
             BindingSource source = new BindingSource();
             source.DataSource = table;
             dataGridViewSurchargeRate.DataSource = source;
-            bindingSurcharge1.BindingSource = source;
             comboboxName1.DataSource = source;
             txbValue1.Enter += Txb_Enter;
             txbValue1.Leave += Txb_Leave;
@@ -322,41 +292,13 @@ namespace HotelManager
                 comboboxName1.Focus();
             }
         }
-        private void ToolStripLabel5_Click(object sender, EventArgs e)
-        {
-            if (saveSurchargeRate.ShowDialog() == DialogResult.Cancel)
-                return;
-            else
-            {
-                bool check;
-                try
-                {
-                    switch (saveSurchargeRate.FilterIndex)
-                    {
-                        case 2:
-                            check = ExportToExcel.Instance.Export(dataGridViewSurchargeRate, saveSurchargeRate.FileName, ModeExportToExcel.XLSX);
-                            break;
-                        case 3:
-                            check = ExportToExcel.Instance.Export(dataGridViewSurchargeRate, saveSurchargeRate.FileName, ModeExportToExcel.PDF);
-                            break;
-                        default:
-                            check = ExportToExcel.Instance.Export(dataGridViewSurchargeRate, saveSurchargeRate.FileName, ModeExportToExcel.XLS);
-                            break;
-                    }
-                    if (check)
-                        MessageBox.Show("Xuất thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    else
-                        MessageBox.Show("Lỗi xuất thất bại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                catch
-                {
-                    MessageBox.Show("Lỗi (Cần cài đặt Office)", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
+        
         private void BtnAdd1_Click(object sender, EventArgs e)
         {
-            txbValue1.Text = "0";
+            fAddCustomerType f = new fAddCustomerType();
+            f.ShowDialog();
+            Show();
+            LoadFullCustomerType(GetFullCustomerType());
         }
         private void BtnSearch1_Click(object sender, EventArgs e)
         {
@@ -397,7 +339,7 @@ namespace HotelManager
                         {
                             MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             groupSurchargeRate.Tag = surchargeNow;
-                            if (btnCancel.Visible == false)
+                            if (btnCancel1.Visible == false)
                             {
                                 int index = dataGridViewSurchargeRate.SelectedRows[0].Index;
                                 LoadFullSurchargeRate(GetFullSurchargeRate());
@@ -406,7 +348,7 @@ namespace HotelManager
                             else BtnCancel1_Click(null, null);
                         }
                         else
-                            MessageBox.Show("Không thể cập nhật (Không có phụ thu này)", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                            MessageBox.Show("Không thể cập nhật (Tỉ lệ phụ thu không hợp lệ)", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     }
                 }
                 catch
@@ -517,6 +459,228 @@ namespace HotelManager
         {
 
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox13_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox10_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox8_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
+        //fcustomertype
+
+        #region Load
+        private void LoadFullCustomerType(DataTable table)
+        {
+            BindingSource source = new BindingSource();
+            source.DataSource = table;
+            dataGridViewCustomerType.DataSource = source;
+            comboboxName2.DataSource = source;
+            txbValue2.Enter += Txb_Enter;
+            txbValue2.Leave += Txb_Leave;
+        }
+        #endregion
+
+        #region Click
+
+        private void BtnUpdate2_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn cập nhật không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.OK)
+            {
+                UpdateSurcharge2();
+                comboboxName2.Focus();
+            }
+        }
+        private void BtnAdd2_Click(object sender, EventArgs e)
+        {
+            txbValue2.Text = "0";
+        }
+        private void BtnSearch2_Click(object sender, EventArgs e)
+        {
+            txbSearch2.Text = txbSearch2.Text.Trim();
+            if (txbSearch2.Text != string.Empty)
+            {
+                txbValue2.Text = string.Empty;
+                btnSearch2.Visible = false;
+                btnCancel2.Visible = true;
+                Search2();
+            }
+        }
+        #endregion
+
+        #region Method
+        private void UpdateSurcharge2()
+        {
+            if (comboboxName2.Text == string.Empty)
+            {
+                MessageBox.Show("Không thể cập nhật (Không có phụ thu này)", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
+            bool isFill = fCustomer.CheckFillInText(new Control[] { txbValue2 });
+            if (isFill)
+            {
+                CustomerType surchargePre = groupCustomerType.Tag as CustomerType;
+                try
+                {
+                    CustomerType surchargeNow = GetSurchargeNow2();
+                    if (surchargeNow.Equals(surchargePre))
+                    {
+                        MessageBox.Show("Bạn chưa thay đổi dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        bool check = CustomerTypeDAO.Instance.UpdateCustomerType(surchargeNow);
+                        if (check)
+                        {
+                            MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            groupCustomerType.Tag = surchargeNow;
+                            if (btnCancel2.Visible == false)
+                            {
+                                int index = dataGridViewCustomerType.SelectedRows[0].Index;
+                                LoadFullCustomerType(GetFullCustomerType());
+                                comboboxName2.SelectedIndex = index;
+                            }
+                            else BtnCancel2_Click(null, null);
+                        }
+                        else
+                            MessageBox.Show("Không thể cập nhật (Không có phụ thu này)", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Lỗi không xác định", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không được để trống giá trị", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void ChangeText2(DataGridViewRow row)
+        {
+
+            if (row.IsNewRow)
+            {
+                txbValue2.Text = "0";
+            }
+            else
+            {
+                txbValue2.Text = row.Cells[colValue2.Name].Value.ToString();
+                CustomerType CustomerType = new CustomerType(((DataRowView)row.DataBoundItem).Row);
+                groupCustomerType.Tag = CustomerType;
+            }
+        }
+        private void TxbSearch2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+                BtnSearch2_Click(sender, null);
+            else
+                if (e.KeyChar == 27 && btnCancel2.Visible == true)
+                BtnCancel2_Click(sender, null);
+        }
+        private void FCustomerType_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 27 && btnCancel2.Visible == true)
+                BtnCancel2_Click(sender, null);
+        }
+
+        private void Search2()
+        {
+            LoadFullCustomerType(GetSearchCustomerType());
+        }
+        #endregion
+
+        #region GetData
+        private DataTable GetFullCustomerType()
+        {
+            return CustomerTypeDAO.Instance.LoadFullCustomerType();
+        }
+        private CustomerType GetSurchargeNow2()
+        {
+            fStaff.Trim(new Bunifu.Framework.UI.BunifuMetroTextbox[] { });
+            return new CustomerType(comboboxName2.Text, double.Parse(txbValue2.Text));
+        }
+        private DataTable GetSearchCustomerType()
+        {
+            return CustomerTypeDAO.Instance.Search(txbSearch2.Text);
+        }
+        #endregion
+
+        #region Check isDigit
+
+        #endregion
+
+        #region ChangeText
+        private void dataGridViewCustomerType_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridViewCustomerType.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dataGridViewCustomerType.SelectedRows[0];
+                ChangeText2(row);
+            }
+        }
+        #endregion
+
+        #region Key
+        #region Close
+        private void FCustomerType_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            BtnCancel2_Click(sender, null);
+        }
+        #endregion
+
+        private void TxbSearch2_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void fParameter2_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void dataGridViewCustomerType_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        //private void btnAdd_Click(object sender, EventArgs e)
+        //{
+        //    fAddCustomerType f = new fAddCustomerType();
+        //    f.ShowDialog();
+        //    Show();
+        //    LoadFullCustomerType(GetFullCustomerType());
+        //}
+
+        private void groupCustomerType_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
     }
     #endregion
 }

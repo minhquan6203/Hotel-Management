@@ -68,7 +68,7 @@ namespace HotelManager
                         txbPrice.Text = "0";
                     }
                     else
-                        MessageBox.Show("Loại phụ thu đã tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        MessageBox.Show("Loại phụ thu đã tồn tại hoặc tỉ lệ không hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }else
                 {
                     MessageBox.Show("Số khách vượt quá số người tối đa", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);

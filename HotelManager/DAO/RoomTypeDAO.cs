@@ -78,6 +78,12 @@ namespace HotelManager.DAO
             RoomType roomType = new RoomType(data.Rows[0]);
             return roomType;
         }
+        //internal bool CheckLimitPerson()
+        //{
+        //    string query = "CheckLimitPerson @id";
+        //    return DataProvider.Instance.ExecuteNoneQuery(query, new object[] { customerTypeNow.Id, customerTypeNow.Name }) > 0;
+        //}
+
         #endregion
 
     }

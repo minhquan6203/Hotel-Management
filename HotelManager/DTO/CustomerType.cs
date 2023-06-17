@@ -11,24 +11,47 @@ namespace HotelManager.DTO
     {
         private int id;
         private string name;
-        public CustomerType(int id, string name)
+        private double rate;
+        public CustomerType(int id, string name, double rate)
         {
             Id = id;
             Name = name;
+            Rate = rate;
+        }
+        public CustomerType()
+        {
+           
+        }
+        public CustomerType(string name, double rate)
+        {
+            Name = name;
+            Rate = rate;
         }
         public CustomerType(DataRow row)
         {
-            Id = (int)row["id"];
-            Name = row["Name"].ToString();
+            Id = (int)row[columnName: "id"];
+            Name = row[columnName: "Name"].ToString();
+            Rate = (double)row["Rate"];
         }
+
+        public CustomerType(int v1, double v2)
+        {
+            V1 = v1;
+            V2 = v2;
+        }
+
         public override bool Equals(object obj)
         {
             return Equals(obj as CustomerType);
         }
         public bool Equals(CustomerType customerTypePre)
         {
-            if (customerTypePre == null) return false;
-            return (this.name == customerTypePre.name);
+            if (customerTypePre == null)
+                return false;
+            if (this.name != customerTypePre.name) return false;
+            if (this.rate != customerTypePre.rate) return false;
+            return true;
+
         }
         public override int GetHashCode()
         {
@@ -36,5 +59,8 @@ namespace HotelManager.DTO
         }
         public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
+        public double Rate { get => rate; set => rate = value; }
+        public int V1 { get; }
+        public double V2 { get; }
     }
 }

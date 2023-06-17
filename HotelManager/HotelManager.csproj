@@ -101,6 +101,12 @@
     <Compile Include="fAddRoom.Designer.cs">
       <DependentUpon>fAddRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAddCustomerType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddCustomerType.Designer.cs">
+      <DependentUpon>fAddCustomerType.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAddSurchargeRate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -273,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fAddRoom.resx">
       <DependentUpon>fAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddCustomerType.resx">
+      <DependentUpon>fAddCustomerType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fAddSurchargeRate.resx">
       <DependentUpon>fAddSurchargeRate.cs</DependentUpon>

@@ -18,7 +18,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[InsertReceiveRoom]
+create proc [dbo].[InsertReceiveRoom]
 @idBookRoom int,@idRoom int
 as
 begin
@@ -63,7 +63,7 @@ begin
 end
 
 GO
-CREATE PROC [dbo].[USP_ChekcAccess] 
+create PROC [dbo].[USP_ChekcAccess] 
 @username NVARCHAR(100), @formname NVARCHAR(100)
 AS
 BEGIN
@@ -74,7 +74,7 @@ END
 GO
 
 GO
-CREATE PROC [dbo].[USP_DeleteAccess]
+create PROC [dbo].[USP_DeleteAccess]
 @idJob INT, @idStaffType int
 AS
 BEGIN
@@ -100,7 +100,7 @@ begin
 end
 
 GO
-CREATE PROC [dbo].[USP_DeleteStaffType]
+create PROC [dbo].[USP_DeleteStaffType]
 @id int
 AS
 begin
@@ -114,7 +114,7 @@ begin
 END
 
 GO
-CREATE proc [dbo].[USP_GetCustomerTypeNameByIdCard]
+create proc [dbo].[USP_GetCustomerTypeNameByIdCard]
 @idCard nvarchar(100)
 as
 begin
@@ -124,7 +124,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_GetIdBillFromIdRoom]
+create proc [dbo].[USP_GetIdBillFromIdRoom]
 @idRoom int
 as
 begin
@@ -150,7 +150,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_GetIdReceiRoomFromIdRoom]--IdRoom đưa vào có trạng thái "Có người"
+create proc [dbo].[USP_GetIdReceiRoomFromIdRoom]--IdRoom đưa vào có trạng thái "Có người"
 @idRoom int
 as
 begin
@@ -242,7 +242,7 @@ begin
 end
 
 GO
-CREATE PROC [dbo].[USP_InsertAccess]
+create PROC [dbo].[USP_InsertAccess]
 @idJob INT, @idStaffType int
 AS
 BEGIN
@@ -259,7 +259,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_InsertBillDetails]
+create proc [dbo].[USP_InsertBillDetails]
 @idBill int,@idService int,@count int
 as
 begin
@@ -283,7 +283,7 @@ end
 
 GO
 --moi
-CREATE PROC [dbo].[USP_InsertRoomType]
+create PROC [dbo].[USP_InsertRoomType]
 @Name nvarchar(100),@Price int,@LimitPerson int
 AS
 BEGIN
@@ -316,16 +316,16 @@ INSERT INTO dbo.Customer(IDCard,IDCustomerType, Name, Sex)
 end
 
 GO
-CREATE PROC [dbo].[USP_InsertCustomerType]
-@name NVARCHAR(100)
-AS
-BEGIN
-	INSERT INTO dbo.CustomerType(name)
-	VALUES(@name)
-END
+--create PROC [dbo].[USP_InsertCustomerType]
+--@name NVARCHAR(100)
+--AS
+--BEGIN
+--	INSERT INTO dbo.CustomerType(name)
+--	VALUES(@name)
+--END
 
 GO
-CREATE Proc [dbo].[USP_InsertReport]
+create Proc [dbo].[USP_InsertReport]
 @idBill int
 AS
 BEGIN
@@ -333,7 +333,7 @@ BEGIN
 	DECLARE @year INT = 0
 	DECLARE @id INT = 0
 	DECLARE @price INT = 0
-	SELECT @id = dbo.ROOM.IDRoomType, @month = MONTH(bill.DateOfCreate), @year = YEAR(bill.DateOfCreate), @price = bill.TotalPrice
+	SELECT @id = dbo.ROOM.IDRoomType, @month = MONTH(bill.DateOfcreate), @year = YEAR(bill.DateOfcreate), @price = bill.TotalPrice
 	FROM bill INNER JOIN dbo.RECEIVEROOM ON RECEIVEROOM.ID = bill.IDReceiveRoom 
 		INNER JOIN dbo.ROOM ON ROOM.ID = RECEIVEROOM.IDRoom
 	WHERE bill.ID = @idBill
@@ -360,7 +360,7 @@ INSERT INTO dbo.Room(Name, IDRoomType, IDStatusRoom)
 VALUES(@nameRoom, @idRoomType, @idStatusRoom)
 end
 GO
-CREATE PROC [dbo].[USP_InsertService]
+create PROC [dbo].[USP_InsertService]
 @name NVARCHAR(200), @idServiceType INT, @price int
 AS
 BEGIN
@@ -369,7 +369,7 @@ BEGIN
 END
 
 GO
-CREATE PROC [dbo].[USP_InsertServiceType]
+create PROC [dbo].[USP_InsertServiceType]
 @name NVARCHAR(100)
 AS
 BEGIN
@@ -378,7 +378,7 @@ BEGIN
 END
 
 GO
-CREATE PROC [dbo].[USP_InsertStaff]
+create PROC [dbo].[USP_InsertStaff]
 @user NVARCHAR(100), @name NVARCHAR(100), @pass NVARCHAR(100),
 @idStaffType INT,@idCard NVARCHAR(100), @dateOfBirth DATE, @sex NVARCHAR(100),
 @address NVARCHAR(200), @phoneNumber INT, @startDay date
@@ -392,7 +392,7 @@ BEGIN
 END
 
 GO
-CREATE PROC [dbo].[USP_InsertStaffType] 
+create PROC [dbo].[USP_InsertStaffType] 
 @name NVARCHAR(100)
 AS
 BEGIN
@@ -410,7 +410,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_IsExistBillOfRoom]--Trả về count > 0: tức là đã tồn tại Bill
+create proc [dbo].[USP_IsExistBillOfRoom]--Trả về count > 0: tức là đã tồn tại Bill
 @idRoom int
 as
 begin
@@ -433,7 +433,7 @@ begin
 	)
 end
 GO
-CREATE proc [dbo].[USP_IsIdCardExists]
+create proc [dbo].[USP_IsIdCardExists]
 @idCard nvarchar(100)
 as
 begin
@@ -442,7 +442,7 @@ from Customer
 where IDCard=@idCard
 end
 GO
-CREATE proc [dbo].[USP_IsNameExists]
+create proc [dbo].[USP_IsNameExists]
 @name int
 as
 begin
@@ -463,7 +463,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_LoadBookRoomsByDate]
+create proc [dbo].[USP_LoadBookRoomsByDate]
 @date Date
 as
 begin
@@ -474,7 +474,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_LoadEmptyRoom]
+create proc [dbo].[USP_LoadEmptyRoom]
 @idRoomType int
 as
 begin
@@ -484,7 +484,7 @@ begin
 end
 
 GO
-CREATE PROC [dbo].[USP_LoadFullAccessNow]
+create PROC [dbo].[USP_LoadFullAccessNow]
 @idStaffType INT
 AS
 BEGIN
@@ -506,20 +506,20 @@ BEGIN
 END
 
 GO
-CREATE PROC [dbo].[USP_LoadFUllBill] 
+create PROC [dbo].[USP_LoadFUllBill] 
 AS
 BEGIN
-	SELECT bill.id, room.Name AS [roomName], Customer.Name as [customerName], StaffSetUp, DateOfCreate, STATUSBILL.Name, TotalPrice, (cast(Discount as nvarchar(4)) + '%') [Discount], cast(TotalPrice*( (100-Discount)/100.0) as int) [FinalPrice]
+	SELECT bill.id, room.Name AS [roomName], Customer.Name as [customerName], StaffSetUp, DateOfcreate, STATUSBILL.Name, TotalPrice, (cast(Discount as nvarchar(4)) + '%') [Discount], cast(TotalPrice*( (100-Discount)/100.0) as int) [FinalPrice]
     FROM dbo.BILL INNER JOIN dbo.RECEIVEROOM ON RECEIVEROOM.ID = BILL.IDReceiveRoom
 					INNER JOIN dbo.STATUSBILL ON STATUSBILL.id = bill.IDStatusBill
 					INNER JOIN dbo.ROOM ON ROOM.ID = RECEIVEROOM.IDRoom
 					inner join bookroom on bookroom.id = RECEIVEROOM.IDBookRoom
 					inner join Customer on Customer.ID = BookRoom.IDCustomer
-	ORDER BY DateOfCreate DESC
+	ORDER BY DateOfcreate DESC
 END
 
 GO
-CREATE PROC [dbo].[USP_LoadFullCustomer]
+create PROC [dbo].[USP_LoadFullCustomer]
 AS
 SELECT CUSTOMER.ID, Customer.Name, IDCard, CustomerType.Name as [NameCustomerType], Sex, IDCustomerType 
 FROM dbo.Customer INNER JOIN dbo.CustomerType ON CustomerType.ID = Customer.IDCustomerType
@@ -529,22 +529,22 @@ GO
 --Customer Type
 --------------------------------------------------------------
 
-CREATE PROC [dbo].[USP_LoadFullCustomerType]
+create PROC [dbo].[USP_LoadFullCustomerType]
 AS
 SELECT * FROM dbo.CustomerType
 
 GO
-CREATE PROC [dbo].[USP_LoadFullParameter]
+create PROC [dbo].[USP_LoadFullParameter]
 AS
 SELECT * FROM dbo.PARAMETER
 GO
 
-CREATE PROC [dbo].[USP_LoadFullSurchargeRate]
+create PROC [dbo].[USP_LoadFullSurchargeRate]
 AS
 SELECT * FROM dbo.SurchargeRate
 GO
 
-CREATE PROC [dbo].[USP_InsertParameter]
+create PROC [dbo].[USP_InsertParameter]
 @Name nvarchar(100), @Value int, @Describe nvarchar(200)
 AS
 BEGIN
@@ -553,7 +553,7 @@ BEGIN
 END
 
 GO
-CREATE PROC [dbo].[USP_LoadFullReport]
+create PROC [dbo].[USP_LoadFullReport]
 @month INT, @year int
 AS
 BEGIN
@@ -562,7 +562,7 @@ BEGIN
 END
 
 GO
-CREATE PROC [dbo].[USP_LoadFullRoom]
+create PROC [dbo].[USP_LoadFullRoom]
 AS
 SELECT Room.ID, Room.Name,RoomType.Name AS [nameRoomType], Price, LimitPerson,
 StatusRoom.Name AS [nameStatusRoom], IDRoomType, IDStatusRoom
@@ -571,22 +571,22 @@ ON roomtype.id = room.IDRoomType
 INNER JOIN dbo.StatusRoom ON statusroom.id = room.IDStatusRoom
 
 GO
-CREATE PROC [dbo].[USP_LoadFullRoomType]
+create PROC [dbo].[USP_LoadFullRoomType]
 AS
 SELECT * FROM dbo.RoomType
 GO
-CREATE PROC [dbo].[USP_LoadFullService]
+create PROC [dbo].[USP_LoadFullService]
 AS
 SELECT Service.ID, Service.Name, Price, ServiceType.Name AS [nameServiceType], IDServiceType
 FROM dbo.Service INNER JOIN dbo.ServiceType ON ServiceType.ID = Service.IDServiceType
 
 GO
-CREATE PROC [dbo].[USP_LoadFullServiceType]
+create PROC [dbo].[USP_LoadFullServiceType]
 AS
 SELECT * FROM ServiceType
 
 GO
-CREATE PROC [dbo].[USP_LoadFullStaff]
+create PROC [dbo].[USP_LoadFullStaff]
 AS
 BEGIN
 	SELECT UserName, DisplayName, Name, IDCard,
@@ -599,7 +599,7 @@ GO
 --Staff type
 --------------------------------------------------------------
 
-CREATE PROC [dbo].[USP_LoadFullStaffType]
+create PROC [dbo].[USP_LoadFullStaffType]
 AS
 begin
 SELECT * FROM dbo.StaffType
@@ -610,12 +610,12 @@ GO
 
 --Status Room
 --------------------------------------------------------------
-CREATE PROC [dbo].[USP_LoadFullStatusRoom]
+create PROC [dbo].[USP_LoadFullStatusRoom]
 AS
 SELECT * FROM dbo.StatusRoom
 
 GO
-CREATE proc [dbo].[USP_LoadListFullRoom]
+create proc [dbo].[USP_LoadListFullRoom]
 @getToday Date
 as
 begin
@@ -673,7 +673,7 @@ where ID=@id
 end
 
 GO
-CREATE PROC [dbo].[USP_SearchBill]
+create PROC [dbo].[USP_SearchBill]
 @string NVARCHAR(100), @mode int
 AS
 BEGIN
@@ -691,18 +691,18 @@ BEGIN
 		WHERE [dbo].ConvertString(Customer.IDCard) LIKE @string
 
 
-	SELECT bill.id, room.Name AS [roomName], Customer.Name as [customerName], bill.StaffSetUp, bill.DateOfCreate, STATUSBILL.Name, bill.TotalPrice, (cast(bill.Discount as nvarchar(4)) + '%') [Discount], cast(bill.TotalPrice*( (100-bill.Discount)/100.0) as int) [FinalPrice]
+	SELECT bill.id, room.Name AS [roomName], Customer.Name as [customerName], bill.StaffSetUp, bill.DateOfcreate, STATUSBILL.Name, bill.TotalPrice, (cast(bill.Discount as nvarchar(4)) + '%') [Discount], cast(bill.TotalPrice*( (100-bill.Discount)/100.0) as int) [FinalPrice]
     FROM dbo.BILL INNER JOIN dbo.RECEIVEROOM ON RECEIVEROOM.ID = BILL.IDReceiveRoom 
 	INNER JOIN dbo.STATUSBILL ON STATUSBILL.id = bill.IDStatusBill 
 	INNER JOIN dbo.ROOM ON ROOM.ID = RECEIVEROOM.IDRoom
 	INNER JOIN @table ON bill.id = [@table].id
 	inner join bookroom on bookroom.id = RECEIVEROOM.IDBookRoom
 	inner join Customer on Customer.ID = BookRoom.IDCustomer
-	ORDER BY DateOfCreate DESC
+	ORDER BY DateOfcreate DESC
 END
 
 GO
-	CREATE PROC [dbo].[USP_SearchCustomer]
+	create PROC [dbo].[USP_SearchCustomer]
 	@string NVARCHAR(100), @mode INT
 	AS
 	BEGIN
@@ -725,7 +725,7 @@ GO
 --------------------------------------------------------------
 --parameter
 --------------------------------------------------------------
-CREATE PROC [dbo].[USP_SearchParameter]
+create PROC [dbo].[USP_SearchParameter]
 @string NVARCHAR(200)
 AS
 BEGIN
@@ -733,9 +733,18 @@ BEGIN
 	SELECT * FROM dbo.PARAMETER
 	WHERE [dbo].[convertstring](name) like @string
 END
+GO
+create PROC [dbo].[USP_SearchCustomerType]
+@string NVARCHAR(200)
+AS
+BEGIN
+	SELECT @string = '%' + [dbo].[convertstring](@string) + '%'
+	SELECT * FROM dbo.CustomerType
+	WHERE [dbo].[convertstring](Name) like @string
+END
 
 GO
-CREATE PROC [dbo].[USP_SearchSurchargeRate]
+create PROC [dbo].[USP_SearchSurchargeRate]
 @string int
 AS
 BEGIN
@@ -748,7 +757,7 @@ GO
 
 --Room
 --------------------------------------------------------------
-CREATE PROC [dbo].[USP_SearchRoom]
+create PROC [dbo].[USP_SearchRoom]
 @string NVARCHAR(100), @int INT
 AS
 BEGIN
@@ -764,7 +773,7 @@ GO
 
 --Room Type
 --------------------------------------------------------------
-CREATE PROC [dbo].[USP_SearchRoomType]
+create PROC [dbo].[USP_SearchRoomType]
 @string NVARCHAR(100), @int INT
 AS
 BEGIN
@@ -774,7 +783,7 @@ BEGIN
 end
 
 GO
-CREATE PROC [dbo].[USP_SearchService]
+create PROC [dbo].[USP_SearchService]
 @string NVARCHAR(100), @int int
 AS
 BEGIN
@@ -796,7 +805,7 @@ GO
 
 --Service Type
 --------------------------------------------------------------
-CREATE PROC [dbo].[USP_SearchServiceType]
+create PROC [dbo].[USP_SearchServiceType]
 @string NVARCHAR(100), @int INT
 AS
 BEGIN
@@ -811,7 +820,7 @@ GO
 
 --Staff 
 --------------------------------------------------------------
-CREATE PROC [dbo].[USP_SearchStaff]
+create PROC [dbo].[USP_SearchStaff]
 @string NVARCHAR(100), @int int
 AS
 BEGIN
@@ -834,7 +843,7 @@ BEGIN
 end
 
 GO
-CREATE proc [dbo].[USP_ShowBill]
+create proc [dbo].[USP_ShowBill]
 @idRoom int
 as
 begin
@@ -844,7 +853,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_ShowBillInfo]
+create proc [dbo].[USP_ShowBillInfo]
 @idBill int
 as
 begin
@@ -854,7 +863,7 @@ where A.IDReceiveRoom=B.ID and B.IDBookRoom=C.ID and C.IDCustomer=D.ID and D.IDC
 end
 
 GO
-CREATE proc [dbo].[USP_ShowBillPreView]
+create proc [dbo].[USP_ShowBillPreView]
 @idBill int
 as
 begin
@@ -864,12 +873,12 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_ShowBillRoom]--Muốn proc thực thi được thì phải thực thi USP_UpdateBill trước(nếu có thể)
+create proc [dbo].[USP_ShowBillRoom]--Muốn proc thực thi được thì phải thực thi USP_UpdateBill trước(nếu có thể)
 @getToday Date,@idRoom int
 as
 begin
 
-	select A.Name [Tên phòng],D.Price[Đơn giá] ,C.DateCheckIn [Ngày nhận],C.DateCheckOut[Ngày trả] ,E.RoomPrice[Tiền phòng],E.Surcharge[Phụ thu]
+	select A.Name [Tên phòng],D.Price[Đơn giá] ,C.DateCheckIn [Ngày nhận],C.DateCheckOut[Ngày trả] ,E.RoomPrice[Tiền phòng],E.Surcharge[Phụ thu], E.TotalPrice [Thành tiền]
 	from Room A,ReceiveRoom B, BookRoom C,RoomType D,Bill E
 	where E.IDReceiveRoom=B.ID and IDStatusRoom=2 and A.ID=B.IDRoom and B.IDBookRoom=C.ID and A.IDRoomType=D.ID and C.DateCheckOut>=@getToday and B.IDRoom=@idRoom and E.IDStatusBill=1
 end
@@ -905,32 +914,92 @@ begin
 end
 
 GO
-create proc [dbo].[USP_UpdateBill_Other]
-@idBill int,@discount int
-as
-begin
-	declare @totalPrice int=0,@idRoom int
-	declare @days int
-	select @days=DATEDIFF(day,C.DateCheckIn,C.DateCheckOut)
-	from Bill A,ReceiveRoom B,BookRoom C,RoomType D,Room E
-	where A.ID=@idBill and A.IDReceiveRoom=B.ID and B.IDRoom=E.ID and E.IDRoomType=D.ID and C.ID=B.IDBookRoom
+--create proc [dbo].[USP_UpdateBill_Other]
+--@idBill int,@discount int
+--as
+--begin
+--	declare @totalPrice int= 0,@idRoom int, @datout int, @servicePrice int, @totalPrice1 int= 0 
+--	declare @daynew int,@dayold int, @DateCheckIn datetime, @DateCheckOut datetime
 
-	select @totalPrice=RoomPrice*@days+ServicePrice+ Surcharge
-	from Bill
-	where ID=@idBill
+--	select @DateCheckOut = DateCheckOut, @DateCheckIn = DateCheckIn, @servicePrice = ServicePrice
+--	from Bill A,ReceiveRoom B,BookRoom C,RoomType D,Room E
+--	where A.ID=@idBill and A.IDReceiveRoom=B.ID and B.IDRoom=E.ID and E.IDRoomType=D.ID and C.ID=B.IDBookRoom
 
-	update Bill
-	set DateOfCreate=GETDATE(), TotalPrice=@totalPrice,Discount=@discount,IDStatusBill=2
-	where ID=@idBill
+--	select @totalPrice = TotalPrice
+--	from Bill
+--	where ID=@idBill
 
-	select @idRoom=B.IDRoom
-	from Bill A, ReceiveRoom B
-	where A.IDReceiveRoom=B.ID
+--	set @dayold= DATEDIFF(day,@DateCheckIn,@DateCheckOut)
 
-	update Room
-	set IDStatusRoom=1
-	where ID=@idRoom
-end
+--	if(@DateCheckIn = CONVERT(DATETIME, GETDATE()))
+--	begin
+--	set @daynew = 1
+--	end
+--	else
+--	begin
+--	set @daynew = DATEDIFF(day,@DateCheckIn,CONVERT(DATETIME, GETDATE()))
+--	end)
+
+--	set @totalPrice1 = (((@totalPrice - @servicePrice) * @daynew / @dayold) + @servicePrice
+
+--	update Bill
+--	set DateOfcreate=GETDATE(), TotalPrice = @totalPrice1 - @totalPrice1 * @discount / 100, Discount=@discount,IDStatusBill=2
+--	--set DateOfcreate=GETDATE(), TotalPrice = @totalPrice
+--	where ID=@idBill
+
+--	select @idRoom=B.IDRoom
+--	from Bill A, ReceiveRoom B
+--	where A.IDReceiveRoom=B.ID
+
+--	update Room
+--	set IDStatusRoom=1
+--	where ID=@idRoom
+--end
+create PROCEDURE [dbo].[USP_UpdateBill_Other]
+@idBill INT, @discount INT
+AS
+BEGIN
+    DECLARE @totalPrice INT = 0, @idRoom INT, @datout INT, @servicePrice INT, @totalPrice1 INT = 0 
+    DECLARE @daynew INT, @dayold INT, @DateCheckIn DATETIME, @DateCheckOut DATETIME
+
+    SELECT @DateCheckOut = DateCheckOut, @DateCheckIn = DateCheckIn, @servicePrice = ServicePrice
+    FROM Bill A
+    INNER JOIN ReceiveRoom B ON A.IDReceiveRoom = B.ID
+    INNER JOIN BookRoom C ON B.IDBookRoom = C.ID
+    INNER JOIN Room E ON B.IDRoom = E.ID
+    INNER JOIN RoomType D ON E.IDRoomType = D.ID
+    WHERE A.ID = @idBill
+
+    SELECT @totalPrice = TotalPrice
+    FROM Bill
+    WHERE ID = @idBill
+
+    SET @dayold = DATEDIFF(day, @DateCheckIn, @DateCheckOut)
+
+    IF (@DateCheckIn = CONVERT(DATE, GETDATE()))
+    BEGIN
+        SET @daynew = 1
+    END
+    ELSE
+    BEGIN
+        SET @daynew = DATEDIFF(day, @DateCheckIn, CONVERT(DATE, GETDATE()))
+    END
+
+    SET @totalPrice1 = (((@totalPrice - @servicePrice) * @daynew / @dayold) + @servicePrice)
+
+    UPDATE Bill
+    SET DateOfcreate = GETDATE(), TotalPrice = @totalPrice1 - (@totalPrice1 * @discount / 100), Discount = @discount, IDStatusBill = 2
+    WHERE ID = @idBill
+
+    SELECT @idRoom = B.IDRoom
+    FROM Bill A
+    INNER JOIN ReceiveRoom B ON A.IDReceiveRoom = B.ID
+    WHERE A.ID = @idBill
+
+    UPDATE Room
+    SET IDStatusRoom = 1
+    WHERE ID = @idRoom
+END
 
 GO
 create proc [dbo].[USP_UpdateBill_RoomPrice]
@@ -959,25 +1028,25 @@ FROM SurchargeRate
 WHERE NAME <= @countCustomer --so khách hàng phụ thu là 3
 ORDER BY NAME DESC
 
-set @roomPrice = @price * @maxrate;
+set @roomPrice = @price;
  --@maxrate tỉ lệ phụ thu loại khách
 
 
 if(@countCustomer >= @limitPerson)
 --set @surcharge = @surchargerate
-	set @surcharge = @price * (@countCustomer - @QD2) * @surchargerate * @maxrate
+	set @surcharge = @price * (@countCustomer - @QD2) * @surchargerate
 else
  set @surcharge = 0
  --tiền phụ thu = tiền phong * ti lệ phụ thu khách thứ
 
-set @totalPrice = (@roomPrice + @surcharge)*@days
+set @totalPrice = ((@roomPrice + @surcharge)*@days)*@maxrate
 
 update Bill
 set RoomPrice=@roomPrice, Surcharge = @surcharge, TotalPrice = @totalPrice
 where id=@idBill
 END
 
---CREATE proc [dbo].[USP_UpdateBill_RoomPrice]
+--create proc [dbo].[USP_UpdateBill_RoomPrice]
 --@idBill int
 --as
 --begin
@@ -1018,7 +1087,7 @@ END
 --end
 
 GO
-CREATE proc [dbo].[USP_UpdateBill_ServicePrice]
+create proc [dbo].[USP_UpdateBill_ServicePrice]
 @idBill int
 as
 begin
@@ -1029,12 +1098,12 @@ begin
 	if(@totalServicePrice is null)
 	set @totalServicePrice=0
 	update Bill 
-	set ServicePrice=@totalServicePrice
+	set ServicePrice=@totalServicePrice, TotalPrice += @totalServicePrice 
 	where ID=@idBill
 end
 
 GO
-CREATE proc [dbo].[USP_UpdateBillDetails]
+create proc [dbo].[USP_UpdateBillDetails]
 @idBill int,@idService int,@_count int
 as
 begin
@@ -1074,7 +1143,7 @@ begin
 end
 
 GO
-CREATE PROC [dbo].[USP_UpdateCustomer]
+create PROC [dbo].[USP_UpdateCustomer]
 @id INT, @customerName NVARCHAR(100), @idCustomerType int, @idCardNow NVARCHAR(100), @sex NVARCHAR(100), @idCardPre NVARCHAR(100)
 AS
 BEGIN
@@ -1122,7 +1191,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_UpdateInfo]
+create proc [dbo].[USP_UpdateInfo]
 @username nvarchar(100),@address nvarchar(100),@phonenumber int,@idcard nvarchar(100),@dateOfBirth date,@sex nvarchar(50)
 as
 begin
@@ -1132,7 +1201,7 @@ begin
 end
 
 GO
-CREATE PROC [dbo].[USP_UpdateParameter]
+create PROC [dbo].[USP_UpdateParameter]
 @name NVARCHAR(200), @value int, @describe NVARCHAR(200)
 AS
 BEGIN
@@ -1153,28 +1222,69 @@ UPDATE dbo.PARAMETER
 		UPDATE dbo.ROOMTYPE SET LimitPerson = @value WHERE ID = 4
 END
 go
-CREATE PROC [dbo].[USP_UpdateSurchargeRate]
+create PROC [dbo].[USP_UpdateSurchargeRate]
 @name int, @value float
 AS
 BEGIN
-UPDATE dbo.[SurchargeRate]
-SET Value = @value, datemodify = GETDATE()
+    IF (@value <= 0 OR @value >= 1)
+    BEGIN
+        RETURN
+    END
+	else
+	BEGIN
+    UPDATE dbo.[SurchargeRate]
+	SET Value = @value, datemodify = GETDATE()
+	WHERE name = @name
+	END
+END
+GO
+create PROC [dbo].[USP_UpdateCustomerType]
+@name NVARCHAR(200), @rate float
+AS
+BEGIN
+UPDATE dbo.[CustomerType]
+SET Rate = @rate
 WHERE name = @name
 END
 
 GO
-create PROC [dbo].[USP_InsertSurchargeRate]
-@name int, @value float
+create PROCEDURE [dbo].[USP_InsertSurchargeRate]
+@name INT, @value float
 AS
 BEGIN
-DECLARE @Count int
-SELECT @Count = COUNT(*)
-FROM SurchargeRate
-WHERE Name = @name
-if(@Count>0) return
-INSERT INTO SurchargeRate(Name, Value, DateModify) VALUES (@name, @value, GETDATE())
+	DECLARE @Count int
+
+    SELECT @Count = COUNT(*)
+    FROM SurchargeRate
+    WHERE Name = @name
+
+    IF (@Count > 0 AND (@value <= 0 OR @value >= 1))
+    BEGIN
+        RETURN
+    END
+	else
+	BEGIN
+    INSERT INTO SurchargeRate (Name, Value, DateModify)
+    VALUES (@name, @value, GETDATE())
+	END
 END
 
+GO
+create PROC [dbo].[USP_InsertCustomerType]
+@name nvarchar(100), @rate float
+AS
+BEGIN
+	DECLARE @Count int
+
+	SELECT @name = [dbo].[convertstring](@name)
+
+    SELECT @Count = COUNT(*) FROM dbo.CustomerType
+    WHERE[dbo].[convertstring] (name)like @name
+
+	if(@Count>0) return
+	INSERT INTO CustomerType(Name, Rate) VALUES (@name, @rate)
+
+END
 
 
 GO
@@ -1188,7 +1298,7 @@ begin
 end
 
 GO
-CREATE proc [dbo].[USP_UpdateReceiveRoom]
+create proc [dbo].[USP_UpdateReceiveRoom]
 @id int,@idRoom int
 as
 begin
@@ -1202,7 +1312,7 @@ begin
 end	
 
 GO
-CREATE PROC [dbo].[USP_UpdateRoom]
+create PROC [dbo].[USP_UpdateRoom]
 @id INT, @nameRoom NVARCHAR(100), @idRoomType INT, @idStatusRoom INT
 AS
 UPDATE dbo.Room
@@ -1210,9 +1320,15 @@ SET
 	Name = @nameRoom, IDRoomType = @idRoomType, IDStatusRoom = @idStatusRoom
 WHERE ID = @id
 GO
-CREATE PROC [dbo].[USP_UpdateRoomType]
+create PROC [dbo].[USP_UpdateRoomType]
 @id INT, @name NVARCHAR(100), @price int, @limitPerson int
 AS
+	DECLARE @Value int
+	SELECT @Value = Value
+	FROM Parameter
+	WHERE Name = N'QĐ1'
+	if(@limitPerson > @Value)
+	return
 	UPDATE RoomType
 	SET
     name = @name, Price = @price, LimitPerson = @limitPerson
@@ -1231,7 +1347,7 @@ begin
 END
 
 GO
-CREATE PROC [dbo].[USP_UpdateServiceType]
+create PROC [dbo].[USP_UpdateServiceType]
 @id INT, @name NVARCHAR(100)
 AS
 BEGIN
@@ -1241,7 +1357,7 @@ BEGIN
 	WHERE id =@id
 END
 GO
-CREATE PROC [dbo].[USP_UpdateStaff]
+create PROC [dbo].[USP_UpdateStaff]
 @user NVARCHAR(100), @name NVARCHAR(100),@idStaffType INT,
 @idCard NVARCHAR(100), @dateOfBirth DATE, @sex NVARCHAR(100),
 @address NVARCHAR(200), @phoneNumber INT, @startDay DATE
@@ -1260,7 +1376,7 @@ BEGIN
 END
 
 GO
-CREATE PROC [dbo].[USP_UpdateStaffType] 
+create PROC [dbo].[USP_UpdateStaffType] 
 @id int, @name NVARCHAR(100)
 AS
 BEGIN
