@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A81E9E23-CDF5-4BBE-B58C-19091DEAA9BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HotelManager</RootNamespace>
+    <AssemblyName>HotelManager</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DAO\AccessDAO.cs" />
+    <Compile Include="DAO\AccountDAO.cs" />
+    <Compile Include="DAO\BillDAO.cs" />
+    <Compile Include="DAO\BillDetailsDAO.cs" />
+    <Compile Include="DAO\BookRoomDAO.cs" />
+    <Compile Include="DAO\CustomerDAO.cs" />
+    <Compile Include="DAO\CustomerTypeDAO.cs" />
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\SurchargeRateDAO.cs" />
+    <Compile Include="DAO\ParameterDAO.cs" />
+    <Compile Include="DAO\ReceiveRoomDAO.cs" />
+    <Compile Include="DAO\ReceiveRoomDetailsDAO.cs" />
+    <Compile Include="DAO\ReportDAO.cs" />
+    <Compile Include="DAO\RoomDAO.cs" />
+    <Compile Include="DAO\RoomTypeDAO.cs" />
+    <Compile Include="DAO\AccountTypeDAO.cs" />
+    <Compile Include="DAO\ServiceDAO.cs" />
+    <Compile Include="DAO\ServiceTypeDAO.cs" />
+    <Compile Include="DAO\StatusRoomDAO.cs" />
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\BillDetails.cs" />
+    <Compile Include="DTO\BookRoom.cs" />
+    <Compile Include="DTO\Customer.cs" />
+    <Compile Include="DTO\CustomerType.cs" />
+    <Compile Include="DTO\SurchargeRate.cs" />
+    <Compile Include="DTO\Parameter.cs" />
+    <Compile Include="DTO\ReceiveRoom.cs" />
+    <Compile Include="DTO\ReceiveRoomDetails.cs" />
+    <Compile Include="DTO\Room.cs" />
+    <Compile Include="DTO\RoomType.cs" />
+    <Compile Include="DTO\AccountType.cs" />
+    <Compile Include="DTO\Service.cs" />
+    <Compile Include="DTO\ServiceType.cs" />
+    <Compile Include="DTO\StatusRoom.cs" />
+    <Compile Include="DAO\ExportToExcel.cs" />
+    <Compile Include="fAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAbout.Designer.cs">
+      <DependentUpon>fAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAccess.Designer.cs">
+      <DependentUpon>fAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddCustomer.Designer.cs">
+      <DependentUpon>fAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddCustomerInfo.Designer.cs">
+      <DependentUpon>fAddCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddRoom.Designer.cs">
+      <DependentUpon>fAddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddCustomerType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddCustomerType.Designer.cs">
+      <DependentUpon>fAddCustomerType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddSurchargeRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddSurchargeRate.Designer.cs">
+      <DependentUpon>fAddSurchargeRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddService.Designer.cs">
+      <DependentUpon>fAddService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddRoomType.Designer.cs">
+      <DependentUpon>fAddRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddServiceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddServiceType.Designer.cs">
+      <DependentUpon>fAddServiceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddStaff.Designer.cs">
+      <DependentUpon>fAddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddStaffType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddStaffType.Designer.cs">
+      <DependentUpon>fAddStaffType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBill.Designer.cs">
+      <DependentUpon>fBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBookRoomDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBookRoomDetails.Designer.cs">
+      <DependentUpon>fBookRoomDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fChangeRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangeRoom.Designer.cs">
+      <DependentUpon>fChangeRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCustomer.Designer.cs">
+      <DependentUpon>fCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fManagement.Designer.cs">
+      <DependentUpon>fManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBookRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBookRoom.Designer.cs">
+      <DependentUpon>fBookRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fParameter.Designer.cs">
+      <DependentUpon>fParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPrintBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPrintBill.Designer.cs">
+      <DependentUpon>fPrintBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fProfile.Designer.cs">
+      <DependentUpon>fProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReceiveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReceiveRoom.Designer.cs">
+      <DependentUpon>fReceiveRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReceiveRoomDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReceiveRoomDetails.Designer.cs">
+      <DependentUpon>fReceiveRoomDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReport.Designer.cs">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRoom.Designer.cs">
+      <DependentUpon>fRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fRoomType.Designer.cs">
+      <DependentUpon>fRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fService.Designer.cs">
+      <DependentUpon>fService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fServiceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fServiceType.Designer.cs">
+      <DependentUpon>fServiceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fStaff.Designer.cs">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUpdateCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUpdateCustomerInfo.Designer.cs">
+      <DependentUpon>fUpdateCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUseService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUseService.Designer.cs">
+      <DependentUpon>fUseService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAbout.resx">
+      <DependentUpon>fAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAccess.resx">
+      <DependentUpon>fAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddCustomer.resx">
+      <DependentUpon>fAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddCustomerInfo.resx">
+      <DependentUpon>fAddCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddRoom.resx">
+      <DependentUpon>fAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddCustomerType.resx">
+      <DependentUpon>fAddCustomerType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddSurchargeRate.resx">
+      <DependentUpon>fAddSurchargeRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddService.resx">
+      <DependentUpon>fAddService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddRoomType.resx">
+      <DependentUpon>fAddRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddServiceType.resx">
+      <DependentUpon>fAddServiceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddStaff.resx">
+      <DependentUpon>fAddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddStaffType.resx">
+      <DependentUpon>fAddStaffType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBill.resx">
+      <DependentUpon>fBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBookRoomDetails.resx">
+      <DependentUpon>fBookRoomDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChangeRoom.resx">
+      <DependentUpon>fChangeRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCustomer.resx">
+      <DependentUpon>fCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fManagement.resx">
+      <DependentUpon>fManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBookRoom.resx">
+      <DependentUpon>fBookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fParameter.resx">
+      <DependentUpon>fParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPrintBill.resx">
+      <DependentUpon>fPrintBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fProfile.resx">
+      <DependentUpon>fProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReceiveRoom.resx">
+      <DependentUpon>fReceiveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReceiveRoomDetails.resx">
+      <DependentUpon>fReceiveRoomDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReport.resx">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRoom.resx">
+      <DependentUpon>fRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fRoomType.resx">
+      <DependentUpon>fRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fService.resx">
+      <DependentUpon>fService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fServiceType.resx">
+      <DependentUpon>fServiceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fStaff.resx">
+      <DependentUpon>fStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUpdateCustomerInfo.resx">
+      <DependentUpon>fUpdateCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUseService.resx">
+      <DependentUpon>fUseService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\do cnpm\hotel-management-v2\Source code\C# script\HotelManager\packages\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Winform.Metroframework.1.4.0\lib\net20\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.Composition.Registration" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

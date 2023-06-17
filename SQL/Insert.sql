@@ -17,8 +17,8 @@ INSERT ACCESS (IDStaffType, IDJob) VALUES (2, 2)
 INSERT ACCESS (IDStaffType, IDJob) VALUES (2, 3)
 
 SET IDENTITY_INSERT CustomerType ON 
-INSERT CustomerType (ID, Name) VALUES (1, N'Khách nội địa')
-INSERT CustomerType (ID, Name) VALUES (2, N'Khách nước ngoài')
+INSERT CustomerType (ID, Name, Rate) VALUES (1, N'Khách nội địa', 1)
+INSERT CustomerType (ID, Name, Rate) VALUES (2, N'Khách nước ngoài', 1.5)
 SET IDENTITY_INSERT CustomerType OFF
 
 SET IDENTITY_INSERT JOB ON 
@@ -35,37 +35,37 @@ INSERT JOB (ID, Name, NameForm) VALUES (10, N'Quy định', N'fParameter')
 SET IDENTITY_INSERT JOB OFF
 
 
-INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ1', 3, N'Mỗi phòng có tối 3 khách', NULL)
-INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ2', 0.25, N'Mỗi khách hàng vượt số lượng tiêu chuẩn phụ thu thêm 0.25', NULL)
-INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ3', 1.5, N'Khách nước ngoài hóa đơn nhân với hệ số 1.5', NULL)
+INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ1', 3, N'Mỗi phòng có tối đa 3 khách', NULL)
+INSERT Parameter (Name, Value, Describe, DateModify) VALUES (N'QĐ2', 2, N'Số người không phụ thu', NULL)
 
+INSERT SurchargeRate (Name, Value, DateModify) VALUES (3, 0.25, NULL)
  
 SET IDENTITY_INSERT Room ON
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (1, N'Phòng 101', 1, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (2, N'Phòng 102', 2, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (3, N'Phòng 103', 3, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (4, N'Phòng 104', 2, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (5, N'Phòng 105', 1, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (6, N'Phòng 106', 1, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (7, N'Phòng 107', 3, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (8, N'Phòng 108', 1, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (9, N'Phòng 109', 3, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (10, N'Phòng 201', 3, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (11, N'Phòng 202', 3, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (12, N'Phòng 203', 2, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (13, N'Phòng 204', 2, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (14, N'Phòng 205', 3, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (15, N'Phòng 206', 3, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (16, N'Phòng 207', 2, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (17, N'Phòng 208', 1, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (18, N'Phòng 209', 2, 1)
-INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (19, N'Phòng 210', 3, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (1, N'101', 1, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (2, N'102', 2, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (3, N'103', 3, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (4, N'104', 2, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (5, N'105', 1, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (6, N'106', 1, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (7, N'107', 3, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (8, N'108', 1, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (9, N'109', 3, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (10, N'201', 3, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (11, N'202', 3, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (12, N'203', 2, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (13, N'204', 2, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (14, N'205', 3, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (15, N'206', 3, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (16, N'207', 2, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (17, N'208', 1, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (18, N'209', 2, 1)
+INSERT Room (ID, Name, IDRoomType, IDStatusRoom) VALUES (19, N'210', 3, 1)
 SET IDENTITY_INSERT Room OFF
 
 SET IDENTITY_INSERT RoomType ON 
-INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (1, N'Phòng A', 150000, 3)
-INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (2, N'Phòng B', 170000, 3)
-INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (3, N'Phòng C', 200000, 3)
+INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (1, N'A', 150000, 3)
+INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (2, N'B', 170000, 3)
+INSERT RoomType (ID, Name, Price, LimitPerson) VALUES (3, N'C', 200000, 3)
 SET IDENTITY_INSERT RoomType OFF
 
 SET IDENTITY_INSERT ServiceType ON 
@@ -92,8 +92,8 @@ INSERT Staff (UserName, DisplayName, PassWord, IDStaffType, IDCard, DateOfBirth,
 
 SET IDENTITY_INSERT StaffType ON 
 INSERT StaffType (ID, Name) VALUES (1, N'Quản lí')
-INSERT StaffType (ID, Name) VALUES (2, N'Dọn rác')
-INSERT StaffType (ID, Name) VALUES (3, N'Bảo vệ')
+INSERT StaffType (ID, Name) VALUES (2, N'Lễ tân')
+INSERT StaffType (ID, Name) VALUES (3, N'Kế toán')
 SET IDENTITY_INSERT StaffType OFF
 
 SET IDENTITY_INSERT StatusBill ON 
@@ -103,7 +103,7 @@ SET IDENTITY_INSERT StatusBill OFF
 
 SET IDENTITY_INSERT StatusRoom ON 
 INSERT StatusRoom (ID, Name) VALUES (1, N'Trống')
-INSERT StatusRoom (ID, Name) VALUES (2, N'Có người')
+INSERT StatusRoom (ID, Name) VALUES (2, N'Đang thuê')
 SET IDENTITY_INSERT StatusRoom OFF
 GO
 

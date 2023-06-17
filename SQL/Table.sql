@@ -1,4 +1,4 @@
-CREATE DATABASE HotelManagement
+create DATABASE HotelManagement
 GO
 
 --USE master;
@@ -10,10 +10,10 @@ GO
 USE HotelManagement
 
 GO
-CREATE FUNCTION ConvertString ( @strInput NVARCHAR(4000) ) RETURNS NVARCHAR(4000) AS BEGIN IF @strInput IS NULL RETURN @strInput IF @strInput = '' RETURN @strInput DECLARE @RT NVARCHAR(4000) DECLARE @SIGN_CHARS NCHAR(136) DECLARE @UNSIGN_CHARS NCHAR (136) SET @SIGN_CHARS = N'ăâđêôơưàảãạáằẳẵặắầẩẫậấèẻẽẹéềểễệế ìỉĩịíòỏõọóồổỗộốờởỡợớùủũụúừửữựứỳỷỹỵý ĂÂĐÊÔƠƯÀẢÃẠÁẰẲẴẶẮẦẨẪẬẤÈẺẼẸÉỀỂỄỆẾÌỈĨỊÍ ÒỎÕỌÓỒỔỖỘỐỜỞỠỢỚÙỦŨỤÚỪỬỮỰỨỲỶỸỴÝ' +NCHAR(272)+ NCHAR(208) SET @UNSIGN_CHARS = N'aadeoouaaaaaaaaaaaaaaaeeeeeeeeee iiiiiooooooooooooooouuuuuuuuuuyyyyy AADEOOUAAAAAAAAAAAAAAAEEEEEEEEEEIIIII OOOOOOOOOOOOOOOUUUUUUUUUUYYYYYDD' DECLARE @COUNTER int DECLARE @COUNTER1 int SET @COUNTER = 1 WHILE (@COUNTER <=LEN(@strInput)) BEGIN SET @COUNTER1 = 1 WHILE (@COUNTER1 <=LEN(@SIGN_CHARS)+1) BEGIN IF UNICODE(SUBSTRING(@SIGN_CHARS, @COUNTER1,1)) = UNICODE(SUBSTRING(@strInput,@COUNTER ,1) ) BEGIN IF @COUNTER=1 SET @strInput = SUBSTRING(@UNSIGN_CHARS, @COUNTER1,1) + SUBSTRING(@strInput, @COUNTER+1,LEN(@strInput)-1) ELSE SET @strInput = SUBSTRING(@strInput, 1, @COUNTER-1) +SUBSTRING(@UNSIGN_CHARS, @COUNTER1,1) + SUBSTRING(@strInput, @COUNTER+1,LEN(@strInput)- @COUNTER) BREAK END SET @COUNTER1 = @COUNTER1 +1 END SET @COUNTER = @COUNTER +1 END SET @strInput = replace(@strInput,' ','-') RETURN @strInput END
+create FUNCTION ConvertString ( @strInput NVARCHAR(4000) ) RETURNS NVARCHAR(4000) AS BEGIN IF @strInput IS NULL RETURN @strInput IF @strInput = '' RETURN @strInput DECLARE @RT NVARCHAR(4000) DECLARE @SIGN_CHARS NCHAR(136) DECLARE @UNSIGN_CHARS NCHAR (136) SET @SIGN_CHARS = N'ăâđêôơưàảãạáằẳẵặắầẩẫậấèẻẽẹéềểễệế ìỉĩịíòỏõọóồổỗộốờởỡợớùủũụúừửữựứỳỷỹỵý ĂÂĐÊÔƠƯÀẢÃẠÁẰẲẴẶẮẦẨẪẬẤÈẺẼẸÉỀỂỄỆẾÌỈĨỊÍ ÒỎÕỌÓỒỔỖỘỐỜỞỠỢỚÙỦŨỤÚỪỬỮỰỨỲỶỸỴÝ' +NCHAR(272)+ NCHAR(208) SET @UNSIGN_CHARS = N'aadeoouaaaaaaaaaaaaaaaeeeeeeeeee iiiiiooooooooooooooouuuuuuuuuuyyyyy AADEOOUAAAAAAAAAAAAAAAEEEEEEEEEEIIIII OOOOOOOOOOOOOOOUUUUUUUUUUYYYYYDD' DECLARE @COUNTER int DECLARE @COUNTER1 int SET @COUNTER = 1 WHILE (@COUNTER <=LEN(@strInput)) BEGIN SET @COUNTER1 = 1 WHILE (@COUNTER1 <=LEN(@SIGN_CHARS)+1) BEGIN IF UNICODE(SUBSTRING(@SIGN_CHARS, @COUNTER1,1)) = UNICODE(SUBSTRING(@strInput,@COUNTER ,1) ) BEGIN IF @COUNTER=1 SET @strInput = SUBSTRING(@UNSIGN_CHARS, @COUNTER1,1) + SUBSTRING(@strInput, @COUNTER+1,LEN(@strInput)-1) ELSE SET @strInput = SUBSTRING(@strInput, 1, @COUNTER-1) +SUBSTRING(@UNSIGN_CHARS, @COUNTER1,1) + SUBSTRING(@strInput, @COUNTER+1,LEN(@strInput)- @COUNTER) BREAK END SET @COUNTER1 = @COUNTER1 +1 END SET @COUNTER = @COUNTER +1 END SET @strInput = replace(@strInput,' ','-') RETURN @strInput END
 GO
 
-CREATE TABLE ACCESS(
+create TABLE ACCESS(
 	IDStaffType int NOT NULL,
 	IDJob int NOT NULL,
  CONSTRAINT PK_Access PRIMARY KEY CLUSTERED 
@@ -23,24 +23,25 @@ CREATE TABLE ACCESS(
 )) 
 GO
 
-CREATE TABLE Bill(
+create TABLE Bill(
 	ID int IDENTITY(1,1) NOT NULL,
 	IDReceiveRoom int NOT NULL,
 	StaffSetUp nvarchar(100) NOT NULL,
-	DateOfCreate smalldatetime NULL,
-	RoomPrice int NOT NULL,
-	ServicePrice int NOT NULL,
-	TotalPrice int NOT NULL,
+	DateOfcreate smalldatetime NULL,
+	RoomPrice int NOT NULL, --tien phong 1 ngày
+	ServicePrice int NOT NULL,--tiền dịch vụ
+	TotalPrice int NOT NULL,--tông tiền
 	Discount int NOT NULL,
 	IDStatusBill int NOT NULL,
-	Surcharge int NOT NULL,
+	Surcharge int NOT NULL,--tiền phụ thu
+	--TotalPrice = (RoomPrice + Surcharge(khách thứ 3))* số ngày*ti lệ phụ thu + tiền dịch vụ
 PRIMARY KEY CLUSTERED 
 (
 	ID ASC
 ))
 GO
 
-CREATE TABLE BillDetails(
+create TABLE BillDetails(
 	IDBill int NOT NULL,
 	IDService int NOT NULL,
 	Count int NOT NULL,
@@ -52,7 +53,7 @@ CREATE TABLE BillDetails(
 ))
 GO
 
-CREATE TABLE BookRoom(
+create TABLE BookRoom(
 	ID int IDENTITY(1,1) NOT NULL,
 	IDCustomer int NOT NULL,
 	IDRoomType int NOT NULL,
@@ -65,32 +66,29 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE Customer(
+create TABLE Customer(
 	ID int IDENTITY(1,1) NOT NULL,
 	IDCard nvarchar(100) NOT NULL,
 	IDCustomerType int NOT NULL,
 	Name nvarchar(100) NOT NULL,
-	DateOfBirth date NOT NULL,
-	Address nvarchar(200) NOT NULL,
-	PhoneNumber int NOT NULL,
 	Sex nvarchar(100) NOT NULL,
-	Nationality nvarchar(100) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	ID ASC
 ))
 GO
 
-CREATE TABLE CustomerType(
+create TABLE CustomerType(
 	ID int IDENTITY(1,1) NOT NULL,
 	Name nvarchar(100) NOT NULL,
+	Rate float NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	ID ASC
 ))
 GO
 
-CREATE TABLE JOB(
+create TABLE JOB(
 	ID int IDENTITY(1,1) NOT NULL,
 	Name nvarchar(100) NOT NULL,
 	NameForm nvarchar(100) NOT NULL,
@@ -100,15 +98,22 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE Parameter(
+create TABLE Parameter(
 	Name nvarchar(100) NOT NULL,
-	Value float NULL,
+	Value int NULL,
 	Describe nvarchar(200) NULL,
 	DateModify smalldatetime NULL
 )
 GO
 
-CREATE TABLE ReceiveRoom(
+create TABLE SurchargeRate(
+	Name int NOT NULL,
+	Value float NULL,
+	DateModify smalldatetime NULL
+)
+GO
+
+create TABLE ReceiveRoom(
 	ID int IDENTITY(1,1) NOT NULL,
 	IDBookRoom int NOT NULL,
 	IDRoom int NOT NULL,
@@ -118,7 +123,7 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE ReceiveRoomDetails(
+create TABLE ReceiveRoomDetails(
 	IDReceiveRoom int NOT NULL,
 	IDCustomerOther int NOT NULL,
  CONSTRAINT PK_ReceiveRoomDetails PRIMARY KEY CLUSTERED 
@@ -128,7 +133,7 @@ CREATE TABLE ReceiveRoomDetails(
 ))
 GO
 
-CREATE TABLE REPORT(
+create TABLE REPORT(
 	idRoomType int NOT NULL,
 	value int NOT NULL,
 	--rate float NOT NULL,
@@ -142,7 +147,7 @@ CREATE TABLE REPORT(
 ))
 GO
 
-CREATE TABLE Room(
+create TABLE Room(
 	ID int IDENTITY(1,1) NOT NULL,
 	Name nvarchar(100) NOT NULL,
 	IDRoomType int NOT NULL,
@@ -153,7 +158,7 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE RoomType(
+create TABLE RoomType(
 	ID int IDENTITY(1,1) NOT NULL,
 	Name nvarchar(100) NOT NULL,
 	Price int NOT NULL,
@@ -164,7 +169,7 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE Service(
+create TABLE Service(
 	ID int IDENTITY(1,1) NOT NULL,
 	Name nvarchar(200) NOT NULL,
 	IDServiceType int NOT NULL,
@@ -175,7 +180,7 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE ServiceType(
+create TABLE ServiceType(
 	ID int IDENTITY(1,1) NOT NULL,
 	Name nvarchar(100) NOT NULL,
 PRIMARY KEY CLUSTERED 
@@ -184,7 +189,7 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE Staff(
+create TABLE Staff(
 	ID int IDENTITY(1,1) NOT NULL,
 	UserName nvarchar(100) NOT NULL,
 	DisplayName nvarchar(100) NOT NULL,
@@ -202,7 +207,7 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE StaffType(
+create TABLE StaffType(
 	ID int IDENTITY(1,1) NOT NULL,
 	Name nvarchar(100) NOT NULL,
 PRIMARY KEY CLUSTERED 
@@ -211,7 +216,7 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE StatusBill(
+create TABLE StatusBill(
 	ID int IDENTITY(1,1) NOT NULL,
 	Name nvarchar(100) NOT NULL,
 PRIMARY KEY CLUSTERED 
@@ -220,7 +225,7 @@ PRIMARY KEY CLUSTERED
 ))
 GO
 
-CREATE TABLE StatusRoom(
+create TABLE StatusRoom(
 	ID int IDENTITY(1,1) NOT NULL,
 	Name nvarchar(100) NOT NULL,
 PRIMARY KEY CLUSTERED 
